@@ -20,6 +20,91 @@ Here is an example quotation:
 
 > "Right here." [@kinney2008autism]
 
+[@kinney2008autism]
+> Spatial Scale:
+- " National Weather Service maps of storm tracks were used to identify the parishes that were hit by the centers of each storm, and thus were likely to have experienced the most intense effects of the storm" [@kinney2008autism]
+
+[@bayleyegn2006rapid]
+> Spatial Scale: 
+- Central area of assigned cluster within Santa Rosa and Escambia counties in Florida. Randomly
+
+
+[@hagy2006effects]
+> Temporal Scale: 
+- Water quality surveys conducted monthly from 2000 to 2004 at up to 15 sites located on two transects within the Pensacola Bay system. Post Hurricane Ivan surveys were taken October 6 and November 5, or 20 and 50 days after the storm.  
+
+
+[@lieberman2017self]
+> Spatial Scale: 
+- Self reported flood data
+- "Public macro-level flood data was obtained from the FEMA Modeling Task Force (MOTF) Hurricane Sandy Impact Analysis" [@lieberman2017self]
+- New York State 3 meter spatial resolution storm surge product downloaded and imported into licensed version of ArcGIS to provide water depth above ground in New York City and Long Island
+- Street level geo-coding in SAS using datasets generated from U.S. Census Bureau TIGER/Line shapefiles. Process matches street, city, and zip-code from survey dataset with lookup dataset to produce a coordinate
+
+[@grabich2016hurricane]
+> Spatial Scale: 
+- Births to (only) Florida residents linked to address to link to hurricane exposure
+- Hurricane risk assessed at county level
+> Temporal Scale:
+- Risk period begins at 20 weeks of gestation
+- Pregnancy divided into exposed time and unexposed time after 20 weeks
+- Study population included births with estimated date of conception between October 24, 2003 and September 26, 2004.
+
+[@harville2018cumulative]
+> Spatial Scale: 
+- Convenience sampling at a broad range of community and health facilities.
+
+[@scaramutti2019mental]
+> Spatial Scale:
+- Major cities in Florida and Puerto Rico were coded as urban with 0, and all other areas were coded as rural/suburban with a 1. 
+
+[@bianchette2009ecological]
+> Temporal Scale:
+- Post hurricane images of vegetation take 9.5 months after hurricane to ensure that vegetation damage observed was permanent. 
+
+[@grabich2016measuring]
+> Spatial/Temporal Scale:
+- Hurricane disaster exposure 3 methods, FEMA Presidential disaster declarations, spatial data on specific storm trajectory (storm tracks with a symmmetrical buffer around them), novel meteorological measure based on Saffir-Simpson hurricane intensity scale.
+- Preterm birth and low birth weight rates collected from the county level of exposed areas
+
+[@bevilacqua2020understanding]
+> Spatial
+- ggmaps package in R was used to generate distribution of zip codes of the participants
+> Temporal
+- 
+
+
+[@lane2013health]
+> Spatial 
+- "Based on vulnerable subgroups identified in the literature, potential indicators of population vulnerability for which data are available were identified and mapped within the 42 NYC United Hospital Fund (UHF) neighborhoods located within any NYC hurricane evacuation zone. UHF neighborhoods are zip code-aggregated areas within all five boroughs. For each indicator, prevalences were categorized intoquartilesbyneighborhood." [@lane2013health] 
+
+
+[@schwartz2018preliminary]
+> Spatial 
+- Convenience sampling from the Greater Houston area
+
+> Temporal 
+- Research team arrived in Houston less than 3 weeks after Hurricane Harvey made landfall
+
+[@pugatch2019tropical]
+- "I use windspeed data on tropical storms originating in the
+Atlantic and eastern North Pacific oceans (the regions relevant to
+Mexico), available from the National Oceanic and Atmospheric
+Administration (NOAA) Tropical Prediction Center, a U.S. government
+agency. NOAA analyzes data from reconnaissance aircraft,
+ships, and satellites to create ‘‘best tracks” of individual storms:
+positions (latitude and longitude) of storm centers at 6-hourly
+intervals, combined with intensity information (windspeed and
+barometric pressure; Jarvinen, Neumann, & Davis, 1993; Davis,
+Brown, & Preston, 1984; Chu, Sampson, Levine, & Fukada, 2002).
+Complete records for both ocean regions are available since 1949.
+Fig. 1 maps storm best tracks making landfall in Mexico" [@pugatch2019tropical]
+- "I use data on tropical storm exposure and mortality in all 31
+Mexican states, plus Mexico City, for each month during 1990–
+2011 (I chose the starting period based on the availability of microdata
+on mortality). I create an index to measure storm severity by
+incorporating two elements, windspeed and population density" [@pugatch20219tropical]
+
 
 # References
 
