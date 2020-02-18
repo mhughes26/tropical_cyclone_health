@@ -21,11 +21,15 @@ Here is an example quotation:
 > "Right here." [@kinney2008autism]
 
 [@kinney2008autism]
+
 > Spatial Scale:
+
 - " National Weather Service maps of storm tracks were used to identify the parishes that were hit by the centers of each storm, and thus were likely to have experienced the most intense effects of the storm" [@kinney2008autism]
 
 [@bayleyegn2006rapid]
+
 > Spatial Scale: 
+
 - Central area of assigned cluster within Santa Rosa and Escambia counties in Florida. Randomly
 
 
@@ -35,14 +39,18 @@ Here is an example quotation:
 
 
 [@lieberman2017self]
+
 > Spatial Scale: 
+
 - Self reported flood data
 - "Public macro-level flood data was obtained from the FEMA Modeling Task Force (MOTF) Hurricane Sandy Impact Analysis" [@lieberman2017self]
 - New York State 3 meter spatial resolution storm surge product downloaded and imported into licensed version of ArcGIS to provide water depth above ground in New York City and Long Island
 - Street level geo-coding in SAS using datasets generated from U.S. Census Bureau TIGER/Line shapefiles. Process matches street, city, and zip-code from survey dataset with lookup dataset to produce a coordinate
 
 [@grabich2016hurricane]
+
 > Spatial Scale: 
+
 - Births to (only) Florida residents linked to address to link to hurricane exposure
 - Hurricane risk assessed at county level
 > Temporal Scale:
