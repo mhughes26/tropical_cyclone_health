@@ -20,25 +20,62 @@ Here is an example quotation:
 
 > "Right here." [@kinney2008autism]
 
-[@kinney2008autism]
+#[@kinney2008autism]
 
 > Spatial Scale:
 
-- " National Weather Service maps of storm tracks were used to identify the parishes that were hit by the centers of each storm, and thus were likely to have experienced the most intense effects of the storm" [@kinney2008autism]
+- "National Weather Service maps of storm tracks were used to identify the parishes that were hit by the centers of each storm, and thus were likely to have experienced the most intense effects of the storm" [@kinney2008autism]
 
-[@bayleyegn2006rapid]
+> Exposure:
+
+- Severity of prenatal storm exposure assessed two ways: intensity of storm's impact on parish, and how vulnerable residents would be if storm hit their parish. (Intensity and Vulnerability).
+- Using data from NCHS, 40 week gestations were assumed to estimate the gestional age of babies during the storm. 
+
+> Results/Outcomes: 
+
+- AD(Autistic Disorder) had significantly higher prevalence in those with higher prenatal storm exposure. AD Prevalence also depended on Prenatal Period of Storm Exposure (what gestational period the baby was in when the storm exposure occured)
+
+
+
+#[@bayleyegn2006rapid]
 
 > Spatial Scale: 
 
-- Central area of assigned cluster within Santa Rosa and Escambia counties in Florida. Randomly
+- Escambia and Santa Rosa counties were identified as those most impacted by Hurricane Ivan by Florida Department of Health. Probability Proportional to Size Sampling (modified from the WHO), was used to obtain a sample of 30 clusters within these counties, which were put on maps given to interview teams. 
+- 7 households interviewed per cluster, for a total of 420 households interviewed.
+- Interviews administered asking for demographic info, housing info, damage info, etc. 
+
+> Temporal scale
+
+- Survey instruments administered over 3 days, 6 days after Hurricane Ivan made landfall. 
+
+> Results/Outcomes
+
+- Most commonly reported "Greatest needs" were garbage pickup and restoration of electricity, after that it was access to medical care, medications, home repair, and ice. 
+-Interviews and surveys were intended to look at what the health and safety impacts were after the hurricane, it turned out to be a wide variety of factors including poor environmental hygiene, living in damaged homes, sleep disturbance, respiratory problems, and the aformentioned "Greatest Needs." 
 
 
-[@hagy2006effects]
-> Temporal Scale: 
+
+#[@hagy2006effects]
+
+> Temporal/Spatial Scale: 
+
 - Water quality surveys conducted monthly from 2000 to 2004 at up to 15 sites located on two transects within the Pensacola Bay system. Post Hurricane Ivan surveys were taken October 6 and November 5, or 20 and 50 days after the storm.  
+- Extent of inundated land and maximum height of tidal surge were estimated by directly observing locations and heights of high water marks around perimeter of Pensacola Bay.
+-Total Prism Model used to estimate the magnitude of exchane associated with storm surge. 
+
+> Outcome/Results:
+
+- Hurricane Ivan caused water to rise continuously for 31 hours.
+- Storm surge inundated 165 km^2 of land, which increased the Bay's surface area by 50% and it's volume by 230%. 
+- Based on Total Prism Model, storm surge flushed a maximum of 60% of the Bay's water out to sea as it retreated - this must have increased salinity of the Bay substantially. 
+- Using Navy's model estimate of offshore salinity in the Tidal Prism Model, Ivan's surge was computed to have increased the mean salinity of the Bay from 23.4 to as high as 30.0.
+- Tidal surge replaced Bay waters with low-nutrient, well-oxygenated, oligotrophic Gulf waters
+- Post-storm freshwater input stimulated an increase in phytoplankton biomass, which persisted for several weeks. 
+- Hypoxia was intensified relative to the seasonal norm. 
 
 
-[@lieberman2017self]
+#[@lieberman2017self]
 
 > Spatial Scale: 
 
@@ -47,54 +84,120 @@ Here is an example quotation:
 - New York State 3 meter spatial resolution storm surge product downloaded and imported into licensed version of ArcGIS to provide water depth above ground in New York City and Long Island
 - Street level geo-coding in SAS using datasets generated from U.S. Census Bureau TIGER/Line shapefiles. Process matches street, city, and zip-code from survey dataset with lookup dataset to produce a coordinate
 
-[@grabich2016hurricane]
+> Results/Outcomes:
+
+- Mental health variables considered based on scores of a questionaire were anxiety score, depression score, and PTSD score
+- Self reported flood exposure and FEMA flood exposure data showed significant discrepencies in the associations between flooding and mental health outcomes. 
+- Self reported dichotomous flooding showed significant associations with all mental health outcomes, whereas dichotomous FEMA flooding only showed significant associations with PTSD.
+- Macro-level flooding data is less expensive and faster, but potentially underestimates mental health outcomes. 
+
+#[@grabich2016hurricane]
+
+
+
+
 
 > Spatial Scale: 
 
 - Births to (only) Florida residents linked to address to link to hurricane exposure
 - Hurricane risk assessed at county level
+- Florida Department of Health, Vital Statistics Department was the source of data on births from 2003 to 2005.
+- Hurricane exposure classified as maximum wind speed in specific Florida county extracted from NOAA's Hurricane Research Division public database.
+- Exposure defined as >= 39 mph and >= 74 mph
+
+
 > Temporal Scale:
+
 - Risk period begins at 20 weeks of gestation
 - Pregnancy divided into exposed time and unexposed time after 20 weeks
 - Study population included births with estimated date of conception between October 24, 2003 and September 26, 2004.
 
-[@harville2018cumulative]
-> Spatial Scale: 
-- Convenience sampling at a broad range of community and health facilities.
+> Results/Outcomes
 
-[@scaramutti2019mental]
-> Spatial Scale:
-- Major cities in Florida and Puerto Rico were coded as urban with 0, and all other areas were coded as rural/suburban with a 1. 
-
-[@bianchette2009ecological]
-> Temporal Scale:
-- Post hurricane images of vegetation take 9.5 months after hurricane to ensure that vegetation damage observed was permanent. 
-
-[@grabich2016measuring]
-> Spatial/Temporal Scale:
-- Hurricane disaster exposure 3 methods, FEMA Presidential disaster declarations, spatial data on specific storm trajectory (storm tracks with a symmmetrical buffer around them), novel meteorological measure based on Saffir-Simpson hurricane intensity scale.
-- Preterm birth and low birth weight rates collected from the county level of exposed areas
-
-[@bevilacqua2020understanding]
-> Spatial
-- ggmaps package in R was used to generate distribution of zip codes of the participants
-> Temporal
+- Outcome of interest was to see if there was an association between hurricane exposure and the risk of a preterm birth.
+- Two outcome standards: extremely preterm delivery < 32 weeks gestation, and overall preterm delivery < 37 weeks gestation.
+- Overall positive association observed between exposure to Hurricane Harvey and hazard of extreme preterm delivery (not overall preterm delivery however)
 - 
 
 
-[@lane2013health]
-> Spatial 
-- "Based on vulnerable subgroups identified in the literature, potential indicators of population vulnerability for which data are available were identified and mapped within the 42 NYC United Hospital Fund (UHF) neighborhoods located within any NYC hurricane evacuation zone. UHF neighborhoods are zip code-aggregated areas within all five boroughs. For each indicator, prevalences were categorized intoquartilesbyneighborhood." [@lane2013health] 
+#[@scaramutti2019mental]
+
+> Spatial Scale:
+
+- Major cities in Florida and Puerto Rico were coded as urban with 0, and all other areas were coded as rural/suburban with a 1. 
+- Word of mouth and outreach to community leaders and community centers in Central and South Florida and Puerto Rico
+- Online surveys available through Qualtrics, respondants asked to refer 3 additional respondants
+- Linear regression models used with site and urbanacity as predictors for depressive symptoms, anxiety symptoms, and PTSD symptoms
+- Binary logistic regression analysis for clinical vs non-clinical anxiety, depression, and PTSD as criterion variables, and site or urbanacity as predictors
+
+> Temporal Scale:
+
+- Assessing mental health of Puerto Ricans in Florida and Puerto Rico 6 months after Hurricane Maria.
+
+> Results/Outcomes: 
+
+- Mental health outcomes of interest were anxiety, depression, and PTSD
+- Results showed significant associations between urbanacity and anxiety, approaching statistical significance for association between urbanacity and depressive symptoms, and significant association between urbanacity and PTSD intrusive reexperiencing and PTSD hypervigilance.
+- Overall, rates of depression and PTSD were higher in Puerto Ricans who migrated to Florida after Hurricane Maria. 
+- Puerto Ricans outside major cities were more likely to meet criteria for depression and PTSD
+- Puerto Ricans in Puerto Rico had significantly fewere clinical symptoms than those in Florida, but rates were high overall for both Florida and Puerto Rico. 
+
+#[@bianchette2009ecological]
+
+> Temporal/Spatial Scale:
+
+- Study area was three coastal lakes known as the Shelby Lakes in Gulf State Park, Alabama.
+- Hurrican Ivan brought 120 mph winds and a storm surge of 10-12 feet, which inundated all of the coastal plane around the Shelby Lakes. 
+- Post hurricane images of vegetation take 9.5 months after hurricane to ensure that vegetation damage observed was permanent. 
+- Remote sensing using Landsat 5 images coupled with ground surveys of tree mortality were used.
+
+> Results/Outcomes: 
+
+- Ecological impacts were the main concern of this study, primarily measured by tree mortality.
+- Trees at lower elevation showed greater mortality than those at higher elevations. 
+- Results suggested that saltwater intrusion and storm surge flooding were the main reasons for tree mortality in forests around Shelby Lakes, rather than wind damage. 
 
 
-[@schwartz2018preliminary]
+
+
+#[@grabich2016measuring]
+
+> Spatial/Temporal Scale:
+
+- Hurricane disaster exposure 3 methods, FEMA Presidential disaster declarations, spatial data on specific storm trajectory (storm tracks with a symmmetrical buffer around them), novel meteorological measure based on Saffir-Simpson hurricane intensity scale.
+- Preterm birth and low birth weight rates collected from the county level of exposed areas
+
+#[@bevilacqua2020understanding]
+
+> Spatial
+
+- ggmaps package in R was used to generate distribution of zip codes of the participants
+
+> Temporal
+
+
+
+#[@lane2013health]
+
 > Spatial 
+
+- "Based on vulnerable subgroups identified in the literature, potential indicators of population vulnerability for which data are available were identified and mapped within the 42 NYC United Hospital Fund (UHF) neighborhoods located within any NYC hurricane evacuation zone. UHF neighborhoods are zip code-aggregated areas within all five boroughs. For each indicator, prevalences were categorized intoquartilesbyneighborhood."
+
+#[@lane2013health] 
+
+
+#[@schwartz2018preliminary]
+
+> Spatial 
+
 - Convenience sampling from the Greater Houston area
 
-> Temporal 
+> Temporal
+
 - Research team arrived in Houston less than 3 weeks after Hurricane Harvey made landfall
 
-[@pugatch2019tropical]
+#[@pugatch2019tropical]
+
 - "I use windspeed data on tropical storms originating in the
 Atlantic and eastern North Pacific oceans (the regions relevant to
 Mexico), available from the National Oceanic and Atmospheric
