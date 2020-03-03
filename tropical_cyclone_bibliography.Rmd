@@ -20,51 +20,51 @@ Here is an example quotation:
 
 > "Right here." [@kinney2008autism]
 
-#[@kinney2008autism]
+# [@kinney2008autism]
 
-> Spatial Scale:
+## Spatial Scale:
 
 - "National Weather Service maps of storm tracks were used to identify the parishes that were hit by the centers of each storm, and thus were likely to have experienced the most intense effects of the storm" [@kinney2008autism]
 
-> Exposure:
+##  Exposure:
 
 - Severity of prenatal storm exposure assessed two ways: intensity of storm's impact on parish, and how vulnerable residents would be if storm hit their parish. (Intensity and Vulnerability).
 - Using data from NCHS, 40 week gestations were assumed to estimate the gestional age of babies during the storm. 
 
-> Results/Outcomes: 
+## Results/Outcomes: 
 
 - AD(Autistic Disorder) had significantly higher prevalence in those with higher prenatal storm exposure. AD Prevalence also depended on Prenatal Period of Storm Exposure (what gestational period the baby was in when the storm exposure occured)
 
 
 
-#[@bayleyegn2006rapid]
+# [@bayleyegn2006rapid]
 
-> Spatial Scale: 
+## Spatial Scale: 
 
 - Escambia and Santa Rosa counties were identified as those most impacted by Hurricane Ivan by Florida Department of Health. Probability Proportional to Size Sampling (modified from the WHO), was used to obtain a sample of 30 clusters within these counties, which were put on maps given to interview teams. 
 - 7 households interviewed per cluster, for a total of 420 households interviewed.
 - Interviews administered asking for demographic info, housing info, damage info, etc. 
 
-> Temporal scale
+## Temporal scale
 
 - Survey instruments administered over 3 days, 6 days after Hurricane Ivan made landfall. 
 
-> Results/Outcomes
+## Results/Outcomes
 
 - Most commonly reported "Greatest needs" were garbage pickup and restoration of electricity, after that it was access to medical care, medications, home repair, and ice. 
 -Interviews and surveys were intended to look at what the health and safety impacts were after the hurricane, it turned out to be a wide variety of factors including poor environmental hygiene, living in damaged homes, sleep disturbance, respiratory problems, and the aformentioned "Greatest Needs." 
 
 
 
-#[@hagy2006effects]
+# [@hagy2006effects]
 
-> Temporal/Spatial Scale: 
+## Temporal/Spatial Scale: 
 
 - Water quality surveys conducted monthly from 2000 to 2004 at up to 15 sites located on two transects within the Pensacola Bay system. Post Hurricane Ivan surveys were taken October 6 and November 5, or 20 and 50 days after the storm.  
 - Extent of inundated land and maximum height of tidal surge were estimated by directly observing locations and heights of high water marks around perimeter of Pensacola Bay.
 -Total Prism Model used to estimate the magnitude of exchane associated with storm surge. 
 
-> Outcome/Results:
+## Outcome/Results:
 
 - Hurricane Ivan caused water to rise continuously for 31 hours.
 - Storm surge inundated 165 km^2 of land, which increased the Bay's surface area by 50% and it's volume by 230%. 
@@ -75,29 +75,25 @@ Here is an example quotation:
 - Hypoxia was intensified relative to the seasonal norm. 
 
 
-#[@lieberman2017self]
+# [@lieberman2017self]
 
-> Spatial Scale: 
+## Spatial Scale: 
 
 - Self reported flood data
 - "Public macro-level flood data was obtained from the FEMA Modeling Task Force (MOTF) Hurricane Sandy Impact Analysis" [@lieberman2017self]
 - New York State 3 meter spatial resolution storm surge product downloaded and imported into licensed version of ArcGIS to provide water depth above ground in New York City and Long Island
 - Street level geo-coding in SAS using datasets generated from U.S. Census Bureau TIGER/Line shapefiles. Process matches street, city, and zip-code from survey dataset with lookup dataset to produce a coordinate
 
-> Results/Outcomes:
+## Results/Outcomes:
 
 - Mental health variables considered based on scores of a questionaire were anxiety score, depression score, and PTSD score
 - Self reported flood exposure and FEMA flood exposure data showed significant discrepencies in the associations between flooding and mental health outcomes. 
 - Self reported dichotomous flooding showed significant associations with all mental health outcomes, whereas dichotomous FEMA flooding only showed significant associations with PTSD.
 - Macro-level flooding data is less expensive and faster, but potentially underestimates mental health outcomes. 
 
-#[@grabich2016hurricane]
+# [@grabich2016hurricane]
 
-
-
-
-
-> Spatial Scale: 
+## Spatial Scale: 
 
 - Births to (only) Florida residents linked to address to link to hurricane exposure
 - Hurricane risk assessed at county level
@@ -106,13 +102,13 @@ Here is an example quotation:
 - Exposure defined as >= 39 mph and >= 74 mph
 
 
-> Temporal Scale:
+# Temporal Scale:
 
 - Risk period begins at 20 weeks of gestation
 - Pregnancy divided into exposed time and unexposed time after 20 weeks
 - Study population included births with estimated date of conception between October 24, 2003 and September 26, 2004.
 
-> Results/Outcomes
+# Results/Outcomes
 
 - Outcome of interest was to see if there was an association between hurricane exposure and the risk of a preterm birth.
 - Two outcome standards: extremely preterm delivery < 32 weeks gestation, and overall preterm delivery < 37 weeks gestation.
@@ -120,9 +116,9 @@ Here is an example quotation:
 - 
 
 
-#[@scaramutti2019mental]
+# [@scaramutti2019mental]
 
-> Spatial Scale:
+## Spatial Scale:
 
 - Major cities in Florida and Puerto Rico were coded as urban with 0, and all other areas were coded as rural/suburban with a 1. 
 - Word of mouth and outreach to community leaders and community centers in Central and South Florida and Puerto Rico
@@ -130,11 +126,11 @@ Here is an example quotation:
 - Linear regression models used with site and urbanacity as predictors for depressive symptoms, anxiety symptoms, and PTSD symptoms
 - Binary logistic regression analysis for clinical vs non-clinical anxiety, depression, and PTSD as criterion variables, and site or urbanacity as predictors
 
-> Temporal Scale:
+## Temporal Scale:
 
 - Assessing mental health of Puerto Ricans in Florida and Puerto Rico 6 months after Hurricane Maria.
 
-> Results/Outcomes: 
+## Results/Outcomes: 
 
 - Mental health outcomes of interest were anxiety, depression, and PTSD
 - Results showed significant associations between urbanacity and anxiety, approaching statistical significance for association between urbanacity and depressive symptoms, and significant association between urbanacity and PTSD intrusive reexperiencing and PTSD hypervigilance.
@@ -142,16 +138,16 @@ Here is an example quotation:
 - Puerto Ricans outside major cities were more likely to meet criteria for depression and PTSD
 - Puerto Ricans in Puerto Rico had significantly fewere clinical symptoms than those in Florida, but rates were high overall for both Florida and Puerto Rico. 
 
-#[@bianchette2009ecological]
+# [@bianchette2009ecological]
 
-> Temporal/Spatial Scale:
+## Temporal/Spatial Scale:
 
 - Study area was three coastal lakes known as the Shelby Lakes in Gulf State Park, Alabama.
 - Hurrican Ivan brought 120 mph winds and a storm surge of 10-12 feet, which inundated all of the coastal plane around the Shelby Lakes. 
 - Post hurricane images of vegetation take 9.5 months after hurricane to ensure that vegetation damage observed was permanent. 
 - Remote sensing using Landsat 5 images coupled with ground surveys of tree mortality were used.
 
-> Results/Outcomes: 
+## Results/Outcomes: 
 
 - Ecological impacts were the main concern of this study, primarily measured by tree mortality.
 - Trees at lower elevation showed greater mortality than those at higher elevations. 
@@ -160,43 +156,43 @@ Here is an example quotation:
 
 
 
-#[@grabich2016measuring]
+# [@grabich2016measuring]
 
-> Spatial/Temporal Scale:
+## Spatial/Temporal Scale:
 
 - Hurricane disaster exposure 3 methods, FEMA Presidential disaster declarations, spatial data on specific storm trajectory (storm tracks with a symmmetrical buffer around them), novel meteorological measure based on Saffir-Simpson hurricane intensity scale.
 - Preterm birth and low birth weight rates collected from the county level of exposed areas
 
-#[@bevilacqua2020understanding]
+# [@bevilacqua2020understanding]
 
-> Spatial
+## Spatial Scale
 
 - ggmaps package in R was used to generate distribution of zip codes of the participants
 
-> Temporal
+## Temporal Scale
 
 
 
-#[@lane2013health]
+# [@lane2013health]
 
-> Spatial 
+## Spatial Scale
 
 - "Based on vulnerable subgroups identified in the literature, potential indicators of population vulnerability for which data are available were identified and mapped within the 42 NYC United Hospital Fund (UHF) neighborhoods located within any NYC hurricane evacuation zone. UHF neighborhoods are zip code-aggregated areas within all five boroughs. For each indicator, prevalences were categorized intoquartilesbyneighborhood."
 
-#[@lane2013health] 
+# [@lane2013health] 
 
 
-#[@schwartz2018preliminary]
+# [@schwartz2018preliminary]
 
-> Spatial 
+## Spatial 
 
 - Convenience sampling from the Greater Houston area
 
-> Temporal
+## Temporal
 
 - Research team arrived in Houston less than 3 weeks after Hurricane Harvey made landfall
 
-#[@pugatch2019tropical]
+# [@pugatch2019tropical]
 
 - "I use windspeed data on tropical storms originating in the
 Atlantic and eastern North Pacific oceans (the regions relevant to
@@ -217,7 +213,7 @@ on mortality). I create an index to measure storm severity by
 incorporating two elements, windspeed and population density" [@pugatch20219tropical]
 
 
-[@jaycox2010children]
+# [@jaycox2010children]
 
 New Orleans schoolchildren were participated in a trial and assessment of an intervention after Hurricane Katrina. Group intervention at school and individual intervention at a clinic were the two options. Both treatments led to a reduction in symptoms of PTSD, but there were still elevated levels of PTSD even post treatment. 
 
@@ -291,7 +287,7 @@ experiences per student." [@jaycox2010children]
 - Overall, Hurricane Katrina was not associated with an increase in the rates of LBW and preterm births, in some areas there was a reduction of these. This may be due to population changes though because the population at risk after the hurricane had a higher risk profile. 
 
 
-[@ferdinand2005hurricane]
+# [@ferdinand2005hurricane]
 
 - Hurricane Katrina led to a large number of people with uncontrolled hypertension and cardiovascular disease. Higher rates of high blood pressure are seen in African Americans than in whites, and the rates of controlled blood pressure in disadvantaged communities in Louisiana is very low. 
 
@@ -315,6 +311,33 @@ experiences per student." [@jaycox2010children]
 - "There is a 1.8x greater rate of fatal stroke, 1.5x greater rate of coronary heart disease and mortality, and a 4.2x greater rate of end‐stage renal disease in this population." [@ferdinand2005hurricane]
 - "Only 52% of evacuees had health insurance at the time of the hurricane, and chronic conditions such as heart disease, hypertension, diabetes, and asthma were reported by 41% of the adults surveyed. Furthermore, 29% of evacuees reported having problems in obtaining their necessary prescription drugs." [@ferdinand2005hurricane]
 
+
+# [@christopher2017effects]
+
+## Temporal Scale
+
+- July 1, 2004 to August 31, 2006 for Hurricane Katrina.
+- March 1, 2010 to April 31, 2012 for April 2011 Alabama tornado disaster.
+- "The gestation period for mothers in the sample ranged from 18 to 47 weeks, 
+with a mean gestation period of 37.97 weeks (SD = 2.84 weeks"[christopher2017effects]
+
+## Spatial Scale
+
+- "For Hurricane Katrina, the population was delimited to pregnant 
+women residing in the counties of Hancock, Harrison, Jackson, and Jones, Mississippi, who experienced a live singleton birth which survived or was born and died between the periods of July 1, 2004 to August 31, 2006." [@christopher2017effects]
+- "For the April 2011 Alabama tornado disaster, the population was delimited to pregnant women residing in the counties of Calhoun, DeKalb, Franklin, Jefferson, Lawrence, Limestone, Madison, Marion, St. Clair, and Tuscaloosa, Alabama who were most likely affected by the April 2011 tornado disaster, and experienced a live singleton birth which survived or was born and died between the periods of March 1, 2010 to April 31, 2012." [@christopher2017effects]
+
+## Exposure
+
+- Maternal prenatal exposure to Hurricane Katrina in Mississippi
+- Maternal prenatal exposure to April 2011 Tornado disaster in Alabama. 
+- "The data consisted of customized delimited county-level linked birth and infant death data drawn from Alabama and Mississippi Linked Infant Births and Deaths Record Files for the period 1997-2013." [@christopher2017effects]
+
+
+## Results/Outcome
+
+- Response variables of interest included birth weight, preterm birth, infant mortality, and mode of delivery.
+- Exposure to hurricanes increased odds of low birth weight and also increased risk for preterm birth, however it wasn't shown to have a significant association with increased infant mortality. 
 
 
 
