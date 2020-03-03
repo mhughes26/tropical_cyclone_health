@@ -339,6 +339,9 @@ women residing in the counties of Hancock, Harrison, Jackson, and Jones, Mississ
 - Response variables of interest included birth weight, preterm birth, infant mortality, and mode of delivery.
 - Exposure to hurricanes increased odds of low birth weight and also increased risk for preterm birth, however it wasn't shown to have a significant association with increased infant mortality. 
 
+```{r echo = FALSE, out.width="0.4\\textwidth", fig.align="center", fig.cap="Example of how exposure to tornadoes was assesses in Christopher (2017) for counties."}
+knitr::include_graphics("figures/Tracking The Tornadoes Paths' in Alabama.PNG")
+```
 
 
 # References
