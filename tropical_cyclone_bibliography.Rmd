@@ -263,6 +263,8 @@ experiences per student." [@jaycox2010children]
 
 # [@harville2010population]
 
+- Low birth rates and preterm births were studied in Louisiana at three spatial levels: Orleans Parish (New Orleans), Region 1 (this includes Orleans Parish, and several others), and Louisiana as a whole. 
+
 ## Temporal Scale
 
 - Data used in analysis came from Louisiana birth records 2003-2007, in Medicaid-linked data. 
@@ -289,8 +291,29 @@ experiences per student." [@jaycox2010children]
 - Overall, Hurricane Katrina was not associated with an increase in the rates of LBW and preterm births, in some areas there was a reduction of these. This may be due to population changes though because the population at risk after the hurricane had a higher risk profile. 
 
 
+[@ferdinand2005hurricane]
 
+- Hurricane Katrina led to a large number of people with uncontrolled hypertension and cardiovascular disease. Higher rates of high blood pressure are seen in African Americans than in whites, and the rates of controlled blood pressure in disadvantaged communities in Louisiana is very low. 
 
+## Spatial Scale
+
+- 680 adults staying in Hurricane Katrina shelters in Houston Texas were given a survey 
+- 98% of these survey subjects were from New Orleans.
+- Population in areas of flooding was 76% black, and 29% below the poverty line.
+
+## Temporal Scale
+
+- Surveys were administered from September 10 - 12, 2005. 
+
+## Exposure
+
+- Exposure to flooding leads to evacuation and unexpected displacement, which increases the odds of losing medical records and information that include hypertensive patient's medication regimen, including frequency, dosage, and indications. 
+
+## Results/Outcome
+
+- Outcomes of concern in this paper are hypertension and cardiovascular disease. 
+- "There is a 1.8x greater rate of fatal stroke, 1.5x greater rate of coronary heart disease and mortality, and a 4.2x greater rate of end‐stage renal disease in this population." [@ferdinand2005hurricane]
+- "Only 52% of evacuees had health insurance at the time of the hurricane, and chronic conditions such as heart disease, hypertension, diabetes, and asthma were reported by 41% of the adults surveyed. Furthermore, 29% of evacuees reported having problems in obtaining their necessary prescription drugs." [@ferdinand2005hurricane]
 
 
 
