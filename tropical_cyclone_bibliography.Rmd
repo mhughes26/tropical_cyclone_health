@@ -1,6 +1,6 @@
 ---
 title: "Tropical Cyclone Bibliography"
-author: "Matt"
+author: "Matthew Hughes"
 date: "February 7, 2020"
 output: pdf_document
 bibliography: bibliography.bib
@@ -215,6 +215,84 @@ Mexican states, plus Mexico City, for each month during 1990–
 2011 (I chose the starting period based on the availability of microdata
 on mortality). I create an index to measure storm severity by
 incorporating two elements, windspeed and population density" [@pugatch20219tropical]
+
+
+[@jaycox2010children]
+
+New Orleans schoolchildren were participated in a trial and assessment of an intervention after Hurricane Katrina. Group intervention at school and individual intervention at a clinic were the two options. Both treatments led to a reduction in symptoms of PTSD, but there were still elevated levels of PTSD even post treatment. 
+
+## Spatial Scale
+
+- Three schools in New Orleans participating in Project Fleur-de-Lis.
+
+## Temporal Scale
+
+- Interventions began 15 months after Hurricane Katrina.
+- "Students were assessed at baseline (December 2006–January
+2007), at 5 months (April–May 2007) and at 10 months
+(September–October 2007). The CBITS groups ran March to
+May 2007 and TF-CBT was implemented February to September,
+2007. This study only reports on the 10-month follow-up assessment
+results."[@jaycox2010children]
+
+## Exposure
+
+- Exposure measured via self report by students using the Disaster Experience Questionnaire.
+- "For an overall exposure to hurricane experiences measure, we tallied experiences listed in the top panel of Table 2, for a total number of
+experiences per student." [@jaycox2010children]
+- PTSD symptoms assessed using the Child PTSD Symptom Scale (a score greater than 11 is considered elevated symptoms).
+
+## Results/Outcomes
+
+- More girls than boys were at risk for PTSD symptoms (63% for girls, and 37% for boys).
+- PTSD scores at 10 months were generally improved from scores at baseline assessment in students who participated in the intervention.
+- "More than 60% of students screened positive for elevated PTSD symptoms and were included in the intervention field trial." [@jaycox2010children]
+
+# [@bourque2006weathering]
+
+## Temporal Scale
+
+## Spatial Scale
+
+## Exposure
+
+## Results/Outcomes
+
+- NOAA's Tropical Prediction Center estimates that between 1970 and 1999, 1% of deaths in hurricanes were caused by storm surges, 59% by freshwater (inland) flooding, and 12% by wind. 
+
+
+# [@harville2010population]
+
+## Temporal Scale
+
+- Data used in analysis came from Louisiana birth records 2003-2007, in Medicaid-linked data. 
+- Birth outcomes among state residents were examined for the 2 years before and after Hurricane Katrina.
+
+
+
+## Spatial Scale
+
+- The Regional Level is the scale that was used to study birth outcomes, and Louisiana is divided into 9 health regions. 
+- The Region of mother's residence was used to study rather than the region that the mother gave birth in. 
+- Region 1 was the Louisiana region hit most strongly by Hurricane Katrina and consists of Orleans,Jefferson,Plaquemines,and St Bernard parishes. The study looked at Orleans parish (city of New Orleans), Region 1, and Louisiana all together.
+
+
+## Exposure
+
+- Exposure defined as giving birth in the two years after Hurricane Katrina
+
+
+## Results/Outcome
+
+- Outcomes of interest were Low Birth Weight, and Preterm Birth. 
+- In Louisiana as a whole, rates of LBW rose in the two years after Hurricane Katrina, but rates of Preterm births did not.
+- Overall, Hurricane Katrina was not associated with an increase in the rates of LBW and preterm births, in some areas there was a reduction of these. This may be due to population changes though because the population at risk after the hurricane had a higher risk profile. 
+
+
+
+
+
+
 
 
 # References
