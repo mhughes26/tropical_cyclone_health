@@ -343,6 +343,38 @@ women residing in the counties of Hancock, Harrison, Jackson, and Jones, Mississ
 knitr::include_graphics("figures/Tracking The Tornadoes Paths' in Alabama.PNG")
 ```
 
+# [@zahran2011economics]
+
+
+
+## Temporal Scale
+
+- "Mental health condition is measured as the reported count of poor mental health days experienced by a respondent in the previous 30 days. Data on mental health days are from the CDC’s BRFSS, 2005–2006." [@zahran2011economics]
+
+## Spatial Scale
+
+- Intensity of hurricane's path measured using data on property damage and crop loss from the Spatial Hazard Losses and Events Database.
+- 
+
+
+## Exposure
+
+- "Individual exposure to Hurricane Katrina and/or Rita was determined by information on the temporal and spatial coordinates of each hurricane event,
+the date a respondent was interviewed by the CDC, and the respondent’s place of county residence, as reported in the CDC’s Behavioral Risk Factor Surveillance
+System (BRFSS) database" [@zahran2011economics]
+- Number of poor mental healthd days expected to have spikes corresponding to hurricane events in affected but not unaffected areas with respect to hurricane exposure. 
+
+## Results/Outcomes
+
+- Outcome of interest was mental health resilience of Hurricane Katrina and Rita survivors, stratified by vulnerability status. Number of poor mental health days used as metric for this. 
+- Vulnerability status measured by poor physical health, social support, education level, income, and being a single mother.
+- Single mothers were identified as a particular vulnerability category of interest
+- "Resistance refers to the capacity to limit displacement from equilibrium
+following a traumatic event. Resilience, by contrast, points to the ability to return to an equilibrium state—the more rapid the return to preevent functioning, the greater the resilience." [@zahran2011economics]
+- Average number of poor mental health days in 30 was 3.37 for the population as a whole, and 5.95 for single mothers. 
+- Overall, hurricane exposed single mothers and exposed "others" all experienced an increased number of days of poor mental health.
+- "We estimate that single mothers, as a group, suffered over $130 million in productivity loss from added postdisaster stress and disability." [@zahran2011economics]
+
 
 # References
 
