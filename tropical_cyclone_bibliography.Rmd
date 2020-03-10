@@ -384,6 +384,53 @@ following a traumatic event. Resilience, by contrast, points to the ability to r
 - Predictor variables are disaster damage, recency bias, and day of the week. 
 
 
+# [@nordhaus2010economics]
+
+## Temporal Scale
+
+- Annual number of tropical cyclones from 1970 to 2004 averaged at 85. 
+- Reliable data on the number of tropical cyclones has only been collected since 1960, so it is hard to accurately gage if the average number of tropical cyclones per year is increasing. 
+- "Using “best track” or HURDAT data for North Atlantic storms, there has been a clear increase in the frequency of storms over the 1851–2005 period, particularly since 1980."
+
+## Spatial Scale
+
+- Study focues on tropical cyclones in the North Atlantic, focusing on the East Coast of the United States
+
+
+## Exposure
+
+- Storm intensity is measured by something called "Hurricane Power" which is defined as a function of maximum wind speed squared or cubed
+- "NOAA has constructed a power index called the accumulated cyclone energy (ACE) index, which is a function of maximum wind speed squared." [nordhaus2010economics]
+- This study analyzes economics impacts by looking at three primary factors: number of storms, maximum wind speed at landfall, and GDP.
+
+## Results/Outcomes
+
+- Southern Atlantic coast is most vulnerable to hurricanes in the context of climate echange
+- Damages appear to increase to the ninth degree of wind speed.
+- It is estimated that climate change will increase the intensity of hurricanes and tropical cyclones, but it isn't clear if it will also increase the frequency. - Based on 2005 incomes, it is estimated that average annual US hurricane damages will increase by $10 billion.
+
+
+
+# [@gaddis2007full]
+
+## Temporal Scale
+
+- Built capital recovery is typically measured in the short term because it is limited by available human labor and construction materials, whereas natural capital recovery may take much longer because it is often limited by natural processes.
+- Standard discount rate may be appropriate for built capital stocks but it is inappropriate to apply it to social, human, and natural capital stocks. 
+
+## Spatial Scale
+
+- Full cost accounting of damages after hurricanes must look at regional, national and international scales since communities and areas not affected by the direct results of the tropical cyclone or hurricane may still be impacted economically.
+- It was noted that some regions benefit economically from storms, for example areas surrounding New Orleans saw their property values go up because of people trying to leave the New Orleans area.
+
+## Exposure
+
+- Economic damage in the form of built capital, human capital, natural capital, and social capital.
+
+## Results/Outcomes
+
+- Current policies that incentivize settling in vulnerable coastal areas should be replaced with policies that encourage populating the interior of the country which is experiencing negative population growth. 
+- 
 
 
 
