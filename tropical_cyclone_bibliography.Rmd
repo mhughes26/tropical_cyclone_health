@@ -196,7 +196,7 @@ Fig. 1 maps storm best tracks making landfall in Mexico" [@pugatch2019tropical]
 Mexican states, plus Mexico City, for each month during 1990–
 2011 (I chose the starting period based on the availability of microdata
 on mortality). I create an index to measure storm severity by
-incorporating two elements, windspeed and population density" [@pugatch20219tropical]
+incorporating two elements, windspeed and population density" [@pugatch2019tropical]
 
 
 # [@jaycox2010children]
@@ -376,7 +376,7 @@ following a traumatic event. Resilience, by contrast, points to the ability to r
 
 ## Exposure
 
-- "In the event of a natural disaster,people living in affected areas suffer both income and wealth losses. Wealth losses typically involve damage to residential or commercial property, whereas income losses involve lost wages, proﬁts, dividends, and rents in consequence of the disaster." [@zahran2013daily]
+- "In the event of a natural disaster,people living in affected areas suffer both income and wealth losses. Wealth losses typically involve damage to residential or commercial property, whereas income losses involve lost wages, profits, dividends, and rents in consequence of the disaster." [@zahran2013daily]
 
 ## Results/Outcomes
 
