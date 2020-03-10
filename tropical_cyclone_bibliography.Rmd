@@ -331,11 +331,9 @@ knitr::include_graphics("figures/Tracking_The_Tornadoes_Paths_in_Alabama.PNG")
 
 ```{r echo = FALSE, out.width = "0.4\\textwidth", fig.align = "center", fig.cap = "Second Figure."}
 knitr::include_graphics("figures/Birmingham_Tuscaloosa_Tornado_Track.PNG")
-
 ```
 
 # [@zahran2011economics]
-
 
 
 ## Temporal Scale
@@ -365,6 +363,28 @@ following a traumatic event. Resilience, by contrast, points to the ability to r
 - Average number of poor mental health days in 30 was 3.37 for the population as a whole, and 5.95 for single mothers. 
 - Overall, hurricane exposed single mothers and exposed "others" all experienced an increased number of days of poor mental health.
 - "We estimate that single mothers, as a group, suffered over $130 million in productivity loss from added postdisaster stress and disability." [@zahran2011economics]
+
+
+[@zahran2013daily]
+
+## Temporal Scale
+
+## Spatial Scale
+
+- Casualty counts are recorded at the county level in counties affected by either hurricanes or tornados.
+- 
+
+## Exposure
+
+- "In the event of a natural disaster,people living in affected areas suffer both income and wealth losses. Wealth losses typically involve damage to residential or commercial property, whereas income losses involve lost wages, proﬁts, dividends, and rents in consequence of the disaster." [@zahran2013daily]
+
+## Results/Outcomes
+
+- Dependent variables analyzed are hurricane casualties and tornado casualties. 
+- Predictor variables are disaster damage, recency bias, and day of the week. 
+
+
+
 
 
 # References
