@@ -446,6 +446,130 @@ following a traumatic event. Resilience, by contrast, points to the ability to r
 - Current policies that incentivize settling in vulnerable coastal areas should be replaced with policies that encourage populating the interior of the country which is experiencing negative population growth. 
 - 
 
+# [@narita2009damage]
+
+## Temporal Scale
+
+- Model runs from the years 1950 (1950 to 2000 used for model calibration) to 3000
+
+## Spatial Scale
+
+- Globe divided into 16 regions to test scenarios. 
+
+## Exposure
+
+- FUND version 3.4 used to analyze climate change impacts attributable to enhancement of tropical cyclone activity
+- "Essentially, FUND is a model that calculates damage caused by climate change for 16 regions of the world listed in Table 1 by making use of exogenous scenarios of socioeconomic variables. The scenarios comprise projected temporal proﬁles of population growth, economic growth, autonomous energy efﬁciency improvements and carbon efﬁciency improvements (decarbonization), emissions of carbon dioxide from land use change, and emissions of methane and of nitrous oxide. Carbon dioxide emissions from fossil fuel combustion are computed endogenously on the basis of the Kaya identity. The calculated impacts of climate change perturb the default paths of population and economic outputs corresponding to the exogenous scenarios. The model runs from the years 1950 to 3000 in time steps of a year, though the outputs for the 1950 to 2000 period is only used for calibration, and the years beyond 2100 are used for approximating the social cost of carbon under low discount rates, a matter that does not concern us in this paper."[@narita2009damage]
+
+## Results/Outcomes
+
+- Direct economic damages to the USA calculated to almost USD $19 billion. 
+
+# [@pistrika2010damage]
+
+## Temporal Scale
+
+- 
+
+## Spatial Scale
+
+- Greater New Orleans metropolitan area was studied. The area was divided into three sections based on "bowls" aka polders.
+- 
+
+## Exposure
+
+- Hydrodynamic flood simulations used to analyze relationship between flood characteristics and damage to buildings. 
+- Momentum = mass x velocity = density x volume x velocity => 
+  Momentum = density x flooded horizontal area x (depth x velocity)
+  
+  
+- Characteristics of the flood (load/flood action) and building resistance  and  are used to predict the structural damage. This then is used to analyze and predict the economic damage by looking at the total replacement cost and the building's market cost prior to the disaster. 
+
+## Results/Outcome
+
+- Outcome of interest is direct damage to residential buildings in New Orleans caused by flooding after Hurricane Katrina
+- "The spatial level of detail of the analysis is a determining factor for the correlation between predictions and observations. The smaller the spatial unit of the analysis the poorer the relationship between flood characteristics and damage." [@pistrika2010damage]
+- "The highest damage percentages and structural damage mainly occurred in areas where higher flow velocities occurred, especially near the breaches in the Lower 9th Ward neighborhood. Due to the approach that was used for damage quantification, buildings that sustained structural damage, had damage levels higher than 50% of their market value." [@pistrika2010damage]
+- "An alternative approach has been proposed that could be used to distinguish three different damage zones based on the combination of water depth and flow velocity. There appeared to be clear differences between the average, observed damage values in the three zones. This approach could be useful to determine the extent of flood damage and distinguish the main damage zones for an area affected by flooding due to breaching of flood defenses." [@pistrika2010damage]
+
+
+
+# [@xian2015storm]
+
+FEMA's flood risk mapping techniques are tested against a survey quantitatively assessing the damage to 380 structures in Ortley Beach, New Jersey, after Hurricane Sandy in 2012. 
+
+## Temporal Scale
+
+- Damage was surveyed in the aftermath of Hurricane Sandy
+
+## Spatial Scale
+
+- 380 structures in a heavily affected area of Ortley Beach
+
+## Exposure
+
+- "we quantitatively measure the damage percentage for each of the significant building components (foundation, exterior walls, wall siding, windows, doors, roof, and roof cover). Moreover, we assess the damage percentage to each component at each story and each side of a structure. The survey indicates that different sides and stories of a structure suffered different levels of damage due to the different surge/wave effects." [@xian2015storm]
+- Different factors were put in a database: Distance from the coast, ground elevation, elevation above ground, and year building was built. 
+
+## Results/Outcome
+- Overall, the side facing the ocean, and the first floor of a building were typically at a greater risk for damage than the other three sides and other floors.
+- Buildings built after 1979 tended to withstand damage from the hurricanes greater than buildings built before this year. 
+
+# [@willison2019quantifying]
+
+Quantifying the US federal response and resulting inequality in Texas and Florida versus Puerto Rico. Hurricanes Irma, Harvey, and Maria are all analyzed.
+
+## Temporal Scale
+
+- Analysis spans landfall to six months after each hurricane, in this case Harvey, Irma, and Maria. 
+
+## Spatial Scale
+
+- Florida, Texas, and Puerto Rico were all analyzed at the state/territory level.
+
+## Exposure
+
+- "To examine differences in disaster responses across the three hurricanes, we focus on measures of federal spending, federal resources distributed and direct and indirect storm-mortality counts. Federal spending estimates come from congressional appropriations and FEMA records. Resource estimates come from FEMA
+documents and news releases. Mortality counts come from National Oceanographic and Atmospheric Administration (NOAA) reports, respective vital statistics offices and news reports. Damage estimates came from NOAA reports. In each case, we compare the responses and the severity at critical time points after the storm." [@willison2019quantifying]
+
+## Results/Outcome
+
+- "Our results show that the federal response was faster and more generous across measures of money and staffing to Hurricanes Harvey and Irma in Texas and Florida, compared with Hurricane Maria in Puerto Rico. This result would be unsurprising if Hurricane Maria was less damaging than Irma and Harvey. However, Hurricanes Harvey and Irma made landfall as category four hurricanes,1 5 and Maria hit Puerto Rico as a ‘high-end’ category 4, or just below the threshold of a category 5 hurricane.6 Maria caused more damage in Puerto Rico than Irma in Florida or Harvey in Texas in terms of loss of electricity and housing destruction,1 5 6 with overall damage estimates comparable to Harvey, and greater than estimates for Irma.1 Assuming that infrastructure costs are higher in Texas and Florida, and therefore more expensive to repair, compared with Puerto Rico, the high damage estimates in Puerto Rico emphasise the severity
+of storm damage." [@willison2019quantifying]
+
+
+# [@xian2018brief]
+
+Hydrodynamic storm surge and wave modeling was coupled with rapid damage surveying in the Florida Keys to assess physical damage. 
+
+## Temporal Scale
+
+- Field surveys were carried out September 21-24 soon after Hurricane Irma (September 10 is when it made landfall). 
+- Rapid survey method involved driving at a speed of 10 mph throughout affected areas and taking GPS informed pictures from the rear side windows.
+
+## Spatial Scale
+
+- Big Pine Key and Marathon are the two survey locations in the Florida Keys, they were the two areas that were most affected by the hurricane. 
+- Over 1600 residential buildings were surveyed using the rapid survey method.
+
+## Exposure
+
+- After conducting a damage and assessment survey after Hurricane Irma, a statistical regression approach is used to quantify the contribution of various hazard and vulnerability factors. 
+- "To understand the hazard and inform the field survey, we first use the coupled hydrodynamic and 41 wave model ADCIRC+SWAN (Dietrich et al. 2012, Marsooli and Lin 2017) to simulate the 42 storm tide (i.e., water level) and wave height for Hurricane Irma. To simulate Irma’s storm tide 43 and wave (Figure 1), we apply the surface wind (at 10-m) and sea-level pressure fields from 44 National Center for Environmental Prediction Final (NCEP FNL) operational global analysis data (0.25o x 0.25o 45 x 6 hours)." [@xian2018brief]
+- The collected photos and satellite images are used to categorize damage state for each residential building surveyed. 
+- FEMA's damage state criteria that were used in Hurricane Sandy are used to categorize and assess the damage in Big Pine Key and Marathon, and include the categories No/very limited damage; Minor damage; Minor damage; and Destroyed. 
+
+
+## Results/Outcome
+
+- Hydrodynamic forces induced by storm surges and waves were the primary cause of destroyed and heaviliy damaged buildings.
+- Observed storm surge damage is consistent with the hydrodynamic models. 
+- Analysis on Big Pine Key revealed that distance from the coastline was the most significant predictor for damage state
+- On Marathon, building type and size were the two main predictors.
+
+
+
+
 
 
 # References
