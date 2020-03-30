@@ -6,22 +6,11 @@ output: pdf_document
 bibliography: bibliography.bib
 ---
 
-Here is an example reference: [@kinney2008autism]
-
-Here are some more references [@ryan2015analyzing; @goldmann2014mental]
-
-Here are example bullet points: 
-
-- Item 1
-- Item 2
-- Item 3
-
-Here is an example quotation: 
-
-> "Right here." [@kinney2008autism]
-
 # [@kinney2008autism]
 
+## Temporal Scale
+
+- Severe storms between 1980 and 1995 were identified
 ## Spatial Scale:
 
 - "National Weather Service maps of storm tracks were used to identify the parishes that were hit by the centers of each storm, and thus were likely to have experienced the most intense effects of the storm" [@kinney2008autism]
@@ -39,30 +28,42 @@ Here is an example quotation:
 
 # [@bayleyegn2006rapid]
 
+## Temporal scale
+
+- Survey instruments administered over 3 days, 6 days after Hurricane Ivan made landfall. 
+
 ## Spatial Scale: 
 
 - Escambia and Santa Rosa counties were identified as those most impacted by Hurricane Ivan by Florida Department of Health. Probability Proportional to Size Sampling (modified from the WHO), was used to obtain a sample of 30 clusters within these counties, which were put on maps given to interview teams. 
 - 7 households interviewed per cluster, for a total of 420 households interviewed.
 - Interviews administered asking for demographic info, housing info, damage info, etc. 
 
-## Temporal scale
+## Exposure
 
-- Survey instruments administered over 3 days, 6 days after Hurricane Ivan made landfall. 
+- Hurrican Ivan making landfall on the Florida panhandle was the exposure.
 
 ## Results/Outcomes
 
 - Most commonly reported "Greatest needs" were garbage pickup and restoration of electricity, after that it was access to medical care, medications, home repair, and ice. 
--Interviews and surveys were intended to look at what the health and safety impacts were after the hurricane, it turned out to be a wide variety of factors including poor environmental hygiene, living in damaged homes, sleep disturbance, respiratory problems, and the aformentioned "Greatest Needs." 
+- Interviews and surveys were intended to look at what the health and safety impacts were after the hurricane, it turned out to be a wide variety of factors including poor environmental hygiene, living in damaged homes, sleep disturbance, respiratory problems, and the aformentioned "Greatest Needs." 
 
 
 
 # [@hagy2006effects]
 
-## Temporal/Spatial Scale: 
+## Temporal Scale: 
 
-- Water quality surveys conducted monthly from 2000 to 2004 at up to 15 sites located on two transects within the Pensacola Bay system. Post Hurricane Ivan surveys were taken October 6 and November 5, or 20 and 50 days after the storm.  
+- Water quality surveys conducted monthly from 2000 to 2004. Post Hurricane Ivan surveys were taken October 6 and November 5, or 20 and 50 days after the storm.  
+
+## Spatial Scale: 
+
+- Water quality surveys conducted at up to 15 sites located on two transects within the Pensacola Bay sytem. 
 - Extent of inundated land and maximum height of tidal surge were estimated by directly observing locations and heights of high water marks around perimeter of Pensacola Bay.
 -Total Prism Model used to estimate the magnitude of exchane associated with storm surge. 
+
+## Exposure: 
+
+- Exposure of interest in this study was the storm surge from Hurricane Ivan when it made landfall 
 
 ## Outcome/Results:
 
@@ -113,7 +114,7 @@ Here is an example quotation:
 - Outcome of interest was to see if there was an association between hurricane exposure and the risk of a preterm birth.
 - Two outcome standards: extremely preterm delivery < 32 weeks gestation, and overall preterm delivery < 37 weeks gestation.
 - Overall positive association observed between exposure to Hurricane Harvey and hazard of extreme preterm delivery (not overall preterm delivery however)
-- 
+
 
 
 # [@scaramutti2019mental]
@@ -210,7 +211,7 @@ Fig. 1 maps storm best tracks making landfall in Mexico" [@pugatch2019tropical]
 Mexican states, plus Mexico City, for each month during 1990–
 2011 (I chose the starting period based on the availability of microdata
 on mortality). I create an index to measure storm severity by
-incorporating two elements, windspeed and population density" [@pugatch20219tropical]
+incorporating two elements, windspeed and population density" [@pugatch2019tropical]
 
 
 # [@jaycox2010children]
@@ -344,7 +345,7 @@ knitr::include_graphics("figures/Tracking_The_Tornadoes_Paths_in_Alabama.PNG")
 ```
 
 ```{r echo = FALSE, out.width = "0.4\\textwidth", fig.align = "center", fig.cap = "Second Figure."}
-knitr::include_graphics("figures/Birmingham_Tuscaloosa_Tornado_Track")
+knitr::include_graphics("figures/Birmingham_Tuscaloosa_Tornado_Track.PNG")
 ```
 
 # [@zahran2011economics]
@@ -390,7 +391,7 @@ following a traumatic event. Resilience, by contrast, points to the ability to r
 
 ## Exposure
 
-- "In the event of a natural disaster,people living in affected areas suffer both income and wealth losses. Wealth losses typically involve damage to residential or commercial property, whereas income losses involve lost wages, proﬁts, dividends, and rents in consequence of the disaster." [@zahran2013daily]
+- "In the event of a natural disaster,people living in affected areas suffer both income and wealth losses. Wealth losses typically involve damage to residential or commercial property, whereas income losses involve lost wages, profits, dividends, and rents in consequence of the disaster." [@zahran2013daily]
 
 ## Results/Outcomes
 
@@ -568,6 +569,112 @@ Hydrodynamic storm surge and wave modeling was coupled with rapid damage surveyi
 - On Marathon, building type and size were the two main predictors.
 
 
+# [@shao2017understanding]
+
+This study focuses on the effects of external influences and perceptions of flood risk on individual's behavior relating to purchasing flooding insurance. Flood insurance ownership rates are relatively low and despite the fact that home owners in Special Flood Hazard Areas are required to buy flood insurance if they are receiving a mortgage from a federally backed or regulated lender, the law is not heavily enforced. 
+
+## Temporal Scale
+
+- Individual levels variables constructed from data collected in 2012 Gulf Coast Climate Change Study
+- Data collected by phone interviews from January 3rd through April 4, 2012.
+
+## Spatial Scale
+
+- State level
+- Stratified random sampling strategy drew independent samples in Texas, Louisiana, Mississippi, Alabama, and Florida. 
+- Contextual variables pertaining to flooding risk taken at the county level in these states.
+
+## Exposure
+
+- 3856 respondants, response rate was 17.6%
+
+### Dependent Variables
+
+- "The two dependent variables are based on responses to two survey questions. The two questions are“do you haveflood insur-ance?”and“do you have flood insurance to feel safer or because it is required?”" [@shao2017understanding]
+
+### Independent Variables
+
+- "The individual-level independent variables, including socio-demographic features, home ownership, distance from the coast(self-reported), trust in the local government and flood-related risk perceptions, are all constructed based on survey items." [@shao2017understanding]
+- "The contextual variables include spatial information about flood hazards estimated by FEMA, peak height of storm surge from the most recent hurricane landfall, and economic damages from the most recent and most impacted flooding events, respectively. They are all at county-level"
+
+## Results/Outcome
+
+- People from racial minorities were more likely to buy flood insurance voluntarily than whites when controlling for other variables, perhaps reflecting that whites perceive less risk than minorities.
+- People of higher socioeconomic status (both higher levels of education and income) were more likely to buy flood insurance.
+- A perception that flooding and storm intensity is increasing also made coastal residents more likely to buy flood insurance. 
+- The other major factors in predicting whether or not a resident would buy flood insurance were self reported distance from the coast, and belief in local government's preparedness to address climate change. 
+
+
+# [@xian2017optimal]
+
+This paper is about creating an economically optimal elevation level (OEL), because it is more economical to use this rather than 1 foot above base flood elevation (BSE). "Under the regulations of both ASCE 242 and NFIP, FEMA requires coastal houses with repetitive losses and/or substantial damage from flood events to be elevated to at least 1 foot above the BFE and recommends all houses in SFHA to be elevated to this level (FEMA, 2011). However,this requirement/recommendation does not provide guidance for home owners about how many feet exactly their houses should be raised to."[@xian2017optimal]
+
+## Temporal Scale
+
+- "The house information data used in this study, including location, ground elevation, house size, and house value, were collected by a team of students and faculty from University of Notre Dame and Princeton University in an onsite survey three weeks after Sandy." [@xian2017optimal]
+
+## Spatial Scale
+
+- Three actual houses in Ortley Beach, New Jersey were used to test the OEL model. 
+
+## Exposure
+
+- "We propose that an economically optimal elevation level (OEL)for coastal houses can be estimated through a cost-benefit analysis(CBA). Specifically, the OEL can be calculated as the level that minimizes the sum of the upfront elevation cost and present value of cumulative annual expected losses over the lifespan of a house."[@xian2017optimal]
+
+## Results/Outcome
+
+- About half of the houses at Ortley Beach would save 10,000 dollars per structure if elevated to OELs instead of 1-foot freeboard, and about 5% of the houses could save up to 100,000 dollars. 
+
+
+
+# [@deryugina2018economic]
+
+## Temporal Scale
+
+- Data taken from individual Federal tax returns and third party information returns filed between 1999 and 2013.
+
+## Spatial Scale
+
+- City of New Orleans, Louisiana is the focus of the study and New Orleans residents were identified as those with a New Orleans zip code on their tax return or on their W2 form.
+- Cities with similar characteristics to Louisiana are compared, with three pre-Katrina dimensions: median earnings, population growth rate, and percentage of the population that is black. These cities were Baltimore, MD, Birmingham, AL, Detroit, MI, Gary, IN, Jackson, MS, Memphis, TN, Newark, NJ, Portsmouth, VA, Richmond, VA, and St. Louis, MO. 
+
+## Exposure
+
+- "We explore five key dimensions across which one might expect the economic
+impact of the hurricane to be heterogeneous: whether a household’s own home
+was severely affected by the storm, pre-Katrina income, age, homeownership,
+and whether the household left New Orleans." [@deryugina2018economic]
+
+## Results/Outcomes
+
+- After a few years, the income of New Orleans residents affected by Hurricane Katrina actually recovered and surpassed that of controls in other cities. 
+
+
+# [@shao2017understanding] 
+
+This is a different article than the other one with the name shao2017understanding. This one is about perception of increasing hurricane strengths in the Gulf States. 
+
+## Temporal Scale
+
+- Individual levels variables constructed from data collected in 2012 Gulf Coast Climate Change Study
+- Data collected by phone interviews from January 3rd through April 4, 2012.
+- Previous hurricanes that made landfall were used from the past 20 year period of 1992 to 2011. 
+
+## Spatial Scale
+
+- State level
+- Stratified random sampling strategy drew independent samples in Texas, Louisiana, Mississippi, Alabama, and Florida. 
+- Respondants had to have lived in coastal counties with at least one hurricane landfall between 1992 and 2011. (The reasoning is that hurricanes don't often occur at a single location, and human memory is short so anything past 20 years wouldn't be accurate). 
+
+## Exposure
+
+- Spatial pattern of perception of increasing hurricane strength is mapped and used as the dependent variable. 
+- Hurricane strength is measured by maximum windspeed at landfall, storm surge, and economic damage. 
+
+## Results/Outcomes
+
+- Outcome of interest is coastal residents' perceptions of increased hurricane strength. Intensity of past hurricanes, physical characteristics like wind speed, consequences such as economic damage, and people's opinions of climate change are the four factors that are framed as research questions to see how they affect this perception of increased hurricane strength. 
+- Perceptions of increasing hurricane strength are stronger in Louisiana and Mississippi, likely because of memory of Hurricane Katrina, and less strong moving away from this epicenter into the Gulf Coasts of Texas and Florida. 
 
 
 
