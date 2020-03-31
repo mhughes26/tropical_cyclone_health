@@ -42,19 +42,33 @@ to see what week of gestation the baby was in during the storm?]
 
 # [@bayleyegn2006rapid]
 
+This study was a rapid needs assessment conducted in [southern Florida?] shortly after
+Hurricane Ivan in [year]. It was done using a survey, with the goal of seeing what critical
+needs residents had following the storm [?].
+
 ## Temporal scale
 
 - Survey instruments administered over 3 days, 6 days after Hurricane Ivan made landfall. 
+Since they measured this in days, they probably were looking at the specific day that the
+storm passed as the "day 0", and then looking at needs at specific day-level time points
+from that initial day, so they would need a daily temporal scale for other exposure data.
 
 ## Spatial Scale: 
 
-- Escambia and Santa Rosa counties were identified as those most impacted by Hurricane Ivan by Florida Department of Health. Probability Proportional to Size Sampling (modified from the WHO), was used to obtain a sample of 30 clusters within these counties, which were put on maps given to interview teams. 
+- Escambia and Santa Rosa counties were identified as those most impacted by Hurricane Ivan by Florida Department of Health. [Was this based on a qualitative assessment, or on any 
+type of measurements? If the latter, let's include any quantitative measurements they 
+used here.] Probability Proportional to Size Sampling (modified from the WHO), was used to obtain a sample of 30 clusters within these counties, which were put on maps given to interview teams. 
 - 7 households interviewed per cluster, for a total of 420 households interviewed.
 - Interviews administered asking for demographic info, housing info, damage info, etc. 
 
 ## Exposure
 
-- Hurrican Ivan making landfall on the Florida panhandle was the exposure.
+- Hurricane Ivan making landfall on the Florida panhandle was the exposure. The Florida
+Department of Public Health then made a determination of several of the hardest hit areas
+to study (and also the determination that the storm was severe enough to consider
+parts of Florida as exposed to a severe event and so in need of assessment for current
+needs). [No further analysis was used to quantify the intensity of exposure in the
+study areas?]
 
 ## Results/Outcomes
 
