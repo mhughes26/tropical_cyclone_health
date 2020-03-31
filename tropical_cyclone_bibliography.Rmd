@@ -8,24 +8,37 @@ bibliography: bibliography.bib
 
 # [@kinney2008autism]
 
+This study investigated whether the prevalence of autistic disorder in children was
+associated with whether the child was exposed in utero to a severe hurricane, 
+investigating for different stages of gestational development [?]. The study 
+was conducted in [which part of? all? coastal?] Louisiana for 1980--1995.
+
 ## Temporal Scale
 
-- Severe storms between 1980 and 1995 were identified
+- Severe storms between 1980 and 1995 were identified. [The study links exposure by the
+day of the storm (true?), but since it is linking to gestational period (measure of 
+week of gestational period is probably as refined as you can get on that), a week-level
+temporal scale would have probably worked fine for this study.]
 
 ## Spatial Scale:
 
-- "National Weather Service maps of storm tracks were used to identify the parishes that were hit by the centers of each storm, and thus were likely to have experienced the most intense effects of the storm" [@kinney2008autism]
+- "National Weather Service maps of storm tracks were used to identify the parishes that were hit by the centers of each storm, and thus were likely to have experienced the most intense effects of the storm" [@kinney2008autism] In other words, intensity was measured based 
+on a storm's central track passing through the county [?] (high intensity) versus
+not crossing the county (lower intensity). [Were storm exposures still considered, even
+if the track didn't pass through the county? I'm assuming so if they compared 
+high and low intensity based on the track crossing the county. 
+If so, how did they pick which storms to 
+look at for a county at all?]
 
 ##  Exposure:
 
 - Severity of prenatal storm exposure assessed two ways: intensity of storm's impact on parish, and how vulnerable residents would be if storm hit their parish. (Intensity and Vulnerability).
-- Using data from NCHS, 40 week gestations were assumed to estimate the gestional age of babies during the storm. 
+- Using data from NCHS, 40 week gestations were assumed to estimate the gestional age of babies during the storm. [Does this mean that they took the date of birth and counted backward
+to see what week of gestation the baby was in during the storm?]
 
 ## Results/Outcomes: 
 
-- AD(Autistic Disorder) had significantly higher prevalence in those with higher prenatal storm exposure. AD Prevalence also depended on Prenatal Period of Storm Exposure (what gestational period the baby was in when the storm exposure occured)
-
-
+- AD (Autistic Disorder) had significantly higher prevalence in those with higher prenatal storm exposure. AD Prevalence also depended on Prenatal Period of Storm Exposure (what gestational period the baby was in when the storm exposure occured) 
 
 # [@bayleyegn2006rapid]
 
