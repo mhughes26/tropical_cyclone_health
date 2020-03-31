@@ -626,7 +626,6 @@ This paper is about creating an economically optimal elevation level (OEL), beca
 - About half of the houses at Ortley Beach would save 10,000 dollars per structure if elevated to OELs instead of 1-foot freeboard, and about 5% of the houses could save up to 100,000 dollars. 
 
 
-
 # [@deryugina2018economic]
 
 ## Temporal Scale
@@ -676,6 +675,29 @@ This is a different article than the other one with the name shao2017understandi
 - Outcome of interest is coastal residents' perceptions of increased hurricane strength. Intensity of past hurricanes, physical characteristics like wind speed, consequences such as economic damage, and people's opinions of climate change are the four factors that are framed as research questions to see how they affect this perception of increased hurricane strength. 
 - Perceptions of increasing hurricane strength are stronger in Louisiana and Mississippi, likely because of memory of Hurricane Katrina, and less strong moving away from this epicenter into the Gulf Coasts of Texas and Florida. 
 
+[@grech2015hurricane]
+
+This study looked at whether or not Hurricane Katrina had an influence on the male/female ratio of births in the Gulf states. 
+
+## Temporal Scale
+
+- January 2003 to December 2012 was the time frame from which live birth data was collected and analyzed. 
+- Precipitation data was collected from the US National Weather Service and in this study a precipitation map is presented from August 29 to September 1, 2005. 
+
+## Spatial Scale
+
+- State level
+- Data on monthly male and female live births were obtained from the CDC's  website for the states of Alabama, Florida, Louisiana, and Mississippi. 
+
+## Exposure
+
+- In this study, precipitation mainly in the form of rainfall was the metric for assessing hurricane exposure. 
+
+## Results/Outcomes
+
+- A dose-response relationship was observed between rainfall and the male to female sex ratio of live births 8 to 10 months later. 
+- " 8–10 months (April to June 2006) after the hurricane, M/F jumped significantly from 1.052 to 1.071
+with a SOR of 1.018 " [@grech2015hurricane]
 
 
 
