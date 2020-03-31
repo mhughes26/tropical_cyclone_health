@@ -165,20 +165,28 @@ They used a very fine-scale (3-m resolution) estimate of storm surge to try to d
 
 # [@grabich2016hurricane]
 
+This study investigated the association between risk of pre-term birth and hurricane 
+exposure in Florida. 
+
 ## Spatial Scale: 
 
 - Births to (only) Florida residents linked to address to link to hurricane exposure
 - Hurricane risk assessed at county level
 - Florida Department of Health, Vital Statistics Department was the source of data on births from 2003 to 2005.
-- Hurricane exposure classified as maximum wind speed in specific Florida county extracted from NOAA's Hurricane Research Division public database.
-- Exposure defined as >= 39 mph and >= 74 mph
 
+## Temporal Scale:
 
-# Temporal Scale:
-
+- They investigated risk periods by week of gestation [?]
 - Risk period begins at 20 weeks of gestation
 - Pregnancy divided into exposed time and unexposed time after 20 weeks
 - Study population included births with estimated date of conception between October 24, 2003 and September 26, 2004.
+
+## Exposure:
+
+- Hurricane exposure classified as maximum wind speed in specific Florida county extracted from NOAA's Hurricane Research Division public database. [Could you check on this---did they 
+use the wind field value for the county, for example from H*Winds, or did they use the 
+central wind of the storm as the approximation, which they would have gotten from HURDAT?]
+- Exposure defined as >= 39 mph and >= 74 mph
 
 # Results/Outcomes
 
