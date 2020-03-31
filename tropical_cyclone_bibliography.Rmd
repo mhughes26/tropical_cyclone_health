@@ -386,6 +386,7 @@ New Orleans schoolchildren were participated in a trial and assessment of an int
 ## Spatial Scale
 
 - Three schools in New Orleans participating in Project Fleur-de-Lis.
+- I assume they have the point location (address, for example) for each school?
 
 ## Temporal Scale
 
@@ -395,7 +396,9 @@ New Orleans schoolchildren were participated in a trial and assessment of an int
 (September--October 2007). The CBITS groups ran March to
 May 2007 and TF-CBT was implemented February to September,
 2007. This study only reports on the 10-month follow-up assessment
-results."[@jaycox2010children]
+results." [@jaycox2010children]
+- For this, it sounds like a storm-wide assessment of intensity would be fine (wouldn't
+need finer time resolution)
 
 ## Exposure
 
