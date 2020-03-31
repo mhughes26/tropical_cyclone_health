@@ -258,10 +258,29 @@ whole area around it was inundated by the surge of this storm?
 
 # [@grabich2016measuring]
 
-## Spatial/Temporal Scale:
+This study investigated the association between hurricane exposure and birth outcomes
+in Florida. In particular, it investigated different ways of assessing exposure to the storm.
 
-- Hurricane disaster exposure 3 methods, FEMA Presidential disaster declarations, spatial data on specific storm trajectory (storm tracks with a symmmetrical buffer around them), novel meteorological measure based on Saffir-Simpson hurricane intensity scale.
+## Spatial Scale:
+
 - Preterm birth and low birth weight rates collected from the county level of exposed areas
+
+## Temporal Scale:
+
+- In other birth outcome studies, it seems like gestational week might be used a lot?
+So, this study might not need a higher resolution than week? It's interesting, since they 
+have three different exposure metrics, they really have two different time resolutions
+on those. The winds and storm track could be determined to about the hour (and certainly 
+the day), while the FEMA disaster declarations will be a single, storm-long measurement
+(the storm resulted in one or it didn't).
+
+## Exposure: 
+
+- Hurricane disaster exposure 3 methods, FEMA Presidential disaster declarations, spatial data on specific storm trajectory (storm tracks with a symmmetrical buffer around them), novel meteorological measure based on Saffir-Simpson hurricane intensity scale [i.e., including 
+wind speeds experienced locally].
+
+## Results/Outcomes: 
+
 
 # [@bevilacqua2020understanding]
 
