@@ -79,25 +79,40 @@ study areas?]
 
 # [@hagy2006effects]
 
+This study investigated the evolution of water quality in [areas of the Pensacola Bay?]
+in [Florida?] following Hurricane Ivan in [year], as well as the association with 
+populations of plankton [?]. The studies were conducted monthly for 
+several years following the storm.
+
 ## Temporal Scale: 
 
-- Water quality surveys conducted monthly from 2000 to 2004. Post Hurricane Ivan surveys were taken October 6 and November 5, or 20 and 50 days after the storm.  
+- Water quality surveys conducted monthly from 2000 to 2004. Post Hurricane Ivan surveys were taken October 6 and November 5, or 20 and 50 days after the storm. [Could you clarify?
+Is it that there was this tighter schedule right after the storm, and then it moved to 
+a monthly schedule for the following few years?]
 
 ## Spatial Scale: 
 
-- Water quality surveys conducted at up to 15 sites located on two transects within the Pensacola Bay sytem. 
-- Extent of inundated land and maximum height of tidal surge were estimated by directly observing locations and heights of high water marks around perimeter of Pensacola Bay.
--Total Prism Model used to estimate the magnitude of exchane associated with storm surge. 
+- Water quality surveys [was it a survey, or testing? (maybe the language here is discipline-specific...)] conducted at up to 15 sites located on two transects within the Pensacola Bay system. [Did they have a latitude and longitude for each of these sample
+sites? Or was it based on something like "center of the bay, about one mile from the
+ocean" kind of specificity for the sites? (in which case, it would be trying to 
+sample a certain type of site each time, but not necessarily have the same lat/long
+for the site from time to time)?]
+- If sample sites are given with lat./long., having point-level exposure data could help
+inform a study like this. Otherwise, watershed-level data (as well as, perhaps, 
+data on a spatial scale linked to the water system, like "bay", "inlet", "river") 
+might be more helpful.
 
 ## Exposure: 
 
 - Exposure of interest in this study was the storm surge from Hurricane Ivan when it made landfall 
+- Extent of inundated land and maximum height of tidal surge were estimated by directly observing locations and heights of high water marks around perimeter of Pensacola Bay.
+- Total Prism Model used to estimate the magnitude of exchange associated with storm surge. 
 
 ## Outcome/Results:
 
 - Hurricane Ivan caused water to rise continuously for 31 hours.
-- Storm surge inundated 165 km^2 of land, which increased the Bay's surface area by 50% and it's volume by 230%. 
-- Based on Total Prism Model, storm surge flushed a maximum of 60% of the Bay's water out to sea as it retreated - this must have increased salinity of the Bay substantially. 
+- Storm surge inundated 165 $km^2$ of land, which increased the Bay's surface area by 50% and it's volume by 230%. 
+- Based on Total Prism Model, storm surge flushed a maximum of 60% of the Bay's water out to sea as it retreated---this must have increased salinity of the Bay substantially. 
 - Using Navy's model estimate of offshore salinity in the Tidal Prism Model, Ivan's surge was computed to have increased the mean salinity of the Bay from 23.4 to as high as 30.0.
 - Tidal surge replaced Bay waters with low-nutrient, well-oxygenated, oligotrophic Gulf waters
 - Post-storm freshwater input stimulated an increase in phytoplankton biomass, which persisted for several weeks. 
