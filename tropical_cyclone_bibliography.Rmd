@@ -299,9 +299,17 @@ This study investigated ...
 
 # [@lane2013health]
 
+This study investigated ...
+
 ## Spatial Scale
 
-- "Based on vulnerable subgroups identified in the literature, potential indicators of population vulnerability for which data are available were identified and mapped within the 42 NYC United Hospital Fund (UHF) neighborhoods located within any NYC hurricane evacuation zone. UHF neighborhoods are zip code-aggregated areas within all five boroughs. For each indicator, prevalences were categorized intoquartilesbyneighborhood."
+- "Based on vulnerable subgroups identified in the literature, potential indicators of population vulnerability for which data are available were identified and mapped within the 42 NYC United Hospital Fund (UHF) neighborhoods located within any NYC hurricane evacuation zone. UHF neighborhoods are zip code-aggregated areas within all five boroughs. For each indicator, prevalences were categorized into quartiles by neighborhood."
+
+## Temporal Scale:
+
+## Exposure:
+
+## Results/Outcomes:
 
 # [@lane2013health] 
 
