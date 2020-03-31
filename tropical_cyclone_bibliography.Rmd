@@ -284,12 +284,17 @@ wind speeds experienced locally].
 
 # [@bevilacqua2020understanding]
 
-## Spatial Scale
+This study investigated ...
+
+## Spatial Scale:
 
 - ggmaps package in R was used to generate distribution of zip codes of the participants
 
-## Temporal Scale
+## Temporal Scale:
 
+## Exposure:
+
+## Results/Outcomes:
 
 
 # [@lane2013health]
