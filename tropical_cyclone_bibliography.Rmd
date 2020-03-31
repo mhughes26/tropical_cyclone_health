@@ -415,6 +415,8 @@ experiences per student." [@jaycox2010children]
 
 # [@bourque2006weathering]
 
+This study investigated ...
+
 ## Temporal Scale
 
 ## Spatial Scale
