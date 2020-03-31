@@ -124,16 +124,28 @@ might be more helpful.
 This study investigated how Hurricane Sandy in 2012 was associated with mental health in 
 New York City and Long Island, NY [?].
 
+## Temporal Scale
+
+- Surveys were all administered after Hurricane Sandy, and the mean time elapsed
+since Hurricane Sandy was 20.16 months. 
+
 ## Spatial Scale: 
 
 - There was an address for each study subject [?]. This was then geocoded to a latitude
 and longitude (point location) for each study subject.
 - Street level geo-coding in SAS using datasets generated from U.S. Census Bureau TIGER/Line shapefiles. Process matches street, city, and zip-code from survey dataset with lookup dataset to produce a coordinate
 - Point-level, it sounds like (or at least street level)
+- "In conjunction with community and governmental partners, the recruitment team
+traveled to libraries, community centers, senior centers, gyms and faith-based institutions
+across Queens, Staten Island, Nassau, and Suffolk in both heavily and less affected areas,
+and accepted all the volunteers who offered to participate in the study."
 
 ## Exposure: 
 
 - Extent of flooding [at the subject's home?] as a result of Hurricane Sandy in 2012
+- Flooding was the main factor for assessing hurricane exposure
+- FEMA dichotomous and FEMA continuous flooding models were used to map the flooding exposure in New York City and Long Island
+- Self-reported flooding exposure was also assessed and compared to the FEMA models. There were discrepencies between the two of these. 
 - "Public macro-level flood data was obtained from the FEMA Modeling Task Force (MOTF) Hurricane Sandy Impact Analysis" [@lieberman2017self]
 - New York State 3-meter spatial resolution storm surge product downloaded and imported into licensed version of ArcGIS to provide water depth above ground in New York City and Long Island
 - They also assessed the degree of exposure based on self reports of [flooding amount?
@@ -756,6 +768,8 @@ This study looked at whether or not Hurricane Katrina had an influence on the ma
 - A dose-response relationship was observed between rainfall and the male to female sex ratio of live births 8 to 10 months later. 
 - " 8--10 months (April to June 2006) after the hurricane, M/F jumped significantly from 1.052 to 1.071
 with a SOR of 1.018 " [@grech2015hurricane]
+
+
 
 
 
