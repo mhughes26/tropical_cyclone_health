@@ -325,13 +325,19 @@ This study investigated ...
 
 # [@schwartz2018preliminary]
 
-## Spatial 
+This study investigated ...
+
+## Spatial Scale:
 
 - Convenience sampling from the Greater Houston area
 
-## Temporal
+## Temporal Scale:
 
 - Research team arrived in Houston less than 3 weeks after Hurricane Harvey made landfall
+
+## Exposure:
+
+## Results/Outcomes:
 
 # [@pugatch2019tropical]
 
