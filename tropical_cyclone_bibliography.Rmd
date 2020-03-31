@@ -11,6 +11,7 @@ bibliography: bibliography.bib
 ## Temporal Scale
 
 - Severe storms between 1980 and 1995 were identified
+
 ## Spatial Scale:
 
 - "National Weather Service maps of storm tracks were used to identify the parishes that were hit by the centers of each storm, and thus were likely to have experienced the most intense effects of the storm" [@kinney2008autism]
