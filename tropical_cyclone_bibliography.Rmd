@@ -313,6 +313,15 @@ This study investigated ...
 
 # [@lane2013health] 
 
+This study investigated ...
+
+## Spatial Scale
+
+## Temporal Scale:
+
+## Exposure:
+
+## Results/Outcomes:
 
 # [@schwartz2018preliminary]
 
