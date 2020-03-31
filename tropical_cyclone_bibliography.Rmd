@@ -229,21 +229,32 @@ type of study.
 
 # [@bianchette2009ecological]
 
-## Temporal/Spatial Scale:
+This study investigated the ecological impacts (particularly in terms of tree mortality) in 
+a coastal area in Alabama following Hurricane Ivan in [year].
+
+## Temporal Scale: 
+
+- Post hurricane images of vegetation take 9.5 months after hurricane to ensure that vegetation damage observed was permanent. 
+
+## Spatial Scale:
 
 - Study area was three coastal lakes known as the Shelby Lakes in Gulf State Park, Alabama.
-- Hurrican Ivan brought 120 mph winds and a storm surge of 10-12 feet, which inundated all of the coastal plane around the Shelby Lakes. 
-- Post hurricane images of vegetation take 9.5 months after hurricane to ensure that vegetation damage observed was permanent. 
 - Remote sensing using Landsat 5 images coupled with ground surveys of tree mortality were used.
+- [Do we have any idea how fine the spatial resolution for the Landsat images were? We 
+could probably look that up in documentation for Landsat 5, too. I'm assuming they 
+got a pretty high-resolution picture of tree mortality?]
+
+## Exposure: 
+
+- Hurricane Ivan brought 120 mph winds and a storm surge of 10-12 feet, which inundated all of the coastal plane around the Shelby Lakes.
+- It sounds like the full study area was assumed to be exposed based on the fact that the
+whole area around it was inundated by the surge of this storm?
 
 ## Results/Outcomes: 
 
 - Ecological impacts were the main concern of this study, primarily measured by tree mortality.
 - Trees at lower elevation showed greater mortality than those at higher elevations. 
 - Results suggested that saltwater intrusion and storm surge flooding were the main reasons for tree mortality in forests around Shelby Lakes, rather than wind damage. 
-
-
-
 
 # [@grabich2016measuring]
 
