@@ -8,6 +8,9 @@ bibliography: bibliography.bib
 
 # [@kinney2008autism]
 
+## Temporal Scale
+
+- Severe storms between 1980 and 1995 were identified
 ## Spatial Scale:
 
 - "National Weather Service maps of storm tracks were used to identify the parishes that were hit by the centers of each storm, and thus were likely to have experienced the most intense effects of the storm" [@kinney2008autism]
@@ -25,30 +28,42 @@ bibliography: bibliography.bib
 
 # [@bayleyegn2006rapid]
 
+## Temporal scale
+
+- Survey instruments administered over 3 days, 6 days after Hurricane Ivan made landfall. 
+
 ## Spatial Scale: 
 
 - Escambia and Santa Rosa counties were identified as those most impacted by Hurricane Ivan by Florida Department of Health. Probability Proportional to Size Sampling (modified from the WHO), was used to obtain a sample of 30 clusters within these counties, which were put on maps given to interview teams. 
 - 7 households interviewed per cluster, for a total of 420 households interviewed.
 - Interviews administered asking for demographic info, housing info, damage info, etc. 
 
-## Temporal scale
+## Exposure
 
-- Survey instruments administered over 3 days, 6 days after Hurricane Ivan made landfall. 
+- Hurrican Ivan making landfall on the Florida panhandle was the exposure.
 
 ## Results/Outcomes
 
 - Most commonly reported "Greatest needs" were garbage pickup and restoration of electricity, after that it was access to medical care, medications, home repair, and ice. 
--Interviews and surveys were intended to look at what the health and safety impacts were after the hurricane, it turned out to be a wide variety of factors including poor environmental hygiene, living in damaged homes, sleep disturbance, respiratory problems, and the aformentioned "Greatest Needs." 
+- Interviews and surveys were intended to look at what the health and safety impacts were after the hurricane, it turned out to be a wide variety of factors including poor environmental hygiene, living in damaged homes, sleep disturbance, respiratory problems, and the aformentioned "Greatest Needs." 
 
 
 
 # [@hagy2006effects]
 
-## Temporal/Spatial Scale: 
+## Temporal Scale: 
 
-- Water quality surveys conducted monthly from 2000 to 2004 at up to 15 sites located on two transects within the Pensacola Bay system. Post Hurricane Ivan surveys were taken October 6 and November 5, or 20 and 50 days after the storm.  
+- Water quality surveys conducted monthly from 2000 to 2004. Post Hurricane Ivan surveys were taken October 6 and November 5, or 20 and 50 days after the storm.  
+
+## Spatial Scale: 
+
+- Water quality surveys conducted at up to 15 sites located on two transects within the Pensacola Bay sytem. 
 - Extent of inundated land and maximum height of tidal surge were estimated by directly observing locations and heights of high water marks around perimeter of Pensacola Bay.
 -Total Prism Model used to estimate the magnitude of exchane associated with storm surge. 
+
+## Exposure: 
+
+- Exposure of interest in this study was the storm surge from Hurricane Ivan when it made landfall 
 
 ## Outcome/Results:
 
@@ -99,7 +114,7 @@ bibliography: bibliography.bib
 - Outcome of interest was to see if there was an association between hurricane exposure and the risk of a preterm birth.
 - Two outcome standards: extremely preterm delivery < 32 weeks gestation, and overall preterm delivery < 37 weeks gestation.
 - Overall positive association observed between exposure to Hurricane Harvey and hazard of extreme preterm delivery (not overall preterm delivery however)
-- 
+
 
 
 # [@scaramutti2019mental]
@@ -185,7 +200,7 @@ Atlantic and eastern North Pacific oceans (the regions relevant to
 Mexico), available from the National Oceanic and Atmospheric
 Administration (NOAA) Tropical Prediction Center, a U.S. government
 agency. NOAA analyzes data from reconnaissance aircraft,
-ships, and satellites to create ‘‘best tracks” of individual storms:
+ships, and satellites to create ``best tracks'' of individual storms:
 positions (latitude and longitude) of storm centers at 6-hourly
 intervals, combined with intensity information (windspeed and
 barometric pressure; Jarvinen, Neumann, & Davis, 1993; Davis,
@@ -193,8 +208,7 @@ Brown, & Preston, 1984; Chu, Sampson, Levine, & Fukada, 2002).
 Complete records for both ocean regions are available since 1949.
 Fig. 1 maps storm best tracks making landfall in Mexico" [@pugatch2019tropical]
 - "I use data on tropical storm exposure and mortality in all 31
-Mexican states, plus Mexico City, for each month during 1990–
-2011 (I chose the starting period based on the availability of microdata
+Mexican states, plus Mexico City, for each month during 1990--2011 (I chose the starting period based on the availability of microdata
 on mortality). I create an index to measure storm severity by
 incorporating two elements, windspeed and population density" [@pugatch2019tropical]
 
@@ -210,9 +224,9 @@ New Orleans schoolchildren were participated in a trial and assessment of an int
 ## Temporal Scale
 
 - Interventions began 15 months after Hurricane Katrina.
-- "Students were assessed at baseline (December 2006–January
-2007), at 5 months (April–May 2007) and at 10 months
-(September–October 2007). The CBITS groups ran March to
+- "Students were assessed at baseline (December 2006--January
+2007), at 5 months (April--May 2007) and at 10 months
+(September--October 2007). The CBITS groups ran March to
 May 2007 and TF-CBT was implemented February to September,
 2007. This study only reports on the 10-month follow-up assessment
 results."[@jaycox2010children]
@@ -294,7 +308,7 @@ experiences per student." [@jaycox2010children]
 ## Results/Outcome
 
 - Outcomes of concern in this paper are hypertension and cardiovascular disease. 
-- "There is a 1.8x greater rate of fatal stroke, 1.5x greater rate of coronary heart disease and mortality, and a 4.2x greater rate of end‐stage renal disease in this population." [@ferdinand2005hurricane]
+- "There is a 1.8x greater rate of fatal stroke, 1.5x greater rate of coronary heart disease and mortality, and a 4.2x greater rate of end-stage renal disease in this population." [@ferdinand2005hurricane]
 - "Only 52% of evacuees had health insurance at the time of the hurricane, and chronic conditions such as heart disease, hypertension, diabetes, and asthma were reported by 41% of the adults surveyed. Furthermore, 29% of evacuees reported having problems in obtaining their necessary prescription drugs." [@ferdinand2005hurricane]
 
 
@@ -338,7 +352,7 @@ knitr::include_graphics("figures/Birmingham_Tuscaloosa_Tornado_Track.PNG")
 
 ## Temporal Scale
 
-- "Mental health condition is measured as the reported count of poor mental health days experienced by a respondent in the previous 30 days. Data on mental health days are from the CDC’s BRFSS, 2005–2006." [@zahran2011economics]
+- "Mental health condition is measured as the reported count of poor mental health days experienced by a respondent in the previous 30 days. Data on mental health days are from the CDC's BRFSS, 2005--2006." [@zahran2011economics]
 
 ## Spatial Scale
 
@@ -349,7 +363,7 @@ knitr::include_graphics("figures/Birmingham_Tuscaloosa_Tornado_Track.PNG")
 ## Exposure
 
 - "Individual exposure to Hurricane Katrina and/or Rita was determined by information on the temporal and spatial coordinates of each hurricane event,
-the date a respondent was interviewed by the CDC, and the respondent’s place of county residence, as reported in the CDC’s Behavioral Risk Factor Surveillance
+the date a respondent was interviewed by the CDC, and the respondent's place of county residence, as reported in the CDC's Behavioral Risk Factor Surveillance
 System (BRFSS) database" [@zahran2011economics]
 - Number of poor mental healthd days expected to have spikes corresponding to hurricane events in affected but not unaffected areas with respect to hurricane exposure. 
 
@@ -359,7 +373,7 @@ System (BRFSS) database" [@zahran2011economics]
 - Vulnerability status measured by poor physical health, social support, education level, income, and being a single mother.
 - Single mothers were identified as a particular vulnerability category of interest
 - "Resistance refers to the capacity to limit displacement from equilibrium
-following a traumatic event. Resilience, by contrast, points to the ability to return to an equilibrium state—the more rapid the return to preevent functioning, the greater the resilience." [@zahran2011economics]
+following a traumatic event. Resilience, by contrast, points to the ability to return to an equilibrium state---the more rapid the return to preevent functioning, the greater the resilience." [@zahran2011economics]
 - Average number of poor mental health days in 30 was 3.37 for the population as a whole, and 5.95 for single mothers. 
 - Overall, hurricane exposed single mothers and exposed "others" all experienced an increased number of days of poor mental health.
 - "We estimate that single mothers, as a group, suffered over $130 million in productivity loss from added postdisaster stress and disability." [@zahran2011economics]
@@ -390,7 +404,7 @@ following a traumatic event. Resilience, by contrast, points to the ability to r
 
 - Annual number of tropical cyclones from 1970 to 2004 averaged at 85. 
 - Reliable data on the number of tropical cyclones has only been collected since 1960, so it is hard to accurately gage if the average number of tropical cyclones per year is increasing. 
-- "Using “best track” or HURDAT data for North Atlantic storms, there has been a clear increase in the frequency of storms over the 1851–2005 period, particularly since 1980."
+- "Using ``best track'' or HURDAT data for North Atlantic storms, there has been a clear increase in the frequency of storms over the 1851--2005 period, particularly since 1980."
 
 ## Spatial Scale
 
@@ -431,6 +445,258 @@ following a traumatic event. Resilience, by contrast, points to the ability to r
 
 - Current policies that incentivize settling in vulnerable coastal areas should be replaced with policies that encourage populating the interior of the country which is experiencing negative population growth. 
 - 
+
+# [@narita2009damage]
+
+## Temporal Scale
+
+- Model runs from the years 1950 (1950 to 2000 used for model calibration) to 3000
+
+## Spatial Scale
+
+- Globe divided into 16 regions to test scenarios. 
+
+## Exposure
+
+- FUND version 3.4 used to analyze climate change impacts attributable to enhancement of tropical cyclone activity
+- "Essentially, FUND is a model that calculates damage caused by climate change for 16 regions of the world listed in Table 1 by making use of exogenous scenarios of socioeconomic variables. The scenarios comprise projected temporal profiles of population growth, economic growth, autonomous energy efficiency improvements and carbon efficiency improvements (decarbonization), emissions of carbon dioxide from land use change, and emissions of methane and of nitrous oxide. Carbon dioxide emissions from fossil fuel combustion are computed endogenously on the basis of the Kaya identity. The calculated impacts of climate change perturb the default paths of population and economic outputs corresponding to the exogenous scenarios. The model runs from the years 1950 to 3000 in time steps of a year, though the outputs for the 1950 to 2000 period is only used for calibration, and the years beyond 2100 are used for approximating the social cost of carbon under low discount rates, a matter that does not concern us in this paper."[@narita2009damage]
+
+## Results/Outcomes
+
+- Direct economic damages to the USA calculated to almost USD $19 billion. 
+
+# [@pistrika2010damage]
+
+## Temporal Scale
+
+- 
+
+## Spatial Scale
+
+- Greater New Orleans metropolitan area was studied. The area was divided into three sections based on "bowls" aka polders.
+- 
+
+## Exposure
+
+- Hydrodynamic flood simulations used to analyze relationship between flood characteristics and damage to buildings. 
+- Momentum = mass x velocity = density x volume x velocity => 
+  Momentum = density x flooded horizontal area x (depth x velocity)
+  
+  
+- Characteristics of the flood (load/flood action) and building resistance  and  are used to predict the structural damage. This then is used to analyze and predict the economic damage by looking at the total replacement cost and the building's market cost prior to the disaster. 
+
+## Results/Outcome
+
+- Outcome of interest is direct damage to residential buildings in New Orleans caused by flooding after Hurricane Katrina
+- "The spatial level of detail of the analysis is a determining factor for the correlation between predictions and observations. The smaller the spatial unit of the analysis the poorer the relationship between flood characteristics and damage." [@pistrika2010damage]
+- "The highest damage percentages and structural damage mainly occurred in areas where higher flow velocities occurred, especially near the breaches in the Lower 9th Ward neighborhood. Due to the approach that was used for damage quantification, buildings that sustained structural damage, had damage levels higher than 50% of their market value." [@pistrika2010damage]
+- "An alternative approach has been proposed that could be used to distinguish three different damage zones based on the combination of water depth and flow velocity. There appeared to be clear differences between the average, observed damage values in the three zones. This approach could be useful to determine the extent of flood damage and distinguish the main damage zones for an area affected by flooding due to breaching of flood defenses." [@pistrika2010damage]
+
+
+
+# [@xian2015storm]
+
+FEMA's flood risk mapping techniques are tested against a survey quantitatively assessing the damage to 380 structures in Ortley Beach, New Jersey, after Hurricane Sandy in 2012. 
+
+## Temporal Scale
+
+- Damage was surveyed in the aftermath of Hurricane Sandy
+
+## Spatial Scale
+
+- 380 structures in a heavily affected area of Ortley Beach
+
+## Exposure
+
+- "we quantitatively measure the damage percentage for each of the significant building components (foundation, exterior walls, wall siding, windows, doors, roof, and roof cover). Moreover, we assess the damage percentage to each component at each story and each side of a structure. The survey indicates that different sides and stories of a structure suffered different levels of damage due to the different surge/wave effects." [@xian2015storm]
+- Different factors were put in a database: Distance from the coast, ground elevation, elevation above ground, and year building was built. 
+
+## Results/Outcome
+- Overall, the side facing the ocean, and the first floor of a building were typically at a greater risk for damage than the other three sides and other floors.
+- Buildings built after 1979 tended to withstand damage from the hurricanes greater than buildings built before this year. 
+
+# [@willison2019quantifying]
+
+Quantifying the US federal response and resulting inequality in Texas and Florida versus Puerto Rico. Hurricanes Irma, Harvey, and Maria are all analyzed.
+
+## Temporal Scale
+
+- Analysis spans landfall to six months after each hurricane, in this case Harvey, Irma, and Maria. 
+
+## Spatial Scale
+
+- Florida, Texas, and Puerto Rico were all analyzed at the state/territory level.
+
+## Exposure
+
+- "To examine differences in disaster responses across the three hurricanes, we focus on measures of federal spending, federal resources distributed and direct and indirect storm-mortality counts. Federal spending estimates come from congressional appropriations and FEMA records. Resource estimates come from FEMA
+documents and news releases. Mortality counts come from National Oceanographic and Atmospheric Administration (NOAA) reports, respective vital statistics offices and news reports. Damage estimates came from NOAA reports. In each case, we compare the responses and the severity at critical time points after the storm." [@willison2019quantifying]
+
+## Results/Outcome
+
+- "Our results show that the federal response was faster and more generous across measures of money and staffing to Hurricanes Harvey and Irma in Texas and Florida, compared with Hurricane Maria in Puerto Rico. This result would be unsurprising if Hurricane Maria was less damaging than Irma and Harvey. However, Hurricanes Harvey and Irma made landfall as category four hurricanes,1 5 and Maria hit Puerto Rico as a 'high-end' category 4, or just below the threshold of a category 5 hurricane.6 Maria caused more damage in Puerto Rico than Irma in Florida or Harvey in Texas in terms of loss of electricity and housing destruction,1 5 6 with overall damage estimates comparable to Harvey, and greater than estimates for Irma.1 Assuming that infrastructure costs are higher in Texas and Florida, and therefore more expensive to repair, compared with Puerto Rico, the high damage estimates in Puerto Rico emphasise the severity
+of storm damage." [@willison2019quantifying]
+
+
+# [@xian2018brief]
+
+Hydrodynamic storm surge and wave modeling was coupled with rapid damage surveying in the Florida Keys to assess physical damage. 
+
+## Temporal Scale
+
+- Field surveys were carried out September 21-24 soon after Hurricane Irma (September 10 is when it made landfall). 
+- Rapid survey method involved driving at a speed of 10 mph throughout affected areas and taking GPS informed pictures from the rear side windows.
+
+## Spatial Scale
+
+- Big Pine Key and Marathon are the two survey locations in the Florida Keys, they were the two areas that were most affected by the hurricane. 
+- Over 1600 residential buildings were surveyed using the rapid survey method.
+
+## Exposure
+
+- After conducting a damage and assessment survey after Hurricane Irma, a statistical regression approach is used to quantify the contribution of various hazard and vulnerability factors. 
+- "To understand the hazard and inform the field survey, we first use the coupled hydrodynamic and 41 wave model ADCIRC+SWAN (Dietrich et al. 2012, Marsooli and Lin 2017) to simulate the 42 storm tide (i.e., water level) and wave height for Hurricane Irma. To simulate Irma's storm tide 43 and wave (Figure 1), we apply the surface wind (at 10-m) and sea-level pressure fields from 44 National Center for Environmental Prediction Final (NCEP FNL) operational global analysis data (0.25o x 0.25o 45 x 6 hours)." [@xian2018brief]
+- The collected photos and satellite images are used to categorize damage state for each residential building surveyed. 
+- FEMA's damage state criteria that were used in Hurricane Sandy are used to categorize and assess the damage in Big Pine Key and Marathon, and include the categories No/very limited damage; Minor damage; Minor damage; and Destroyed. 
+
+
+## Results/Outcome
+
+- Hydrodynamic forces induced by storm surges and waves were the primary cause of destroyed and heaviliy damaged buildings.
+- Observed storm surge damage is consistent with the hydrodynamic models. 
+- Analysis on Big Pine Key revealed that distance from the coastline was the most significant predictor for damage state
+- On Marathon, building type and size were the two main predictors.
+
+
+# [@shao2017understanding]
+
+This study focuses on the effects of external influences and perceptions of flood risk on individual's behavior relating to purchasing flooding insurance. Flood insurance ownership rates are relatively low and despite the fact that home owners in Special Flood Hazard Areas are required to buy flood insurance if they are receiving a mortgage from a federally backed or regulated lender, the law is not heavily enforced. 
+
+## Temporal Scale
+
+- Individual levels variables constructed from data collected in 2012 Gulf Coast Climate Change Study
+- Data collected by phone interviews from January 3rd through April 4, 2012.
+
+## Spatial Scale
+
+- State level
+- Stratified random sampling strategy drew independent samples in Texas, Louisiana, Mississippi, Alabama, and Florida. 
+- Contextual variables pertaining to flooding risk taken at the county level in these states.
+
+## Exposure
+
+- 3856 respondants, response rate was 17.6%
+
+### Dependent Variables
+
+- "The two dependent variables are based on responses to two survey questions. The two questions are 'do you haveflood insurance?' and 'do you have flood insurance to feel safer or because it is required?'" [@shao2017understanding]
+
+### Independent Variables
+
+- "The individual-level independent variables, including socio-demographic features, home ownership, distance from the coast(self-reported), trust in the local government and flood-related risk perceptions, are all constructed based on survey items." [@shao2017understanding]
+- "The contextual variables include spatial information about flood hazards estimated by FEMA, peak height of storm surge from the most recent hurricane landfall, and economic damages from the most recent and most impacted flooding events, respectively. They are all at county-level"
+
+## Results/Outcome
+
+- People from racial minorities were more likely to buy flood insurance voluntarily than whites when controlling for other variables, perhaps reflecting that whites perceive less risk than minorities.
+- People of higher socioeconomic status (both higher levels of education and income) were more likely to buy flood insurance.
+- A perception that flooding and storm intensity is increasing also made coastal residents more likely to buy flood insurance. 
+- The other major factors in predicting whether or not a resident would buy flood insurance were self reported distance from the coast, and belief in local government's preparedness to address climate change. 
+
+
+# [@xian2017optimal]
+
+This paper is about creating an economically optimal elevation level (OEL), because it is more economical to use this rather than 1 foot above base flood elevation (BSE). "Under the regulations of both ASCE 242 and NFIP, FEMA requires coastal houses with repetitive losses and/or substantial damage from flood events to be elevated to at least 1 foot above the BFE and recommends all houses in SFHA to be elevated to this level (FEMA, 2011). However,this requirement/recommendation does not provide guidance for home owners about how many feet exactly their houses should be raised to."[@xian2017optimal]
+
+## Temporal Scale
+
+- "The house information data used in this study, including location, ground elevation, house size, and house value, were collected by a team of students and faculty from University of Notre Dame and Princeton University in an onsite survey three weeks after Sandy." [@xian2017optimal]
+
+## Spatial Scale
+
+- Three actual houses in Ortley Beach, New Jersey were used to test the OEL model. 
+
+## Exposure
+
+- "We propose that an economically optimal elevation level (OEL)for coastal houses can be estimated through a cost-benefit analysis(CBA). Specifically, the OEL can be calculated as the level that minimizes the sum of the upfront elevation cost and present value of cumulative annual expected losses over the lifespan of a house."[@xian2017optimal]
+
+## Results/Outcome
+
+- About half of the houses at Ortley Beach would save 10,000 dollars per structure if elevated to OELs instead of 1-foot freeboard, and about 5% of the houses could save up to 100,000 dollars. 
+
+
+# [@deryugina2018economic]
+
+## Temporal Scale
+
+- Data taken from individual Federal tax returns and third party information returns filed between 1999 and 2013.
+
+## Spatial Scale
+
+- City of New Orleans, Louisiana is the focus of the study and New Orleans residents were identified as those with a New Orleans zip code on their tax return or on their W2 form.
+- Cities with similar characteristics to Louisiana are compared, with three pre-Katrina dimensions: median earnings, population growth rate, and percentage of the population that is black. These cities were Baltimore, MD, Birmingham, AL, Detroit, MI, Gary, IN, Jackson, MS, Memphis, TN, Newark, NJ, Portsmouth, VA, Richmond, VA, and St. Louis, MO. 
+
+## Exposure
+
+- "We explore five key dimensions across which one might expect the economic
+impact of the hurricane to be heterogeneous: whether a household's own home
+was severely affected by the storm, pre-Katrina income, age, homeownership,
+and whether the household left New Orleans." [@deryugina2018economic]
+
+## Results/Outcomes
+
+- After a few years, the income of New Orleans residents affected by Hurricane Katrina actually recovered and surpassed that of controls in other cities. 
+
+
+# [@shao2017understanding] 
+
+This is a different article than the other one with the name shao2017understanding. This one is about perception of increasing hurricane strengths in the Gulf States. 
+
+## Temporal Scale
+
+- Individual levels variables constructed from data collected in 2012 Gulf Coast Climate Change Study
+- Data collected by phone interviews from January 3rd through April 4, 2012.
+- Previous hurricanes that made landfall were used from the past 20 year period of 1992 to 2011. 
+
+## Spatial Scale
+
+- State level
+- Stratified random sampling strategy drew independent samples in Texas, Louisiana, Mississippi, Alabama, and Florida. 
+- Respondants had to have lived in coastal counties with at least one hurricane landfall between 1992 and 2011. (The reasoning is that hurricanes don't often occur at a single location, and human memory is short so anything past 20 years wouldn't be accurate). 
+
+## Exposure
+
+- Spatial pattern of perception of increasing hurricane strength is mapped and used as the dependent variable. 
+- Hurricane strength is measured by maximum windspeed at landfall, storm surge, and economic damage. 
+
+## Results/Outcomes
+
+- Outcome of interest is coastal residents' perceptions of increased hurricane strength. Intensity of past hurricanes, physical characteristics like wind speed, consequences such as economic damage, and people's opinions of climate change are the four factors that are framed as research questions to see how they affect this perception of increased hurricane strength. 
+- Perceptions of increasing hurricane strength are stronger in Louisiana and Mississippi, likely because of memory of Hurricane Katrina, and less strong moving away from this epicenter into the Gulf Coasts of Texas and Florida. 
+
+[@grech2015hurricane]
+
+This study looked at whether or not Hurricane Katrina had an influence on the male/female ratio of births in the Gulf states. 
+
+## Temporal Scale
+
+- January 2003 to December 2012 was the time frame from which live birth data was collected and analyzed. 
+- Precipitation data was collected from the US National Weather Service and in this study a precipitation map is presented from August 29 to September 1, 2005. 
+
+## Spatial Scale
+
+- State level
+- Data on monthly male and female live births were obtained from the CDC's  website for the states of Alabama, Florida, Louisiana, and Mississippi. 
+
+## Exposure
+
+- In this study, precipitation mainly in the form of rainfall was the metric for assessing hurricane exposure. 
+
+## Results/Outcomes
+
+- A dose-response relationship was observed between rainfall and the male to female sex ratio of live births 8 to 10 months later. 
+- " 8--10 months (April to June 2006) after the hurricane, M/F jumped significantly from 1.052 to 1.071
+with a SOR of 1.018 " [@grech2015hurricane]
 
 
 
