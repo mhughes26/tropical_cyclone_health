@@ -121,12 +121,28 @@ might be more helpful.
 
 # [@lieberman2017self]
 
+This study investigated how Hurricane Sandy in 2012 was associated with mental health in 
+New York City and Long Island, NY [?].
+
 ## Spatial Scale: 
 
-- Self reported flood data
-- "Public macro-level flood data was obtained from the FEMA Modeling Task Force (MOTF) Hurricane Sandy Impact Analysis" [@lieberman2017self]
-- New York State 3 meter spatial resolution storm surge product downloaded and imported into licensed version of ArcGIS to provide water depth above ground in New York City and Long Island
+- There was an address for each study subject [?]. This was then geocoded to a latitude
+and longitude (point location) for each study subject.
 - Street level geo-coding in SAS using datasets generated from U.S. Census Bureau TIGER/Line shapefiles. Process matches street, city, and zip-code from survey dataset with lookup dataset to produce a coordinate
+- Point-level, it sounds like (or at least street level)
+
+## Exposure: 
+
+- Extent of flooding [at the subject's home?] as a result of Hurricane Sandy in 2012
+- "Public macro-level flood data was obtained from the FEMA Modeling Task Force (MOTF) Hurricane Sandy Impact Analysis" [@lieberman2017self]
+- New York State 3-meter spatial resolution storm surge product downloaded and imported into licensed version of ArcGIS to provide water depth above ground in New York City and Long Island
+- They also assessed the degree of exposure based on self reports of [flooding amount?
+damage from flooding?]
+- Self-reported flood data [Does this mean that they had a point location---latitude and 
+longitude---for the home of each study subject?]
+- It sounds like they ideally wanted to match exposure to a point location (subject's home [?]).
+They used a very fine-scale (3-m resolution) estimate of storm surge to try to do this
+(as well as asking the subject to assess their own flood exposure).
 
 ## Results/Outcomes:
 
