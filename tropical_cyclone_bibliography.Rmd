@@ -198,20 +198,29 @@ central wind of the storm as the approximation, which they would have gotten fro
 
 # [@scaramutti2019mental]
 
+This study investigated mental health outcomes following Hurricane Maria through a 
+survey-based study.
+
 ## Spatial Scale:
 
 - Major cities in Florida and Puerto Rico were coded as urban with 0, and all other areas were coded as rural/suburban with a 1. 
 - Word of mouth and outreach to community leaders and community centers in Central and South Florida and Puerto Rico
 - Online surveys available through Qualtrics, respondants asked to refer 3 additional respondants
-- Linear regression models used with site and urbanacity as predictors for depressive symptoms, anxiety symptoms, and PTSD symptoms
-- Binary logistic regression analysis for clinical vs non-clinical anxiety, depression, and PTSD as criterion variables, and site or urbanacity as predictors
+- [Do we know if they had the exact address of each participant? Or did they only know
+that they were in Puerto Rico and whether they were in the city or a rural area, without
+knowing which city or area?]
 
 ## Temporal Scale:
 
 - Assessing mental health of Puerto Ricans in Florida and Puerto Rico 6 months after Hurricane Maria.
+- There was a single time point when outcomes were measured, so coarser time resolutions
+(e.g., week, month, single value for the storm as a whole) would probably be useful in this
+type of study.
 
 ## Results/Outcomes: 
 
+- Linear regression models used with site and urbanacity as predictors for depressive symptoms, anxiety symptoms, and PTSD symptoms
+- Binary logistic regression analysis for clinical vs non-clinical anxiety, depression, and PTSD as criterion variables, and site or urbanacity as predictors
 - Mental health outcomes of interest were anxiety, depression, and PTSD
 - Results showed significant associations between urbanacity and anxiety, approaching statistical significance for association between urbanacity and depressive symptoms, and significant association between urbanacity and PTSD intrusive reexperiencing and PTSD hypervigilance.
 - Overall, rates of depression and PTSD were higher in Puerto Ricans who migrated to Florida after Hurricane Maria. 
