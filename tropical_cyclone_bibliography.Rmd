@@ -341,6 +341,25 @@ This study investigated ...
 
 # [@pugatch2019tropical]
 
+This study investigated ... [how tropical cyclone exposure was associated with 
+risk of mortality?]
+
+## Spatial Scale:
+
+- "I use data on tropical storm exposure and mortality in all 31
+Mexican states, plus Mexico City, for each month during 1990--2011 (I chose the starting period based on the availability of microdata
+on mortality). " [@pugatch2019tropical]
+- What scale were the deaths? By state? Or by something similar to county? Or 
+did they have the exact location of each death?
+
+## Temporal scale
+
+- I would assume they have the date of each death, and that's what they're pairing
+up with the hurricane exposure? Or do they have something coarser-scale, like month
+of death or year of death?
+
+## Exposure:
+
 - "I use windspeed data on tropical storms originating in the
 Atlantic and eastern North Pacific oceans (the regions relevant to
 Mexico), available from the National Oceanic and Atmospheric
@@ -353,9 +372,10 @@ barometric pressure; Jarvinen, Neumann, & Davis, 1993; Davis,
 Brown, & Preston, 1984; Chu, Sampson, Levine, & Fukada, 2002).
 Complete records for both ocean regions are available since 1949.
 Fig. 1 maps storm best tracks making landfall in Mexico" [@pugatch2019tropical]
-- "I use data on tropical storm exposure and mortality in all 31
-Mexican states, plus Mexico City, for each month during 1990--2011 (I chose the starting period based on the availability of microdata
-on mortality). I create an index to measure storm severity by
+- Can we tell if they're using the central intensity of the storm (what you'd 
+get with the Best Tracks data), or if they're somehow estimating the windspeed
+at the location of each death (or whatever aggregation they have)?
+- "I create an index to measure storm severity by
 incorporating two elements, windspeed and population density" [@pugatch2019tropical]
 
 
