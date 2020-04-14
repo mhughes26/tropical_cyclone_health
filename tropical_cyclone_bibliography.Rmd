@@ -649,47 +649,70 @@ following a traumatic event. Resilience, by contrast, points to the ability to r
 
 # [@zahran2013daily]
 
+This study investigates ...
+
 ## Temporal Scale
+
+- [Are these recorded by date, or is there an event-wide estimate of total casualties that's used?
+Do they have a date for each disaster, or just the month or year?]
 
 ## Spatial Scale
 
 - Casualty counts are recorded at the county level in counties affected by either hurricanes or tornados.
-- 
+- [So it sounds like this study has outcome data aggregated at the county level for the spatial level.]
 
 ## Exposure
 
 - "In the event of a natural disaster,people living in affected areas suffer both income and wealth losses. Wealth losses typically involve damage to residential or commercial property, whereas income losses involve lost wages, profits, dividends, and rents in consequence of the disaster." [@zahran2013daily]
+- [It looks like they are looking at the level of county. How have they decided if a county is exposed
+to a hurricane? Are they using a disaster database that lists each disaster event for each county? Or did
+they pair up with hurricane tracks or something?]
 
 ## Results/Outcomes
 
 - Dependent variables analyzed are hurricane casualties and tornado casualties. 
+- [Are these only the casualties that were specifically linked to the disaster, or does it measure
+the total increase in excess deaths during the period of the disaster?]
 - Predictor variables are disaster damage, recency bias, and day of the week. 
+- [Could you clarify what "recency bias" measures?]
+- [Where are they getting the disaster damage estimates?]
 
 
 # [@nordhaus2010economics]
+
+This study investigates patterns in exposure to and damages from tropical cyclones in the US [have I 
+summarized this study correctly?].
 
 ## Temporal Scale
 
 - Annual number of tropical cyclones from 1970 to 2004 averaged at 85. 
 - Reliable data on the number of tropical cyclones has only been collected since 1960, so it is hard to accurately gage if the average number of tropical cyclones per year is increasing. 
 - "Using ``best track'' or HURDAT data for North Atlantic storms, there has been a clear increase in the frequency of storms over the 1851--2005 period, particularly since 1980."
+- [Are they just using total counts of storms per year? Or are they looking at specific storms? This would help
+us figure out the time resolution, and whether it would make sense as yearly or cumulative for the storm.]
 
 ## Spatial Scale
 
 - Study focues on tropical cyclones in the North Atlantic, focusing on the East Coast of the United States
-
+- [Do they measure patterns by county or state? Or are they really pooling everything together to just have
+one measure across the whole east coast?]
 
 ## Exposure
 
-- Storm intensity is measured by something called "Hurricane Power" which is defined as a function of maximum wind speed squared or cubed
+- Storm intensity is measured by something called "Hurricane Power" which is defined as a function of maximum wind speed squared or cubed [This is measured separately for each storm, right?]
 - "NOAA has constructed a power index called the accumulated cyclone energy (ACE) index, which is a function of maximum wind speed squared." [nordhaus2010economics]
 - This study analyzes economics impacts by looking at three primary factors: number of storms, maximum wind speed at landfall, and GDP.
+- [Is this number of storms per year? How do they aggregate the maximum wind speeds across storms, if they're 
+using both the number of storms and the maximum wind speed?]
 
 ## Results/Outcomes
 
 - Southern Atlantic coast is most vulnerable to hurricanes in the context of climate echange
 - Damages appear to increase to the ninth degree of wind speed.
-- It is estimated that climate change will increase the intensity of hurricanes and tropical cyclones, but it isn't clear if it will also increase the frequency. - Based on 2005 incomes, it is estimated that average annual US hurricane damages will increase by $10 billion.
+- [Where do they get their data on economic impacts / damages? Are they calculating this themselves or getting
+it from a database that's already been created? If they're calculating it themselves, what are the inputs?]
+- It is estimated that climate change will increase the intensity of hurricanes and tropical cyclones, but it isn't clear if it will also increase the frequency. 
+- Based on 2005 incomes, it is estimated that average annual US hurricane damages will increase by $10 billion.
 
 
 
