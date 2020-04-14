@@ -6,6 +6,44 @@ output: pdf_document
 bibliography: bibliography.bib
 ---
 
+# Spatial levels
+
+- Point location (latitude / longitude or address) of each subject (e.g., household, individual)
+  + [@bayleyegn2006rapid]
+- Fine spatial resolution, but not individual level (e.g., tree mortality in small areas measured
+by remote sensing)
+  + [@bianchette2009ecological]
+- ZIP code 
+  + [@bevilacqua2020understanding] [double-check]
+  + [@lane2013health]
+- County / parish
+  + [@kinney2008autism]
+  + [@grabich2016hurricane] [double-check]
+  + [@grabich2016measuring] [double-check]
+- State
+  + [@jaycox2010children] [double-check]
+- Country (e.g., Puerto Rico)
+  + [@scaramutti2019mental] [double-check]
+  
+# Time scales
+
+*Either the specific time scale used, or the finest resolution that would likely be helpful
+given the study's outcome data.*
+
+- Day
+  + [@bayleyegn2006rapid]
+  + [@pugatch2019tropical]
+- Between day and week
+  + [@hagy2006effects]
+- Week (often pregnancy outcomes, where gestational week is a factor)
+  + [@kinney2008autism]
+  + [@grabich2016hurricane] [double-check]
+  + [@grabich2016measuring] [double-check]
+- Cumulative measure across storm event
+  + [@jaycox2010children]
+  + [@scaramutti2019mental]
+  + [@bianchette2009ecological]
+
 # [@kinney2008autism]
 
 This study investigated whether the prevalence of autistic disorder in children was
