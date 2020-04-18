@@ -6,6 +6,44 @@ output: pdf_document
 bibliography: bibliography.bib
 ---
 
+# Spatial levels
+
+- Point location (latitude / longitude or address) of each subject (e.g., household, individual)
+  + [@bayleyegn2006rapid]
+- Fine spatial resolution, but not individual level (e.g., tree mortality in small areas measured
+by remote sensing)
+  + [@bianchette2009ecological]
+- ZIP code 
+  + [@bevilacqua2020understanding] [double-check]
+  + [@lane2013health]
+- County / parish
+  + [@kinney2008autism]
+  + [@grabich2016hurricane] [double-check]
+  + [@grabich2016measuring] [double-check]
+- State
+  + [@jaycox2010children] [double-check]
+- Country (e.g., Puerto Rico)
+  + [@scaramutti2019mental] [double-check]
+  
+# Time scales
+
+*Either the specific time scale used, or the finest resolution that would likely be helpful
+given the study's outcome data.*
+
+- Day
+  + [@bayleyegn2006rapid]
+  + [@pugatch2019tropical]
+- Between day and week
+  + [@hagy2006effects]
+- Week (often pregnancy outcomes, where gestational week is a factor)
+  + [@kinney2008autism]
+  + [@grabich2016hurricane] [double-check]
+  + [@grabich2016measuring] [double-check]
+- Cumulative measure across storm event
+  + [@jaycox2010children]
+  + [@scaramutti2019mental]
+  + [@bianchette2009ecological]
+
 # [@kinney2008autism]
 
 This study investigated whether the prevalence of autistic disorder in children was
@@ -415,6 +453,8 @@ experiences per student." [@jaycox2010children]
 
 # [@bourque2006weathering]
 
+This study investigated ...
+
 ## Temporal Scale
 
 ## Spatial Scale
@@ -429,12 +469,12 @@ experiences per student." [@jaycox2010children]
 # [@harville2010population]
 
 - Low birth rates and preterm births were studied in Louisiana at three spatial levels: Orleans Parish (New Orleans), Region 1 (this includes Orleans Parish, and several others), and Louisiana as a whole. 
+- [Does this mean that the spatial scales are county, multi-county region, and state?]
 
 ## Temporal Scale
 
 - Data used in analysis came from Louisiana birth records 2003-2007, in Medicaid-linked data. 
 - Birth outcomes among state residents were examined for the 2 years before and after Hurricane Katrina.
-
 
 
 ## Spatial Scale
@@ -447,13 +487,22 @@ experiences per student." [@jaycox2010children]
 ## Exposure
 
 - Exposure defined as giving birth in the two years after Hurricane Katrina
+- [Are all these births considered "exposed", or are some included in the study as controls?
+Are they looking at post-storm exposures as a risk factor for a period up to (and a little over)
+a year after the storm, for births two years after?]
+- [Do they have the dates of birth, or are all these births pooled together?]
+- [Based on this, probably cumulative storm-wide measurements and/or week resolution would be 
+helpful for the time resolution. If they're looking at storm-related exposures over a year
+after the storm, then maybe monthly exposure assessments would be helpful, too?]
 
 
 ## Results/Outcome
 
 - Outcomes of interest were Low Birth Weight, and Preterm Birth. 
 - In Louisiana as a whole, rates of LBW rose in the two years after Hurricane Katrina, but rates of Preterm births did not.
-- Overall, Hurricane Katrina was not associated with an increase in the rates of LBW and preterm births, in some areas there was a reduction of these. This may be due to population changes though because the population at risk after the hurricane had a higher risk profile. 
+- Overall, Hurricane Katrina was not associated with an increase in the rates of LBW and preterm births, in some areas there was a reduction of these. This may be due to population changes though because the population at risk after the hurricane had a higher risk profile. [I'm not sure I follow the conclusion here---if the population changes
+led to a population with a higher risk profile, wouldn't we expect to see an increase (rather than no
+association)?]
 
 
 # [@ferdinand2005hurricane]
@@ -464,43 +513,71 @@ experiences per student." [@jaycox2010children]
 
 - 680 adults staying in Hurricane Katrina shelters in Houston Texas were given a survey 
 - 98% of these survey subjects were from New Orleans.
+- [So, city / county for spatial level?]
 - Population in areas of flooding was 76% black, and 29% below the poverty line.
+- [It sounds like they might also be interested in sub-county level for the amount of flooding. 
+Here they asked with self-report, it looks like, but this could also be provided by other
+exposure assessment. Did they have the address of each survey respondent? If so, maybe the 
+spatial resolution is "point location"?]
 
 ## Temporal Scale
 
 - Surveys were administered from September 10 - 12, 2005. 
+- [It sounds like they were trying to get an overall view of flooding throughout the storm, rather
+than how flooding evolved from day to day, right?]
 
 ## Exposure
 
 - Exposure to flooding leads to evacuation and unexpected displacement, which increases the odds of losing medical records and information that include hypertensive patient's medication regimen, including frequency, dosage, and indications. 
+- [It sounds like they considered storm-related flooding as their exposure of interest. How did they measure
+the extent of flooding for each study subject? Was it by self-report (through the survey), or did they 
+use other measurements or modeling?]
 
 ## Results/Outcome
 
 - Outcomes of concern in this paper are hypertension and cardiovascular disease. 
 - "There is a 1.8x greater rate of fatal stroke, 1.5x greater rate of coronary heart disease and mortality, and a 4.2x greater rate of end-stage renal disease in this population." [@ferdinand2005hurricane]
+- [For the previous statement, what is the comparison group? Is this for those surveyed compared to the state or
+city on average? Or is it for people with flooding during the storm versus those without?]
 - "Only 52% of evacuees had health insurance at the time of the hurricane, and chronic conditions such as heart disease, hypertension, diabetes, and asthma were reported by 41% of the adults surveyed. Furthermore, 29% of evacuees reported having problems in obtaining their necessary prescription drugs." [@ferdinand2005hurricane]
 
 
 # [@christopher2017effects]
+
+This study investigated the association between two disasters (Hurricane Katrina and a 2011 tornado 
+outbreak in Alabama) and birth outcomes (birth weight, pre-term birth, infant mortality, mode of delivery).
 
 ## Temporal Scale
 
 - July 1, 2004 to August 31, 2006 for Hurricane Katrina.
 - March 1, 2010 to April 31, 2012 for April 2011 Alabama tornado disaster.
 - "The gestation period for mothers in the sample ranged from 18 to 47 weeks, 
-with a mean gestation period of 37.97 weeks (SD = 2.84 weeks"[christopher2017effects]
+with a mean gestation period of 37.97 weeks (SD = 2.84 weeks)"[christopher2017effects]
+- [It sounds like weekly-resolved data would be sufficient to match with the outcome data they have?]
 
 ## Spatial Scale
 
 - "For Hurricane Katrina, the population was delimited to pregnant 
 women residing in the counties of Hancock, Harrison, Jackson, and Jones, Mississippi, who experienced a live singleton birth which survived or was born and died between the periods of July 1, 2004 to August 31, 2006." [@christopher2017effects]
 - "For the April 2011 Alabama tornado disaster, the population was delimited to pregnant women residing in the counties of Calhoun, DeKalb, Franklin, Jefferson, Lawrence, Limestone, Madison, Marion, St. Clair, and Tuscaloosa, Alabama who were most likely affected by the April 2011 tornado disaster, and experienced a live singleton birth which survived or was born and died between the periods of March 1, 2010 to April 31, 2012." [@christopher2017effects]
+- [This definitely sounds like county-level exposure data would be sufficient, as it sounds like their 
+health data is aggregated at the county level.]
 
 ## Exposure
 
 - Maternal prenatal exposure to Hurricane Katrina in Mississippi
+- [How did they decide to include the counties they included in Mississippi for Katrina (Hancock, Harrison,
+Jackson, and Jones, Mississippi)? Were these counties selected because the central storm track passed through
+them, for example, or because they were given disaster declarations or something?]
 - Maternal prenatal exposure to April 2011 Tornado disaster in Alabama. 
 - "The data consisted of customized delimited county-level linked birth and infant death data drawn from Alabama and Mississippi Linked Infant Births and Deaths Record Files for the period 1997-2013." [@christopher2017effects]
+- [Were controls (those unexposed to the storm in utero) just all the births in other years? (in other words, 
+was the comparison made for other births in the county, but in other years)? Also, were all pregnant women
+in the selected counties considered "exposed" to the same degree (a binary classification of exposure, rather
+than a continuous measure)?]
+- [For the figure you've included here, it looks like they might have picked the tornado counties based on the
+tornado tracks passing through them. Is the same true for Katrina? (exposure based on the central) track
+passing directly through the county?)]
 
 
 ## Results/Outcome
@@ -518,15 +595,29 @@ knitr::include_graphics("figures/Birmingham_Tuscaloosa_Tornado_Track.PNG")
 
 # [@zahran2011economics]
 
+This study investigated mental health outcomes following Hurricanes Katrina and Rita. 
 
 ## Temporal Scale
 
 - "Mental health condition is measured as the reported count of poor mental health days experienced by a respondent in the previous 30 days. Data on mental health days are from the CDC's BRFSS, 2005--2006." [@zahran2011economics]
+- [They focus only on Hurricanes Katrina and Rita, right?]
+- [Do they have the exact date that the respondent took the survey? I'm guessing they just do these surveys
+once a year or something, in which case, they'd have a single outcome measurement for the year or the storm, 
+and that wouldn't necessarily be close in time to the storm. Is that right? In that case, just a measure at
+the yearly scale, or a cumulative storm measurement, would probably be resolved enough temporally for the study.]
 
 ## Spatial Scale
 
 - Intensity of hurricane's path measured using data on property damage and crop loss from the Spatial Hazard Losses and Events Database.
-- 
+- [As a note, I think maybe we mean "intensity of the hurricane along its path" rather than "intensity of 
+hurricane's path"]
+- [For the Spatial Hazard Losses and Events Database, could you add some details on that? Is that a database
+these authors created, or is it something publicly available? You could check the reference they use for 
+this database.]
+- [Based on a comment later, the spatial scale was at the county level. It looks like this is the finest
+resolution they have for each respondent, so you wouldn't need more resolved exposure measuments in this case.]
+- [Did they use a continuous metric for exposure, or just separate into exposed / unexposed based on these 
+damage / losses values in the database?]
 
 
 ## Exposure
@@ -534,7 +625,15 @@ knitr::include_graphics("figures/Birmingham_Tuscaloosa_Tornado_Track.PNG")
 - "Individual exposure to Hurricane Katrina and/or Rita was determined by information on the temporal and spatial coordinates of each hurricane event,
 the date a respondent was interviewed by the CDC, and the respondent's place of county residence, as reported in the CDC's Behavioral Risk Factor Surveillance
 System (BRFSS) database" [@zahran2011economics]
+- [Could you clarify for this exposure assessment? Based on one of the previous comments, they used damages data, 
+but this is sounding like they used how close a county was to the track. Maybe they first used distance to the
+storm to determine exposed / unexposed and then used damages data to further distinguish how hard-hit each county
+was or something?]
 - Number of poor mental healthd days expected to have spikes corresponding to hurricane events in affected but not unaffected areas with respect to hurricane exposure. 
+- [To clarify, did they use the same time period, but compare by location to compare exposed to unexposed? 
+(so, in other words, instead of comparing one county over time they compared across counties?). If so, I 
+think we definitely want to try to pull some more details on how they determined a county was exposed to the
+storm.]
 
 ## Results/Outcomes
 
@@ -548,49 +647,72 @@ following a traumatic event. Resilience, by contrast, points to the ability to r
 - "We estimate that single mothers, as a group, suffered over $130 million in productivity loss from added postdisaster stress and disability." [@zahran2011economics]
 
 
-[@zahran2013daily]
+# [@zahran2013daily]
+
+This study investigates ...
 
 ## Temporal Scale
+
+- [Are these recorded by date, or is there an event-wide estimate of total casualties that's used?
+Do they have a date for each disaster, or just the month or year?]
 
 ## Spatial Scale
 
 - Casualty counts are recorded at the county level in counties affected by either hurricanes or tornados.
-- 
+- [So it sounds like this study has outcome data aggregated at the county level for the spatial level.]
 
 ## Exposure
 
 - "In the event of a natural disaster,people living in affected areas suffer both income and wealth losses. Wealth losses typically involve damage to residential or commercial property, whereas income losses involve lost wages, profits, dividends, and rents in consequence of the disaster." [@zahran2013daily]
+- [It looks like they are looking at the level of county. How have they decided if a county is exposed
+to a hurricane? Are they using a disaster database that lists each disaster event for each county? Or did
+they pair up with hurricane tracks or something?]
 
 ## Results/Outcomes
 
 - Dependent variables analyzed are hurricane casualties and tornado casualties. 
+- [Are these only the casualties that were specifically linked to the disaster, or does it measure
+the total increase in excess deaths during the period of the disaster?]
 - Predictor variables are disaster damage, recency bias, and day of the week. 
+- [Could you clarify what "recency bias" measures?]
+- [Where are they getting the disaster damage estimates?]
 
 
 # [@nordhaus2010economics]
+
+This study investigates patterns in exposure to and damages from tropical cyclones in the US [have I 
+summarized this study correctly?].
 
 ## Temporal Scale
 
 - Annual number of tropical cyclones from 1970 to 2004 averaged at 85. 
 - Reliable data on the number of tropical cyclones has only been collected since 1960, so it is hard to accurately gage if the average number of tropical cyclones per year is increasing. 
 - "Using ``best track'' or HURDAT data for North Atlantic storms, there has been a clear increase in the frequency of storms over the 1851--2005 period, particularly since 1980."
+- [Are they just using total counts of storms per year? Or are they looking at specific storms? This would help
+us figure out the time resolution, and whether it would make sense as yearly or cumulative for the storm.]
 
 ## Spatial Scale
 
 - Study focues on tropical cyclones in the North Atlantic, focusing on the East Coast of the United States
-
+- [Do they measure patterns by county or state? Or are they really pooling everything together to just have
+one measure across the whole east coast?]
 
 ## Exposure
 
-- Storm intensity is measured by something called "Hurricane Power" which is defined as a function of maximum wind speed squared or cubed
+- Storm intensity is measured by something called "Hurricane Power" which is defined as a function of maximum wind speed squared or cubed [This is measured separately for each storm, right?]
 - "NOAA has constructed a power index called the accumulated cyclone energy (ACE) index, which is a function of maximum wind speed squared." [nordhaus2010economics]
 - This study analyzes economics impacts by looking at three primary factors: number of storms, maximum wind speed at landfall, and GDP.
+- [Is this number of storms per year? How do they aggregate the maximum wind speeds across storms, if they're 
+using both the number of storms and the maximum wind speed?]
 
 ## Results/Outcomes
 
 - Southern Atlantic coast is most vulnerable to hurricanes in the context of climate echange
 - Damages appear to increase to the ninth degree of wind speed.
-- It is estimated that climate change will increase the intensity of hurricanes and tropical cyclones, but it isn't clear if it will also increase the frequency. - Based on 2005 incomes, it is estimated that average annual US hurricane damages will increase by $10 billion.
+- [Where do they get their data on economic impacts / damages? Are they calculating this themselves or getting
+it from a database that's already been created? If they're calculating it themselves, what are the inputs?]
+- It is estimated that climate change will increase the intensity of hurricanes and tropical cyclones, but it isn't clear if it will also increase the frequency. 
+- Based on 2005 incomes, it is estimated that average annual US hurricane damages will increase by $10 billion.
 
 
 
