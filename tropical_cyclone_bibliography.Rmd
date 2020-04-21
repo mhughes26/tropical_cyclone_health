@@ -46,7 +46,7 @@ given the study's outcome data.*
 
 # [@kinney2008autism]
 
-This study tested a hypothesis that the risk of autistic disorder increases in a dose-response manner relative to the intensity of prenatal storm exposure, and that sensitive periods of gestation exist where these exposures are more likely to increase the risk of autistic disorder. The study was conducted in Louisiana parishes that had been hit by the storm centers from 1980 to 1995. [which part of? all? coastal?] Louisiana for 1980--1995.
+This study tested a hypothesis that the risk of autistic disorder increases in a dose-response manner relative to the intensity of prenatal storm exposure, and that sensitive periods of gestation exist where these exposures are more likely to increase the risk of autistic disorder. The study was conducted in Louisiana parishes that had been hit by the storm centers from 1980 to 1995. 
 
 ## Temporal Scale
 
@@ -115,7 +115,10 @@ This study investigated the evolution of water quality in Pensacola Bay in Flori
 
 ## Spatial Scale: 
 
-- Water quality surveys [was it a survey, or testing? (maybe the language here is discipline-specific...)] conducted at up to 15 sites located on two transects within the Pensacola Bay system. These sample site shad recorded Latitude and Longitudinal coordinates. 
+- Water quality surveys conducted at up to 15 sites located on two transects within the Pensacola Bay system. These sample site shad recorded Latitude and Longitudinal coordinates. 
+```{r echo = FALSE, out.width="0.4\\textwidth", fig.align="center", fig.cap="Example of how exposure to tornadoes was assesses in Christopher (2017) for counties."}
+knitr::include_graphics("figures/pensacola_bay_survey_sites.PNG")
+```
 - The water quality surveys were really a series of tests described in the quotes: "Hydrographic data were collected at each stationusing a Seabird SBE25 CTD measuring water
 temperature, salinity, dissolved oxygen, PAR, chlorophyll a fluorescence, and turbidity. Profile data
 were binned at a 0.25-m interval. Surface and bottom water samples were collected with either a Van Dorn bottle or a low pressure submersible pump. Samples for dissolved nutrients were filtered
@@ -153,8 +156,7 @@ Pensacola Bay" [@hagy2006effects]
 
 # [@lieberman2017self]
 
-This study investigated how Hurricane Sandy in 2012 was associated with mental health in 
-New York City and Long Island, NY [?].
+This study investigated how exposure to flooding during Hurricane Sandy in 2012 was associated with mental health in New York City and Long Island, NY. Self reported flooding exposure was compared to flooding exposure data from FEMA after Hurricane Sandy and this then an association was determined between the flooding exposure and depression, anxiety, and PTSD. 
 
 ## Temporal Scale
 
@@ -163,18 +165,18 @@ since Hurricane Sandy was 20.16 months.
 
 ## Spatial Scale: 
 
-- There was an address for each study subject [?]. This was then geocoded to a latitude
+- A residential address for each study subject was then geocoded to a latitude
 and longitude (point location) for each study subject.
 - Street level geo-coding in SAS using datasets generated from U.S. Census Bureau TIGER/Line shapefiles. Process matches street, city, and zip-code from survey dataset with lookup dataset to produce a coordinate
 - Point-level, it sounds like (or at least street level)
 - "In conjunction with community and governmental partners, the recruitment team
 traveled to libraries, community centers, senior centers, gyms and faith-based institutions
 across Queens, Staten Island, Nassau, and Suffolk in both heavily and less affected areas,
-and accepted all the volunteers who offered to participate in the study."
+and accepted all the volunteers who offered to participate in the study." [@lieberman2017self]
 
 ## Exposure: 
 
-- Extent of flooding [at the subject's home?] as a result of Hurricane Sandy in 2012
+- Extent of flooding at the study subject's residential address as a result of Hurricane Sandy in 2012
 - Flooding was the main factor for assessing hurricane exposure
 - FEMA dichotomous and FEMA continuous flooding models were used to map the flooding exposure in New York City and Long Island
 - Self-reported flooding exposure was also assessed and compared to the FEMA models. There were discrepencies between the two of these. 
@@ -182,9 +184,10 @@ and accepted all the volunteers who offered to participate in the study."
 - New York State 3-meter spatial resolution storm surge product downloaded and imported into licensed version of ArcGIS to provide water depth above ground in New York City and Long Island
 - They also assessed the degree of exposure based on self reports of [flooding amount?
 damage from flooding?]
-- Self-reported flood data [Does this mean that they had a point location---latitude and 
-longitude---for the home of each study subject?]
-- It sounds like they ideally wanted to match exposure to a point location (subject's home [?]).
+- Participants who did not provide an address were excluded from the study. 
+- "The presence and height of flooding were gathered fromthe overall hurricane exposure measure. Instances where participants recorded that there was no flooding in their home during Sandy (n = 63) were correspondingly assigned a flood height of 0 feet in order to be incorporated in a continuous measure of flood exposure. Instances where participants recorded flooding in their homes but did not record a numerical water height (n = 66) could not be included in analyses involving the continuous measure of flood exposure. A maximum water height of 15 feet reported on questionnaires was chosen as a cutoff to be included in this study to remove unreasonable flood heights. This choice excluded 4 participants." [@lieberman2017self]
+- Self-reported flood data was collected, meaning that the subjects were asked to assess their own flood exposure. The address they provided was used to create a a point location using latitude and longitude 
+- It sounds like they ideally wanted to match exposure to a point location (subject's home).
 They used a very fine-scale (3-m resolution) estimate of storm surge to try to do this
 (as well as asking the subject to assess their own flood exposure).
 
@@ -194,6 +197,7 @@ They used a very fine-scale (3-m resolution) estimate of storm surge to try to d
 - Self reported flood exposure and FEMA flood exposure data showed significant discrepencies in the associations between flooding and mental health outcomes. 
 - Self reported dichotomous flooding showed significant associations with all mental health outcomes, whereas dichotomous FEMA flooding only showed significant associations with PTSD.
 - Macro-level flooding data is less expensive and faster, but potentially underestimates mental health outcomes. 
+
 
 # [@grabich2016hurricane]
 
@@ -208,14 +212,18 @@ exposure in Florida.
 
 ## Temporal Scale:
 
-- They investigated risk periods by week of gestation [?]
 - Risk period begins at 20 weeks of gestation
 - Pregnancy divided into exposed time and unexposed time after 20 weeks
 - Study population included births with estimated date of conception between October 24, 2003 and September 26, 2004.
+- "The authors used county-level Vital Statistics data obtained from the Florida Department of Health to calculate county-specific rates oflow birth weight and preterm births for women who were pregnant
+during the 2004 hurricane season. Women included in this calculation had an estimated date of conception based on last menstrual period between October 2003 and September 2004. These women would be at risk of hurricane exposure during pregnancy." [@grabich2016hurricane]
 
 ## Exposure:
 
-- Hurricane exposure classified as maximum wind speed in specific Florida county extracted from NOAA's Hurricane Research Division public database. [Could you check on this---did they 
+- Hurricane exposure classified as maximum wind speed in specific Florida county extracted from NOAA's Hurricane Research Division public database. 
+- "Wind speeds wereextracted from NOAA’s Hurricane Research Division (HRD) public databases." [@grabich2016hurricane]
+
+[Could you check on this---did they 
 use the wind field value for the county, for example from H*Winds, or did they use the 
 central wind of the storm as the approximation, which they would have gotten from HURDAT?]
 - Exposure defined as >= 39 mph and >= 74 mph
