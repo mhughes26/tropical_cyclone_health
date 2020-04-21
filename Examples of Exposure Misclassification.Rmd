@@ -1,0 +1,20 @@
+---
+title: "Examples of Exposure Misclassification"
+author: "Matthew Hughes"
+date: "April 21, 2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# [kinney2008autism]
+
+This study tested a hypothesis that the risk of autistic disorder increases in a dose-response manner relative to the intensity of prenatal storm exposure, and that sensitive periods of gestation exist where these exposures are more likely to increase the risk of autistic disorder. The study was conducted in Louisiana parishes that had been hit by the storm centers from 1980 to 1995. [which part of? all? coastal?] Louisiana for 1980--1995.
+
+- Individual gestation lengths were not available in this study, so a 40-week gestation was assumed. The 40-week gestation was divided into five eight week periods because the researchers wanted to understand if there were sensitive periods of gestation during which exposure to tropical storms could increase the risk of the child in utero having autism. There is a strong potential for misclassification of exposure here, because there is a potential for many pregnancies to be incorrectly divided five ways if they have longer or shorter gestations than 40 weeks. This could lead to incorrect risk assessments based on gestational period. Perhaps the eight weeks is a large enough bin to mitigate these effects. 
+
+- Because the spatial scale of this study was at the level of individual Parishes (the equivalent of counties in Louisiana), it is possible that exposure misclassification existed, relating to how intensely mothers were exposed during pregnancy. Three levels of severity of storm exposure for an individual Parish were defined as High (Storm Intensity and Storm Vulnerability both present), Intermediate (Either Storm Intensity or Storm Vulnerability present), or Low (Neither present). Storm intensity was assessed based on whether or not the center of the storm had passed through that Parish. Storm vulnerability was a factor that described how vulnerable to a storm's effects residents would be if a storm center hit their parish. 
+
+- 
