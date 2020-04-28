@@ -116,9 +116,11 @@ This study investigated the evolution of water quality in Pensacola Bay in Flori
 ## Spatial Scale: 
 
 - Water quality surveys conducted at up to 15 sites located on two transects within the Pensacola Bay system. These sample site shad recorded Latitude and Longitudinal coordinates. 
+
 ```{r echo = FALSE, out.width="0.4\\textwidth", fig.align="center", fig.cap="Example of how exposure to tornadoes was assesses in Christopher (2017) for counties."}
 knitr::include_graphics("figures/pensacola_bay_survey_sites.PNG")
 ```
+
 - The water quality surveys were really a series of tests described in the quotes: "Hydrographic data were collected at each stationusing a Seabird SBE25 CTD measuring water
 temperature, salinity, dissolved oxygen, PAR, chlorophyll a fluorescence, and turbidity. Profile data
 were binned at a 0.25-m interval. Surface and bottom water samples were collected with either a Van Dorn bottle or a low pressure submersible pump. Samples for dissolved nutrients were filtered
@@ -724,15 +726,24 @@ it from a database that's already been created? If they're calculating it themse
 
 - Built capital recovery is typically measured in the short term because it is limited by available human labor and construction materials, whereas natural capital recovery may take much longer because it is often limited by natural processes.
 - Standard discount rate may be appropriate for built capital stocks but it is inappropriate to apply it to social, human, and natural capital stocks. 
+- [For this study, do they have damages / economic data that they're using? If so, what is the
+time scale? For example, do they have one measurement per storm, or maybe are they using
+data that's collected every year?]
 
 ## Spatial Scale
 
 - Full cost accounting of damages after hurricanes must look at regional, national and international scales since communities and areas not affected by the direct results of the tropical cyclone or hurricane may still be impacted economically.
 - It was noted that some regions benefit economically from storms, for example areas surrounding New Orleans saw their property values go up because of people trying to leave the New Orleans area.
+- [If this is a quantitative scale (rather than a commentary or something), do they 
+have data on damages that they're looking at? In that case, do they have those
+numbers by state or by county or by some other aggregation? This is what we'd want
+to list for the spatial scale here.]
 
 ## Exposure
 
-- Economic damage in the form of built capital, human capital, natural capital, and social capital.
+- Economic damage in the form of built capital, human capital, natural capital, and social capital. [How do they get these values? Do they have a database of damages specifically
+from tropical cyclones? Or are they pairing up economic data from some other source
+with tropical cyclone dates and places?]
 
 ## Results/Outcomes
 
@@ -744,10 +755,23 @@ it from a database that's already been created? If they're calculating it themse
 ## Temporal Scale
 
 - Model runs from the years 1950 (1950 to 2000 used for model calibration) to 3000
+- [For this study, I think we're also interested in figuring out what data they used to
+make the model that they ultimately use for future damages. To project out, they must
+have some estimate of the relationship between damage and tropical cyclones today, 
+and then they're using that estimated relationship to project damages in the 
+future. In that case, how did they build their model of the relationship between 
+tropical cyclones and damages? Did they use observed data from previous years?
+If so, did they have damage estimates by storm, or by year, or at some other time
+scale? We'll want to know that to answer the "temporal" scale question for this 
+paper (and similarly the spatial scale to answer the "spatial" question---in other
+words, if they had data from the past that they used to estimate this association, 
+was it by country or by state or by county or at some other aggregation?]
 
 ## Spatial Scale
 
 - Globe divided into 16 regions to test scenarios. 
+- [Are these regions the level that the data was collected and used to build the
+present-day damages model, though?]
 
 ## Exposure
 
@@ -767,11 +791,17 @@ it from a database that's already been created? If they're calculating it themse
 ## Spatial Scale
 
 - Greater New Orleans metropolitan area was studied. The area was divided into three sections based on "bowls" aka polders.
-- 
+- [Can we find out a little bit more about what these "bowls" are? I assume that
+they have some geographic definition? This is really interesting---it looks like we
+have a new spatial scale that's different from county or ZIP code and is based more
+on something that's meaningful for flooding.]
+- [How do these bowls compare to neighborhoods? Would you have several neighborhoods in one, 
+or are they smaller than a neighborhood?]
 
 ## Exposure
 
 - Hydrodynamic flood simulations used to analyze relationship between flood characteristics and damage to buildings. 
+- [In other words, it sounds like they had some model of flooding that they could use to simulate floods, and then did they compare those outputs to the actual data that was observed after a specific storm to buildings? Or is this study purely a simulation study? If it's only a simulation study, we probably won't include it, because our focus is more on helping to connect observations from a storm with human impacts studies, and if it was just a simulation study, it wouldn't need observations as inputs, I don't think.]
 - Momentum = mass x velocity = density x volume x velocity => 
   Momentum = density x flooded horizontal area x (depth x velocity)
   
@@ -780,11 +810,16 @@ it from a database that's already been created? If they're calculating it themse
 
 ## Results/Outcome
 
-- Outcome of interest is direct damage to residential buildings in New Orleans caused by flooding after Hurricane Katrina
+- Outcome of interest is direct damage to residential buildings in New Orleans caused by flooding after Hurricane Katrina [Hmmm. Again, it would be helpful to clarify here if they were using real data on the damage observed to buildings after that storm?]
 - "The spatial level of detail of the analysis is a determining factor for the correlation between predictions and observations. The smaller the spatial unit of the analysis the poorer the relationship between flood characteristics and damage." [@pistrika2010damage]
 - "The highest damage percentages and structural damage mainly occurred in areas where higher flow velocities occurred, especially near the breaches in the Lower 9th Ward neighborhood. Due to the approach that was used for damage quantification, buildings that sustained structural damage, had damage levels higher than 50% of their market value." [@pistrika2010damage]
 - "An alternative approach has been proposed that could be used to distinguish three different damage zones based on the combination of water depth and flow velocity. There appeared to be clear differences between the average, observed damage values in the three zones. This approach could be useful to determine the extent of flood damage and distinguish the main damage zones for an area affected by flooding due to breaching of flood defenses." [@pistrika2010damage]
-
+- [Again, can you tell if they were using *observations* about the water depth and 
+flow velocity during Hurricane Katrina for this analysis, or did they just simulate
+what they expected those to be, based on some flood simulation model, rather than use
+real observations? If they used real observations, then I think we need to find out
+a bit more about how they got those. Did they put out their own sensors to collect it?
+Or were they using data from the USGS, for example?]
 
 
 # [@xian2015storm]
