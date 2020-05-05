@@ -182,10 +182,9 @@ and accepted all the volunteers who offered to participate in the study." [@lieb
 - Self-reported flooding exposure was also assessed and compared to the FEMA models. There were discrepencies between the two of these. 
 - "Public macro-level flood data was obtained from the FEMA Modeling Task Force (MOTF) Hurricane Sandy Impact Analysis" [@lieberman2017self]
 - New York State 3-meter spatial resolution storm surge product downloaded and imported into licensed version of ArcGIS to provide water depth above ground in New York City and Long Island
-- They also assessed the degree of exposure based on self reports of [flooding amount?
-damage from flooding?]
+- They also assessed the degree of exposure based on self reports of flooding water height.
 - Participants who did not provide an address were excluded from the study. 
-- "The presence and height of flooding were gathered fromthe overall hurricane exposure measure. Instances where participants recorded that there was no flooding in their home during Sandy (n = 63) were correspondingly assigned a flood height of 0 feet in order to be incorporated in a continuous measure of flood exposure. Instances where participants recorded flooding in their homes but did not record a numerical water height (n = 66) could not be included in analyses involving the continuous measure of flood exposure. A maximum water height of 15 feet reported on questionnaires was chosen as a cutoff to be included in this study to remove unreasonable flood heights. This choice excluded 4 participants." [@lieberman2017self]
+- "The presence and height of flooding were gathered from the overall hurricane exposure measure. Instances where participants recorded that there was no flooding in their home during Sandy (n = 63) were correspondingly assigned a flood height of 0 feet in order to be incorporated in a continuous measure of flood exposure. Instances where participants recorded flooding in their homes but did not record a numerical water height (n = 66) could not be included in analyses involving the continuous measure of flood exposure. A maximum water height of 15 feet reported on questionnaires was chosen as a cutoff to be included in this study to remove unreasonable flood heights. This choice excluded 4 participants." [@lieberman2017self]
 - Self-reported flood data was collected, meaning that the subjects were asked to assess their own flood exposure. The address they provided was used to create a a point location using latitude and longitude 
 - It sounds like they ideally wanted to match exposure to a point location (subject's home).
 They used a very fine-scale (3-m resolution) estimate of storm surge to try to do this
@@ -221,11 +220,11 @@ during the 2004 hurricane season. Women included in this calculation had an esti
 ## Exposure:
 
 - Hurricane exposure classified as maximum wind speed in specific Florida county extracted from NOAA's Hurricane Research Division public database. 
-- "Wind speeds wereextracted from NOAA’s Hurricane Research Division (HRD) public databases." [@grabich2016hurricane]
+- "Wind speeds were extracted from NOAA’s Hurricane Research Division (HRD) public databases." [@grabich2016hurricane]
+- "The geographic spatial buffer exposure method yielded different results than either the disaster declaration method or the binary maximum wind-speed-exposure classifications. For all hurricanes
+except Hurricane Ivan, the 60 and 100-km buffer identified a similar number of counties as the binary 63-km=h (39-mi=h) windspeed categorization. For Hurricane Ivan, the number of counties exposed to both the 60 and 100-km buffer was less than any of the other methods. Compared with the counties exposed using the dichotomous 119-km=h (74-mi=h) maximum wind speed, there was a 138% difference in the number of counties exposed. Although the spatial buffer categorized a similar number of counties exposed as the binary wind speed methods, the heterogeneity across storms is apparent, particularly for Hurricane Ivan."[@grabich2016hurricane]
 
-[Could you check on this---did they 
-use the wind field value for the county, for example from H*Winds, or did they use the 
-central wind of the storm as the approximation, which they would have gotten from HURDAT?]
+###[Could you check on this---did they use the wind field value for the county, for example from H*Winds, or did they use the central wind of the storm as the approximation, which they would have gotten from HURDAT?]###
 - Exposure defined as >= 39 mph and >= 74 mph
 
 # Results/Outcomes
@@ -238,17 +237,16 @@ central wind of the storm as the approximation, which they would have gotten fro
 
 # [@scaramutti2019mental]
 
-This study investigated mental health outcomes following Hurricane Maria through a 
-survey-based study.
+This study investigated mental health outcomes in Puerto Ricans in both Puerto Rico and Florida following Hurricane Maria through a survey-based study.
 
 ## Spatial Scale:
 
 - Major cities in Florida and Puerto Rico were coded as urban with 0, and all other areas were coded as rural/suburban with a 1. 
 - Word of mouth and outreach to community leaders and community centers in Central and South Florida and Puerto Rico
 - Online surveys available through Qualtrics, respondants asked to refer 3 additional respondants
-- [Do we know if they had the exact address of each participant? Or did they only know
+- ###[Do we know if they had the exact address of each participant? Or did they only know
 that they were in Puerto Rico and whether they were in the city or a rural area, without
-knowing which city or area?]
+knowing which city or area?]### It doesn't appear that the exact address of the respondants was provided, and seems unlikely given that the identities of the participants were not even verifiable. 
 
 ## Temporal Scale:
 
@@ -270,7 +268,7 @@ type of study.
 # [@bianchette2009ecological]
 
 This study investigated the ecological impacts (particularly in terms of tree mortality) in 
-a coastal area in Alabama following Hurricane Ivan in [year].
+a coastal area in Alabama following Hurricane Ivan in 2004.
 
 ## Temporal Scale: 
 
@@ -280,15 +278,13 @@ a coastal area in Alabama following Hurricane Ivan in [year].
 
 - Study area was three coastal lakes known as the Shelby Lakes in Gulf State Park, Alabama.
 - Remote sensing using Landsat 5 images coupled with ground surveys of tree mortality were used.
-- [Do we have any idea how fine the spatial resolution for the Landsat images were? We 
-could probably look that up in documentation for Landsat 5, too. I'm assuming they 
-got a pretty high-resolution picture of tree mortality?]
+- "Two Landsat 5 images (30 m resolution, path 020, row 039, GeoTiff format), dated 20 July 2004 (pre-Ivan) and 7 July 2005 (post-Ivan), were used for this study." [@bianchette2009ecological]
 
 ## Exposure: 
 
 - Hurricane Ivan brought 120 mph winds and a storm surge of 10-12 feet, which inundated all of the coastal plane around the Shelby Lakes.
-- It sounds like the full study area was assumed to be exposed based on the fact that the
-whole area around it was inundated by the surge of this storm?
+- ###It sounds like the full study area was assumed to be exposed based on the fact that the
+whole area around it was inundated by the surge of this storm?###
 
 ## Results/Outcomes: 
 
@@ -299,11 +295,12 @@ whole area around it was inundated by the surge of this storm?
 # [@grabich2016measuring]
 
 This study investigated the association between hurricane exposure and birth outcomes
-in Florida. In particular, it investigated different ways of assessing exposure to the storm.
+in Florida. In particular, it investigated different ways of assessing exposure to the storm. At the time of publishing, the most accepted methods for assigning disaster exposure: FEMA presidential disaster declarations and spatial data on the specific storm track trajectory. The authors of this paper propose a new method that uses meteorological data to define exposure to hurricanes.
 
 ## Spatial Scale:
 
 - Preterm birth and low birth weight rates collected from the county level of exposed areas
+- "The authors’ novel meteorological method uses the hurricane intensity by the county’s maximum wind speed. Wind speeds were extracted from NOAA’s Hurricane Research Division (HRD) public databases." [@grabich2016measuring]
 
 ## Temporal Scale:
 
@@ -318,28 +315,40 @@ the day), while the FEMA disaster declarations will be a single, storm-long meas
 
 - Hurricane disaster exposure 3 methods, FEMA Presidential disaster declarations, spatial data on specific storm trajectory (storm tracks with a symmmetrical buffer around them), novel meteorological measure based on Saffir-Simpson hurricane intensity scale [i.e., including 
 wind speeds experienced locally].
+```{r echo = FALSE, out.width="0.4\\textwidth", fig.align="center", fig.cap="Example of how exposure to tornadoes was assesses in Christopher (2017) for counties."}
+knitr::include_graphics("figures/grabich_hurricane_exposure_methods.PNG")
+```
+
 
 ## Results/Outcomes: 
-
+- All three of the different exposure methods showed noticeably different results. The FEMA disaster declaration consistently assigned the highest number of counties as exposed, and the authors speculate that it could be overassigning. 
+- Using the disaster declaration method, the authors could not find any statistically significant associations between the whether the county was exposed, and low-birth weight and pre-term births, but these null findings support the idea that exposure misclassification is occurring. 
 
 # [@bevilacqua2020understanding]
 
-This study investigated ...
+This study investigated associations between exposure to Hurricane Harvey in 2017, and mental health symptoms in the Greater Houston Area. 
 
 ## Spatial Scale:
 
+- The Greater Houston Area was the study area and spatial scale of this study. Recruitment events were organized in different neighborhooods of Houston to get participants to enroll. 
+- Efforts were made to recruit a sample of participants that reflected the racial/ethnic makeup of Houston.
 - ggmaps package in R was used to generate distribution of zip codes of the participants
 
 ## Temporal Scale:
 
+- Study began 5 months post-Hurricane Harvey in January of 2018, and survey participants were recruited and took the survey between from January 25 to January 29, 2018.
+
 ## Exposure:
+
+- Hurricane exposure was quantified using a hurricane exposure score that was calculated from tallying the number of hurricane exposures checked on a survey. The survey included 30 Yes/No questions about hurricane experiences that included the death of a friend or family member, damage to property, etc. 
 
 ## Results/Outcomes:
 
+- Multivariable logistic regression models showed that an increased Hurricane Exposure Score was significantly associated with an increased odds for probable depression, anxiety, and PTSD. 
 
 # [@lane2013health]
 
-This study investigated ...
+This study investigated a review of the literature pertaining to health outcomes after hurricanes. The purpose was to use the review to inform climate adaptation planning efforts, especially pertaining to New York City. 
 
 ## Spatial Scale
 
@@ -347,21 +356,19 @@ This study investigated ...
 
 ## Temporal Scale:
 
-## Exposure:
-
-## Results/Outcomes:
-
-# [@lane2013health] 
-
-This study investigated ...
-
-## Spatial Scale
-
-## Temporal Scale:
+- No clear temporal scale was used as this was a literature review. 
 
 ## Exposure:
 
+- "Health outcomes can occur through multiple pathways (see Figure 1) including (1) hazards from exposure to storm impact; (2) evacuation; (3) post-storm hazards from utility outages and sheltering in place in inadequate housing; (4) exposure to secondary hazards including contaminated drinking water, contact with contaminated floodwaters, and mold and moisture in housing; (5) population displacement
+and disruption of services; (6) mental health effects from traumatic or stressful experiences during and after the storms and (7) health and safety risks from clean-up and recovery activities."
+
 ## Results/Outcomes:
+
+- "A wide range of potential acute and long-term health impacts were identified in the literature,
+from injury and death resulting from a failure to evacuate safely, physical and mental health problems in displaced populations because of disruption of care or stress, and injury and illness risk during repair and recovery, as well as a range of potential health impacts fromexposures in damaged
+housing and fromsheltering in place.Mental health problems were some of the most frequently cited health consequences of major storms. For several dimensions of public health vulnerability to coastal storms, NYC neighborhoods with elevated poverty levels may be at increased risk for lasting impacts."
+
 
 # [@schwartz2018preliminary]
 
