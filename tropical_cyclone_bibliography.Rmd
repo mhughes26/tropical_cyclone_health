@@ -363,18 +363,18 @@ This study investigated a review of the literature pertaining to health outcomes
 ## Exposure:
 
 - "Health outcomes can occur through multiple pathways (see Figure 1) including (1) hazards from exposure to storm impact; (2) evacuation; (3) post-storm hazards from utility outages and sheltering in place in inadequate housing; (4) exposure to secondary hazards including contaminated drinking water, contact with contaminated floodwaters, and mold and moisture in housing; (5) population displacement
-and disruption of services; (6) mental health effects from traumatic or stressful experiences during and after the storms and (7) health and safety risks from clean-up and recovery activities."
+and disruption of services; (6) mental health effects from traumatic or stressful experiences during and after the storms and (7) health and safety risks from clean-up and recovery activities." [@lane2013health]
 
 ## Results/Outcomes:
 
 - "A wide range of potential acute and long-term health impacts were identified in the literature,
 from injury and death resulting from a failure to evacuate safely, physical and mental health problems in displaced populations because of disruption of care or stress, and injury and illness risk during repair and recovery, as well as a range of potential health impacts fromexposures in damaged
-housing and fromsheltering in place.Mental health problems were some of the most frequently cited health consequences of major storms. For several dimensions of public health vulnerability to coastal storms, NYC neighborhoods with elevated poverty levels may be at increased risk for lasting impacts."
+housing and fromsheltering in place.Mental health problems were some of the most frequently cited health consequences of major storms. For several dimensions of public health vulnerability to coastal storms, NYC neighborhoods with elevated poverty levels may be at increased risk for lasting impacts." [@lane2013health]
 
 
 # [@schwartz2018preliminary]
 
-This study investigated ...
+This study investigated the mental health needs of Houston residents
 
 ## Spatial Scale:
 
@@ -382,9 +382,11 @@ This study investigated ...
 
 ## Temporal Scale:
 
-- Research team arrived in Houston less than 3 weeks after Hurricane Harvey made landfall
+- Research team arrived in Houston less than 3 weeks after Hurricane Harvey made landfall to administer the survey. 
 
 ## Exposure:
+
+- "Having probable PTSD, anxiety or depression was the primary outcome in the logistic regression statistical models, and was treated as a dichotomous variable (yes or no) based on the clinically relevant cutoffs described above. The number of personal, property-related or chemical exposures was used as a continuous variable to investigate how an increase in any type of hurricane exposure affected mental health. Logistic models were adjusted for covariates including age, gender and a prior history of a mental health condition, including anxiety disorder, depression, PTSD, schizophrenia, bipolar disorder, substance abuse disorders (alcohol or prescription drug related) or some other mental health disorder that was diagnosed by a physician." [@schwartz2018preliminary]
 
 ## Results/Outcomes:
 
