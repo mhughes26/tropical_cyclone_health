@@ -7,27 +7,126 @@ bibliography: bibliography.bib
 ---
 
 
-When studying the econonomic, social, and health impacts that tropical storms and hurricanes have in places such as the Gulf Coast of the United States, it is important to select an appropriate spatial and temporal scale in order to adequately classify exposure. Failure to classify exposure accurately allows misclassification bias to move the results of the study further from the true parameter. Of particular concern in environmental epidemiology is non-differential misclassification which will in all cases bias the results towards the null [@armstrong1998effect]. In effect, this will weaken or obscure any associations that are present that the researcher may hope to observe in the data [@armstrong1998effect]. 
 
-A literature review was conducted to investigate the different spatial and temporal scales that were most commonly used by researchers studying tropical storm and hurricane impacts on health, ecology, and economic systems in affected areas. Spatially, the most common units tended to be the county and state level, while the temporal scale ranged from days to weeks to cumulative measures across storm events. 
+# Statement of key issue
 
-# Spatial Scales
+Extensive physical exposure data is often available for tropical cyclones
+at they near and cross communities in the United States. This data can come
+both from established monitoring networks, like [NOAA network name?], but 
+also may result from data collection efforts during or after the storm by 
+atmospheric scientists and engineers seeking to characterize a specific storm.
+
+Researchers in a variety of fields---including epidemiology, economics, and
+social sciences---are interested in how these severe storms impact humans.
+However, while there is often a wealth of physical exposure data collected for a
+storm, it is not always straightforward to integrate these physical exposure
+measurements with data characterizing human impacts. A particular challenge is
+that the resolution of physical exposure and human impact datasets---both in
+terms of spatial resolution and temporal resolution---often differ for
+measurements of outcomes among humans compared to the resolutions typically used
+in measuring physical exposure data.
+
+In this paper, we will provide examples of how tropical cyclone exposure data
+can be misaligned, or require aggregation, both spatially and temporally to
+allow them to be integrated with data characterizing human impacts of the storm.
+Further, we will go through several common temporal and spatial resolutions in
+which outcome data from past studies of the human outcomes of tropical cyclones
+in the United States have been available. We will discuss how differences in
+resolution between exposure and outcome datasets can create challenges in
+measuring and inferring the association between tropical cyclone exposure and
+human impacts, including potential biases and reduced precision in estimates of
+these associations. We will finish by discussing tools and challenges in
+integrating exposure and outcome datasets in the face of these differences in
+resolution in the original data and paths forward in resolving these challenges.
+
+# Implications of not improving this integration
+
+Differences in resolution between exposure and outcome datasets can create
+challenges in measuring and inferring the association between tropical cyclone
+exposure and human impacts. When studying the econonomic, social, and health
+impacts that tropical storms and hurricanes have in places such as the Gulf
+Coast of the United States, it is important to select an appropriate spatial and
+temporal scale in order to adequately classify exposure. Mis-matches in the
+spatial and temporal scale of exposure data versus outcome data can create
+challenges when measuring and inferring associations between tropical cyclone
+exposures and human impacts. Two potential implications are that this mis-match
+can introducing bias in estimated associations and that it can reduce precision
+in estimates of those associations.
+
+*Misclassification error / measurement error.*
+One pathway for problems is through misclassification / measurement error bias.
+Failure to classify exposure accurately allows misclassification bias to move
+the results of the study further from the true parameter (for example,
+classifying certain observations as exposed to a storm when they really 
+were not, or vice-versa). [Add a clarification of misclassification error 
+versus measurement error---basically depdens on whether you're measuring 
+exposure in categories, like exposed / unexposed, or if you're measuring
+it as a continuous value, like level of air pollution on a given day.] 
+
+*Non-differential misclassification error.*
+Environmental epidemiology studies are often
+prone to non-differential misclassification error, which will [in all
+cases---BA: this is actually not true I think---we can discuss] bias the results
+towards the null [@armstrong1998effect]. In effect, this will weaken or obscure
+any associations that are present that the researcher may hope to observe in the
+data [@armstrong1998effect]. [Add an example from tropical cyclone impacts
+studies of a case where you might get non-differential misclassification
+error.]
+
+*Differential misclassification error.*
+[Define differential misclassification error.]
+[Add an example from tropical cyclone impacts
+studies of a case where you might get non-differential misclassification
+error.]
+
+# Common resolutions for human impacts outcome data
+
+We conducted a literature review to investigate the different spatial and temporal scales that were most commonly used by researchers studying tropical storm and hurricane impacts on health, ecology, and economic systems in affected areas. Spatially, the most common units tended to be the county and state level, while the temporal scale ranged from days to weeks to cumulative measures across storm events. 
+
+## Spatial Scales
+
+Data measuring human impacts often represents things that happened to 
+individuals, and often happened at a specific geographical location. 
+In human impacts studies, such outcomes occasionally are available at 
+the individual level. However, often the data are not available individually, 
+but instead as aggregations, often aggregated based on geopolitical boundaries.
+In this section, we describe some common spatial resolutions for
+outcome data from previous research on the human impacts of tropical cyclones
+in the United States. 
 
 ### Point Location
 
-Point locations are the smallest resolution of spatial data used to assess the exposure to tropical storms and hurricanes. The obvious advantage of a point location is that when mapped it can be overlayed with data on storm patterns to gage a very accurate picture of exposure. Since storm tracks are often spatially represented by the path of storm's center, having point locations for the exposed units of interest means that you can more accurately measure how close they were to the center of the storm, and then further make conclusions based on this. 
+[BA: Let's think some about the order we want for these sections. We're making
+several good points / analysis here. First, we're defining what we mean by the
+resolution ("point location" here). We probably want to start with that. Then we
+have some examples for studies that have had outcome data at this resolution.
+Maybe that could go next, to help illustrate the definition we've given. We've
+got some information on *how* the data at this scale was collected (e.g.,
+geocoding from addresses reported from the study subjects), which I think is
+really interesting. Finally, we're got some text that talks about how data at
+this resolution could be integrated with some main formats of exposure data. We
+might want to end with that (or maybe even, as we work on this draft, that might
+go into a different section of the paper).]
+
+Point locations are the smallest resolution of spatial data used to assess the exposure to tropical storms and hurricanes, as they represent the specific location
+of individual, non-aggregated observations on the outcome of interest. The obvious advantage of a point location is that when mapped it can be overlayed with physical exposure data on a storm or storms to gage a very accurate picture of exposure, 
+taking full advantage of high resolution in the exposure data. Since storm tracks are often spatially represented by the path of storm's center, having point locations for the exposed units of interest means that you can more accurately measure how close each observation was to the storm's central track, and then further make conclusions based on this. Similarly, point locations can be 
+integrated in a straightforward way with gridded exposure data, as might
+result from re-analysis datasets or ... [check with James Done about this], as
+each point location can be assigned the exposure level of the closest gridded
+measurement.
 
 In many cases the point location was assessed by collecting information on the study subject's residential address through some sort of a survey [@lieberman2017self], [@jaycox2010children],[@bayleyegn2006rapid]. These surveys were often designed to assess psychological needs of hurricane survivors, as well as medical, financial, and nutritional needs. In other cases, point locations were recorded using a GPS device that recorded actual coordinates [@hagy2006effects]. This is a pretty common practice in ecological research. 
 
 ### Zip Code/County/Parish
 
-While Point locations are very useful, many of the papers cited used larger geographic areas to denote spatial exposure to storms. Zip codes [@bevilacqua2020understanding],[@lane2013health], are often used to aggregate groups of people living in a given area, as are counties [@kinney2008autism], [@grabich2016hurricane], [@grabich2016measuring], [@schwartz2018preliminary], [@harville2010population]. There are several disadvantages and pitfalls to using this spatial level. One is that not all counties and zip codes(which are called parishes in Louisiana) are the same size or have the same population, so they may not be immediately comparable. Using the county/parish or zip code also lends itself to the possibility of exposure misclassification. There are many ways that this can occur in a study on tropical storms; one common example is that counties selected as exposed are those that had the center of the storm pass through their county's physical boundaries. However it is very possible that some individuals lived in a county that was classified as exposed based on this criteria but were in a region of the county far enough away from the storm center that they were not severely impacted. That means these individuals would be classified as exposed when they really were not and it could bias the association towards the null if one existed. Alternatively, individuals who lived in a county that wasn't classified as exposed but were near the border of a county that was could be incorrectly categorized as being unexposed even if they actually experienced many of the effects of the storm. 
+While point locations are very useful, many of the papers cited used larger geographic areas to denote spatial exposure to storms. Zip codes [@bevilacqua2020understanding],[@lane2013health], are often used to aggregate groups of people living in a given area, as are counties [@kinney2008autism], [@grabich2016hurricane], [@grabich2016measuring], [@schwartz2018preliminary], [@harville2010population]. There are several disadvantages and pitfalls to using this spatial level. One is that not all counties and zip codes(which are called parishes in Louisiana) are the same size or have the same population, so they may not be immediately comparable. Using the county/parish or zip code also lends itself to the possibility of exposure misclassification. There are many ways that this can occur in a study on tropical storms; one common example is that counties selected as exposed are those that had the center of the storm pass through their county's physical boundaries. However it is very possible that some individuals lived in a county that was classified as exposed based on this criteria but were in a region of the county far enough away from the storm center that they were not severely impacted. That means these individuals would be classified as exposed when they really were not and it could bias the association towards the null if one existed. Alternatively, individuals who lived in a county that wasn't classified as exposed but were near the border of a county that was could be incorrectly categorized as being unexposed even if they actually experienced many of the effects of the storm. 
 
 ### State/Metropolitan Region
 
 Many studies used the spatial level of entire states or specific metropolitan areas to gather information on those who were exposed. This is the spatial level of an ecological study and can be useful to compare the emergency preparedness and policies of different states. The potential for the ecological bias is of course present when looking at this spatial scale however, which occurs when the outcomes on the population level (typically an average), do not represent the individual outcomes very well. 
 
-# Temporal Scales
+## Temporal Scales
 
 ### Week
 
@@ -40,8 +139,21 @@ Many of the studies looked at didn't assess exposure at the moment of the storm,
 
 
 
+# Terms
 
+These are terms we're using right now that we might want to iterate on, 
+in conjunction with our colleagues on the project, to make sure we have
+terms that are precise and consistent across the document: 
 
+- **physical exposure data**: By this, we mean things that are measured
+about the storm like wind speed, rainfall, measures of flooding, and other
+things that might be considered more in the realm of what an atmospheric
+scientist or engineer might measure about the storm. We're contrasting 
+this with data that for human impacts studies on outcomes among humans
+(e.g., pregnancy outcomes, economic outcomes like unemployment)
+- **resolution**: We're using this right now to talk about spatial and
+temporal levels of aggregation. Sometimes, we're using "scales" instead, I 
+think.
 
 
 
