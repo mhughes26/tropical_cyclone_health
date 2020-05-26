@@ -374,7 +374,7 @@ housing and fromsheltering in place.Mental health problems were some of the most
 
 # [@schwartz2018preliminary]
 
-This study investigated the mental health needs of Houston residents
+This study investigated the mental health needs of Houston residents in the aftermath of Hurricane Harvey in 2017.
 
 ## Spatial Scale:
 
@@ -390,63 +390,53 @@ This study investigated the mental health needs of Houston residents
 
 ## Results/Outcomes:
 
+- Overall Hurricane Harvey was positively associated with mental health outcomes especially PTSD and anxiety in Houston residents. 
+- Displacement was associated with a higher risk of PTSD and depression. 
+- A positive association between perceived exposure to chemicals and toxins was also associated with an increased risk of PTSD and depression 3 weeks after Hurricane Harvey. 
+
+
 # [@pugatch2019tropical]
 
-This study investigated ... [how tropical cyclone exposure was associated with 
-risk of mortality?]
+This study used objective meteorological data and vital statistics records to quantify the effects of tropical storm frequency and mortality in Mexico.
 
 ## Spatial Scale:
 
-- "I use data on tropical storm exposure and mortality in all 31
-Mexican states, plus Mexico City, for each month during 1990--2011 (I chose the starting period based on the availability of microdata
+- "I use data on tropical storm exposure and mortality in all 31, Mexican states, plus Mexico City, for each month during 1990--2011 (I chose the starting period based on the availability of microdata
 on mortality). " [@pugatch2019tropical]
-- What scale were the deaths? By state? Or by something similar to county? Or 
-did they have the exact location of each death?
+- Deaths came from the Mexican state level. 
+- "Mortality data are from the universe of Mexican Vital Statistics records. Beginning with 10.3 million individual recorded deaths, I aggregate by state, month, and year. To construct mortality rates, I divide the deaths in each state-month-year cell by the population in that cell, using the Mexican Census from 1990, 2000, and 2010 and the Mexican Conteo (a large population survey conducted
+between Census years, comparable to the American Community Survey) from 1995 and 2005. I assume constant population growth to impute population values between surveys, and annualize monthly mortality rates by multiplying by 12." [pugatch2019tropical]
+
+```{r echo = FALSE, out.width="0.4\\textwidth", fig.align="center", fig.cap="Example of how exposure to tornadoes was assesses in Christopher (2017) for counties."}
+knitr::include_graphics("figures/mexican_tropical_storm_states.PNG")
+```
 
 ## Temporal scale
 
-- I would assume they have the date of each death, and that's what they're pairing
-up with the hurricane exposure? Or do they have something coarser-scale, like month
-of death or year of death?
+- Deaths are aggregated by month and year in each Mexican state. The deaths are then divided by the population using the Mexican census in 1990, 2000, and 2010.
+- Storms are also recorded by month. 
 
 ## Exposure:
 
-- "I use windspeed data on tropical storms originating in the
-Atlantic and eastern North Pacific oceans (the regions relevant to
-Mexico), available from the National Oceanic and Atmospheric
-Administration (NOAA) Tropical Prediction Center, a U.S. government
-agency. NOAA analyzes data from reconnaissance aircraft,
-ships, and satellites to create ``best tracks'' of individual storms:
-positions (latitude and longitude) of storm centers at 6-hourly
-intervals, combined with intensity information (windspeed and
-barometric pressure; Jarvinen, Neumann, & Davis, 1993; Davis,
-Brown, & Preston, 1984; Chu, Sampson, Levine, & Fukada, 2002).
-Complete records for both ocean regions are available since 1949.
-Fig. 1 maps storm best tracks making landfall in Mexico" [@pugatch2019tropical]
-- Can we tell if they're using the central intensity of the storm (what you'd 
-get with the Best Tracks data), or if they're somehow estimating the windspeed
-at the location of each death (or whatever aggregation they have)?
-- "I create an index to measure storm severity by
-incorporating two elements, windspeed and population density" [@pugatch2019tropical]
+- "I use windspeed data on tropical storms originating in the Atlantic and eastern North Pacific oceans (the regions relevant to Mexico), available from the National Oceanic and Atmospheric
+Administration (NOAA) Tropical Prediction Center, a U.S. government agency. NOAA analyzes data from reconnaissance aircraft, ships, and satellites to create ``best tracks'' of individual storms: positions (latitude and longitude) of storm centers at 6-hourly intervals, combined with intensity information (windspeed and barometric pressure; Jarvinen, Neumann, & Davis, 1993; Davis, Brown, & Preston, 1984; Chu, Sampson, Levine, & Fukada, 2002). Complete records for both ocean regions are available since 1949. Fig. 1 maps storm best tracks making landfall in Mexico" [@pugatch2019tropical]
+- The researchers divided Mexico into a series of grids and used storm best track data, which is a model of windspeed decay from the hurricane eye by predicting the radius of the hurricane, found the distance between each affected gridpoint and the nearest point along the storm best track, then finally inserting the predcited windspeed to calculate the storm index for the affected point. 
+- "I create an index to measure storm severity by incorporating two elements, windspeed and population density" [@pugatch2019tropical]
 
 
 # [@jaycox2010children]
 
-New Orleans schoolchildren were participated in a trial and assessment of an intervention after Hurricane Katrina. Group intervention at school and individual intervention at a clinic were the two options. Both treatments led to a reduction in symptoms of PTSD, but there were still elevated levels of PTSD even post treatment. 
+New Orleans schoolchildren participated in a trial and assessment of an intervention after Hurricane Katrina. Group intervention at school and individual intervention at a clinic were the two options. Both treatments led to a reduction in symptoms of PTSD, but there were still elevated levels of PTSD even post treatment. 
 
 ## Spatial Scale
 
 - Three schools in New Orleans participating in Project Fleur-de-Lis.
-- I assume they have the point location (address, for example) for each school?
+- Point location used - the student's homes were identified. 
 
 ## Temporal Scale
 
 - Interventions began 15 months after Hurricane Katrina.
-- "Students were assessed at baseline (December 2006--January
-2007), at 5 months (April--May 2007) and at 10 months
-(September--October 2007). The CBITS groups ran March to
-May 2007 and TF-CBT was implemented February to September,
-2007. This study only reports on the 10-month follow-up assessment
+- "Students were assessed at baseline (December 2006--January 2007), at 5 months (April--May 2007) and at 10 months (September--October 2007). The CBITS groups ran March to May 2007 and TF-CBT was implemented February to September, 2007. This study only reports on the 10-month follow-up assessment
 results." [@jaycox2010children]
 - For this, it sounds like a storm-wide assessment of intensity would be fine (wouldn't
 need finer time resolution)
@@ -454,8 +444,7 @@ need finer time resolution)
 ## Exposure
 
 - Exposure measured via self report by students using the Disaster Experience Questionnaire.
-- "For an overall exposure to hurricane experiences measure, we tallied experiences listed in the top panel of Table 2, for a total number of
-experiences per student." [@jaycox2010children]
+- "For an overall exposure to hurricane experiences measure, we tallied experiences listed in the top panel of Table 2, for a total number of experiences per student." [@jaycox2010children]
 - PTSD symptoms assessed using the Child PTSD Symptom Scale (a score greater than 11 is considered elevated symptoms).
 
 ## Results/Outcomes
@@ -466,13 +455,20 @@ experiences per student." [@jaycox2010children]
 
 # [@bourque2006weathering]
 
-This study investigated ...
-
-## Temporal Scale
+This paper is a review of all the mortalities and morbidities and psychological effects attributed to Hurricane Katrina and hurricanes prior to Katrina. Also looks at the information on evacuation plans and how effective they  have been. 
 
 ## Spatial Scale
 
+- Hurricanes as well as health impacts such as death, mental health outcomes, and morbidities were mainly only discussed on the state level, occasionally talking about particular Louisiana parishes when discussing Hurricane Katrina. 
+
+## Temporal Scale
+
+- This paper was a review and mainly lists major hurricanes prior to Katrina by year, sometimes mentioning the month they happened in. They cover Hurricanes Elena and Gloria (September 1985), Hugo (1989), Andrew (1992), Marilyn and Opal (1995), Georges (1998), Floyd (1999), Isabel (2003), the entire 2004 hurricane season, and Hurricane Katrina (2005).
+
+
 ## Exposure
+
+- Mortality, morbidities, infectious disease, vibrio infections, and psychological problems were mainly assessed at state levels and reported in the immediate aftermath of the hurricane in question.
 
 ## Results/Outcomes
 
@@ -482,7 +478,7 @@ This study investigated ...
 # [@harville2010population]
 
 - Low birth rates and preterm births were studied in Louisiana at three spatial levels: Orleans Parish (New Orleans), Region 1 (this includes Orleans Parish, and several others), and Louisiana as a whole. 
-- [Does this mean that the spatial scales are county, multi-county region, and state?]
+- Spatial scales are county, multi-county, and state.
 
 ## Temporal Scale
 
@@ -499,11 +495,11 @@ This study investigated ...
 
 ## Exposure
 
-- Exposure defined as giving birth in the two years after Hurricane Katrina
-- [Are all these births considered "exposed", or are some included in the study as controls?
-Are they looking at post-storm exposures as a risk factor for a period up to (and a little over)
-a year after the storm, for births two years after?]
-- [Do they have the dates of birth, or are all these births pooled together?]
+- Exposure defined as giving birth in the two years after Hurricane Katrina. 
+- "Frequency and rate (percentage) of birth outcomes and odds ratios (ORs) and 95% confidence intervals (CIs) were calculated comparing the year before and after and 2 years before and after
+Hurricane Katrina."[@harville2010population]
+- It looks as though the main exposure was giving birth after Hurricane Katrina. Four bins were created (13-24 months prior to Katrina, 12 months prior to Katrina, 12 months after Katrina, 13-24 months after Katrina). The birth outcomes of the latter two bins were compared to the birth outcomes of the first two bins.  
+- Births are pooled together.
 - [Based on this, probably cumulative storm-wide measurements and/or week resolution would be 
 helpful for the time resolution. If they're looking at storm-related exposures over a year
 after the storm, then maybe monthly exposure assessments would be helpful, too?]
@@ -513,12 +509,10 @@ after the storm, then maybe monthly exposure assessments would be helpful, too?]
 
 - Outcomes of interest were Low Birth Weight, and Preterm Birth. 
 - In Louisiana as a whole, rates of LBW rose in the two years after Hurricane Katrina, but rates of Preterm births did not.
-- Overall, Hurricane Katrina was not associated with an increase in the rates of LBW and preterm births, in some areas there was a reduction of these. This may be due to population changes though because the population at risk after the hurricane had a higher risk profile. [I'm not sure I follow the conclusion here---if the population changes
-led to a population with a higher risk profile, wouldn't we expect to see an increase (rather than no
-association)?]
+- Overall, Hurricane Katrina was not associated with an increase in the rates of LBW and preterm births, in some areas there was a reduction of these. This may be due to population changes though because after the hurricane the population giving birth was at lower risk.
 
 
-# [@ferdinand2005hurricane]
+# ???[@ferdinand2005hurricane]???
 
 - Hurricane Katrina led to a large number of people with uncontrolled hypertension and cardiovascular disease. Higher rates of high blood pressure are seen in African Americans than in whites, and the rates of controlled blood pressure in disadvantaged communities in Louisiana is very low. 
 
@@ -550,8 +544,7 @@ use other measurements or modeling?]
 
 - Outcomes of concern in this paper are hypertension and cardiovascular disease. 
 - "There is a 1.8x greater rate of fatal stroke, 1.5x greater rate of coronary heart disease and mortality, and a 4.2x greater rate of end-stage renal disease in this population." [@ferdinand2005hurricane]
-- [For the previous statement, what is the comparison group? Is this for those surveyed compared to the state or
-city on average? Or is it for people with flooding during the storm versus those without?]
+- [For the previous statement, what is the comparison group? Is this for those surveyed compared to the state or city on average? Or is it for people with flooding during the storm versus those without?]
 - "Only 52% of evacuees had health insurance at the time of the hurricane, and chronic conditions such as heart disease, hypertension, diabetes, and asthma were reported by 41% of the adults surveyed. Furthermore, 29% of evacuees reported having problems in obtaining their necessary prescription drugs." [@ferdinand2005hurricane]
 
 
