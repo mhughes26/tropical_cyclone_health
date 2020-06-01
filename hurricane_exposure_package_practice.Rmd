@@ -21,5 +21,13 @@ head(hurr_tracks)
 ```
 ```{r}
 map_counties(storm = "Floyd-1999", metric = "rainfall")
+map_counties(storm = "Katrina-2005", metric = "rainfall")
+map_counties(storm = "Katrina-2005", metric = "wind")
+map_counties(storm = "Katrina-2005", metric = "distance")
 ```
+```{r}
+map_distance_exposure(storm = "Sandy-2012", dist_limit = 75)
+map_distance_exposure(storm = "Katrina-2005", dist_limit = 10)
+```
+
 
