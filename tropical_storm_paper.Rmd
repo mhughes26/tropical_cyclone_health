@@ -1,6 +1,6 @@
 ---
 title: "Tropical Storm Paper"
-author: "Dr. Brooke Anderson & Matthew Hughes"
+author: "Brooke Anderson & Matthew Hughes"
 date: "May 25, 2020"
 output: pdf_document
 bibliography: bibliography.bib
@@ -56,10 +56,7 @@ in estimates of those associations.
 *Misclassification error / measurement error.*
 One pathway for problems is through misclassification / measurement error bias. Misclassification error occurs when exposure and outcome variables are measured in categories and the wrong category is assigned to a particular case/observation - for example when a case that is exposed is incorrectly categorized as unexposed. In the case of studying tropical storms, a common method of categorizing exposures is declaring a county or parish as exposed or unexposed based on whether or not the storm track went through the county. Failure to classify exposure accurately allows misclassification bias to move the results of the study further from the true parameter (for example,
 classifying certain observations as exposed to a storm when they really 
-were not, or vice-versa). Measurement error occurs when the variables being measured are continuous such as the amount of precipitation or the wind speed that was measured during a tropical cyclone. Often times these continuous variables can be dichotomized choosing a threshold value to divide these variables into binary categories, which then lends itself to the possibility of misclassification error. **[Add a clarification of misclassification error 
-versus measurement error---basically depdens on whether you're measuring 
-exposure in categories, like exposed / unexposed, or if you're measuring
-it as a continuous value, like level of air pollution on a given day.]**
+were not, or vice-versa). Measurement error occurs when the variables being measured are continuous such as the amount of precipitation or the wind speed that was measured during a tropical cyclone. 
 
 *Non-differential misclassification error.*
 Non-differential misclassification refers to misclassification of either the exposure or the outcome, that is unrelated to the other [@aschengrau2013essentials]. Environmental epidemiology studies are often prone to non-differential misclassification error, which will often, though not always *[in all
@@ -76,6 +73,20 @@ Differential misclassification error occurs when the misclassification of the ou
 ***[Add an example from tropical cyclone impacts
 studies of a case where you might get non-differential misclassification
 error.]***
+
+*Dichotomizing continuous exposure measurements*
+[BA: I think we want to talk about this as it's own thing. Even though it sometimes
+is related to the idea of exposure misclassification, it's got some other facets, like 
+that you're losing information by taking a continuous measurement and lumping it into
+two groups.]
+Sometimes, in research on the societal impacts of tropical cyclones, a binary 
+exposure classification (exposed / unexposed) will be made based on applying a threshold
+to a continuous metric related to hazards of the storm. For example, a county might
+be classified as exposed or unexposed to a storm based on whether it experienced local
+winds during the storm above a certain threshold (e.g., gale-force winds or higher).
+**[Add some more in this paragraph about what issues can crop up when assessing exposure
+in this way. I've added a subdirectory with some papers on this topic in the "papers"
+directory of this project.]**
 
 # Common resolutions for human impacts outcome data
 
