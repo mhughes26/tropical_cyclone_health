@@ -11,7 +11,7 @@ bibliography: bibliography.bib
 # Statement of key issue
 
 Extensive physical exposure data is often available for tropical cyclones
-at they near and cross communities in the United States. This data can come
+as they near and cross communities in the United States. This data can come
 both from established monitoring networks, like [NOAA network name?], but 
 also may result from data collection efforts during or after the storm by 
 atmospheric scientists and engineers seeking to characterize a specific storm.
@@ -43,7 +43,7 @@ resolution in the original data and paths forward in resolving these challenges.
 
 Differences in resolution between exposure and outcome datasets can create
 challenges in measuring and inferring the association between tropical cyclone
-exposure and human impacts. When studying the econonomic, social, and health
+exposure and human impacts. When studying the economic, social, and health
 impacts that tropical storms and hurricanes have in places such as the Gulf
 Coast of the United States, it is important to select an appropriate spatial and
 temporal scale in order to adequately classify exposure. Mis-matches in the
@@ -54,30 +54,28 @@ can introducing bias in estimated associations and that it can reduce precision
 in estimates of those associations.
 
 *Misclassification error / measurement error.*
-One pathway for problems is through misclassification / measurement error bias.
-Failure to classify exposure accurately allows misclassification bias to move
-the results of the study further from the true parameter (for example,
+One pathway for problems is through misclassification / measurement error bias. Misclassification error occurs when exposure and outcome variables are measured in categories and the wrong category is assigned to a particular case/observation - for example when a case that is exposed is incorrectly categorized as unexposed. In the case of studying tropical storms, a common method of categorizing exposures is declaring a county or parish as exposed or unexposed based on whether or not the storm track went through the county. Failure to classify exposure accurately allows misclassification bias to move the results of the study further from the true parameter (for example,
 classifying certain observations as exposed to a storm when they really 
-were not, or vice-versa). [Add a clarification of misclassification error 
+were not, or vice-versa). Measurement error occurs when the variables being measured are continuous such as the amount of precipitation or the wind speed that was measured during a tropical cyclone. Often times these continuous variables can be dichotomized choosing a threshold value to divide these variables into binary categories, which then lends itself to the possibility of misclassification error. **[Add a clarification of misclassification error 
 versus measurement error---basically depdens on whether you're measuring 
 exposure in categories, like exposed / unexposed, or if you're measuring
-it as a continuous value, like level of air pollution on a given day.] 
+it as a continuous value, like level of air pollution on a given day.]**
 
 *Non-differential misclassification error.*
-Environmental epidemiology studies are often
-prone to non-differential misclassification error, which will [in all
+Non-differential misclassification refers to misclassification of either the exposure or the outcome, that is unrelated to the other [@aschengrau2013essentials]. Environmental epidemiology studies are often prone to non-differential misclassification error, which will often, though not always *[in all
 cases---BA: this is actually not true I think---we can discuss] bias the results
-towards the null [@armstrong1998effect]. In effect, this will weaken or obscure
+towards the null [@armstrong1998effect]*. In effect, this will weaken or obscure
 any associations that are present that the researcher may hope to observe in the
-data [@armstrong1998effect]. [Add an example from tropical cyclone impacts
+data [@armstrong1998effect]. An example of a study that could be prone to this kind of bias is [@kinney2008autism] where Louisiana parishes were considered vulnerable to hurricane exposure based on whether or not the storm center passed through that parish. It is possible that the cases considered exposed based on living in these parishes were not in fact exposed since the storm may have passed through only a certain part of the parish. The study looked at hurricane exposure on the risk of autism, and because a diagnosis of autism likely doesn't depend on being classified as exposed to the hurricane or not, this kind of misclassification should it arise would be considered non-differential. **[Add an example from tropical cyclone impacts
 studies of a case where you might get non-differential misclassification
-error.]
+error.]**
 
 *Differential misclassification error.*
-[Define differential misclassification error.]
-[Add an example from tropical cyclone impacts
+Differential misclassification error occurs when the misclassification of the outcome depends on the misclassification of the exposure or vice versa [@aschengrau2013essentials]. Unlike non-differential misclassification, which often has the effect of moving the observed association or parameter towards the null, differential misclassification can move the observation in either direction. An example of differential misclassification in tropical cyclone impact studies can occur in self reported data such as in [@lieberman2017self] where study subjects were asked to report their own flooding exposure and also mental health symptoms of depression, anxiety, and PTSD. It is reasonable to believe that self perceived exposure to hurricane related flooding would also be associated with perceived negative mental health symptoms and thus contribute to differential misclassification error in this situation. 
+**[Define differential misclassification error.]**
+**[Add an example from tropical cyclone impacts
 studies of a case where you might get non-differential misclassification
-error.]
+error.]**
 
 # Common resolutions for human impacts outcome data
 

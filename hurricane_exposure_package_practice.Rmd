@@ -1,0 +1,15 @@
+---
+title: "Hurricane Exposure Practice"
+author: "Matthew Hughes"
+date: "May 30, 2020"
+output: pdf_document
+---
+
+```{r}
+library(tidyverse)
+library(drat)
+addRepo("geanders")
+install.packages("hurricaneexposuredata")
+library("hurricaneexposuredata")
+```
+
