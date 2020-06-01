@@ -8,8 +8,18 @@ output: pdf_document
 ```{r}
 library(tidyverse)
 library(drat)
-addRepo("geanders")
-install.packages("hurricaneexposuredata")
-library("hurricaneexposuredata")
+#addRepo("geanders")
+#install.packages("hurricaneexposuredata")
+
+```
+
+```{r}
+library(hurricaneexposure)
+library(hurricaneexposuredata)
+data("hurr_tracks")
+head(hurr_tracks)
+```
+```{r}
+map_counties(storm = "Floyd-1999", metric = "rainfall")
 ```
 
