@@ -71,11 +71,11 @@ studies of a case where you might get non-differential misclassification
 error.]**
 
 *Differential misclassification error.*
-Differential misclassification error occurs when the misclassification of the outcome depends on the misclassification of the exposure or vice versa [@aschengrau2013essentials]. Unlike non-differential misclassification, which often has the effect of moving the observed association or parameter towards the null, differential misclassification can move the observation in either direction. An example of differential misclassification in tropical cyclone impact studies can occur in self reported data such as in [@lieberman2017self] where study subjects were asked to report their own flooding exposure and also mental health symptoms of depression, anxiety, and PTSD. It is reasonable to believe that self perceived exposure to hurricane related flooding would also be associated with perceived negative mental health symptoms and thus contribute to differential misclassification error in this situation. 
-**[Define differential misclassification error.]**
-**[Add an example from tropical cyclone impacts
+Differential misclassification error occurs when the misclassification of the outcome is related to the misclassification of the exposure or vice versa [@aschengrau2013essentials]. Whereas non-differential misclassification often (though not always) has the effect of moving the observed association or parameter towards the null, differential misclassification can move the observation in either direction. Differential misclassification in tropical cyclone impact studies can occur in self reported data such as in [@lieberman2017self] where study subjects were asked to report their own flooding exposure and also mental health symptoms of depression, anxiety, and PTSD. It is reasonable to believe that self perceived exposure to hurricane related flooding would not be independent from perceived negative mental health symptoms and thus potentially contribute to differential misclassification error in this situation. 
+***[Define differential misclassification error.]***
+***[Add an example from tropical cyclone impacts
 studies of a case where you might get non-differential misclassification
-error.]**
+error.]***
 
 # Common resolutions for human impacts outcome data
 
@@ -106,15 +106,16 @@ this resolution could be integrated with some main formats of exposure data. We
 might want to end with that (or maybe even, as we work on this draft, that might
 go into a different section of the paper).]
 
-Point locations are the smallest resolution of spatial data used to assess the exposure to tropical storms and hurricanes, as they represent the specific location
-of individual, non-aggregated observations on the outcome of interest. The obvious advantage of a point location is that when mapped it can be overlayed with physical exposure data on a storm or storms to gage a very accurate picture of exposure, 
-taking full advantage of high resolution in the exposure data. Since storm tracks are often spatially represented by the path of storm's center, having point locations for the exposed units of interest means that you can more accurately measure how close each observation was to the storm's central track, and then further make conclusions based on this. Similarly, point locations can be 
+Point locations are the smallest resolution of spatial data used to assess the exposure to tropical storms and hurricanes, as they represent the specific location of individual, non-aggregated observations on the outcome of interest. In many cases the point location was assessed by collecting information on the study subject's residential address through some sort of a survey [@lieberman2017self], [@jaycox2010children],[@bayleyegn2006rapid]. These surveys were often designed to assess psychological needs of hurricane survivors, as well as medical, financial, and nutritional needs. For example in [@liberman2017self] the address was provided for New York City residents in a self reported manner to look at associations between mental health outcomes and flooding data. This residential address served as a point location that could be mapped and was compared to flooding data maps created by FEMA.  In other cases, point locations were recorded using a GPS device that recorded actual coordinates such as in [@hagy2006effects] where specific point locations were used to take water samples were taken to measure parameters of water quality such as salinity, temperature, dissolved oxygen, and turbidity compared before and after Hurricane Ivan in Pensacola Bay, Florida. This is a pretty common practice in ecological research because point locations distributed across a landscape can be used to observe patterns taking geography into account. Point locations are also advantageous when using satellite images in conjuction with analysis of hurricane impact as illustrated in [@bianchette2009ecological], where Landsat 5 images were used to compare vegetation damage by looking at specific trees at different elevations to assess the ecological impact of Hurricane Ivan. 
+
+The obvious advantage of a point location is that when mapped it can be overlayed with physical exposure data on a storm or storms to gage a very accurate picture of exposure, 
+taking full advantage of high resolution in the exposure data. Since storm tracks are often spatially represented by the path of the storm's center, having point locations for the exposed units of interest means that you can more accurately measure how close each observation was to the storm's central track, and then further make conclusions based on this. Similarly, point locations can be 
 integrated in a straightforward way with gridded exposure data, as might
 result from re-analysis datasets or ... [check with James Done about this], as
 each point location can be assigned the exposure level of the closest gridded
 measurement.
 
-In many cases the point location was assessed by collecting information on the study subject's residential address through some sort of a survey [@lieberman2017self], [@jaycox2010children],[@bayleyegn2006rapid]. These surveys were often designed to assess psychological needs of hurricane survivors, as well as medical, financial, and nutritional needs. In other cases, point locations were recorded using a GPS device that recorded actual coordinates [@hagy2006effects]. This is a pretty common practice in ecological research. 
+
 
 ### Zip Code/County/Parish
 
