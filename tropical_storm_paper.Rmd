@@ -74,19 +74,25 @@ Differential misclassification error occurs when the misclassification of the ou
 studies of a case where you might get non-differential misclassification
 error.]***
 
-*Dichotomizing continuous exposure measurements*
-[BA: I think we want to talk about this as it's own thing. Even though it sometimes
+# Dichotomizing continuous exposure measurements
+*[BA: I think we want to talk about this as it's own thing. Even though it sometimes
 is related to the idea of exposure misclassification, it's got some other facets, like 
 that you're losing information by taking a continuous measurement and lumping it into
-two groups.]
+two groups.]*
+
 Sometimes, in research on the societal impacts of tropical cyclones, a binary 
 exposure classification (exposed / unexposed) will be made based on applying a threshold
 to a continuous metric related to hazards of the storm. For example, a county might
 be classified as exposed or unexposed to a storm based on whether it experienced local
 winds during the storm above a certain threshold (e.g., gale-force winds or higher).
-**[Add some more in this paragraph about what issues can crop up when assessing exposure
-in this way. I've added a subdirectory with some papers on this topic in the "papers"
-directory of this project.]**
+
+There are several advantages to dichotomizing continuous variables, but the general consensus in epidemiology is not to do it. The reasons it is implemented are typically because it simplifies the data and allows for easier analysis and interpretation [@naggara2011analysis]. Additionally, it is very common in clinical settings to categorize continuous variables, for example hypertensive or not hypertensive, overweight or not overweight, dead or alive, etc. [@van2008leave]. 
+
+For the most part however, categorizing or dichotomizing continuous variables is not ideal. One largely noted reason why is that statistical power is lost because so much information is lost when categorization occurs [@van2008leave]. That 100 continuous observations or data points are statistically equivalent to at leaset 157 observations has been noted in several studies [@naggara2011analysis]. This makes sense when you consider that continuous variables allow you to observe nuance in the data and perceive a dose response relationship between the predictor and response variables, should one exist. This effect is masked when categorization occurs, and even more so when a smaller number of categorical variables are used (for example dichotomization itself at 2). Generally, if you are going to categorize continuous data, it is better to use 3 or more categories rather than just two. 
+
+Another obvious problem with categorizing continuous data is that the cutoff points are often arbitrary. In the case of dichotomization, the median is often used, but there is typically no reason to assume that the median is a reasonable cutoff point, and because different samples will have different medians, this automatically makes many categorical bins difficult to compare across studies [@altman2006cost]. Choose optimal cutoff points that give the smallest p-values are also not great as they lead to spurious results [@altman2006cost]. 
+
+Not surprisingly, as with exposure misclassification, dichotomizing continuous variables can bias results. A study by Selvin showed that the odds ratios can be significantly different depending on the chosen cutoff that is implemented in a study [@van2008leave]. Categorical variables also can put otherwise similar observations into separate bins if they are close but on opposite sides of the cutoff [@altman2006cost]. While the idea of using a median as a cutoff for example is to delineate a "high" and "low" group, two individual observations that may only be a fraction different but on either sides of the mean will be classified as high and low respectively and give the false impression that they are significantly different. 
 
 # Common resolutions for human impacts outcome data
 
