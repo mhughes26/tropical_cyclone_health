@@ -74,17 +74,14 @@ Differential misclassification error occurs when the misclassification of the ou
 studies of a case where you might get non-differential misclassification
 error.]***
 
-# Dichotomizing continuous exposure measurements
-*[BA: I think we want to talk about this as it's own thing. Even though it sometimes
-is related to the idea of exposure misclassification, it's got some other facets, like 
-that you're losing information by taking a continuous measurement and lumping it into
-two groups.]*
-
+*Dichotomizing continuous exposure measurements.*
 Sometimes, in research on the societal impacts of tropical cyclones, a binary 
 exposure classification (exposed / unexposed) will be made based on applying a threshold
 to a continuous metric related to hazards of the storm. For example, a county might
 be classified as exposed or unexposed to a storm based on whether it experienced local
 winds during the storm above a certain threshold (e.g., gale-force winds or higher).
+[BA: Can you add examples of human impacts studies that used a dichotomous exposure of 
+exposed / unexposed?]
 
 There are several advantages to dichotomizing continuous variables, but the general consensus in epidemiology is not to do it. The reasons it is implemented are typically because it simplifies the data and allows for easier analysis and interpretation [@naggara2011analysis]. Additionally, it is very common in clinical settings to categorize continuous variables, for example hypertensive or not hypertensive, overweight or not overweight, dead or alive, etc. [@van2008leave]. 
 
