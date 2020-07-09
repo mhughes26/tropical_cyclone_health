@@ -117,7 +117,7 @@ This study investigated the evolution of water quality in Pensacola Bay in Flori
 
 - Water quality surveys conducted at up to 15 sites located on two transects within the Pensacola Bay system. These sample site shad recorded Latitude and Longitudinal coordinates. 
 
-```{r echo = FALSE, out.width="0.4\\textwidth", fig.align="center", fig.cap="Example of how exposure to tornadoes was assesses in Christopher (2017) for counties."}
+```{r echo = FALSE, out.width="0.4\\textwidth", fig.align="center"}
 knitr::include_graphics("figures/pensacola_bay_survey_sites.PNG")
 ```
 
@@ -317,7 +317,7 @@ the day), while the FEMA disaster declarations will be a single, storm-long meas
 
 - Hurricane disaster exposure 3 methods, FEMA Presidential disaster declarations, spatial data on specific storm trajectory (storm tracks with a symmmetrical buffer around them), novel meteorological measure based on Saffir-Simpson hurricane intensity scale [i.e., including 
 wind speeds experienced locally].
-```{r echo = FALSE, out.width="0.4\\textwidth", fig.align="center", fig.cap="Example of how exposure to tornadoes was assesses in Christopher (2017) for counties."}
+```{r echo = FALSE, out.width="0.4\\textwidth", fig.align="center"}
 knitr::include_graphics("figures/grabich_hurricane_exposure_methods.PNG")
 ```
 
@@ -407,7 +407,7 @@ on mortality). " [@pugatch2019tropical]
 - "Mortality data are from the universe of Mexican Vital Statistics records. Beginning with 10.3 million individual recorded deaths, I aggregate by state, month, and year. To construct mortality rates, I divide the deaths in each state-month-year cell by the population in that cell, using the Mexican Census from 1990, 2000, and 2010 and the Mexican Conteo (a large population survey conducted
 between Census years, comparable to the American Community Survey) from 1995 and 2005. I assume constant population growth to impute population values between surveys, and annualize monthly mortality rates by multiplying by 12." [pugatch2019tropical]
 
-```{r echo = FALSE, out.width="0.4\\textwidth", fig.align="center", fig.cap="Example of how exposure to tornadoes was assesses in Christopher (2017) for counties."}
+```{r echo = FALSE, out.width="0.4\\textwidth", fig.align="center"}
 knitr::include_graphics("figures/mexican_tropical_storm_states.PNG")
 ```
 
@@ -591,11 +591,11 @@ passing directly through the county?)]
 - Response variables of interest included birth weight, preterm birth, infant mortality, and mode of delivery.
 - Exposure to hurricanes increased odds of low birth weight and also increased risk for preterm birth, however it wasn't shown to have a significant association with increased infant mortality. 
 
-```{r echo = FALSE, out.width="0.4\\textwidth", fig.align="center", fig.cap="Example of how exposure to tornadoes was assesses in Christopher (2017) for counties."}
+```{r echo = FALSE, out.width="0.4\\textwidth", fig.align="center"}
 knitr::include_graphics("figures/Tracking_The_Tornadoes_Paths_in_Alabama.PNG")
 ```
 
-```{r echo = FALSE, out.width = "0.4\\textwidth", fig.align = "center", fig.cap = "Second Figure."}
+```{r echo = FALSE, out.width = "0.4\\textwidth", fig.align = "center"}
 knitr::include_graphics("figures/Birmingham_Tuscaloosa_Tornado_Track.PNG")
 ```
 
