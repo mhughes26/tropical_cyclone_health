@@ -43,7 +43,7 @@ Differential misclassification error occurs when the misclassification of the ou
 ***[Define differential misclassification error.]***
 ***[Add an example from tropical cyclone impacts
 studies of a case where you might get non-differential misclassification
-error.]***
+error.]*** Test for push
 
 *Dichotomizing continuous exposure measurements.*
 Sometimes, in research on the societal impacts of tropical cyclones, a binary 
