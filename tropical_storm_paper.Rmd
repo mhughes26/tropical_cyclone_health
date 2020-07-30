@@ -1,5 +1,5 @@
 ---
-title: "Tropical Storm Paper"
+title: "Challenges of Integrating Physical Exposure and Human Impacts Data in Tropical Cyclone Studies"
 author: "Brooke Anderson & Matthew Hughes"
 date: "May 25, 2020"
 output: pdf_document
