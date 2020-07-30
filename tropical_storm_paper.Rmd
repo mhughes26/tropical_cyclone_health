@@ -2,17 +2,21 @@
 title: "Tropical Storm Paper"
 author: "Brooke Anderson & Matthew Hughes"
 date: "May 25, 2020"
-output: pdf_document
+output: word_document
 bibliography: bibliography.bib
 ---
 
 
 
-# Statement of key issue
+# Introduction
 
-Extensive physical exposure data is often available for tropical cyclones as they near and cross communities in the United States. This data can come both from established monitoring networks, like [NOAA network name?], but also may result from data collection efforts during or after the storm by atmospheric scientists and engineers seeking to characterize a storm. Researchers studying the human impacts of these storms, including epidemiologists, economists, and social scientists are interested in this data as well, but it is often unavailable in a way that is accessible for them to use. Resolving physical exposure and human impact datasets is challenging because the human impact measurements and physical exposure data do not have congruent resolutions. 
+Tropical cyclones are a pervasive threat to communities across the Eastern and Southern United States, particularly around the Gulf Coast. The term tropical cyclone encompasses hurricanes as well as tropical storms and tropical depressions. The destructive nature of tropical cyclones creates an imperative to study their human impacts, which can include property damage, monetary loss, and negative health outcomes. 
+
+Extensive physical exposure data is often available for tropical cyclones as they near and cross communities in the United States. This data can come both from established monitoring networks, like [NOAA network name?], but may also result from data collection efforts during or after the storm by atmospheric scientists and engineers seeking to characterize a storm. Researchers studying the human impacts of these storms, including epidemiologists, economists, and social scientists are interested in this data as well, but it is often unavailable in a way that is accessible for them to use. Resolving physical exposure and human impact datasets is challenging because the human impact data and physical exposure data do not have congruent resolutions. 
 
 Here we explore cases and implications of integrating data at different temporal and spatial scales, focusing as an example on human impact studies of tropical cyclones in the US. United States, Tropical Cyclones(econompasses hurricanes, tropical storms and tropical depressions), and Human Impacts. 
+
+Spatial and temporal misalignment is a problem that researchers run into when integrating data from human impact studies with physical exposure data. For example, physical exposure data on windspeed may have a very fine resolution, possibly down to seconds or minutes, while data on birth outcomes may be at a temporal scale of weeks or even months. Some of the reasons for this are practical. There are several reasons for these discrepencies. Often physical exposure data is recorded at monitoring systems that are designed to automatically record a data point at a fixed interval of time, and human impact data on health or socioeconomic status comes from administrative sources that collect data on certain scales. Another factor that drives spatial and temporal misalignment between physical exposure data and human impacts data is privacy. Physical exposure data  is impersonal and can often represent a very specific temporal and spatial point, whereas human impacts data is often aggregated to preserve the anonymity and privacy of study subjects. 
 
 *Claim 1*
 [We are making a claim that these problems of integration are happening. Tropical cyclone studies on human impacts often require integration of data at different temporal and spatial scales. So some extent this is unavoidable. Measurement error might come into this.]
