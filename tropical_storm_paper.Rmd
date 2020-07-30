@@ -14,7 +14,6 @@ Tropical cyclones are a pervasive threat to communities across the Eastern and S
 
 Extensive physical exposure data is often available for tropical cyclones as they near and cross communities in the United States. This data can come both from established monitoring networks, like [NOAA network name?], but may also result from data collection efforts during or after the storm by atmospheric scientists and engineers seeking to characterize a storm. Researchers studying the human impacts of these storms, including epidemiologists, economists, and social scientists are interested in this data as well, but it is often unavailable in a way that is accessible for them to use. Resolving physical exposure and human impact datasets is challenging because the human impact data and physical exposure data do not have congruent resolutions. 
 
-
 Here we explore cases and implications of integrating data at different temporal and spatial scales, focusing as an example on human impact studies of tropical cyclones in the US. Spatial and temporal misalignment is a problem that researchers run into when integrating data from human impact studies with physical exposure data. For example, physical exposure data on windspeed may have a very fine resolution, possibly down to seconds or minutes, while data on birth outcomes may be at a temporal scale of weeks or even months. 
 
 Some of the reasons for this are practical. Often physical exposure data is recorded at monitoring systems that are designed to automatically record a data point at a fixed interval of time. Human impact data on health or socioeconomic status comes from administrative sources that collect data on certain scales. Different sources of data naturally beget differences in data resolution. Another factor that drives spatial and temporal misalignment between physical exposure data and human impacts data is privacy. Physical exposure data  is impersonal and can often represent a very specific temporal and spatial point, whereas human impacts data is often aggregated to preserve the anonymity and privacy of study subjects. 
@@ -23,34 +22,64 @@ The study question that researchers ask may also drive the choice of spatial and
 
 Another factor that drives spatial and temporal misalignment in tropical cyclone studies is that researchers studying human impacts often do not collect the physical exposure data themselves. Instead they get this data from large sources of secondary data such as the National Hurricane Center Data Archive from NOAA (National Oceanic and Atmospheric Administration) and the NWS (National Weather Service). 
 
-*Claim 1*
-[We are making a claim that these problems of integration are happening. Tropical cyclone studies on human impacts often require integration of data at different temporal and spatial scales. So some extent this is unavoidable. Measurement error might come into this.]
-*Subclaim 1*
-There are a few factors that drive these differences in scale.
-*Sub-sub claim 1*These mismatches often result from practical reasons (administrative data collected at certain scales, weather data is already recorded from monitoring systems at fixed sensors, gridded weather products. Human impacts - aggregation is often due to privacy issues, negating the use of point sources.)[Anything where the data was not collected by the researchers, data from big databases in existence already (secondary sources)].
-*Sub-sub claim 2*
-Spatial and temporal scale may be driven by study question*
-*Subclaim 2* 
-Certain scales show up a lot for outcome data. Repeated scales are not the same for physical and human impacts.
-*Subclaim 3*
-These differences in scale can show up on both the spatial and temporal level. 
+A review of the literature on human impacts of tropical cyclone shows that certain spatial and temporal scales show up more frequently than others. Spatially, county level and zip code level data are frequently used to aggregate health outcomes and other human impacts. Temporal scales for human impact studies are often cumulative measures of time. This is in contrast to physical exposure data which is often spatially at the point location level, and temporally at a very fine resolution down to minutes and seconds. 
+
+In this paper, we will illustrate some some of the situations where various spatial and temporal levels of physical exposure data are used, using examples from the literature. These examples will demonstrate different ways that researchers have integrated physical exposure data with human impacts data. We will discuss how differences in
+resolution between physical exposure and human impact datasets can create challenges in measuring and inferring the association between tropical cyclone exposure and human impacts. Finally, we will explore some of the implications of integrating these different types of data. 
+
+# Spatial Scales
+
+The spatial scale that a researcher uses varies depending on the data available or sampling method used. In human impacts data finer spatial scales will correspond more often to individuals or households, while larger spatial scales will correspond to regions, states, or even countries. Physical exposure data is often at a small point location or a grid, based on where weather monitoring sensors are placed. In the following section we will outline the most common spatial scales used in tropical cyclone studies and include some examples from the literature where they were employed. 
+
+### Point Location
+
+[BA: Let's think some about the order we want for these sections. We're making
+several good points / analysis here. First, we're defining what we mean by the
+resolution ("point location" here). We probably want to start with that. Then we
+have some examples for studies that have had outcome data at this resolution.
+Maybe that could go next, to help illustrate the definition we've given. We've
+got some information on *how* the data at this scale was collected (e.g.,
+geocoding from addresses reported from the study subjects), which I think is
+really interesting. Finally, we're got some text that talks about how data at
+this resolution could be integrated with some main formats of exposure data. We
+might want to end with that (or maybe even, as we work on this draft, that might
+go into a different section of the paper).]
+
+Point locations are the smallest resolution of spatial data used to assess the exposure to tropical storms and hurricanes, as they represent the specific location of individual, non-aggregated observations on the outcome of interest. In many cases, researchers collect information on the study subject's residential address through some sort of a survey to assess point location  [@lieberman2017self], [@jaycox2010children],[@bayleyegn2006rapid]. These surveys are often designed to assess psychological needs of hurricane survivors, as well as medical, financial, and nutritional needs. For example in [@liberman2017self], New York City residents provided their address in a self reported manner to look at associations between mental health outcomes and flooding data. This residential address served as a point location that could be mapped and was compared to flooding data maps created by FEMA.  In other cases, a GPS device is used to record coordinates that mark a specific point locations. An example is [@hagy2006effects], where specific point locations were used to take water samples were taken to measure parameters of water quality such as salinity, temperature, dissolved oxygen, and turbidity compared before and after Hurricane Ivan in Pensacola Bay, Florida. This is a common practice in ecological research because point locations distributed across a landscape can be used to observe patterns taking geography into account. Point locations are also advantageous when using satellite images in conjuction with analysis of hurricane impact as illustrated in [@bianchette2009ecological], where Landsat 5 images were used to compare vegetation damage, by looking at specific trees at different elevations to assess the ecological impact of Hurricane Ivan. 
+
+The obvious advantage of a point location is that when mapped, it can be overlayed with physical exposure data on a storm or storms to gage a very accurate picture of exposure, 
+taking full advantage of high resolution in the exposure data. Since storm tracks are often spatially represented by the path of the storm's center, having point locations for the exposed units of interest allows researchers to more accurately measure how close each observation was to the storm's central track, and make further conclusions on this. Similarly, point locations can be integrated in a straightforward way with gridded exposure data, as might
+result from re-analysis datasets or ... [check with James Done about this], as
+each point location can be assigned the exposure level of the closest gridded
+measurement.
+
+[Once we give examples, we should talk about what level the physical exposure data was recorded as. Did it line up exactly? Grided data. Some studies avoid the problem by creating a proxy (ex: dist from the storm track).]
+
+### Zip Code/County/Parish
+
+While point locations are very useful, many of the papers cited used larger geographic areas to denote spatial exposure to storms. Zip codes [@bevilacqua2020understanding],[@lane2013health], are often used to aggregate groups of people living in a given area. Counties are at a higher aggregation level than zip codes [@kinney2008autism], [@grabich2016hurricane], [@grabich2016measuring], [@schwartz2018preliminary], [@harville2010population]. Often these levels seem to be used when a specific metropolitan area is being looked at, such as New York City after Hurricane Sandy [@lane2013health], and Houstan after Hurricane Harvey [@schwartz2018preliminary]. The county level is a convenient method to use the storm path of the hurricane to quickly categorize exposed areas as in [@grabich2016measuring]. 
+
+There are several disadvantages and pitfalls to using this spatial level. For one, not all counties and zip codes(which are called parishes in Louisiana) are the same size or have the same population, so they may not be immediately comparable. Using the county/parish or zip code makes it easier for researchers to misclassify exposure. There are many ways that this can occur in a study on tropical storms; one common example is that counties selected as exposed are those that had the center of the storm pass through their county's physical boundaries. However it is very possible that some individuals lived in a county classified as exposed based on this criteria, but were in a region of the county far enough away from the storm center that they were not severely impacted. These individuals would be classified as exposed when they really were not and it could bias an apparetn association towards the null. Alternatively, individuals who lived in a unexposed county, but were near the border of an exposed county could be incorrectly categorized as being unexposed even if they actually experienced many of the effects of the storm. 
+
+### State/Metropolitan Region
+
+Many studies used the spatial level of entire states or specific metropolitan areas to gather information on those who were exposed. [@harville2010population] is an interesting paper because it looks at the state level as well as the regional and parish level. In this paper researchers observed birth outcomes in response to Hurricane Katrina in the state of Louisiana as a whole, the New Orleans metropolitan area, and Orleans parish, which is the heart of New Orleans. Looking at these three levels is a way to compare different incident rates and other measures of associations across different spatial scales. 
+
+The state or national level is the spatial level of an ecological study and can be useful to compare the emergency preparedness and policies of different states. The potential for the ecological bias is of course present when looking at this spatial scale however, which occurs when the outcomes on the population level (typically an average), do not represent the individual outcomes very well. 
+
+# Temporal Scales
+
+### Week
+
+Week is a very common unit of time used to ascertain exposure, particularly for studies that are concerned with birth outcomes and gestation during hurricane exposure [@kinney2008autism], [@grabich2016hurricane], [@grabich2016measuring]. When the week of gestation is known, the timing that the hurricane makes landfall, or has its storm center pass through a county can be matched up to this week of gestation to identify possible "critical periods" of exposure during development. 
+
+### Cumulative Measures of Time
+
+Many of the studies looked at didn't assess exposure at the moment of the storm, but rather after it had done damage. 
 
 
-*Claim 2*
-[When you integrate this data, there are issues that arise: ecological bias, dichotomizing continuous variables, measurement error. Make sure to bring this back to us having to use different scales.].Add paragraph to explain how challenges come up. 
 
-In this paper, we will provide examples of how tropical cyclone exposure data
-can be misaligned, or require aggregation, both spatially and temporally to
-allow them to be integrated with data characterizing human impacts of the storm.
-Further, we will go through several common temporal and spatial resolutions in
-which outcome data from past studies of the human impacts of tropical cyclones
-in the United States have been available. We will discuss how differences in
-resolution between exposure and outcome datasets can create challenges in
-measuring and inferring the association between tropical cyclone exposure and
-human impacts, including potential biases and reduced precision in estimates of
-these associations. We will finish by discussing tools and challenges in
-integrating exposure and outcome datasets in the face of these differences in
-resolution in the original data and paths forward in resolving these challenges.
+
 
 # Implications of not improving this integration
 
@@ -112,60 +141,6 @@ An example of a study that could be prone to this kind of bias is [@kinney2008au
 
 We conducted a literature review to investigate the different spatial and temporal scals most commonly used by researchers studying tropical storm and hurricane impacts on health, ecology, and economic systems in affected areas. Spatially, the most common units tended to be the county and state level, while the temporal scale ranged from days to weeks to cumulative measures across storm events. 
 
-## Spatial Scales
-
-Data measuring human impacts often represents events that happened to 
-individuals, and often happened at a specific geographical location. 
-In human impacts studies, such outcomes are often measured and recorded at 
-the individual level, with a specific geographic point location. However, exposure data are often represented as aggregations, based on geopolitical boundaries. In this section, we describe some common spatial resolutions for
-outcome data from previous research on the human impacts of tropical cyclones
-in the United States. 
-
-### Point Location
-
-[BA: Let's think some about the order we want for these sections. We're making
-several good points / analysis here. First, we're defining what we mean by the
-resolution ("point location" here). We probably want to start with that. Then we
-have some examples for studies that have had outcome data at this resolution.
-Maybe that could go next, to help illustrate the definition we've given. We've
-got some information on *how* the data at this scale was collected (e.g.,
-geocoding from addresses reported from the study subjects), which I think is
-really interesting. Finally, we're got some text that talks about how data at
-this resolution could be integrated with some main formats of exposure data. We
-might want to end with that (or maybe even, as we work on this draft, that might
-go into a different section of the paper).]
-
-Point locations are the smallest resolution of spatial data used to assess the exposure to tropical storms and hurricanes, as they represent the specific location of individual, non-aggregated observations on the outcome of interest. In many cases, researchers collect information on the study subject's residential address through some sort of a survey to assess point location  [@lieberman2017self], [@jaycox2010children],[@bayleyegn2006rapid]. These surveys are often designed to assess psychological needs of hurricane survivors, as well as medical, financial, and nutritional needs. For example in [@liberman2017self], New York City residents provided their address in a self reported manner to look at associations between mental health outcomes and flooding data. This residential address served as a point location that could be mapped and was compared to flooding data maps created by FEMA.  In other cases, a GPS device is used to record coordinates that mark a specific point locations. An example is [@hagy2006effects], where specific point locations were used to take water samples were taken to measure parameters of water quality such as salinity, temperature, dissolved oxygen, and turbidity compared before and after Hurricane Ivan in Pensacola Bay, Florida. This is a common practice in ecological research because point locations distributed across a landscape can be used to observe patterns taking geography into account. Point locations are also advantageous when using satellite images in conjuction with analysis of hurricane impact as illustrated in [@bianchette2009ecological], where Landsat 5 images were used to compare vegetation damage, by looking at specific trees at different elevations to assess the ecological impact of Hurricane Ivan. 
-
-The obvious advantage of a point location is that when mapped, it can be overlayed with physical exposure data on a storm or storms to gage a very accurate picture of exposure, 
-taking full advantage of high resolution in the exposure data. Since storm tracks are often spatially represented by the path of the storm's center, having point locations for the exposed units of interest allows researchers to more accurately measure how close each observation was to the storm's central track, and make further conclusions on this. Similarly, point locations can be integrated in a straightforward way with gridded exposure data, as might
-result from re-analysis datasets or ... [check with James Done about this], as
-each point location can be assigned the exposure level of the closest gridded
-measurement.
-
-[Once we give examples, we should talk about what level the physical exposure data was recorded as. Did it line up exactly? Grided data. Some studies avoid the problem by creating a proxy (ex: dist from the storm track).]
-
-### Zip Code/County/Parish
-
-While point locations are very useful, many of the papers cited used larger geographic areas to denote spatial exposure to storms. Zip codes [@bevilacqua2020understanding],[@lane2013health], are often used to aggregate groups of people living in a given area. Counties are at a higher aggregation level than zip codes [@kinney2008autism], [@grabich2016hurricane], [@grabich2016measuring], [@schwartz2018preliminary], [@harville2010population]. Often these levels seem to be used when a specific metropolitan area is being looked at, such as New York City after Hurricane Sandy [@lane2013health], and Houstan after Hurricane Harvey [@schwartz2018preliminary]. The county level is a convenient method to use the storm path of the hurricane to quickly categorize exposed areas as in [@grabich2016measuring]. 
-
-There are several disadvantages and pitfalls to using this spatial level. For one, not all counties and zip codes(which are called parishes in Louisiana) are the same size or have the same population, so they may not be immediately comparable. Using the county/parish or zip code makes it easier for researchers to misclassify exposure. There are many ways that this can occur in a study on tropical storms; one common example is that counties selected as exposed are those that had the center of the storm pass through their county's physical boundaries. However it is very possible that some individuals lived in a county classified as exposed based on this criteria, but were in a region of the county far enough away from the storm center that they were not severely impacted. These individuals would be classified as exposed when they really were not and it could bias an apparetn association towards the null. Alternatively, individuals who lived in a unexposed county, but were near the border of an exposed county could be incorrectly categorized as being unexposed even if they actually experienced many of the effects of the storm. 
-
-### State/Metropolitan Region
-
-Many studies used the spatial level of entire states or specific metropolitan areas to gather information on those who were exposed. [@harville2010population] is an interesting paper because it looks at the state level as well as the regional and parish level. In this paper researchers observed birth outcomes in response to Hurricane Katrina in the state of Louisiana as a whole, the New Orleans metropolitan area, and Orleans parish, which is the heart of New Orleans. Looking at these three levels is a way to compare different incident rates and other measures of associations across different spatial scales. 
-
-The state or national level is the spatial level of an ecological study and can be useful to compare the emergency preparedness and policies of different states. The potential for the ecological bias is of course present when looking at this spatial scale however, which occurs when the outcomes on the population level (typically an average), do not represent the individual outcomes very well. 
-
-## Temporal Scales
-
-### Week
-
-Week is a very common unit of time used to ascertain exposure, particularly for studies that are concerned with birth outcomes and gestation during hurricane exposure [@kinney2008autism], [@grabich2016hurricane], [@grabich2016measuring]. When the week of gestation is known, the timing that the hurricane makes landfall, or has its storm center pass through a county can be matched up to this week of gestation to identify possible "critical periods" of exposure during development. 
-
-### Cumulative Measures of Time
-
-Many of the studies looked at didn't assess exposure at the moment of the storm, but rather after it had done damage. 
 
 
 
