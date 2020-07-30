@@ -136,10 +136,9 @@ Because studying tropical storm and hurricane exposures requires us to look at d
 
 An example of a study that could be prone to this kind of bias is [@kinney2008autism] where Louisiana parishes were considered vulnerable to hurricane exposure based on whether or not the storm center passed through that parish. It is possible that the cases considered exposed based on living in these parishes were not in fact exposed since the storm may have passed through only a certain part of the parish. Never the less, all cases in a parish are considered exposed or unexposed in the aggregate. 
 
+# Discussion
 
-# Common resolutions for human impacts outcome data
-
-We conducted a literature review to investigate the different spatial and temporal scals most commonly used by researchers studying tropical storm and hurricane impacts on health, ecology, and economic systems in affected areas. Spatially, the most common units tended to be the county and state level, while the temporal scale ranged from days to weeks to cumulative measures across storm events. 
+???
 
 
 
