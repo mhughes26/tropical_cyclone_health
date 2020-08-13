@@ -9,7 +9,7 @@ bibliography: bibliography.bib
 
 # Introduction
 
-Tropical cyclones---which encompasses hurricanes as well as tropical storms and tropical depressions---are a pervasive threat to communities across the Eastern and Southern United States. The destructive nature of tropical cyclones creates an imperative to study their human impacts, which can include property damage, monetary loss, and negative health outcomes. 
+Tropical cyclones---which encompasses hurricanes as well as tropical storms and tropical depressions---are a pervasive threat to communities across the Eastern and Southern United States. [Add 2--3 sentences more on how common these are in these areas (could find a good paper or two on that) as well as some examples of high destruction (may want to look at NOAA's docs on billion dollar disasters)] The destructive nature of tropical cyclones creates an imperative to study their human impacts, which can include property damage, monetary loss, and negative health outcomes. 
 
 Researchers have observed that in utero exposure to tropical storms leads to adverse birth outcomes. [@kinney2008autism] observed higher rates of autism in children born to mothers who had higher rates of storm exposure than children born to mothers who were exposed to later intensities. This is not very surprising when one considers that tropical storms are highly stressful events, and stress during a pregnancy is known to have strong impacts on the developing fetus. [@grabich2016hurricane] was another paper that looked at birth outcomes after tropical storms. The researchers in this case found a positive association between exposure to a hurricane and the risk of a pre-term birth. 
 
