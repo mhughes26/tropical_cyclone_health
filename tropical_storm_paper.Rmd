@@ -7,14 +7,26 @@ bibliography: bibliography.bib
 ---
 
 
-
 # Introduction
 
 Tropical cyclones are a pervasive threat to communities across the Eastern and Southern United States, particularly around the Gulf Coast. The term tropical cyclone encompasses hurricanes as well as tropical storms and tropical depressions. The destructive nature of tropical cyclones creates an imperative to study their human impacts, which can include property damage, monetary loss, and negative health outcomes. 
 
-Extensive physical exposure data is often available for tropical cyclones as they near and cross communities in the United States. This data can come both from established monitoring networks, like [NOAA network name?], but may also result from data collection efforts during or after the storm by atmospheric scientists and engineers seeking to characterize a storm. Researchers studying the human impacts of these storms, including epidemiologists, economists, and social scientists are interested in this data as well, but it is often unavailable in a way that is accessible for them to use. Resolving physical exposure and human impact datasets is challenging because the human impact data and physical exposure data do not have congruent resolutions. 
+Researchers have observed that in utero exposure to tropical storms leads to adverse birth outcomes. [@kinney2008autism] observed higher rates of autism in children born to mothers who had higher rates of storm exposure than children born to mothers who were exposed to later intensities. This is not very surprising when one considers that tropical storms are highly stressful events, and stress during a pregnancy is known to have strong impacts on the developing fetus. [@grabich2016hurricane] was another paper that looked at birth outcomes after tropical storms. The researchers in this case found a positive association between exposure to a hurricane and the risk of a pre-term birth. 
 
-Here we explore cases and implications of integrating data at different temporal and spatial scales, focusing as an example on human impact studies of tropical cyclones in the US. Spatial and temporal misalignment is a problem that researchers run into when integrating data from human impact studies with physical exposure data. For example, physical exposure data on windspeed may have a very fine resolution, possibly down to seconds or minutes, while data on birth outcomes may be at a temporal scale of weeks or even months. 
+The scientific literature also reveals evidence of mental health outcomes associated with populations exposed to tropical storms. Survivors of tropical storms often report higher levels of depression, anxiety, and PTSD, due to reduced access to important medical and social services, property damages, poor sanitation, and displacement after storms. [@lieberman2017self] found higher levels of PTSD in New York City residents who were exposed to flooding after Hurricane Sandy. [@bevilacqua2020understanding] also found higher levels of PTSD, as well as probable depression and anxiety among residents with a higher Hurricane Exposure Score in Houston, Texas. Displaced Puerto Ricans living in Florida after Hurricane Maria also exhibited higher rates of depression, anxiety, and PTSD[@scaramutti2019mental]. These mental health outcomes were compared to Puerto Ricans living on the island, and the individuals who had migrated reported higher frequencies of mental health problems than those who had not. Displacement after a tropical storms is a common human impact that leads to other mental health effects, as well as economic, social, and environmental effects. 
+
+Beyond health impacts, both mental and physical, tropical storms create incredible strains on the economies of the Southeastern United States. These costs are expected to grow as climate change intensifies extreme weather events. It is estimated that by 2100, damages caused by extreme weather events will total cost the United States $19 billion. [@narita2009damage]. High costs of rebuilding infrastructure, providing resources to displaced populations, medical bills, and loss of businesses after a tropical storm all drive these economic burdens. 
+
+Clearly there are severe human impacts that result from exposure to tropical storms. One of the best ways to mitigate impacts is to understand which populations and locations are at a greatest risk for exposure to tropical storms. This requires data that allows researchers to assess where in space and time tropical storms occur, and also where in space and time individuals and populations are experiencing impacts from these storms. 
+
+Lots of researchers are exploring this using multidisciplinary teams, however a key challenge is integrating data from across disciplines. For example: Extensive physical exposure data is often available for tropical cyclones as they near and cross communities in the United States. This data can come both from established monitoring networks, like [NOAA network name?], but may also result from data collection efforts during or after the storm by atmospheric scientists and engineers seeking to characterize a storm. Researchers studying the human impacts of these storms, including epidemiologists, economists, and social scientists are interested in this data as well, but it is often unavailable in a way that is accessible for them to use. Resolving physical exposure and human impact datasets is challenging because the human impact data and physical exposure data do not have congruent resolutions. 
+
+Here we explore cases and implications of integrating data at different temporal and spatial scales, focusing as an example on human impact studies of tropical cyclones in the US. We begin by investigating the reasons that spatial and temporal misaligment exists in the study of tropical storms. We then describe the main spatial and temporal scales used, and finally assess some of the consequences that result from integrating physical exposure data with human impacts data. 
+
+# Claim 1
+
+Spatial and temporal misalignment is a problem that researchers run into when integrating data from human impact studies with physical exposure data. For example, physical exposure data on windspeed may have a very fine resolution, possibly down to seconds or minutes, while data on birth outcomes may be at a temporal scale of weeks or even months. 
+
 
 Some of the reasons for this are practical. Often physical exposure data is recorded at monitoring systems that are designed to automatically record a data point at a fixed interval of time. Human impact data on health or socioeconomic status comes from administrative sources that collect data on certain scales. Different sources of data naturally beget differences in data resolution. Another factor that drives spatial and temporal misalignment between physical exposure data and human impacts data is privacy. Physical exposure data  is impersonal and can often represent a very specific temporal and spatial point, whereas human impacts data is often aggregated to preserve the anonymity and privacy of study subjects. 
 
@@ -161,7 +173,9 @@ temporal levels of aggregation. Sometimes, we're using "scales" instead, I
 think.
 
 
-
+Annual Reviews of Microbiology
+Annual Reviews of Statistics
+Annualreviews.org < Good for learning about stuff for interdisciplinary work. 
 
 
 
