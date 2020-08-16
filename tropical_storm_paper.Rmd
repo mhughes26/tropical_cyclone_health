@@ -1,6 +1,6 @@
 ---
 title: "Challenges of Integrating Physical Exposure and Human Impacts Data in Tropical Cyclone Studies"
-author: "Brooke Anderson & Matthew Hughes"
+author: "Matthew Hughes and Brooke Anderson"
 date: "May 25, 2020"
 output: pdf_document
 bibliography: bibliography.bib
@@ -147,6 +147,229 @@ Single exposure metrics are often used after a storm event has happened. They ar
 Because studying tropical storm and hurricane exposures requires us to look at different spatial scales, we run the risk of encountering the ecological bias when looking at larger spatial aggregations. Ecological bias occurs whenever the aggregate association between an exposure and an outcome does not properly reflect the association on the individual level [@greenland1989ecological]. Ecological studies themselves don't look at individuals, but rather at an aggregate value, usually within a defined geographic region. Looking at national levels of obesity, cancer, or life expectancy, and comparing countries with respect to these outcomes and some exposure is an example of what ecological studies aim to achieve. 
 
 An example of a study that could be prone to this kind of bias is [@kinney2008autism] where Louisiana parishes were considered vulnerable to hurricane exposure based on whether or not the storm center passed through that parish. It is possible that the cases considered exposed based on living in these parishes were not in fact exposed since the storm may have passed through only a certain part of the parish. Never the less, all cases in a parish are considered exposed or unexposed in the aggregate. 
+
+---------------------------------------------------------------------------
+
+[BA: I'm adding some additional text/notes we can work into Claim 2 as
+appropriate. I drafted these while working on another manuscript but they 
+were more detailed than we needed there, so we can work them in here.]
+
+Measurement error can be either random or systematic. Systematic error can often
+be corrected with adjustment if the direction and typical size of the error is
+understood. Random error cannot in the same way. Either type of measurement
+error can be either differential (associated with the probability of the
+outcome) or non-differential (independent of the distribution / probability of
+the outcome). In simpler models, this characteristic might help in predicting
+whether the resulting bias is likely toward the null; however, more complex
+models (e.g., statistical models with adjustment for potential confounders) are
+trickier to diagnose in terms of the likely implications of differential versus
+non-differential measurement error [would need a ref for this].
+
+When a single value of exposure is assigned across an aggregated level (e.g., a
+single exposure measurement for a county or ZIP code), it assumes constant
+exposure across that area. However, this will typically not be the
+case---hazards like storm-associated wind, rain, and flooding can vary in
+intensity across these spatial areas. For some hazards, this variation can be
+notable. Storm surge, for example, will typically be limited to coastal areas of
+a county or ZIP code. Other hazards, like storm-associated wind and rain, are
+more likely to be more homogeneous across space, and so have less
+within-county/ZIP code variation. The rainfields for tropical cyclones are very
+large, and while there are rainbands within the storm that might have
+particularly high rates of precipitation, these progress over the course of the
+storm, and it is unlikely that a county will have one area that experienced very
+extreme precipitation while another experienced very little [BA: We could see if
+we could find a good ref. or two on this point]. Similarly, while topographic
+features and other variability can create variation in the sustained and gust
+windspeeds experienced in an area from a storm, it is unlikely that one part of
+a county would experience high-impact winds from a storm while other parts of
+the county experienced mild wind [BA: We could look for a ref for this, too].
+
+If you use a single exposure estimate for everyone in an area, there is the
+chance that some people within that area will be misclassified (if exposure is
+measured as exposed/unexposed) or have exposure measured with error (if a
+continuous metric of exposure is being used), unless the exposure is perfectly
+homogeneous across the area. This exposure misclassification or measurement
+error can lower the power of the study to detect a clear association between
+exposure to a storm hazard and a certain societal impact, as this smoothing
+drops information inherent in the within-county variation in exposure levels. It
+can also bias estimates of the association between exposure and outcome in the
+same way exposure misclassification through any other mechanism would.
+
+When a proxy exposure estimate (e.g., county-level average exposure level) is
+used for a group of individuals in the study, it can result in a type of 
+exposure measurement error called Berkson error. In this case, the true
+exposure of each individual is randomly distributed around the proxy or 
+mean exposure level assigned to him or her. In other words, the group as a 
+whole is assigned a common exposure level, based on the average exposure 
+across that group, when in fact the individuals' true exposure levels are 
+randomly distributed around this common assigned exposure level. [BA: I think
+this type of error might be a risk when aggregating exposure data, but we should
+look into it a bit more to make sure I'm right.]
+
+It can be important to think about the scale at which the process happens. For
+something very local (e.g., aggregating to a very small neighborhood scale),
+much less information will be lost compared to aggregated to a large scale
+(e.g., state). If an exposure tends to be fairly homogenous across the spatial
+scale used for aggregation, then these concerns are lessened
+[@wakefield2008overcoming].
+
+---------------------------------------------------------------------------
+
+Data that are aggregated across a spatial area---for example, the total number
+of deaths in a geographic area in a certain time period---is known as ecological 
+data, aggregate data, or contextual-level data. Studies that use such data are 
+known as ecological studies [@sedgwick2014ecological].
+
+Aggregated or ecological data can be used to infer a contextual effect, for
+example. Sometimes, however, aggregated data are used to infer individual-level
+associations. While the first type of inference seeks to answer questions like
+how the county-wide rate of an outcome of interest changes when the county is
+exposed to a storm hazard, the second seeks to determine how a person's
+individual risk of an outcome changes if he or she is personally exposed to the
+hazard. The second type of inference can be prone to bias that results from
+cross-level inference---the data used to model the association is at the
+contextual level (e.g., county-level) while the inference is for the individual
+association between exposure and outcome. When an individual-level association
+is estimated from ecological data, the estimate can be very biased from the true
+association, event to the point of reversing the effect estimate---estimating a
+protective effect, for example, when the true effect is detrimental
+[@wakefield2008overcoming]. This type of bias is called ecological  or
+cross-level bias [@greenland1994invited; @idrovo2011three], and the
+misconception that associations estimated from data at the ecological/aggregated
+level provide an unbiased estimate of individual-level associations between
+exposure and risk of the outcome is called the ecological fallacy
+[@wakefield2006health; @portnov2007ecological].
+
+Ecological bias can result both from individual-level exposure measurement error
+inherent in assigning a common exposure estimate to everyone in an area, while
+the exposure varies in intensity across that area. It can also result from
+confounding, even if the confounders are controlled at the ecological level.
+When data are aggregated across a spatial area, information is lost about how
+all relevant factors---exposure level, outcome risk, confounders, and even
+potential effect modifiers---vary within that spatial area. Just as aggregation
+smooths over within-area variation in exposure levels, it also smooths over
+within-area variation in levels of potential confounders. Depending on the
+patterns of this within-area variation, a result could be that ecological-level
+control of the confounders does not, in fact, control for their role at the
+individual level, and so the association inferred at the ecologic level
+continues to be confounded by them when inferred to the individual level.  In
+other words, a factor could still confound the inference of an individual-level
+association, even if it is controlled at a population level in an ecological
+model. For example, a study of the association between risk of pre-term birth
+and tropical cyclone exposure could control for county-level smoking when
+modeling county-level storm exposure and county-level rates of pre-term births.
+Even with this control, an observed association could result from differences in
+individual smoking status, if there is within-county variation in smoking and if
+this has a different pattern across people in the county than variation in
+exposure from the county-wide exposure estimate.
+
+If individual-level inference is the aim, and population-level data is
+available, there are some methods for using it while still aiming to avoid
+ecological bias. Indeed, it can be helpful to use population-level data, as it
+is often available for a large population, improving the power and precision of
+the study [@wakefield2008overcoming; @wakefield2006health]. Further, the level
+of exposure might vary a lot more over the population captured with
+population-level data compared to the variation that captured in a smaller
+sample of individual-level data [@wakefield2008overcoming]. This can contribute
+both to statistical power and improve external validity (as the study data will
+cover more of the range of exposure that might ever be expected). There are
+ways, for example, to supplement population-level data with samples of
+individual-level data through two-level, semi-ecologic study designs
+[@wakefield2008overcoming]. Other study designs can also be used to leverage
+ecological data while minimizing risk from ecological bias. For example,
+potential confounders like age distribution and smoking rates vary much less
+within a county over time than comparing between counties. Time series-style
+study designs, which compare a county to itself over time, therefore allow for
+very similar covariate distributions between exposure and non-exposure. This can
+help since the mechanism for ecological bias depends on the joint distribution
+between individual exposure, outcome, and covariates, if any are included in the
+model. Other studies add to this design by stabilizing for temporal confounding
+through the addition of counties that were never exposed, allowing for a
+differences-in-differences style approach to calibrate for seasonal or
+longer-term trends that might otherwise create confounding. For example, many
+health outcomes have a strong seasonal trend, with peak rates in the winter and
+lows in the summer. Since the hurricane season stretches from summer into fall,
+a study design that compares the rate of a health outcome in an exposed county
+to the rate two weeks before the exposure might be biased away from the null,
+since baseline rates of the health outcome will typically be moving up over most
+of the hurricane season.
+
+Ecological bias can also complicate estimation of effect modification, which 
+otherwise could help in identifying vulnerabilities and susceptibilities among
+certain subpopulations [@wakefield2008overcoming].
+
+For disasters, there are added nuances. First, in some cases, the ecologic-level
+effect (contextual effect) will be directly of interest. For example, public
+health planners in a city may be more interested in knowing how a storm hazard
+exposure is likely to change city-wide rates of certain outcomes than in how it
+would change individual-level risk. In this case, it is appropriate to use of
+ecologic-level data, and resulting estimates will not be prone to ecological
+bias) [@idrovo2011three; @greenland1994invited], although when inferring
+contextual effects from ecologic data without considering individual-level
+factors, there is a chance for the *sociologistic fallacy* [@idrovo2011three].
+[BA: In this last sentence, the cited article is a letter to the editor, and it
+in turn is referencing some other papers that more fully define these ideas. If
+we keep this, we should go back and read more deeply into those cited papers
+from the @idrovo2011three reference].
+
+Second, for a disaster, the relevant exposure might be not just at the individual level
+(e.g., winds or flooding at the individual's residence), but also throughout a
+broader area surrounding the individual. Disasters bring physical hazards that
+can harm people directly, but also through indirect pathways. The causal
+pathways for tropical cyclones to affect human health and cause other societal
+impacts therefore differ from those for a dangerous substance, like air
+pollutants, in which the substance itself must enter the body to cause harm.
+While some health risk comes directly from the storm (e.g., deaths and injuries
+from trees falling on homes or drowning from flooding), there are many more
+pathways that are indirect. These include pathways that go through the way that
+the storm's damage affects community infrastructure and access to medical care.
+For example, a tropical cyclone can bring high winds that cause power outages,
+and as a result those affected could be exposed to more outdoor hazards (outdoor
+air pollution, heat), struggle to safely store perishable food and medications,
+and lose means to power medical equipment. While extreme winds at a person's
+residence would increase their risk of a power outage, outages could also be
+caused by damage to the grid in another part of the community. In some cases,
+then, the level of exposure in a person's community may be as important in
+opening a pathway of risk as exposure at the person's immediate location.
+
+Finally, if the disaster has a large health impact, the health outcome of one
+person in the community could affect the risk of the outcome (or other adverse
+outcomes) for others. This situation is often only the case for infectious
+diseases, where one person with the disease can spread it to others. However, if
+the community-wide impact is large enough, it can affect access to and
+effectiveness of medical care for everyone in the community. if hospitals in the
+community are over capacity or have to evacuate, this could increase health risk
+for people in a fairly large "catchment" area for that hospital. This effect has
+been seen recently with Covid 19---attempts to "flatten the curve" aim to avoid
+moving into a state where a community's health system becomes overwhelmed and
+can no longer deliver a typical level of care to those in the community. This
+effect could happen with either infectious or non-infectious diseases. Also,
+there may be confounders that are relevant at the contextual, rather than
+individual level, as well as modifiers. For example, whether the county is
+coastal could be a contextual-level confounder and effect modifier. This will
+influence whether the county is exposed to that storm or not, since storms
+usually weaken rapidly when the center is over land. In terms of confounding
+pathways, coastal communities might tend to have lower levels of air pollution,
+because sea breezes clear the pollution regularly. They might also be wealthier
+on average, since property on or near the beach is desirable. Finally, they
+might be better prepared for or more hardened against tropical cyclones at the
+community-wide level (e.g., through hardier power infrastructure, more rigorous
+building codes, higher likelihood of evacuating in advance of a threatening
+storm) compared to nearby inland counties.
+
+When inferring individual-level associations from individual-level data, without
+considering an additional role of ecological-level factors, this is known as the
+*psychologistic* or *individualistic fallacy* [@idrovo2011three]. [BA: In this
+last sentence, the cited article is a letter to the editor, and it in turn is
+referencing some other papers that more fully define these ideas. If we keep
+this, we should go back and read more deeply into those cited papers from the
+@idrovo2011three reference].
+
+
+
+---------------------------------------------------------------------------
+
+
 
 # Discussion
 
