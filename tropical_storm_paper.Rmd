@@ -1,6 +1,6 @@
 ---
 title: "Challenges of Integrating Physical Exposure and Human Impacts Data in Tropical Cyclone Studies"
-author: "Brooke Anderson & Matthew Hughes"
+author: "Matthew Hughes and Brooke Anderson"
 date: "May 25, 2020"
 output: pdf_document
 bibliography: bibliography.bib
@@ -9,30 +9,29 @@ bibliography: bibliography.bib
 
 # Introduction
 
-Tropical cyclones are a pervasive threat to communities across the Eastern and Southern United States, particularly around the Gulf Coast. The term tropical cyclone encompasses hurricanes as well as tropical storms and tropical depressions. The destructive nature of tropical cyclones creates an imperative to study their human impacts, which can include property damage, monetary loss, and negative health outcomes. 
+Tropical cyclones---which encompasses hurricanes as well as tropical storms and tropical depressions---are a pervasive threat to communities across the Eastern and Southern United States. These storms originate in the North Atlantic Basin, which produced 16 category 4 and 5 hurricanes alone, between 1975 and 1989, and 25 hurricanes of similar intensity between 1990 and 2004 [@webster2005changes]. Furthermore, there have been 37 years since 1900 that hurricanes caused damages worth more than 10 billion dollars, and this is projected to grow as coastal regions experience population growth, increased wealth, and warmer sea temperatures [@klotzbach2018continental]. As of July 8, 2020, damages from tropical cyclones have cost $1,004 billion and resulted in 7,555 deaths since 1980 [@NOAA billion dollar disasters]. The destructive nature of tropical cyclones creates an imperative to study their human impacts, which includes property damage, monetary loss, and negative health outcomes. 
 
-Researchers have observed that in utero exposure to tropical storms leads to adverse birth outcomes. [@kinney2008autism] observed higher rates of autism in children born to mothers who had higher rates of storm exposure than children born to mothers who were exposed to later intensities. This is not very surprising when one considers that tropical storms are highly stressful events, and stress during a pregnancy is known to have strong impacts on the developing fetus. [@grabich2016hurricane] was another paper that looked at birth outcomes after tropical storms. The researchers in this case found a positive association between exposure to a hurricane and the risk of a pre-term birth. 
+Researchers have observed that in utero exposure to tropical cyclones leads to adverse birth outcomes. [@kinney2008autism] observed higher rates of autism in children born to mothers who had higher rates of storm exposure than children born to mothers who were exposed to later intensities. This is not very surprising when one considers that tropical storms are highly stressful events, and stress during a pregnancy is known to have strong impacts on the developing fetus. [@grabich2016hurricane] was another paper that looked at birth outcomes after tropical storms. The researchers in this case found a positive association between exposure to a hurricane and the risk of a pre-term birth. 
 
-The scientific literature also reveals evidence of mental health outcomes associated with populations exposed to tropical storms. Survivors of tropical storms often report higher levels of depression, anxiety, and PTSD, due to reduced access to important medical and social services, property damages, poor sanitation, and displacement after storms. [@lieberman2017self] found higher levels of PTSD in New York City residents who were exposed to flooding after Hurricane Sandy. [@bevilacqua2020understanding] also found higher levels of PTSD, as well as probable depression and anxiety among residents with a higher Hurricane Exposure Score in Houston, Texas. Displaced Puerto Ricans living in Florida after Hurricane Maria also exhibited higher rates of depression, anxiety, and PTSD[@scaramutti2019mental]. These mental health outcomes were compared to Puerto Ricans living on the island, and the individuals who had migrated reported higher frequencies of mental health problems than those who had not. Displacement after a tropical storms is a common human impact that leads to other mental health effects, as well as economic, social, and environmental effects. 
+The scientific literature also reveals evidence of mental health outcomes associated with populations exposed to tropical cyclones. Survivors of tropical storms often report higher levels of depression, anxiety, and PTSD, due to reduced access to important medical and social services, property damages, poor sanitation, and displacement after storms. [@lieberman2017self] found higher levels of PTSD in New York City residents who were exposed to flooding after Hurricane Sandy. [@bevilacqua2020understanding] also found higher levels of PTSD, as well as probable depression and anxiety among residents with a higher Hurricane Exposure Score in Houston, Texas. Displaced Puerto Ricans living in Florida after Hurricane Maria also exhibited higher rates of depression, anxiety, and PTSD[@scaramutti2019mental]. These mental health outcomes were compared to Puerto Ricans living on the island, and the individuals who had migrated reported higher frequencies of mental health problems than those who had not. Displacement after a tropical storms is a common human impact that leads to other mental health effects, as well as economic, social, and environmental effects. 
 
-Beyond health impacts, both mental and physical, tropical storms create incredible strains on the economies of the Southeastern United States. These costs are expected to grow as climate change intensifies extreme weather events. It is estimated that by 2100, damages caused by extreme weather events will total cost the United States $19 billion. [@narita2009damage]. High costs of rebuilding infrastructure, providing resources to displaced populations, medical bills, and loss of businesses after a tropical storm all drive these economic burdens. 
+Beyond health impacts, both mental and physical, tropical storms create incredible strains on the economies of the Southeastern United States. These costs are expected to grow as climate change intensifies extreme weather events. It is estimated that by 2100, damages caused by extreme weather events will cost the United States $19 billion. [@narita2009damage]. Tropical cyclones often disrupt local economies of coastal communities. For example, in Florida, hurricanes lead to demand shocks in the economy with a positive net effect on earnings and negative net effect on employment - counties directly hit by hurricanes experienced up to 4.35% increases in earnings and 4.76% decreases in employment [@belasen2008hurricanes]. This confusing paradox makes sense when one considers that while hurricanes may wipe out local businesses, the post-hurricane recovery period boosts certain businesses and sectors. New Orleans in the aftermath of Hurricane Katrina is evidence of this. While the city initially experienced the negative effects of a shut down economy, several years after the storm revealed that victims of Hurricane Katrina in New Orleans experienced increased income relative to cities not affected by the storm, perhaps due to a strengthed labor market in post-Katrina New Orleans [@deryugina2018economic]. High costs of rebuilding infrastructure, providing resources to displaced populations, medical bills, and loss of businesses after a tropical storm all drive these economic burdens. 
 
 Clearly there are severe human impacts that result from exposure to tropical storms. One of the best ways to mitigate impacts is to understand which populations and locations are at a greatest risk for exposure to tropical storms. This requires data that allows researchers to assess where in space and time tropical storms occur, and also where in space and time individuals and populations are experiencing impacts from these storms. 
 
 Lots of researchers are exploring this using multidisciplinary teams, however a key challenge is integrating data from across disciplines. For example: Extensive physical exposure data is often available for tropical cyclones as they near and cross communities in the United States. This data can come both from established monitoring networks, like [NOAA network name?], but may also result from data collection efforts during or after the storm by atmospheric scientists and engineers seeking to characterize a storm. Researchers studying the human impacts of these storms, including epidemiologists, economists, and social scientists are interested in this data as well, but it is often unavailable in a way that is accessible for them to use. Resolving physical exposure and human impact datasets is challenging because the human impact data and physical exposure data do not have congruent resolutions. 
 
-Here we explore cases and implications of integrating data at different temporal and spatial scales, focusing as an example on human impact studies of tropical cyclones in the US. We begin by investigating the reasons that spatial and temporal misaligment exists in the study of tropical storms. We then describe the main spatial and temporal scales used, and finally assess some of the consequences that result from integrating physical exposure data with human impacts data. 
+Here we explore cases and implications of integrating data at different temporal and spatial scales, focusing as an example on human impact studies of tropical cyclones in the US. We begin by investigating the reasons that spatial and temporal misaligment exist in the study of tropical cyclones. We then describe the main spatial and temporal scales used, and finally assess some of the consequences that result from integrating physical exposure data with human impacts data. 
 
-# Claim 1
+# Spatial and Temporal Misalignment: Origins of Integration Challenges
 
 Spatial and temporal misalignment is a problem that researchers run into when integrating data from human impact studies with physical exposure data. For example, physical exposure data on windspeed may have a very fine resolution, possibly down to seconds or minutes, while data on birth outcomes may be at a temporal scale of weeks or even months. 
 
+Some of the reasons for this are practical. Often physical exposure data is recorded at monitoring systems that are designed to automatically record a data point at a fixed interval of time. Human impact data on health or socioeconomic status comes from administrative sources that collect data on certain scales. Different sources of data naturally beget differences in data resolution. Another factor that drives spatial and temporal misalignment between physical exposure data and human impacts data is privacy. Physical exposure data is impersonal and can often represent a very specific temporal and spatial point, whereas human impacts data is often aggregated to preserve the anonymity and privacy of study subjects. 
 
-Some of the reasons for this are practical. Often physical exposure data is recorded at monitoring systems that are designed to automatically record a data point at a fixed interval of time. Human impact data on health or socioeconomic status comes from administrative sources that collect data on certain scales. Different sources of data naturally beget differences in data resolution. Another factor that drives spatial and temporal misalignment between physical exposure data and human impacts data is privacy. Physical exposure data  is impersonal and can often represent a very specific temporal and spatial point, whereas human impacts data is often aggregated to preserve the anonymity and privacy of study subjects. 
+The study question that researchers ask may also drive the choice of spatial and temporal scales used to understand human impacts from tropical cyclones. If a study is concerned with birth outcomes for example, having weather data on the windspeed every several seconds may not be relevant, because birth outcomes related to storm exposure in utero may operate on a longer time scale. Sometimes exposure to a tropical cyclone is defined as being present in a county that was hit by the storm center during a gestational period of a mother's pregnancy as is the case in [@grabich2016hurricane]. Here, the researchers divided a pregnancy into exposed and unexposed time to tropical cyclones after 20 weeks of gestation. Using cumulative storm data therefore gives the researchers an easier way to integrate physical exposure data with the gestational period being studied. 
 
-The study question that researchers ask may also drive the choice of spatial and temporal scales used to understand human impacts from tropical cyclones. If a study is concerned with birth outcomes for example, having weather data on the windspeed every several seconds may not be relevant, because birth outcomes related to storm exposure in utero may operate on a longer time scale. Having aggregate storm data would therefore give the researchers an easier way to integrate physical exposure data with the gestational period being studied. 
-
-Another factor that drives spatial and temporal misalignment in tropical cyclone studies is that researchers studying human impacts often do not collect the physical exposure data themselves. Instead they get this data from large sources of secondary data such as the National Hurricane Center Data Archive from NOAA (National Oceanic and Atmospheric Administration) and the NWS (National Weather Service). 
+Another factor that drives spatial and temporal misalignment in tropical cyclone studies is that researchers studying human impacts often do not collect the physical exposure data themselves. Instead they get this data from large sources of secondary data such as the National Hurricane Center Data Archive from NOAA (National Oceanic and Atmospheric Administration) and the NWS (National Weather Service). Researchers also will use such secondary datasets and sources to compare with primary data sources. For example in [@lieberman2017self], self reported flooding exposure data was compared to FEMA flooding exposure data.
 
 A review of the literature on human impacts of tropical cyclone shows that certain spatial and temporal scales show up more frequently than others. Spatially, county level and zip code level data are frequently used to aggregate health outcomes and other human impacts. Temporal scales for human impact studies are often cumulative measures of time. This is in contrast to physical exposure data which is often spatially at the point location level, and temporally at a very fine resolution down to minutes and seconds. 
 
@@ -57,13 +56,9 @@ this resolution could be integrated with some main formats of exposure data. We
 might want to end with that (or maybe even, as we work on this draft, that might
 go into a different section of the paper).]
 
-Point locations are the smallest resolution of spatial data used to assess the exposure to tropical storms and hurricanes, as they represent the specific location of individual, non-aggregated observations on the outcome of interest. In many cases, researchers collect information on the study subject's residential address through some sort of a survey to assess point location  [@lieberman2017self], [@jaycox2010children],[@bayleyegn2006rapid]. These surveys are often designed to assess psychological needs of hurricane survivors, as well as medical, financial, and nutritional needs. For example in [@liberman2017self], New York City residents provided their address in a self reported manner to look at associations between mental health outcomes and flooding data. This residential address served as a point location that could be mapped and was compared to flooding data maps created by FEMA.  In other cases, a GPS device is used to record coordinates that mark a specific point locations. An example is [@hagy2006effects], where specific point locations were used to take water samples were taken to measure parameters of water quality such as salinity, temperature, dissolved oxygen, and turbidity compared before and after Hurricane Ivan in Pensacola Bay, Florida. This is a common practice in ecological research because point locations distributed across a landscape can be used to observe patterns taking geography into account. Point locations are also advantageous when using satellite images in conjuction with analysis of hurricane impact as illustrated in [@bianchette2009ecological], where Landsat 5 images were used to compare vegetation damage, by looking at specific trees at different elevations to assess the ecological impact of Hurricane Ivan. 
+Point locations are the smallest resolution of spatial data used to assess the exposure to tropical storms and hurricanes, as they represent the specific location of individual, non-aggregated observations on the outcome of interest. In many cases, researchers collect information on the study subject's residential address through some sort of a survey to assess point location  [@lieberman2017self], [@jaycox2010children],[@bayleyegn2006rapid]. These surveys are often designed to assess psychological needs of hurricane survivors, as well as medical, financial, and nutritional needs. For example in [@lieberman2017self], New York City residents provided their address in a self reported manner to look at associations between mental health outcomes and flooding data. This residential address served as a point location that could be mapped and was compared to flooding data maps created by FEMA.  In other cases, a GPS device is used to record coordinates that mark a specific point location. An example is [@hagy2006effects], where specific point locations were used to take water samples were taken to measure parameters of water quality such as salinity, temperature, dissolved oxygen, and turbidity compared before and after Hurricane Ivan in Pensacola Bay, Florida. This is a common practice in ecological research because point locations distributed across a landscape can be used to observe patterns taking geography into account. Point locations are also advantageous when using satellite images in conjuction with analysis of hurricane impact as illustrated in [@bianchette2009ecological], where Landsat 5 images were used to compare vegetation damage, by looking at specific trees at different elevations to assess the ecological impact of Hurricane Ivan. 
 
-The obvious advantage of a point location is that when mapped, it can be overlayed with physical exposure data on a storm or storms to gage a very accurate picture of exposure, 
-taking full advantage of high resolution in the exposure data. Since storm tracks are often spatially represented by the path of the storm's center, having point locations for the exposed units of interest allows researchers to more accurately measure how close each observation was to the storm's central track, and make further conclusions on this. Similarly, point locations can be integrated in a straightforward way with gridded exposure data, as might
-result from re-analysis datasets or ... [check with James Done about this], as
-each point location can be assigned the exposure level of the closest gridded
-measurement.
+The obvious advantage of a point location is that when mapped, it can be overlayed with physical exposure data on a storm or storms to gage a very accurate picture of exposure, taking full advantage of high resolution in the exposure data. Since storm tracks are often spatially represented by the path of the storm's center, having point locations for the exposed units of interest allows researchers to more accurately measure how close each observation was to the storm's central track, and make further conclusions on this. Similarly, point locations can be integrated in a straightforward way with gridded exposure data, as might result from re-analysis datasets or ... [check with James Done about this], as each point location can be assigned the exposure level of the closest gridded measurement.
 
 [Once we give examples, we should talk about what level the physical exposure data was recorded as. Did it line up exactly? Grided data. Some studies avoid the problem by creating a proxy (ex: dist from the storm track).]
 
@@ -85,9 +80,13 @@ The state or national level is the spatial level of an ecological study and can 
 
 Week is a very common unit of time used to ascertain exposure, particularly for studies that are concerned with birth outcomes and gestation during hurricane exposure [@kinney2008autism], [@grabich2016hurricane], [@grabich2016measuring]. When the week of gestation is known, the timing that the hurricane makes landfall, or has its storm center pass through a county can be matched up to this week of gestation to identify possible "critical periods" of exposure during development. 
 
+In the North Atlantic Basin, tropical cyclones typically occur between June and November, and so sometimes month to several month periods are used to aggregate the temporal exposure to them. 
+
 ### Cumulative Measures of Time
 
-Many of the studies looked at didn't assess exposure at the moment of the storm, but rather after it had done damage. 
+It is often the case that specific physical exposures are not considered in real time to ascertain human impacts. Instead, human impacts are assessed after the storm has passed, often noting the number of days or weeks that have passed since the hurricane made landfall. This method is common when assessing damages, recovery efforts, and when human impacts are self reported. 
+
+
 
 
 
@@ -147,6 +146,229 @@ Single exposure metrics are often used after a storm event has happened. They ar
 Because studying tropical storm and hurricane exposures requires us to look at different spatial scales, we run the risk of encountering the ecological bias when looking at larger spatial aggregations. Ecological bias occurs whenever the aggregate association between an exposure and an outcome does not properly reflect the association on the individual level [@greenland1989ecological]. Ecological studies themselves don't look at individuals, but rather at an aggregate value, usually within a defined geographic region. Looking at national levels of obesity, cancer, or life expectancy, and comparing countries with respect to these outcomes and some exposure is an example of what ecological studies aim to achieve. 
 
 An example of a study that could be prone to this kind of bias is [@kinney2008autism] where Louisiana parishes were considered vulnerable to hurricane exposure based on whether or not the storm center passed through that parish. It is possible that the cases considered exposed based on living in these parishes were not in fact exposed since the storm may have passed through only a certain part of the parish. Never the less, all cases in a parish are considered exposed or unexposed in the aggregate. 
+
+---------------------------------------------------------------------------
+
+[BA: I'm adding some additional text/notes we can work into Claim 2 as
+appropriate. I drafted these while working on another manuscript but they 
+were more detailed than we needed there, so we can work them in here.]
+
+Measurement error can be either random or systematic. Systematic error can often
+be corrected with adjustment if the direction and typical size of the error is
+understood. Random error cannot in the same way. Either type of measurement
+error can be either differential (associated with the probability of the
+outcome) or non-differential (independent of the distribution / probability of
+the outcome). In simpler models, this characteristic might help in predicting
+whether the resulting bias is likely toward the null; however, more complex
+models (e.g., statistical models with adjustment for potential confounders) are
+trickier to diagnose in terms of the likely implications of differential versus
+non-differential measurement error [would need a ref for this].
+
+When a single value of exposure is assigned across an aggregated level (e.g., a
+single exposure measurement for a county or ZIP code), it assumes constant
+exposure across that area. However, this will typically not be the
+case---hazards like storm-associated wind, rain, and flooding can vary in
+intensity across these spatial areas. For some hazards, this variation can be
+notable. Storm surge, for example, will typically be limited to coastal areas of
+a county or ZIP code. Other hazards, like storm-associated wind and rain, are
+more likely to be more homogeneous across space, and so have less
+within-county/ZIP code variation. The rainfields for tropical cyclones are very
+large, and while there are rainbands within the storm that might have
+particularly high rates of precipitation, these progress over the course of the
+storm, and it is unlikely that a county will have one area that experienced very
+extreme precipitation while another experienced very little [BA: We could see if
+we could find a good ref. or two on this point]. Similarly, while topographic
+features and other variability can create variation in the sustained and gust
+windspeeds experienced in an area from a storm, it is unlikely that one part of
+a county would experience high-impact winds from a storm while other parts of
+the county experienced mild wind [BA: We could look for a ref for this, too].
+
+If you use a single exposure estimate for everyone in an area, there is the
+chance that some people within that area will be misclassified (if exposure is
+measured as exposed/unexposed) or have exposure measured with error (if a
+continuous metric of exposure is being used), unless the exposure is perfectly
+homogeneous across the area. This exposure misclassification or measurement
+error can lower the power of the study to detect a clear association between
+exposure to a storm hazard and a certain societal impact, as this smoothing
+drops information inherent in the within-county variation in exposure levels. It
+can also bias estimates of the association between exposure and outcome in the
+same way exposure misclassification through any other mechanism would.
+
+When a proxy exposure estimate (e.g., county-level average exposure level) is
+used for a group of individuals in the study, it can result in a type of 
+exposure measurement error called Berkson error. In this case, the true
+exposure of each individual is randomly distributed around the proxy or 
+mean exposure level assigned to him or her. In other words, the group as a 
+whole is assigned a common exposure level, based on the average exposure 
+across that group, when in fact the individuals' true exposure levels are 
+randomly distributed around this common assigned exposure level. [BA: I think
+this type of error might be a risk when aggregating exposure data, but we should
+look into it a bit more to make sure I'm right.]
+
+It can be important to think about the scale at which the process happens. For
+something very local (e.g., aggregating to a very small neighborhood scale),
+much less information will be lost compared to aggregated to a large scale
+(e.g., state). If an exposure tends to be fairly homogenous across the spatial
+scale used for aggregation, then these concerns are lessened
+[@wakefield2008overcoming].
+
+---------------------------------------------------------------------------
+
+Data that are aggregated across a spatial area---for example, the total number
+of deaths in a geographic area in a certain time period---is known as ecological 
+data, aggregate data, or contextual-level data. Studies that use such data are 
+known as ecological studies [@sedgwick2014ecological].
+
+Aggregated or ecological data can be used to infer a contextual effect, for
+example. Sometimes, however, aggregated data are used to infer individual-level
+associations. While the first type of inference seeks to answer questions like
+how the county-wide rate of an outcome of interest changes when the county is
+exposed to a storm hazard, the second seeks to determine how a person's
+individual risk of an outcome changes if he or she is personally exposed to the
+hazard. The second type of inference can be prone to bias that results from
+cross-level inference---the data used to model the association is at the
+contextual level (e.g., county-level) while the inference is for the individual
+association between exposure and outcome. When an individual-level association
+is estimated from ecological data, the estimate can be very biased from the true
+association, event to the point of reversing the effect estimate---estimating a
+protective effect, for example, when the true effect is detrimental
+[@wakefield2008overcoming]. This type of bias is called ecological  or
+cross-level bias [@greenland1994invited; @idrovo2011three], and the
+misconception that associations estimated from data at the ecological/aggregated
+level provide an unbiased estimate of individual-level associations between
+exposure and risk of the outcome is called the ecological fallacy
+[@wakefield2006health; @portnov2007ecological].
+
+Ecological bias can result both from individual-level exposure measurement error
+inherent in assigning a common exposure estimate to everyone in an area, while
+the exposure varies in intensity across that area. It can also result from
+confounding, even if the confounders are controlled at the ecological level.
+When data are aggregated across a spatial area, information is lost about how
+all relevant factors---exposure level, outcome risk, confounders, and even
+potential effect modifiers---vary within that spatial area. Just as aggregation
+smooths over within-area variation in exposure levels, it also smooths over
+within-area variation in levels of potential confounders. Depending on the
+patterns of this within-area variation, a result could be that ecological-level
+control of the confounders does not, in fact, control for their role at the
+individual level, and so the association inferred at the ecologic level
+continues to be confounded by them when inferred to the individual level.  In
+other words, a factor could still confound the inference of an individual-level
+association, even if it is controlled at a population level in an ecological
+model. For example, a study of the association between risk of pre-term birth
+and tropical cyclone exposure could control for county-level smoking when
+modeling county-level storm exposure and county-level rates of pre-term births.
+Even with this control, an observed association could result from differences in
+individual smoking status, if there is within-county variation in smoking and if
+this has a different pattern across people in the county than variation in
+exposure from the county-wide exposure estimate.
+
+If individual-level inference is the aim, and population-level data is
+available, there are some methods for using it while still aiming to avoid
+ecological bias. Indeed, it can be helpful to use population-level data, as it
+is often available for a large population, improving the power and precision of
+the study [@wakefield2008overcoming; @wakefield2006health]. Further, the level
+of exposure might vary a lot more over the population captured with
+population-level data compared to the variation that captured in a smaller
+sample of individual-level data [@wakefield2008overcoming]. This can contribute
+both to statistical power and improve external validity (as the study data will
+cover more of the range of exposure that might ever be expected). There are
+ways, for example, to supplement population-level data with samples of
+individual-level data through two-level, semi-ecologic study designs
+[@wakefield2008overcoming]. Other study designs can also be used to leverage
+ecological data while minimizing risk from ecological bias. For example,
+potential confounders like age distribution and smoking rates vary much less
+within a county over time than comparing between counties. Time series-style
+study designs, which compare a county to itself over time, therefore allow for
+very similar covariate distributions between exposure and non-exposure. This can
+help since the mechanism for ecological bias depends on the joint distribution
+between individual exposure, outcome, and covariates, if any are included in the
+model. Other studies add to this design by stabilizing for temporal confounding
+through the addition of counties that were never exposed, allowing for a
+differences-in-differences style approach to calibrate for seasonal or
+longer-term trends that might otherwise create confounding. For example, many
+health outcomes have a strong seasonal trend, with peak rates in the winter and
+lows in the summer. Since the hurricane season stretches from summer into fall,
+a study design that compares the rate of a health outcome in an exposed county
+to the rate two weeks before the exposure might be biased away from the null,
+since baseline rates of the health outcome will typically be moving up over most
+of the hurricane season.
+
+Ecological bias can also complicate estimation of effect modification, which 
+otherwise could help in identifying vulnerabilities and susceptibilities among
+certain subpopulations [@wakefield2008overcoming].
+
+For disasters, there are added nuances. First, in some cases, the ecologic-level
+effect (contextual effect) will be directly of interest. For example, public
+health planners in a city may be more interested in knowing how a storm hazard
+exposure is likely to change city-wide rates of certain outcomes than in how it
+would change individual-level risk. In this case, it is appropriate to use of
+ecologic-level data, and resulting estimates will not be prone to ecological
+bias) [@idrovo2011three; @greenland1994invited], although when inferring
+contextual effects from ecologic data without considering individual-level
+factors, there is a chance for the *sociologistic fallacy* [@idrovo2011three].
+[BA: In this last sentence, the cited article is a letter to the editor, and it
+in turn is referencing some other papers that more fully define these ideas. If
+we keep this, we should go back and read more deeply into those cited papers
+from the @idrovo2011three reference].
+
+Second, for a disaster, the relevant exposure might be not just at the individual level
+(e.g., winds or flooding at the individual's residence), but also throughout a
+broader area surrounding the individual. Disasters bring physical hazards that
+can harm people directly, but also through indirect pathways. The causal
+pathways for tropical cyclones to affect human health and cause other societal
+impacts therefore differ from those for a dangerous substance, like air
+pollutants, in which the substance itself must enter the body to cause harm.
+While some health risk comes directly from the storm (e.g., deaths and injuries
+from trees falling on homes or drowning from flooding), there are many more
+pathways that are indirect. These include pathways that go through the way that
+the storm's damage affects community infrastructure and access to medical care.
+For example, a tropical cyclone can bring high winds that cause power outages,
+and as a result those affected could be exposed to more outdoor hazards (outdoor
+air pollution, heat), struggle to safely store perishable food and medications,
+and lose means to power medical equipment. While extreme winds at a person's
+residence would increase their risk of a power outage, outages could also be
+caused by damage to the grid in another part of the community. In some cases,
+then, the level of exposure in a person's community may be as important in
+opening a pathway of risk as exposure at the person's immediate location.
+
+Finally, if the disaster has a large health impact, the health outcome of one
+person in the community could affect the risk of the outcome (or other adverse
+outcomes) for others. This situation is often only the case for infectious
+diseases, where one person with the disease can spread it to others. However, if
+the community-wide impact is large enough, it can affect access to and
+effectiveness of medical care for everyone in the community. if hospitals in the
+community are over capacity or have to evacuate, this could increase health risk
+for people in a fairly large "catchment" area for that hospital. This effect has
+been seen recently with Covid 19---attempts to "flatten the curve" aim to avoid
+moving into a state where a community's health system becomes overwhelmed and
+can no longer deliver a typical level of care to those in the community. This
+effect could happen with either infectious or non-infectious diseases. Also,
+there may be confounders that are relevant at the contextual, rather than
+individual level, as well as modifiers. For example, whether the county is
+coastal could be a contextual-level confounder and effect modifier. This will
+influence whether the county is exposed to that storm or not, since storms
+usually weaken rapidly when the center is over land. In terms of confounding
+pathways, coastal communities might tend to have lower levels of air pollution,
+because sea breezes clear the pollution regularly. They might also be wealthier
+on average, since property on or near the beach is desirable. Finally, they
+might be better prepared for or more hardened against tropical cyclones at the
+community-wide level (e.g., through hardier power infrastructure, more rigorous
+building codes, higher likelihood of evacuating in advance of a threatening
+storm) compared to nearby inland counties.
+
+When inferring individual-level associations from individual-level data, without
+considering an additional role of ecological-level factors, this is known as the
+*psychologistic* or *individualistic fallacy* [@idrovo2011three]. [BA: In this
+last sentence, the cited article is a letter to the editor, and it in turn is
+referencing some other papers that more fully define these ideas. If we keep
+this, we should go back and read more deeply into those cited papers from the
+@idrovo2011three reference].
+
+
+
+---------------------------------------------------------------------------
+
+
 
 # Discussion
 
