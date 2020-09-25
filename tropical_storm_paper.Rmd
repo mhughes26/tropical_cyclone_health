@@ -74,6 +74,8 @@ The state or national level is the spatial level of an ecological study and can 
 
 # Temporal Scales
 
+Thanks to scientitific institutions such as NOAA and the National Weather Service, there are wide networks of sensors and monitoring equipment established across the United States that are capable of recording physical exposure data at a fine enough level as to render it almost continuous. It is possible to know the wind speed, amount of rainfall, and air temperature at very fine temporal scales throughout the duration of a tropical cyclone event. Human impacts data however, is typically not available at such a fine scale, nor is such a scale sometimes even relevant. Whereas physical exposure data may be collected in real time during the storm, many of the human impacts that researchers are interested in may be only known after the storm, and thus estimations may have to be made of what happened in the past. Below are some examples of time scales that are more applicable to a human scale, and why aggregating physical exposure data to these units of time may be necessary. 
+
 ### Week
 
 Week is a very common unit of time used to ascertain exposure, particularly for studies that are concerned with birth outcomes and gestation during hurricane exposure [@kinney2008autism], [@grabich2016hurricane], [@grabich2016measuring]. When the week of gestation is known, the timing that the hurricane makes landfall, or has its storm center pass through a county can be matched up to this week of gestation to identify possible "critical periods" of exposure during development. 
