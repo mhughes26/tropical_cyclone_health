@@ -1028,6 +1028,27 @@ This study looked at whether or not Hurricane Katrina had an influence on the ma
 - " 8--10 months (April to June 2006) after the hurricane, M/F jumped significantly from 1.052 to 1.071
 with a SOR of 1.018 " [@grech2015hurricane]
 
+[@yan2019tropical]
+
+Multi-year, multi-state study that estimated relative risks of storm exposures on community health outcomes like mortality and Medicare hospitalizations.
+
+## Temporal Scale
+
+Medicare claims come from the county level. 
+
+## Spatial Scale
+
+Days.
+"For each combination of exposure metric and health outcome, we estimated storm-associated health risks for a window from two days before to seven days after the day of storm’s closest approach." [@yan2019tropical]
+
+
+## Exposure
+
+Exposure was defined with five metrics: distance to storm track, cumulative rainfall, maximun sustained wind speed, flooding, and tornadoes. 
+
+## Outcome
+
+The outcome of interest was hospitalizations for cardiovascular or respiratory health effects. 
 
 
 
