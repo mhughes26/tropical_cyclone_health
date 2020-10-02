@@ -98,8 +98,29 @@ It is often the case that specific physical exposures are not considered in real
 
 # Implications of not improving this integration
 
-Differences in resolution between exposure and outcome datasets create challenges in measuring and inferring the association between tropical cyclone exposure and human impacts. When researchers study the economic, social, and health impacts that tropical storms and hurricanes have in locales like the Gulf Coast of the United States, it is important to select an appropriate spatial and temporal scale to adequately classify exposure. Mis-matches in the spatial and temporal scale of exposure data versus outcome data creates challenges when measuring and inferring associations between tropical cyclone exposures and human impacts. This is a problem because it gives an inaccurate picture of how communities and individuals’ health are impacted by these storms.  Two potential implications are that this mis-match can introducing bias in estimated associations and that it can reduce precision in estimates of those associations.
+When researchers study the economic, social, and health impacts that tropical storms and hurricanes have in locales like the Gulf Coast of the United States, it is important to select appropriate spatial and temporal scales to adequately classify exposure. Misalignment in the spatial and temporal scale of exposure data versus outcome data creates challenges when measuring and inferring associations between tropical cyclone exposures and human impacts. This is a problem because it gives an inaccurate picture of how communities and individuals’ health are impacted by these storms.  Two potential implications are that this mismatch can introduce bias in estimated associations and that it can reduce precision in estimates of those associations. In tropical cyclone studies these biases and reduced precision are usually the result of misclassification or measurement error, categorizing continuous data, and ecological bias. 
 
+When researchers are confronted with datasets that are at different temporal or spatial scales, there are typically three options of how to integrate these datasets. The first option is to aggregate the dataset that is at a finer resolution in order to match it to the other dataset. The second option is to interpolate the dataset that is at a more aggregated level in order to integrate it with a dataset that is at a finer level. The final option occurs on spatial scales where you have point levels for all of your datsets but they are spatially misaligned. In this case, you have to utilize methods of matching those point locations, for example residential addresses with the closest weather monitor that measured windspeed or flooding. We will go through each of these methods and point out the ways in which error, bias, and reduced precision can occur. 
+
+*Aggregating Up*
+
+When researchers have physical exposure data at a very fine resolution, perhaps even continuous, and human impacts data at a more aggregate level, it is common and practical to aggregate the physical exposure data. This same practice could also work the other way around, aggregating human impacts data to a physical exposure dataset with a narrower spatial and temporal resolution. In any case, when dealing with aggregated data of any kind, it is important to realize that information on the individual level is lost. Researchers should be mindful when aggregating data, particularly continuous data, that they are losing information. 
+
+Data that are aggregated across a spatial area---for example, the total number of deaths in a geographic area in a certain time period---is known as ecological  data, aggregate data, or contextual-level data. Studies that use such data are known as ecological studies [@sedgwick2014ecological]. Ecological bias occurs whenever the aggregate association between an exposure and an outcome does not properly reflect the association on the individual level [@greenland1989ecological]. There are times when this not a concern, as the research question may be interested in the population average impact. However, when estimates derived from ecological studies are used to infer individual estimates, ecological bias will likely be present. For example, a certain county may be assigned a specific maximum wind speed, however this is an average and does not reflect the heterogeneity of maximum wind speeds experienced by the people living in different parts of the county. 
+
+An example of a study that could be prone to this kind of bias is [@kinney2008autism] where Louisiana parishes were considered vulnerable to hurricane exposure based on whether or not the storm center passed through that parish. It is possible that the cases considered exposed based on living in these parishes were not in fact exposed since the storm may have passed through only a certain part of the parish. Never the less, all cases in a parish are considered exposed or unexposed in the aggregate. 
+
+
+
+
+
+
+
+
+
+
+
+####################################################################################################
 *Misclassification error / measurement error.*
 One pathway for problems is through misclassification / measurement error bias. Misclassification error occurs when exposure and outcome variables are measured in categories and the wrong category is assigned to a particular case/observation - for example when a case that is exposed is incorrectly categorized as unexposed. Failure to classify exposure accurately(for example, classifying certain observations as exposed to a storm when they really were not, or vice-versa), allows misclassification bias to move the results of the study further from the true parameter . Measurement error occurs when the variables being measured are continuous, such as the amount of precipitation or the wind speed that was measured during a tropical cyclone. 
 
