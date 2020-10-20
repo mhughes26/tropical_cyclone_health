@@ -680,7 +680,8 @@ they pair up with hurricane tracks or something?]
 - [Are these only the casualties that were specifically linked to the disaster, or does it measure
 the total increase in excess deaths during the period of the disaster?]
 - Predictor variables are disaster damage, recency bias, and day of the week. 
-- [Could you clarify what "recency bias" measures?]
+- "Recency bias is a binary variable measuring whether or not a county was visited by a hazard event
+causing $1 billion of damage 12 months prior."[@zahran2013daily]
 - [Where are they getting the disaster damage estimates?]
 
 
