@@ -2,7 +2,7 @@
 title: "Challenges of Integrating Physical Exposure and Human Impacts Data in Tropical Cyclone Studies"
 author: "Matthew Hughes and Brooke Anderson"
 date: "May 25, 2020"
-output: pdf_document
+output: word_document
 bibliography: bibliography.bib
 ---
 
@@ -15,7 +15,7 @@ Researchers have observed that in utero exposure to tropical cyclones leads to a
 
 Clearly, tropical cyclones dramatically impact the social, economic, and physical wellbeing of  coastal communities. These extreme weather events represent an environmental health threat that is not going to disappear, and given that coastal regions of the Southeastern US are experiencing population growth, it is likely that higher numbers of people will be put at risk in the future. Avoiding these risks is not possible, but building resilience in communities after they experience tropical cyclone events is key to mitigating damages and preparing for future disasters. Creating lasting and resilient communities in areas prone to tropical cyclones  requires that researchers understand which populations and locations are at the greatest risk for negative exposures to tropical storms. This requires data that allows researchers to assess where in space and time tropical storms occur, and also where in space and time individuals and populations are experiencing impacts from these storms. 
 
-Multidisciplinary teams of researchers are exploring this using different datasets, however a key challenge is integrating data from across disciplines. For example: extensive physical exposure data is often available for tropical cyclones as they near and cross communities in the United States. This data can come both from established monitoring networks, like [NOAA network name?], but may also result from data collection efforts during or after the storm by atmospheric scientists and engineers seeking to characterize a storm. Researchers studying the human impacts of these storms, including epidemiologists, economists, and social scientists are interested in this data as well, but the differences in temporal and spatial makes the data less accessible for them to use. Resolving physical exposure and human impact datasets is challenging because the human impact data and physical exposure data often do not have congruent resolutions. 
+Multidisciplinary teams of researchers are exploring this using different datasets, however a key challenge is integrating data from across disciplines. For example: extensive physical exposure data is often available for tropical cyclones as they near and cross communities in the United States. This data can come both from established monitoring networks, like [NOAA network name?], but may also result from data collection efforts during or after the storm by atmospheric scientists and engineers seeking to characterize a storm. Researchers studying the human impacts of these storms, including epidemiologists, economists, and social scientists are interested in this data as well, but the differences in temporal and spatial resolution makes the data accessible harder to use. Resolving physical exposure and human impact datasets is challenging because the human impact data and physical exposure data often do not have congruent resolutions. 
 
 Here we explore cases and implications of integrating data at different temporal and spatial scales, focusing as an example on human impact studies of tropical cyclones in the US. We begin by investigating the reasons that spatial and temporal misaligment exist in the study of tropical cyclones. We then describe the main spatial and temporal scales used, and finally assess some of the consequences that result from integrating physical exposure data with human impacts data. 
 
@@ -100,21 +100,23 @@ It is often the case that specific physical exposures are not considered in real
 
 When researchers study the economic, social, and health impacts that tropical storms and hurricanes have in locales like the Gulf Coast of the United States, it is important to select appropriate spatial and temporal scales to adequately classify exposure. Misalignment in the spatial and temporal scale of exposure data versus outcome data creates challenges when measuring and inferring associations between tropical cyclone exposures and human impacts. This is a problem because it gives an inaccurate picture of how communities and individuals’ health are impacted by these storms.  Two potential implications are that this mismatch can introduce bias in estimated associations and that it can reduce precision in estimates of those associations. In tropical cyclone studies these biases and reduced precision are usually the result of misclassification or measurement error, categorizing continuous data, and ecological bias. 
 
-When researchers are confronted with datasets that are at different temporal or spatial scales, there are typically three options of how to integrate these datasets. The first option is to aggregate the dataset that is at a finer resolution in order to match it to the other dataset. The second option is to interpolate the dataset that is at a more aggregated level in order to integrate it with a dataset that is at a finer level. The final option occurs on spatial scales where you have point levels for all of your datsets but they are spatially misaligned. In this case, you have to utilize methods of matching those point locations, for example residential addresses with the closest weather monitor that measured windspeed or flooding. We will go through each of these methods and point out the ways in which error, bias, and reduced precision can occur. 
+When researchers are confronted with datasets that are at different temporal or spatial scales, there are typically two options for integrating these datasets. The first option is to aggregate the dataset that is at a finer resolution in order to match it to the other dataset. The other option occurs on spatial scales where you have point levels for all of your datsets but they are spatially misaligned. In this case, you have to utilize methods of matching those point locations, for example residential addresses with the closest weather monitor that measured windspeed or flooding. We will go through each of these methods and point out the ways in which error, bias, and reduced precision can occur. 
 
-*Aggregating Up*
+## When Data Have Different Scales
 
 When researchers have physical exposure data at a very fine resolution, perhaps even continuous, and human impacts data at a more aggregate level, it is common and practical to aggregate the physical exposure data. This same practice could also work the other way around, aggregating human impacts data to a physical exposure dataset with a narrower spatial and temporal resolution. In any case, when dealing with aggregated data of any kind, it is important to realize that information on the individual level is lost. Researchers should be mindful when aggregating data, particularly continuous data, that they are losing information. 
 
-Data that are aggregated across a spatial area---for example, the total number of deaths in a geographic area in a certain time period---is known as ecological  data, aggregate data, or contextual-level data. Studies that use such data are known as ecological studies [@sedgwick2014ecological]. Ecological bias occurs whenever the aggregate association between an exposure and an outcome does not properly reflect the association on the individual level [@greenland1989ecological]. There are times when this not a concern, as the research question may be interested in the population average impact. However, when estimates derived from ecological studies are used to infer individual estimates, ecological bias will likely be present. For example, a certain county may be assigned a specific maximum wind speed, however this is an average and does not reflect the heterogeneity of maximum wind speeds experienced by the people living in different parts of the county. 
+Physical exposures to tropical cyclones, as well as human impacts, are understood across spatial gradiants, and though specific point locations may exist for a weather monitor recording maximum wind sped or rainfall, that point location data is aggregated to a larger spatial unit. For example, several point locations recording maximum wind speed may be replaced by the highest wind speed in a specific county. Data such as this is known as ecological  data, aggregate data, or contextual-level data. Studies that use such data are known as ecological studies [@sedgwick2014ecological]. Ecological bias occurs whenever the aggregate association between an exposure and an outcome does not properly reflect the association on the individual level [@greenland1989ecological]. There are times when this is not a concern, as the research question may be interested in the population average impact. However, when estimates derived from ecological studies are used to infer individual estimates, ecological bias will likely be present. Especially when there is heterogeneity present in an aggregated population, an ecological estimate should not be taken to be representative of individual estimates. 
+
+Researchers do not just aggregate spatial scales; they also aggregate the physical exposures themselves. As previous
 
 When aggregating data, another concern that arises is misclassification or measurerement error. Misclassification error occurs when exposure and outcome variables are measured in categories and the wrong category is assigned to a particular case/observation - for example when a case that is exposed is incorrectly categorized as unexposed. Failure to classify exposure accurately(for example, classifying certain observations as exposed to a storm when they really were not, or vice-versa), allows misclassification bias to move the results of the study further from the true parameter . Measurement error occurs when the variables being measured are continuous, such as the amount of precipitation or the wind speed that was measured during a tropical cyclone. 
 
 Environmental epidemiology studies are often prone to misclassification error because the methods of assessing exposure are not always congruent with the way that researchers conduct human impact studies. It is easy to map the path of a tropical cyclone's center, and categorize every county it passes through as an exposed county. However, this information by itself would not give the researcher any information about population centers that the storm passed through or near to. A town within an exposed county may or may not have been close to the storm's path. Conversely,a town in an unexposed county could be located very close to the border of an exposed county, and even be closer to the storm's track than a different town within that exposed county. An example of a study that could be prone to this kind of bias is [@kinney2008autism] where Louisiana parishes were considered vulnerable to hurricane exposure based on whether or not the storm center passed through that parish. It is possible that the cases considered exposed based on living in these parishes were not in fact exposed since the storm may have passed through only a certain part of the parish. Never the less, all cases in a parish are considered exposed or unexposed in the aggregate. 
 
-*Interpolating Data*
 
-*Handling Misaligned Point Sources*
+##  When Data Have the Same Scale but are at Different Locations
+
 Sometimes, researchers may have access to data that is down to the point source, both for physical exposures and also for human impacts. Very likely however, these point sources will not be the same. Here the issue is not of integrating different resolution levels, but rather of matching different point locations. Weather monitoring sensors may be set up regularly in a grid formation in a geographic region, but the human impacts point locations could be tied to a residential address. In this case, the residential addresses would have to be united with the closest weather monitoring sensor. 
 
 Misclassification is again another potential source of bias in this situation. A current weather monitor or sensor may give a certain reading for a maximum wind speed, but it will be the closest weather monitor for multiple different residential addresses that all experience different maximum wind speeds. 
@@ -127,7 +129,8 @@ Misclassification is again another potential source of bias in this situation. A
 
 
 
-####################################################################################################
+-----------------------------------------------------------------------------------------------
+
 *Misclassification error / measurement error.*
 One pathway for problems is through misclassification / measurement error bias. Misclassification error occurs when exposure and outcome variables are measured in categories and the wrong category is assigned to a particular case/observation - for example when a case that is exposed is incorrectly categorized as unexposed. Failure to classify exposure accurately(for example, classifying certain observations as exposed to a storm when they really were not, or vice-versa), allows misclassification bias to move the results of the study further from the true parameter . Measurement error occurs when the variables being measured are continuous, such as the amount of precipitation or the wind speed that was measured during a tropical cyclone. 
 
@@ -417,6 +420,28 @@ this with data that for human impacts studies on outcomes among humans
 - **resolution**: We're using this right now to talk about spatial and
 temporal levels of aggregation. Sometimes, we're using "scales" instead, I 
 think.
+
+-**misalignment**
+
+-**data integration**
+
+- **maximum sustained wind speed**
+
+- **storm track**
+
+- **precipitation**
+
+- **hazard**
+
+- **tropical cyclone**
+
+- **Atlantic Basin**
+
+- **interpolation**
+
+- **aggregation**
+
+
 - **
 
 
