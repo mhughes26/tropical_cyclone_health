@@ -2,7 +2,7 @@
 title: "Challenges of Integrating Physical Exposure and Human Impacts Data in Tropical Cyclone Studies"
 author: "Matthew Hughes and Brooke Anderson"
 date: "May 25, 2020"
-output: word_document
+output: pdf_document
 bibliography: bibliography.bib
 ---
 
@@ -21,9 +21,9 @@ Here we explore cases and implications of integrating data at different temporal
 
 # Spatial and Temporal Misalignment: Origins of Integration Challenges
 
-Spatial and temporal misalignment is a problem that researchers run into when integrating data from human impact studies with physical exposure data. For example, physical exposure data on windspeed may have a very fine resolution, possibly down to seconds or minutes, while data on birth outcomes may be at a temporal scale of weeks or even months. 
+Questions about the human impacts of tropical cyclones are multidisciplinary, and as such require datsets from different and sometimes seemingly disparate sources. Different disciplines have different methods of collecting data. These differences go beyond the types of software or data management systems used, they often come down to differences the spatial and temporal scales that data points are collected at. These differences and temporal and spatial scales are what we refer to in this paper as spatial and temporal misalignment. In this section we'll describe what drives these differences in temporal and spatial scale, and also inform the reader about the most common spatial and temporal scales used in tropical cyclone research. We'll also detail some of the situations where particular spatial and temporal scales are advantageous. 
 
-Some of the reasons for this are practical. Often physical exposure data is recorded at monitoring systems that are designed to automatically record a data point at a fixed interval of time. Human impact data on health or socioeconomic status comes from administrative sources that collect data on certain scales. Different sources of data naturally beget differences in data resolution. Another factor that drives spatial and temporal misalignment between physical exposure data and human impacts data is privacy. Physical exposure data is impersonal and can often represent a very specific temporal and spatial point, whereas human impacts data is often aggregated to preserve the anonymity and privacy of study subjects. 
+Many of the drivers for spatial and temporal misalignment in any sort of multidisciplinary research stem from the fact that these disciplines evolved and created their own research methods separately. These separate methods are easily illustrated in the various ways in which data are collected across disciplines. For example, in physical exposure assessments,  data is often recorded by sensors in vast monitoring systems that are designed to automatically record a data point at a fixed interval of time. These monitoring systems are often the result of long-standing weather projects such as NOAA and the NWS, and the data is often narrow in temporal and spatial resolution. On the other hand, researchers studying human impacts collect their data from administrative sources. These sources often aggregated by geographic region and time, often out of convenience, or a need to preserve the anonymity and privacy of the people whose data is being used. Taking these things into consideration, it is easier to imagine why  
 
 The study question that researchers ask may also drive the choice of spatial and temporal scales used to understand human impacts from tropical cyclones. If a study is concerned with birth outcomes for example, having weather data on the windspeed every several seconds may not be relevant, because birth outcomes related to storm exposure in utero may operate on a longer time scale. Sometimes exposure to a tropical cyclone is defined as being present in a county that was hit by the storm center during a gestational period of a mother's pregnancy as is the case in [@grabich2016hurricane]. Here, the researchers divided a pregnancy into exposed and unexposed time to tropical cyclones after 20 weeks of gestation. Using cumulative storm data therefore gives the researchers an easier way to integrate physical exposure data with the gestational period being studied. 
 
@@ -130,7 +130,7 @@ Not surprisingly, dichotomizing continuous variables can bias results. A study b
 
 Although using a single exposure value can simplify analysis and interpretation, particularly over an extended temporal scale, there are some obvious drawbacks to relying on one single aggregate value. For example, the Saffir Simpson categories typically correspond only to the geographic point location where the maximum wind speed was observed [@taylor2010saffir]. Hurricane Wilma in 2005 for example, was a Category 3 hurricane when it made landfall on the southwest coast of Florida, but it created Category 1 and Category 2 conditions for the more populous Miami-Dade, Broward, and Palm Beach counties when it finally reached them [@taylor2010saffir].
 
-### Misclassification and Measurement Error
+### Misclassification and Measurement Error in Aggregating Data
 
 When aggregating data, another concern that arises is misclassification or measurerement error. Misclassification error occurs when exposure and outcome variables are measured in categories and the wrong category is assigned to a particular case/observation - for example when a case that is exposed is incorrectly categorized as unexposed. Failure to classify exposure accurately(for example, classifying certain observations as exposed to a storm when they really were not, or vice-versa), allows misclassification bias to move the results of the study further from the true parameter . Measurement error occurs when the variables being measured are continuous, such as the amount of precipitation or the wind speed that was measured during a tropical cyclone. 
 
@@ -142,6 +142,8 @@ A potential solution to this problem of misclassification of populations is thro
 ##  When Data Have the Same Scale but are at Different Locations
 
 Sometimes, researchers may have access to data that is down to the point source, both for physical exposures and also for human impacts. Very likely however, these point sources will not be the same. Here the issue is not of integrating different resolution levels, but rather of matching different point locations. Weather monitoring sensors may be set up regularly in a grid formation in a geographic region, but the human impacts point locations could be tied to a residential address. In this case, the residential addresses would have to be united with the closest weather monitoring sensor. 
+
+### Misclassification for Same Scale Different Locations
 
 Misclassification is again another potential source of bias in this situation. A current weather monitor or sensor may give a certain reading for a maximum wind speed, but it will be the closest weather monitor for multiple different residential addresses that all experience different maximum wind speeds. 
 
@@ -491,5 +493,9 @@ Tropical cyclones often disrupt local economies of coastal communities. For exam
 Non-differential misclassification refers to misclassification of either the exposure or the outcome, that is unrelated to the other (Aschengrau and Seage 2013).  The effect of misclassifying exposures will often, though not always, bias the results of outcome towards the null (Armstrong 1998). In effect, this will weaken or obscure any associations that are present that the researcher may hope to observe in the data (Armstrong 1998).  
 
 Differential misclassification error occurs when the misclassification of the outcome is related to the misclassification of the exposure or vice versa [@aschengrau2013essentials]. While non-differential misclassification often (though not always) has the effect of moving the observed association or parameter towards the null, differential misclassification can move the observation in either direction.
+
+-----------------------
+
+Spatial and temporal misalignment is a problem that researchers run into when integrating data from human impact studies with physical exposure data. For example, physical exposure data on windspeed may have a very fine resolution, possibly down to seconds or minutes, while data on birth outcomes may be at a temporal scale of weeks or even months.
 
 # References
