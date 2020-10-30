@@ -146,11 +146,17 @@ A potential solution to this problem of misclassification of populations is thro
 
 ##  When Data Have the Same Scale but are at Different Locations
 
-Sometimes, researchers may have access to data that is down to the point source, both for physical exposures and also for human impacts. Very likely however, these point sources will not be the same. Here the issue is not of integrating different resolution levels, but rather of matching different point locations. Weather monitoring sensors may be set up regularly in a grid formation in a geographic region, but the human impacts point locations could be tied to a residential address. In this case, the residential addresses would have to be united with the closest weather monitoring sensor. 
+Sometimes, researchers may have access to data that is down to the point source, both for physical exposures and also for human impacts. Very likely however, these point sources will not be the same. Here the issue is not of integrating different resolution levels, but rather of matching different point locations. Weather monitoring stations may be set up regularly in a geographic region, but the human impacts point locations could be tied to a residential address. One way to resolve this spatial misalignment is to assign exposure to the residential addresses based on the closest weather monitoring station [@kim2009health]. Another method is interpolate the data.
+
+One area of research where tropical cyclone studies could stand to learn from is air pollution epidemiology. Many of the same issues regarding spatial and temporal misalignment exist in this area and novel methods have been developed such as the Kriging model. Kriging models estimate parameters of air pollution concentration over a spatial surface and then use this information to predict air pollution exposures to individual point locations. This was done in [@kim2009health] to look at air pollution exposure in Los Angeles, California. The study utilized both methods mentioned above using a kriging model and also referring to the nearest weather monitoring station to assign air pollution exposure to residential locations in Los Angeles. 
+
+
 
 ### Misclassification for Same Scale Different Locations
 
 Misclassification is again another potential source of bias in this situation. A current weather monitor or sensor may give a certain reading for a maximum wind speed, but it will be the closest weather monitor for multiple different residential addresses that all experience different maximum wind speeds. 
+
+### Kriger Interpolation
 
 
 
