@@ -146,7 +146,9 @@ A potential solution to this problem of misclassification of populations is thro
 
 Sometimes, researchers may have access to data that is down to the point source, both for physical exposures and also for human impacts. Very likely however, these point sources will not be the same. Here the issue is not of integrating different resolution levels, but rather of matching different point locations. Weather monitoring stations may be set up regularly in a geographic region, but the human impacts point locations could be tied to a residential address. One way to resolve this spatial misalignment is to assign exposure to the residential addresses based on the closest weather monitoring station [@kim2009health]. Another method is interpolate the data.
 
-One area of research where tropical cyclone studies could stand to learn from is air pollution epidemiology. Many of the same issues regarding spatial and temporal misalignment exist in this area and novel methods have been developed such as the Kriging model. Kriging models estimate parameters of air pollution concentration over a spatial surface and then use this information to predict air pollution exposures to individual point locations. This was done in [@kim2009health] to look at air pollution exposure in Los Angeles, California. The study utilized both methods mentioned above using a kriging model and also referring to the nearest weather monitoring station to assign air pollution exposure to residential locations in Los Angeles. 
+One area of research where tropical cyclone studies could stand to learn about data interpolation from is air pollution epidemiology. Many of the same issues regarding spatial and temporal misalignment exist in this area and novel methods have been developed such as the Kriging model. Kriging models estimate parameters of air pollution concentration over a spatial surface and then use this information to predict air pollution exposures to individual point locations. This was done in [@kim2009health] to look at air pollution exposure in Los Angeles, California. The study utilized both methods mentioned above using a kriging model and also referring to the nearest weather monitoring station to assign air pollution exposure to residential locations in Los Angeles. Something similar could be utilized in tropical cyclone studies as well, replacing rainfall or windspeed for air pollution and particulate matter. 
+
+
 
 
 
@@ -156,7 +158,7 @@ Misclassification is again another potential source of bias in this situation. A
 
 ### Kriger Interpolation
 
-
+Kriging is a relatively new interpolation method for creating continuous spatial surfaces for understanding environmental variables like air pollution, minerals, soil, and meteorological conditions [@liang2013time]. This method has been used extensively in modeling the effects of air pollution in places like California, but it is widely applicable to studies of tropical cyclones as well. Researchers in South Carolina used kriging interpolation to analyse rainfall data and create spatio-temporal model in 2015 during a particularly strong storm season. 
 
 
 
