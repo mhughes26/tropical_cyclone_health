@@ -148,7 +148,7 @@ Sometimes, researchers may have access to data that is down to the point source,
 
 One way to resolve this spatial misalignment is to assign exposure to the residential addresses based on the closest weather monitoring station [@kim2009health]. This is a common method that is employed in many other areas of environmental epidemiology, including studies on the impacts of wildfire smoke plumes and urban smog on respiratory health. Typically, a distance threshold will be determined for a monitoring station or a sensor, and any residence within that distance will be assigned an exposure value from that monitoring point. 
 
-There are several drawbacks to assigning exposure to human residences based on distance from a weather monitoring stations. One of them is that in more rural areas, in situ observations may be sparse and this limits the information between monitors, and diminishes the accuracy of exposures assigned to individuals located between those monitors [@gan2017comparison].The exposed population is also reduced when you rely on distance from monitoring sites, because you can only include individuals who are close enough to reasonably be assigned the exposure from that site [@lassman2017spatial]. Depending on the exposure of interest, topography, climate, and localized weather patterns will also render sites beyond a limited threshold distance from the site as unrealistic to be assigned the value from the monitoring station. 
+There are several drawbacks to assigning exposure to human residences based on distance from a weather monitoring stations. One of them is that in more rural areas, in situ observations may be sparse and this limits the information between monitors, and diminishes the accuracy of exposures assigned to individuals located between those monitors [@gan2017comparison].The exposed population is also reduced when you rely on distance from monitoring sites, because you can only include individuals who are close enough to reasonably be assigned the exposure from that site [@lassman2017spatial]. This can be a problem, as large populations are often required for detection of health impacts. Depending on the exposure of interest, topography, climate, and localized weather patterns will also render sites beyond a limited threshold distance from the site as unrealistic to be assigned the value from the monitoring station. 
 
 Another method of assigning exposure to spatially misaligned individuals is to interpolate. Spatial interpolation is the prediction of values or metrics of specific points within a defined region based on some sort of spatial model [@li2014spatial]. 
 
@@ -157,7 +157,11 @@ Kriging is one such method that creates continuous spatial surfaces for understa
 
 ### Misclassification for Same Scale Different Locations
 
-Misclassification is again another potential source of bias in this situation. A current weather monitor or sensor may give a certain reading for a maximum wind speed, but it will be the closest weather monitor for multiple different residential addresses that all experience different maximum wind speeds. 
+The obvious goal of assigning tropical cyclone exposures to individual point locations by matching values from the nearest monitoring site or spatially interpolating, is to estimate exposure values accuarately. This is crucial to avoid exposure misclassification. The more spatially heterogeneous that an environmental exposure is, the more room there is for exposure misclassification to occur. In studies of wildfires and air pollution, concentrations of PM2.5 and other air pollutants can very greatly within relatively small spatial areas. Other factors like windspeed and rainfall however, are fairly homogenous across spatial areas. This means that interpolating and assigning exposure based on the nearest monitoring sites may result in less exposure misclassificationhave. Tornadoes on the other hand tend to be very localized and can easily be overlooked with these methods. 
+
+When assigning exposure to an individual point location based on the nearest monitoring site, the further this location is from the monitoring site, the more likely it is that the monitoring site won't reflect an exposure estimate accurately. Depending on the environmental variable being measured 
+
+
 
 
 
