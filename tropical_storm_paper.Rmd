@@ -144,7 +144,13 @@ A potential solution to this problem of misclassification of populations is thro
 
 ##  When Data Have the Same Scale but are at Different Locations
 
-Sometimes, researchers may have access to data that is down to the point source, both for physical exposures and also for human impacts. Very likely however, these point sources will not be the same. Here the issue is not of integrating different resolution levels, but rather of matching different point locations. Weather monitoring stations may be set up regularly in a geographic region, but the human impacts point locations could be tied to a residential address. One way to resolve this spatial misalignment is to assign exposure to the residential addresses based on the closest weather monitoring station [@kim2009health]. Another method is interpolate the data.
+Sometimes, researchers may have access to data that is down to the point source, both for physical exposures and also for human impacts. Very likely however, these point sources will not be the same. Here the issue is not of integrating different resolution levels, but rather of matching different point locations. Weather monitoring stations may be set up regularly in a geographic region, but the human impacts point locations could be tied to a residential address. 
+
+One way to resolve this spatial misalignment is to assign exposure to the residential addresses based on the closest weather monitoring station [@kim2009health]. This is a common method that is employed in many other areas of environmental epidemiology, including studies on the impacts of wildfire smoke plumes and urban smog on respiratory health. Typically, a distance threshold will be determined for a monitoring station or a sensor, and any residence within that distance will be assigned an exposure value from that monitoring point. 
+
+There are several drawbacks to assigning exposure to human residences based on distance from a weather monitoring stations. One of them is that in more rural areas, in situ observations may be sparse and this limits the information between monitors, and diminishes the accuracy of exposures assigned to individuals located between those monitors [@gan2017comparison].The exposed population is also reduced when you rely on distance from monitoring sites, because you can only include individuals who are close enough to reasonably be assigned the exposure from that site [@lassman2017spatial]. Depending on the exposure of interest, topography, climate, and localized weather patterns will also render sites beyond a limited threshold distance from the site as inaccurate. 
+
+
 
 Spatial interpolation is the prediction of values or metrics of specific points within a defined region based on some sort of spatial model [@li2014spatial]. 
 
