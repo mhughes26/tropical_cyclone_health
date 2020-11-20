@@ -148,25 +148,19 @@ Sometimes, researchers may have access to data that is down to the point source,
 
 One way to resolve this spatial misalignment is to assign exposure to the residential addresses based on the closest weather monitoring station [@kim2009health]. This is a common method that is employed in many other areas of environmental epidemiology, including studies on the impacts of wildfire smoke plumes and urban smog on respiratory health. Typically, a distance threshold will be determined for a monitoring station or a sensor, and any residence within that distance will be assigned an exposure value from that monitoring point. 
 
-There are several drawbacks to assigning exposure to human residences based on distance from a weather monitoring stations. One of them is that in more rural areas, in situ observations may be sparse and this limits the information between monitors, and diminishes the accuracy of exposures assigned to individuals located between those monitors [@gan2017comparison].The exposed population is also reduced when you rely on distance from monitoring sites, because you can only include individuals who are close enough to reasonably be assigned the exposure from that site [@lassman2017spatial]. Depending on the exposure of interest, topography, climate, and localized weather patterns will also render sites beyond a limited threshold distance from the site as inaccurate. 
+There are several drawbacks to assigning exposure to human residences based on distance from a weather monitoring stations. One of them is that in more rural areas, in situ observations may be sparse and this limits the information between monitors, and diminishes the accuracy of exposures assigned to individuals located between those monitors [@gan2017comparison].The exposed population is also reduced when you rely on distance from monitoring sites, because you can only include individuals who are close enough to reasonably be assigned the exposure from that site [@lassman2017spatial]. Depending on the exposure of interest, topography, climate, and localized weather patterns will also render sites beyond a limited threshold distance from the site as unrealistic to be assigned the value from the monitoring station. 
 
+Another method of assigning exposure to spatially misaligned individuals is to interpolate. Spatial interpolation is the prediction of values or metrics of specific points within a defined region based on some sort of spatial model [@li2014spatial]. 
 
-
-Spatial interpolation is the prediction of values or metrics of specific points within a defined region based on some sort of spatial model [@li2014spatial]. 
-
-One area of research where tropical cyclone studies could stand to learn about data interpolation from is air pollution epidemiology. Many of the same issues regarding spatial and temporal misalignment exist in this area and novel methods have been developed such as the Kriging model. Kriging models estimate parameters of air pollution concentration over a spatial surface and then use this information to predict air pollution exposures to individual point locations. This was done in [@kim2009health] to look at air pollution exposure in Los Angeles, California. The study utilized both methods mentioned above using a kriging model and also referring to the nearest weather monitoring station to assign air pollution exposure to residential locations in Los Angeles. Something similar could be utilized in tropical cyclone studies as well, replacing rainfall or windspeed for air pollution and particulate matter. 
-
-
-
+Kriging is one such method that creates continuous spatial surfaces for understanding environmental variables like air pollution, minerals, soil, and meteorological conditions [@liang2013time]. It is a type of Generalized Least Square Regression Algorithm [@li2014spatial]. This method has been used extensively in modeling the effects of air pollution in places like California, as was done in [@kim2009health] to look at air pollution exposure in Los Angeles, California. The study utilized  a kriging model and as well as using the nearest weather monitoring station to assign air pollution exposure to residential locations in Los Angeles. Kriging is widely applicable to studies of tropical cyclones as well. Researchers in South Carolina used kriging interpolation to analyse rainfall data and create spatio-temporal model in 2015 during a particularly strong storm season. 
 
 
 ### Misclassification for Same Scale Different Locations
 
 Misclassification is again another potential source of bias in this situation. A current weather monitor or sensor may give a certain reading for a maximum wind speed, but it will be the closest weather monitor for multiple different residential addresses that all experience different maximum wind speeds. 
 
-### Kriger Interpolation
 
-Kriging is a relatively new interpolation method for creating continuous spatial surfaces for understanding environmental variables like air pollution, minerals, soil, and meteorological conditions [@liang2013time]. It is a type of Generalized Least Square Regression Algorithm [@li2014spatial]. This method has been used extensively in modeling the effects of air pollution in places like California, but it is widely applicable to studies of tropical cyclones as well. Researchers in South Carolina used kriging interpolation to analyse rainfall data and create spatio-temporal model in 2015 during a particularly strong storm season. 
+
 
 
 
