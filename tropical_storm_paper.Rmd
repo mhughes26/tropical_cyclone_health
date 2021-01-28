@@ -2,7 +2,7 @@
 title: "Challenges of Integrating Physical Exposure and Human Impacts Data in Tropical Cyclone Studies"
 author: "Matthew Hughes and Brooke Anderson"
 date: "May 25, 2020"
-output: pdf_document
+output: word_document
 bibliography: bibliography.bib
 ---
 
@@ -18,6 +18,34 @@ Clearly, tropical cyclones dramatically impact the social, economic, and physica
 Multidisciplinary teams of researchers are exploring this using different datasets, however a key challenge is integrating data from across disciplines. For example: extensive physical exposure data is often available for tropical cyclones as they near and cross communities in the United States. This data can come both from established monitoring networks, like [NOAA network name?], but may also result from data collection efforts during or after the storm by atmospheric scientists and engineers seeking to characterize a storm. Researchers studying the human impacts of these storms, including epidemiologists, economists, and social scientists are interested in this data as well, but the differences in temporal and spatial resolution makes the data accessible harder to use. Resolving physical exposure and human impact datasets is challenging because the human impact data and physical exposure data often do not have congruent resolutions. 
 
 Here we explore cases and implications of integrating data at different temporal and spatial scales, focusing as an example on human impact studies of tropical cyclones in the US. We begin by investigating the reasons that spatial and temporal misaligment exist in the study of tropical cyclones. We then describe the main spatial and temporal scales used, and finally assess some of the consequences that result from integrating physical exposure data with human impacts data. 
+
+# Physical Exposures from Tropical Cyclones
+
+Before we delve into the temporal and spatial scales used to understand tropical cyclone impacts on human health and infrastructure, it may be useful to briefly describe the meteorology of a tropical cyclone, and the ways in which physical properties, and thus exposures, are measured. 
+
+Tropical cyclones are a term that encompass the same type of storm with differentiating names around the globe. Tropical cyclones are referred to as hurricanes in the North Atlantic and Eastern Pacific, typhoons in the Western Pacific, and cyclones in India, Australia, and East Africa. 
+
+Tropical cyclones in the Atlantic Basin usually start as thunderstorms in West Africa and gradually grow into larger storm systems as they move across the Atlantic Ocean. The transformation of these small storms, called tropical disturbances, to tropical depressions, and then tropical storms, and finally tropical cyclones, requires high humidity throughout the troposphere, as well as warm surface water temperatures extending to depths of 200 meters. These are conditions that are usually met between summer and early fall in the North Atlantic. The center of a tropical cyclone is known as the eye, and it is here that air pressures is incredibly low, winds are light, and cloud cover is broken. It is the eye wall where wind speeds are at their highest, and where precipitation is at it's heaviest. 
+
+Much of the destruction and carnage that tropical cyclones leave in their wake is due to the high winds, which can cause dangerous flying debris to damage property and strike individuals. High winds also generate storm surges that cause flooding, obliterate buildings, and lead to drownings, especially when this coincides with normal high tides. Adding to this is the fact that a quarter of tropical cyclones that strike the United States spawn tornadoes, typically in the right front quadrant of the advancing cyclone. 
+
+Measuring the impact that tropical cyclones have on communities in order to assess exposure to the effects like flooding and wind damage means that meteorological measurements of precipitation, wind speed, air pressure, and other metrics must be obtained. I will explain some of the most common ways that these properties are measured. This is important because the limitations of these measurements also inform what we can assume to be true when assigning exposure to communities and individuals. 
+
+## Wind Speed and Direction
+
+Wind speed is an extremely important element of tropical cyclones. To even be classified as a tropical cyclone, a storm must have wind speeds in excess of 74 miles per hour (64 knots). 
+
+Meteorologists and atmospheric scientists use ground based wind instruments in set locations to measure wind speed and direction. One such instrument is called a wind vane. These can take on a variety of appearances such as wind socks at the airport, but they are essentially arrows that always point in the direction the wind is blowing. Anemometers measure wind speed by recording the rate of rotation of moving cups on a free moving shaft. An aerovane can measure both wind speed and wind direction and can be attached to a recorder to give continuous measurements. In order to be accurate and effective, these ground based wind instruments must be placed above the roofs of buildings so that they can be exposed to free flowing air. Since this is not always the case, wind observations can consequently be erratic in nature. 
+
+Above ground, geostationary satellites, which are positioned above a particular location can measure wind speed and wind direction by observing the direction that clouds move in a given amount of time. Doppler radar can also be used to measure wind speed and direction. 
+
+## Precipitation 
+
+It is important to measure precipitation from tropical cyclones because not only does this give an indication of the cyclone's magnitude, but it also corresponds to damaging effects such as flooding. 
+
+Rain gauges are the most well known instrument for measuring precipitation, but there are several different types of precipitation. A standard rain gauge is simply a funnel shaped rain collector that is attached to a tube with measurements on the side. Measurements of rain less than 0.01 of an inch in a rain gauge are referred to as trace amounts. Tipping bucket rain gauges send electrical signals to a remote sensor every time a system of two buckets moves due to a known amount of water filling one of the buckets. Because a small amount of rain is lost whenever the buckets tip, this way of measuring rain is always an undercount. However, this is the type of rain gauge used by the automated weather stations.
+
+Finally, similarly to wind speeds, radar and doppler radar can also be used to gauge precipitation. These technologies allow scientists to actually see the inside of a cloud and understand the amount of precipitation in that cloud. 
 
 # Spatial and Temporal Misalignment: Origins of Integration Challenges
 
@@ -150,16 +178,25 @@ One way to resolve this spatial misalignment is to assign exposure to the reside
 
 There are several drawbacks to assigning exposure to human residences based on distance from a weather monitoring stations. One of them is that in more rural areas, in situ observations may be sparse and this limits the information between monitors, and diminishes the accuracy of exposures assigned to individuals located between those monitors [@gan2017comparison].The exposed population is also reduced when you rely on distance from monitoring sites, because you can only include individuals who are close enough to reasonably be assigned the exposure from that site [@lassman2017spatial]. This can be a problem, as large populations are often required for detection of health impacts. Depending on the exposure of interest, topography, climate, and localized weather patterns will also render sites beyond a limited threshold distance from the site as unrealistic to be assigned the value from the monitoring station. 
 
+Other limitations: storm events could blow away monitors (damage sensors) or the rain can come down in slants that make measurements less accurate. Issues with a radar asystem are different from issues with a ground based monitoring system. 
+
 Another method of assigning exposure to spatially misaligned individuals is to interpolate. Spatial interpolation is the prediction of values or metrics of specific points within a defined region based on some sort of spatial model [@li2014spatial]. 
 
 Kriging is one such method that creates continuous spatial surfaces for understanding environmental variables like air pollution, minerals, soil, and meteorological conditions [@liang2013time]. It is a type of Generalized Least Square Regression Algorithm [@li2014spatial]. This method has been used extensively in modeling the effects of air pollution in places like California, as was done in [@kim2009health] to look at air pollution exposure in Los Angeles, California. The study utilized  a kriging model and as well as using the nearest weather monitoring station to assign air pollution exposure to residential locations in Los Angeles. Kriging is widely applicable to studies of tropical cyclones as well. Researchers in South Carolina used kriging interpolation to analyse rainfall data and create spatio-temporal model in 2015 during a particularly strong storm season. 
 
+Creating a surface, something using a model. This brings in other stuff. Kriging is only based on PM2.5 (if studying wildfire smoke). Modeling would bring in other things like weather.
+
+3rd category: modeling. 
+
+Mention somewhere that homogenous exposures over large areas mean that it doesn't matter what method you use, maybe use the most simple, because otherwise this will be more computation time and it is harder to interpret. 
 
 ### Misclassification for Same Scale Different Locations
 
 The obvious goal of assigning tropical cyclone exposures to individual point locations by matching values from the nearest monitoring site or spatially interpolating, is to estimate exposure values accuarately. This is crucial to avoid exposure misclassification. The more spatially heterogeneous that an environmental exposure is, the more room there is for exposure misclassification to occur. In studies of wildfires and air pollution, concentrations of PM2.5 and other air pollutants can very greatly within relatively small spatial areas. Other factors like windspeed and rainfall however, are fairly homogenous across spatial areas. This means that interpolating and assigning exposure based on the nearest monitoring sites may result in less exposure misclassificationhave. Tornadoes on the other hand tend to be very localized and can easily be overlooked with these methods. 
 
-When assigning exposure to an individual point location based on the nearest monitoring site, the further this location is from the monitoring site, the more likely it is that the monitoring site won't reflect an exposure estimate accurately. Depending on the environmental variable being measured 
+When assigning exposure to an individual point location based on the nearest monitoring site, the further this location is from the monitoring site, the more likely it is that the monitoring site won't reflect an exposure estimate accurately. Topography, complicated weather patterns, and other things could complicate this measurement. 
+
+When interpolating, the environmental exposure of concern will partially determine the potential for misclassification. Using the examples from above of windspeed and rainfall, it is unlikely that much misclassification would occur over a spatial interface since they are homogenous over large areas. 
 
 
 
