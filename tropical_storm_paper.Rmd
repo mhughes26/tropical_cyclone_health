@@ -95,7 +95,7 @@ There are several disadvantages and pitfalls to using this spatial level. For on
 
 Many studies used the spatial level of entire states or specific metropolitan areas to gather information on those who were exposed. [@harville2010population] is an interesting paper because it looks at the state level as well as the regional and parish level. In this paper researchers observed birth outcomes in response to Hurricane Katrina in the state of Louisiana as a whole, the New Orleans metropolitan area, and Orleans parish, which is the heart of New Orleans. Looking at these three levels is a way to compare different incident rates and other measures of associations across different spatial scales. 
 
-The state or national level is the spatial level of an ecological study and can be useful to compare the emergency preparedness and policies of different states. It can also reveal inequities in government response to natural disasters. For example, in [@willison2019quantifying], researchers quantified the federal responses to Hurricanes Irma, Harvey, and Maria in Texas, Florida, and Puerto Rico. 
+The state or national level is the spatial level of an ecological study and can be useful to compare the emergency preparedness and policies of different states. It can also reveal inequities in government response to natural disasters. For example, in [@willison2019quantifying], researchers quantified the federal responses to Hurricanes Irma, Harvey, and Maria in Texas, Florida, and Puerto Rico. They determined that in terms of federal spending and staffing, Hurricane Maria in Puerto Rico was not responded to in a manner commensurate with damage and need for aid compared to Hurricanes Irma and Harvey in Texas and Puerto Rico. 
 
 # Temporal Scales
 
