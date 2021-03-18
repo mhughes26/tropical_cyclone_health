@@ -10,28 +10,24 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r}
-library(hurricaneexposure)
-library(hurricaneexposuredata)
 library(tidyverse)
 library(sf)
 library(tigris)
-library(USAboundaries)
-library(acs)
-library(tidycensus)
 ```
 
 ```{r}
-us <- states()
+us <- states(cb = TRUE)
 plot(us)
 ```
 
 
+
 ```{r}
-us_states <- states()
-us_states_20m <- states(cb = TRUE, resolution = "20m")
-florida <- us_states[us_states$NAME == "Florida", ]
-florida_20m <- us_states_20m[us_states_20m$NAME == "Florida", ]
+florida <- counties(state = "FL", cb = TRUE)
 plot(florida)
-plot(florida_20m, border = "red", add = TRUE)
+```
+```{r}
+flo_pan <- zctas(cb = TRUE, starts_with(323))
+plot(flo_pan)
 ```
 
