@@ -1051,7 +1051,29 @@ Exposure was defined with five metrics: distance to storm track, cumulative rain
 
 The outcome of interest was hospitalizations for cardiovascular or respiratory health effects. 
 
+[@parks2021tropical]
 
+This study looked at tropical cyclone exposure and the association with hospitilizations rates in older adults. 
+
+# Temporal Scale
+
+Day. Association between tropical cyclone exposure up to 7 days after the day of exposure. 
+
+# Spatial Scale
+
+County level. 
+
+# Exposure
+
+Exposure assigned to a particular day if the peak sustained wind that day exceeded a gale force greater than or equal to 34 knots on the Beaufort scale when the cyclone was at the point of closest approach to the county.
+
+# Outcome
+
+The highest increase in hospitalizations after exposure to the tropical cyclones was due to respiratory illnesses. This occured across all seven days after exposure (23%), but peaked after the first day. Injury  hospitalizations also increased all seven days, peaking on the second day at 13.5%.  
+
+# Implications
+
+Exposure misclassification is likely a possibility, as patients were assigned exposure based on their county of residence even though this may not be the county they were in when the cyclone hit. This misclassification is expected to be non-differential bringing the association towards the null, as correlation with the outcome is unlikely. 
 
 
 # References
