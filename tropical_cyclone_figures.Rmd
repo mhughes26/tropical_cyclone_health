@@ -38,11 +38,61 @@ coordinates
 # Turning the latitude and longitude coordinates into sf objects. 
 
 florida_sf <- coordinates %>% 
-  st_as_sf(coords = c("lat", "lon"))
+  st_as_sf(coords = c("lon", "lat")) %>% 
+   st_set_crs(4269)
+
 ```
 
 ```{r}
-florida_map <- ggplot()+
-  geom_sf(data = )
+# Create map of Florida panhandle with point locations using the latitude and longitude dataframe. 
+
+florida_map <- ggplot() +
+  geom_sf(data = florida_zip, color = "darkcyan") +
+  geom_sf(data = florida_sf) +
+  ggtitle("Point Locations in Florida Panhandle") +
+  labs(x = "Longitude", "Latitude") 
+
+florida_map
 ```
+### Zip Code Shaded Image ###
+```{r}
+# Creating an image of a zip code in Florida panhandle that is shaded dark blue. 
+class(florida_zip)
+head(florida_zip)
+
+zipcode <- florida_zip %>%
+filter(ZCTA5CE10 == "32340")
+zipcode
+
+zipcode_map <- ggplot() + 
+  geom_sf(data = florida_zip, color = "darkcyan") + 
+  geom_sf(data = zipcode, fill = "darkcyan") +
+  ggtitle("A Zip Code in the Florida Panhandle") +
+  labs(x = "Longitude", "Latitude") 
+
+zipcode_map
+```
+### County Shaded Image ###
+```{r}
+# Create in image of a county in the Florida panhandle that is shaded in. 
+
+class(florida_zip)
+head(florida_zip)
+
+zipcode <- florida_zip %>%
+filter(ZCTA5CE10 == "32340")
+zipcode
+
+florida_counties <- counties(state = "FL", class = "sf") %>% 
+  filter(NAME == "Jefferson")
+
+florida_county_map <- ggplot() + 
+  geom_sf(data = florida_zip, color = "darkcyan") + 
+  geom_sf(data = florida_counties, fill = "darkcyan") +
+  ggtitle("Jefferson County in the Florida Panhandle") +
+  labs(x = "Longitude", "Latitude") 
+
+florida_county_map
+```
+
 
