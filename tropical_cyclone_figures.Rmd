@@ -14,20 +14,35 @@ library(tidyverse)
 library(sf)
 library(tigris)
 ```
-
+### Point Location Image ###
 ```{r}
-us <- states(cb = TRUE)
-plot(us)
+# Creating a map of the Florida panhandle including Tallahassee
+
+florida_zip <- zctas(cb = TRUE, starts_with = "323", 
+                    class = "sf")
+plot(florida_zip)
 ```
 
 
 
 ```{r}
-florida <- counties(state = "FL", cb = TRUE)
-plot(florida)
+# Creating a small dataframe with latitude and longitude points in Florida panhandle. 
+
+lon <- c(-84.365908,-84.469249,-83.928361,-84.264767)
+lat <- c(29.918281,30.281365,30.087633,30.425467)
+coordinates <- data.frame(lon, lat)
+coordinates
 ```
+
 ```{r}
-flo_pan <- zctas(cb = TRUE, starts_with(323))
-plot(flo_pan)
+# Turning the latitude and longitude coordinates into sf objects. 
+
+florida_sf <- coordinates %>% 
+  st_as_sf(coords = c("lat", "lon"))
+```
+
+```{r}
+florida_map <- ggplot()+
+  geom_sf(data = )
 ```
 

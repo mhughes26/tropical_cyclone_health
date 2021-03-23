@@ -47,6 +47,21 @@ Rain gauges are the most well known instrument for measuring precipitation, but 
 
 Finally, similarly to wind speeds, radar and doppler radar can also be used to gauge precipitation. These technologies allow scientists to actually see the inside of a cloud and understand the amount of precipitation in that cloud. 
 
+# Human Impacts of Tropical Cyclones
+
+The physical exposures mentioned above, such as precipitation and wind speed, impact various dimensions of human wellbeing, namely physical health, mental health, infrastructure, and economic impacts. This data coems
+
+# Health Impacts
+
+Health impacts that have been documented to be associated in some way by tropical cyclones include birth outcomes, respiratory
+
+# Economic Impacts
+
+
+
+
+
+
 # Spatial and Temporal Misalignment: Origins of Integration Challenges
 
 Questions about the human impacts of tropical cyclones are multidisciplinary, and as such require datasets from different and sometimes seemingly disparate sources. Different disciplines have different methods of collecting data. These differences go beyond the types of software or data management systems used, they often come down to differences in the spatial and temporal scales that data points are collected at. These differences and temporal and spatial scales are what we refer to in this paper as spatial and temporal misalignment. 
