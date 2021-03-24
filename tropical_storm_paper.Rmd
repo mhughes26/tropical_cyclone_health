@@ -61,7 +61,9 @@ Mortality data is also collected in the US by the NCHS through a program it admi
 
 # Social and Economic Impacts
 
+Anybody studying human impacts needs to have pertinent demographic data on the populations they are studying. In addition to health outcomes, demographic details such as race, ethnicity, socioeconomic status, age, and political affiliation are interesting and often insightful details of information that can help to shine a light on the human impacts of tropical cyclones. The US Census is a valuable source of information that is updated and compiled every ten years by the US Bureau of the Census on many variables including ancestry, racial background, mortage, occupation, household size, etc.[@aschengrau2013essentials]. 
 
+Other important sources of impact data, particularly from economics come from insurance claims. Tax returns are also useful. [@deryugina2018economic] collected information on individual federal tax returns and third party information returns filed between 1999 and 2013. 
 
 
 
