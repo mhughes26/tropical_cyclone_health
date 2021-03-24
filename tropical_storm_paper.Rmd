@@ -49,13 +49,18 @@ Finally, similarly to wind speeds, radar and doppler radar can also be used to g
 
 # Human Impacts of Tropical Cyclones
 
-The physical exposures mentioned above, such as precipitation and wind speed, impact various dimensions of human wellbeing, namely physical health, mental health, infrastructure, and economic impacts. This data coems
+The physical exposures mentioned above, such as precipitation and wind speed, impact various dimensions of human wellbeing, namely physical health, mental health, infrastructure, and economic impacts. This data doesn't come from point location monitoring stations, but rather from administrative sources, often along geopolitical boundaries. 
 
 # Health Impacts
 
-Health impacts that have been documented to be associated in some way by tropical cyclones include birth outcomes, respiratory
+Similar to the ways in which physical exposure data is recorded in large nationwide networks by federal agencies such as NOAA and the NWS, there are a number of public health agencies, both governmental and non-governmental that collect extensive information pertaining to deaths, acute and chronic illnesses, injuries, birth and pregnancy outcomes, and mental health conditions. This data provides researchers with a wealth of information on health related human impacts of tropical cyclones. 
 
-# Economic Impacts
+Certain general health information can be accessed from data published by the National Vital Statistics System of the National Center for Health Statistics (NCHS) [@aschengrau2013essentials]. This organization has registration offices in every U.S. state, Washington D.C., and New York City. Vital statistics from birth certificates for example, are recorded and verified by medical professionals and submitted to local health depaertments, which submit this information to state health departments, which eventually send it to the NCHS [@aschengrau2013essentials]. 
+
+Mortality data is also collected in the US by the NCHS through a program it administers called the National Death Index [@aschengrau2013essentials]; this particular data has to be obtained through offices at the state level. Death certificates themselves will give the information of the events that led to death, something of interest when determining impacts of tropical cyclones. There are many other sources of health data that contain information pertinent to impacts from tropical cyclones such as the National Health Interview Survey, National Notifiable Diseases Surveillance System, Planned Parenthood Federation of America, Center for Disease Control, Pregnancy Risk Assessment Monitoring System, and many others [@aschengrau2013essentials]. The key is to understand that these data come from hospitals, public health departments and other agencies at local (county), and state levels. Hospitalization records and  public school records of attendance are also helpful and come from similar sources. 
+
+# Social and Economic Impacts
+
 
 
 
