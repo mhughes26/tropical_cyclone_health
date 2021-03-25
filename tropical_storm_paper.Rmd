@@ -204,4 +204,33 @@ When assigning exposure to an individual point location based on the nearest mon
 
 When interpolating, the environmental exposure of concern will partially determine the potential for misclassification. Using the examples from above of windspeed and rainfall, it is unlikely that much misclassification would occur over a spatial interface since they are homogenous over large areas. 
 
+
+# Conclusion/Discussion 
+
+[Outline]
+
+Reverse Funnel 
+
+(Small)
+- We've discussed the datasources, temporal and spatial scales, and methods of collecting data on human impacts and physical exposures related to tropical cyclones. 
+
+- We've talked about how different temporal and spatial scales make it challenging to immediately use this data. 
+
+- We've discussed the main methods for integrating data at different spatial/temporal scales: aggregating, interpolating, matching. 
+
+- We've discussed the implications these integration methods have, and what effect they may have on the observed associations with regard to error and bias. 
+
+(Mid-Funnel)
+- Error and bias are bad because they make the results of tropical cyclone studies less generalizable.
+
+- Less generalizable studies make it harder to predict human impacts in the future and therefore prepare for them. 
+
+- If we don't know what to expect, some communities will be very vulnerable when the next big storm hits. (Thinking about Daniel's paper. He mentioned that the short temporal record of storm tracks meant that some communities weren't thought of as having a high risk because they weren't in the historical record). 
+
+(Wide Funnel)
+
+- As modeling becomes more advanced from physical exposure data, we need to make sure that human impacts data is collected and made available in a way that matches the physical exposure quality. 
+
+
+
 # References
