@@ -25,13 +25,11 @@ Atmospheric and weather data have long been designed to give a picture of meteor
 
 ## Storm Tracks
 
-Tropical cyclone storm tracks refer to the paths the storms take, and can be displayed on maps to visualize where the center of the storm (the eye of the tropical cyclone) passes through. In the North Atlantic Basin, tropical cyclone paths have a tendency to move westward first, then curve north and sometimes northeastward before ending, although some storm tracks take very messy and circuitous paths. 
-
-Satellite imagery and remote sensing can be used to detect the paths of tropical cyclones and hurricanes, and ground monitors measuring wind speed can also detect the movement of the storm.  
+Tropical cyclone storm tracks refer to the paths the storms take, and can be displayed on maps to visualize where the center of the storm (the eye of the tropical cyclone) passes through. In the North Atlantic Basin, tropical cyclone paths have a tendency to move westward first, then curve north and sometimes northeastward before ending, although some storm tracks take very messy and circuitous paths. Satellite imagery and remote sensing can be used to detect the paths of tropical cyclones and hurricanes, and ground monitors measuring wind speed can also detect the movement of the storm. The location of the center of a tropical cyclone can be documented at specific point locations at different times, meaning that it has a very narrow spatial and also temporal resolution. 
 
 ## Wind Speed and Direction
 
-Wind speed is an extremely important element of tropical cyclones. To even be classified as a tropical cyclone, a storm must have wind speeds in excess of 74 miles per hour (64 knots). 
+Wind speed is a common way to characterize exposure to tropical cyclones. To even be classified as a tropical cyclone, a storm must have wind speeds in excess of 74 miles per hour (64 knots). 
 
 Meteorologists and atmospheric scientists use ground based wind instruments in set locations to measure wind speed and direction. One such instrument is called a wind vane. These can take on a variety of appearances such as wind socks at the airport, but they are essentially arrows that always point in the direction the wind is blowing. Anemometers measure wind speed by recording the rate of rotation of moving cups on a free moving shaft. An aerovane can measure both wind speed and wind direction and can be attached to a recorder to give continuous measurements. In order to be accurate and effective, these ground based wind instruments must be placed above the roofs of buildings so that they can be exposed to free flowing air. Since this is not always the case, wind observations can consequently be erratic in nature. 
 
