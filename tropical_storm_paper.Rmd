@@ -2,7 +2,7 @@
 title: "Challenges of Integrating Physical Exposure and Human Impacts Data in Tropical Cyclone Studies"
 author: "Matthew Hughes and Brooke Anderson"
 date: "May 25, 2020"
-output: word_document
+output: pdf_document
 bibliography: bibliography.bib
 ---
 
@@ -89,7 +89,7 @@ The remainder of this section will highlight the most common spatial and tempora
 The spatial scale that a researcher uses varies depending on the data available or sampling method used. In human impacts data finer spatial scales will correspond more often to residential or business addresses, while larger spatial scales will correspond to zip codes, counties, states, or even countries. Physical exposure data is often at a small point location, sometimes within a larger grid, based on where weather monitoring sensors are placed. In the following section we will outline the most common spatial scales used in tropical cyclone studies and include some examples from the literature where they were employed. 
 
 
-```{r echo = FALSE, out.width="0.4\\textwidth", fig.align="center"}
+```{r echo = FALSE, out.width="1.0\\textwidth", fig.align="center"}
 knitr::include_graphics("figures/florida_spatial_scales_rstudio.JPG")
 ```
 
