@@ -88,6 +88,11 @@ The remainder of this section will highlight the most common spatial and tempora
 
 The spatial scale that a researcher uses varies depending on the data available or sampling method used. In human impacts data finer spatial scales will correspond more often to residential or business addresses, while larger spatial scales will correspond to zip codes, counties, states, or even countries. Physical exposure data is often at a small point location, sometimes within a larger grid, based on where weather monitoring sensors are placed. In the following section we will outline the most common spatial scales used in tropical cyclone studies and include some examples from the literature where they were employed. 
 
+
+```{r echo = FALSE, out.width="0.4\\textwidth", fig.align="center"}
+knitr::include_graphics("figures/florida_spatial_scales_rstudio.JPG")
+```
+
 ### Point Location
 
 Point locations are the smallest resolution of spatial data used to assess the exposure to tropical storms and hurricanes, that can be characterized by a specific latitude and longitude. Meteorological instruments, monitors, and sensors that collect information on physical exposures are at this spatial level, but human impacts data can also be represented at this spatial level. 
@@ -112,7 +117,7 @@ The state or national level is the spatial level of an ecological study and can 
 
 # Temporal Scales
 
-Thanks to scientitific institutions such as NOAA and the National Weather Service, there are wide networks of sensors and monitoring equipment established across the United States that are capable of recording physical exposure data at a fine level. It is possible to know the wind speed, amount of rainfall, and air temperature at very fine temporal scales throughout the duration of a tropical cyclone event. Human impacts data however, is typically not available at such a fine scale, nor is such a scale sometimes even relevant. Whereas physical exposure data may be collected in real time during the storm, many of the human impacts that researchers are interested in may be only known after the storm, and thus estimations may have to be made of what happened in the past. Below are some examples of time scales that are more applicable to a human scale, and why aggregating physical exposure data to these units of time may be necessary. 
+Thanks to scientitific institutions such as NOAA and the National Weather Service, there are large networks of sensors and monitoring equipment established across the United States that are capable of recording physical exposure data at a fine temporal level. It is possible to know the wind speed, amount of rainfall, and air temperature at very fine temporal scales throughout the duration of a tropical cyclone event. Human impacts data however, is typically not available at such a fine scale, nor is such a scale sometimes even relevant. Whereas physical exposure data may be collected in real time during the storm, many of the human impacts that researchers are interested in may be only known after the storm, and thus estimations may have to be made of what happened in the past. Below are some examples of time scales that are more applicable to a human scale, and why aggregating physical exposure data to these units of time may be necessary. 
 
 ### Real Time (Minutes, Hours)
 
@@ -212,7 +217,11 @@ When interpolating, the environmental exposure of concern will partially determi
 
 # Conclusion/Discussion 
 
-[Outline]
+The aim of this paper has been to show that studying the human impacts of tropical cyclones requires use of multiple datasets from different sources, at different temporal and spatial scales, and resulting from different data collection methods. We've shown how physical exposure data from tropical cyclones usually comes from point location monitors and sensors such as rain and stream gauges, wind vanes, at weather stations that are often a part of large scale networks operated by NOAA and the NWS. We've shown how in contrast to this, that data on human impacts comes from administrative sources at hospitals, schools, and governments, often at the level of the zip code or county. Because this isn't a natural  
+
+
+
+
 
 Reverse Funnel 
 
