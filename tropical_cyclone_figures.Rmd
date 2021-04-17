@@ -20,10 +20,7 @@ library(tigris)
 
 florida_zip <- zctas(cb = TRUE, starts_with = "323", 
                     class = "sf")
-plot(florida_zip)
 ```
-
-
 
 ```{r}
 # Creating a small dataframe with latitude and longitude points in Florida panhandle. 
@@ -87,5 +84,23 @@ florida_county_map <- ggplot() +
 
 florida_county_map
 ```
+```{r}
+# Creating a panel of the Florida panhandle spatial scale maps
 
+library(cowplot)
 
+plot_grid(florida_map, zipcode_map, florida_county_map)
+```
+
+```{r}
+# Creating a world map
+
+library("rnaturalearth")
+library("rnaturalearthdata")
+
+world <- ne_countries(scale = "medium", returnclass = "sf")
+class(world)
+
+ggplot(data = world) + 
+    geom_sf(color = "black", fill = "cyan")
+```
