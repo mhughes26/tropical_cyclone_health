@@ -13,6 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(sf)
 library(tigris)
+options(tigris_use_cache = TRUE)
 ```
 ### Point Location Image ###
 ```{r}
@@ -104,3 +105,90 @@ class(world)
 ggplot(data = world) + 
     geom_sf(color = "black", fill = "cyan")
 ```
+
+```{r}
+florida_pan_zip <- zctas(cb = TRUE, class = "sf")
+
+florida_panhandle <- ggplot(data = world) +
+  geom_sf(data = florida_pan_zip, fill = "lightgreen") +
+  geom_sf(data = florida_sf) +
+  ggtitle("Point Locations in Florida Panhandle") +
+  labs(x = "Longitude", y = "Latitude") +
+    coord_sf(xlim = c(-88.15, -81.12), ylim = c(27.65, 31.97), expand = FALSE) +
+  theme_void()
+florida_panhandle
+```
+```{r}
+florida_pan_counties <- counties(state = "FL, GA, AL", class = "sf")
+
+florida_panhandle2 <- ggplot(data = world) +
+  geom_sf(data = florida_pan_counties, fill = "purple") +
+  geom_sf(data = florida_sf) +
+  ggtitle("Point Locations in Florida Panhandle") +
+  labs(x = "Longitude", y = "Latitude") +
+    coord_sf(xlim = c(-88.15, -81.12), ylim = c(27.65, 31.97), expand = FALSE) +
+  theme_void()
+florida_panhandle2
+```
+```{r}
+# Using rnoaa to find the coordinates for NOAA stations to use as point locations. 
+library(rnoaa)
+
+noaa_stations <- isd_stations_search(lat = 30.50, lon = -84.5, radius = 250)
+
+florida_pan_sf <- noaa_stations %>% 
+  st_as_sf(coords = c("lon", "lat")) %>% 
+   st_set_crs(4269)
+
+florida_panhandle2 <- ggplot(data = world) +
+  geom_sf(data = florida_pan_counties, fill = "purple") +
+  geom_sf(data = florida_pan_sf) +
+  ggtitle("Point Locations in Florida Panhandle") +
+  labs(x = "Longitude", y = "Latitude") +
+    coord_sf(xlim = c(-88.15, -81.12), ylim = c(27.65, 31.97), expand = FALSE) +
+  theme_void()
+florida_panhandle2
+```
+```{r}
+# Mapping the wind exposure in Florida panhandle of Hurricane Michael in 2018
+library(hurricaneexposure)
+library(hurricaneexposuredata)
+library(tidyverse)
+library(drat)
+addRepo("geanders")
+data("hurr_tracks")
+
+map_counties(storm = "Michael-2018", metric = "wind")
+map_counties(storm = "Michael-2018", metric = "distance")
+```
+```{r}
+# Creating an dataframe with maximum sustained wind speed for Hurricane Michael in Florida in 2018
+
+florida_wind <- county_wind(counties = c("12073", "12039", "12079","12065", "12123", "12129", "12077", "12045", "12123"),
+                            start_year = 2018,
+                            end_year = 2018,
+                            wind_limit = 20,
+                            wind_var = "vmax_sust")
+florida_wind
+```
+```{r}
+florida_wind_sf <- florida_wind %>% 
+  st_as_sf(agr = "fips") %>% 
+   st_set_crs(4269)
+
+
+florida_panhandle3 <- ggplot(data = world) +
+  geom_sf(data = florida_pan_counties, fill = "purple") +
+  geom_sf(data = florida_pan_sf) +
+  geom_sf(aes(fill = florida_wind)) +
+  scale_fill_viridis_c(option = "plasma")
+  ggtitle("Point Locations in Florida Panhandle") +
+  theme_void()
+florida_panhandle3
+
+
+ggplot(data = world) +
+    geom_sf(aes(fill = pop_est)) +
+    scale_fill_viridis_c(option = "plasma", trans = "sqrt")
+```
+
