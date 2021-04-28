@@ -172,14 +172,13 @@ florida_wind <- county_wind(counties = c("12073", "12039", "12079","12065", "121
 florida_wind
 ```
 ```{r}
-florida_wind_sf <- florida_wind %>% 
-  st_as_sf(agr = "fips") %>% 
-   st_set_crs(4269)
+#florida_wind_sf <- florida_wind %>% 
+ # st_as_sf(agr = "fips") %>% 
+   #st_set_crs(4269)
 
 
 florida_panhandle3 <- ggplot(data = world) +
-  geom_sf(data = florida_pan_counties, fill = "purple") +
-  geom_sf(data = florida_pan_sf) +
+  geom_sf(data = florida_pan_counties) +
   geom_sf(aes(fill = florida_wind)) +
   scale_fill_viridis_c(option = "plasma")
   ggtitle("Point Locations in Florida Panhandle") +
