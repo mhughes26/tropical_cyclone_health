@@ -192,36 +192,8 @@ When interpolating, the environmental exposure of concern will partially determi
 
 The aim of this paper has been to show that studying the human impacts of tropical cyclones requires use of multiple datasets from different sources, at different temporal and spatial scales, and resulting from different data collection methods. We've shown how physical exposure data from tropical cyclones usually comes from point location monitors and sensors such as rain and stream gauges, wind vanes, at weather stations that are often a part of large scale networks operated by NOAA and the NWS. We've shown how in contrast to this, that data on human impacts comes from administrative sources at hospitals, schools, and governments, often at the level of the zip code or county. These differences in temporal and spatial scale make use of the data difficult for researchers to immediately utilize. Nevertheless, several methods exist for integrating these datasets, and we've briefly described aggregation, interpolation, and matching as the main methdos for doing this. Though useful, these methods are not without their limitation, such as their propensity towards ecological bias and exposure misclassification. 
 
+Ecological bias and exposure misclassification are a problem, because they impact the external validity of tropical cyclone studies. If not adequately mitigated, they can produce measures of association that do not reflect the true impact that tropical cyclones have on coastal communities. In other words, these kinds of bias and error make tropical cyclone studies less generalizable, which renders them less effective in predicting for future events and preparing for them. That leaves large gaps of uncertainty when it comes to creating resilient communities that can withstand tropical cyclone events, and leaves more vulnerable populations and communities at an elevated risk. [Cite Daniel's paper]
 
-
-
-
- 
-
-
-
-Reverse Funnel 
-
-(Small)
-- We've discussed the datasources, temporal and spatial scales, and methods of collecting data on human impacts and physical exposures related to tropical cyclones. 
-
-- We've talked about how different temporal and spatial scales make it challenging to immediately use this data. 
-
-- We've discussed the main methods for integrating data at different spatial/temporal scales: aggregating, interpolating, matching. 
-
-- We've discussed the implications these integration methods have, and what effect they may have on the observed associations with regard to error and bias. 
-
-(Mid-Funnel)
-- Error and bias are bad because they make the results of tropical cyclone studies less generalizable.
-
-- Less generalizable studies make it harder to predict human impacts in the future and therefore prepare for them. 
-
-- If we don't know what to expect, some communities will be very vulnerable when the next big storm hits. (Thinking about Daniel's paper. He mentioned that the short temporal record of storm tracks meant that some communities weren't thought of as having a high risk because they weren't in the historical record). 
-
-(Wide Funnel)
-
-- As modeling becomes more advanced from physical exposure data, we need to make sure that human impacts data is collected and made available in a way that matches the physical exposure quality. 
-
-
+There is reason to be optimistic that we can harness the power of large datasets on physical, and increasing precision in model building, to understand and predict the effects of tropical cyclones on human health, economic viability, infrastructure, and social dynamics. This is of course contingent on our ability as researchers to make sure that the data on human impacts is of a similar quality and translatable resolution as the high quality data we already have on physical exposures. With larger populations expected to live in areas threatened by tropical cyclones in the future, this is an extremely important undertaking for interdisciplinary teams of meteorologists, epidemiologists, economists, and diaster planners. 
 
 # References
