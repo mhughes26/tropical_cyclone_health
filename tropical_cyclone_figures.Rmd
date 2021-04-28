@@ -93,6 +93,7 @@ library(cowplot)
 plot_grid(florida_map, zipcode_map, florida_county_map)
 ```
 
+<<<<<<< HEAD
 ```{r}
 # Creating a world map
 
@@ -184,5 +185,37 @@ florida_panhandle3 <- ggplot(data = world) +
   ggtitle("Point Locations in Florida Panhandle") +
   theme_void()
 florida_panhandle3
+=======
+```{r message = FALSE, warning = FALSE}
+library(hurricaneexposuredata)
+library(hurricaneexposure)
+
+map_counties(storm = "Michael-2018", metric = "wind")
+```
+
+```{r message = FALSE}
+library(tidyverse)
+data("county_centers")
+michael_fl_winds <- county_wind(counties = county_centers %>%
+                                  filter(state_name == "Florida") %>% 
+                                  pull(fips), 
+            start_year = 2018, end_year = 2018, 
+            wind_limit = 0) %>% 
+  filter(storm_id == "Michael-2018")
+head(michael_fl_winds)
+```
+
+```{r}
+library(viridis)
+all_fl_counties <- counties(state = "FL", cb = TRUE, resolution = "20m") %>% 
+  mutate(fips = paste0(STATEFP, COUNTYFP)) %>% 
+  full_join(michael_fl_winds, by = "fips")
+  
+florida_county_map2 <- ggplot() + 
+  geom_sf(data = all_fl_counties, aes(fill = vmax_sust)) +
+  scale_fill_viridis() + 
+  theme_void()
+florida_county_map2
+>>>>>>> 0a5cd56c6fffab04405043c41f0987b717deea6a
 ```
 
