@@ -116,10 +116,6 @@ rather than solely on whether the storm passed near a residence or community.
 Tropical cyclones are associated with multiple hazards, with high wind and
 flooding as two hazards often associated with human impacts.
 
-There are several examples of wind speed being used as a measure for assigning exposure, often by choosing a threshold wind speed that if attained in a zip code or county during the course of a tropical cyclone, makes it exposed. 
-[@yan2020tropical] used the sustained maximum wind speed recorded at the center of counties. [Move the next two sentences later?] In this example counties were considered exposed to tropical cyclones if the sustained maximum wind speed was greater than 21 meters per second. Because this wind speed is taken from a monitor at the center of the county, it may not be representative of wind speeds in other parts of the exposed county, again contributing to potential misclassification of exposure. 
-Another study that used wind speed to assign exposure was [@parks2021tropical], which categorized counties as exposed to tropical cyclones on days that they experienced peak sustained wind greater than or equal to 34 knots when the the cyclone was at the point of closest approach to the county.
-
 Tropical cyclone-associated winds can be measured or modeling in a number of
 ways. The central intensity of a storm's winds (i.e., the highest winds in 
 any part of the storm) are used as a measure of the overall intensity of 
@@ -155,6 +151,9 @@ temporal resolution. [Limitations of modeling winds]
 
 <!-- Wind speed is a common way to characterize exposure to tropical cyclones. To even be classified as a tropical cyclone, a storm must have wind speeds in excess of 74 miles per hour (64 knots).  -->
  
+There are several examples of wind speed being used as a measure for assigning exposure, often by choosing a threshold wind speed that if attained in a zip code or county during the course of a tropical cyclone, makes it exposed. 
+[@yan2020tropical] used the sustained maximum wind speed recorded at the center of counties. [Move the next two sentences later?] In this example counties were considered exposed to tropical cyclones if the sustained maximum wind speed was greater than 21 meters per second. Because this wind speed is taken from a monitor at the center of the county, it may not be representative of wind speeds in other parts of the exposed county, again contributing to potential misclassification of exposure. 
+Another study that used wind speed to assign exposure was [@parks2021tropical], which categorized counties as exposed to tropical cyclones on days that they experienced peak sustained wind greater than or equal to 34 knots when the the cyclone was at the point of closest approach to the county.
 
 ## Flooding and Storm Surges
 
