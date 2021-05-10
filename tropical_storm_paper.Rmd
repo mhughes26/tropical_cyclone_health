@@ -110,11 +110,51 @@ Other times, exposure to a tropical cyclone is assigned only if the storm track 
 
 ## Wind Speed and Direction
 
-Wind speed is a common way to characterize exposure to tropical cyclones. To even be classified as a tropical cyclone, a storm must have wind speeds in excess of 74 miles per hour (64 knots). Meteorologists and atmospheric scientists use ground based wind instruments in set locations to measure wind speed and direction, such as wind vanes, anenometers, and aerovanes. In order to be accurate and effective, these ground based wind instruments must be placed above the roofs of buildings so that they can be exposed to free flowing air. Since this is not always the case, wind observations can consequently be erratic in nature. Above ground, geostationary satellites, which are positioned above a particular location can measure wind speed and wind direction by observing the direction that clouds move in a given amount of time. Doppler radar can also be used to measure wind speed and direction. 
+For some studies of the human impacts of tropical cyclones, researchers will 
+assess exposure based on the severity of physical hazards experienced, 
+rather than solely on whether the storm passed near a residence or community. 
+Tropical cyclones are associated with multiple hazards, with high wind and
+flooding as two hazards often associated with human impacts.
 
-Wind speed is often used as a measure for assigning exposure, often by choosing a threshold wind speed that if attained in a zip code or county, makes it exposed. [@yan2020tropical] used the sustained maximum wind speed recorded at the center of counties. In this example counties were considered exposed to tropical cyclones if the sustained maximum wind speed was greater than 21 meters per second. Because this wind speed is taken from a monitor at the center of the county, it may not be representative of wind speeds in other parts of the exposed county, again contributing to potential misclassification of exposure. 
+There are several examples of wind speed being used as a measure for assigning exposure, often by choosing a threshold wind speed that if attained in a zip code or county during the course of a tropical cyclone, makes it exposed. 
+[@yan2020tropical] used the sustained maximum wind speed recorded at the center of counties. In this example counties were considered exposed to tropical cyclones if the sustained maximum wind speed was greater than 21 meters per second. Because this wind speed is taken from a monitor at the center of the county, it may not be representative of wind speeds in other parts of the exposed county, again contributing to potential misclassification of exposure. 
+Another study that used wind speed to assign exposure was [@parks2021tropical], which categorized counties as exposed to tropical cyclones on days that they experienced peak sustained wind greater than or equal to 34 knots when the the cyclone was at the point of closest approach to the county.
 
-Another study that used wind speed to assign exposure was [@parks2021tropical], which categorized counties as exposed to tropical cyclones on days that they experienced peak sustained wind greater than or equal to 34 knots when the the cyclone was at the point of closest approach to the county. 
+Tropical cyclone-associated winds can be measured or modeling in a number of
+ways. The central intensity of a storm's winds (i.e., the highest winds in 
+any part of the storm) are used as a measure of the overall intensity of 
+the storm. However, these central measurements are of limited use in determining
+exposure for locations that were not directly hit by the storm, as they 
+characterize the hazards only near the core of the storm. 
+Long-term weather monitoring networks include ground-based wind instruments in set locations to measure wind speed and direction, such as wind vanes, anenometers, and aerovanes. These can provide wind speed measurements at specific locations
+(the location of that ground-based station), and often provide measurements
+at a high temporal resolution (e.g., [minutes? seconds?]). However, these
+instruments can be prone to failure or destruction during very severe conditions, 
+and so may be missing data during the worst tropical cyclone exposures.
+<!-- In order to be accurate and effective, these ground based wind instruments must be placed above the roofs of buildings so that they can be exposed to free flowing air. Since this is not always the case, wind observations can consequently be erratic in nature.  -->
+Geostationary satellites, which are positioned above a particular location, can measure wind speed and wind direction by observing the direction that clouds move in a given amount of time. Doppler radar can also be used to measure wind speed and direction. [Anything about the temporal and spatial resolution
+of geostationary satellites and doppler radar?]
+Finally, customized data collection campaigns are sometimes conducted to 
+collect wind speed data during tropical cyclones. These are often conducted
+over sea, rather than land, including through [flight data collections]. 
+However, [any examples of data collection campaigns on land for a specific 
+tropical cyclone, where people put out more monitors specifically near the
+site of landfall, for example?].
+ 
+Modeling can also be used to estimate tropical cyclone-associated winds at
+specific locations. Wind speed models use central measurements of the storm, 
+including its location and central intensity, to create a wind profile 
+extending from the center of the storm. These models incorporate knowledge
+from atmospheric science on patterns in wind fields and asymmetry in winds
+around the storm's center. These models can be used to estimate winds at any
+location relative to the storm, and so they provide complete spatial coverage. 
+Temporal resolution is influenced by the temporal resolution of the tropical
+cyclone tracking data, since that is the key input to the model, but this 
+temporal resolution can be improved by interpolating tracking data to a finer
+temporal resolution. [Limitations of modeling winds]
+
+<!-- Wind speed is a common way to characterize exposure to tropical cyclones. To even be classified as a tropical cyclone, a storm must have wind speeds in excess of 74 miles per hour (64 knots).  -->
+ 
 
 ## Flooding and Storm Surges
 
