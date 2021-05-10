@@ -15,9 +15,22 @@ Tropical cyclones are environmental disaster events that are crucial for public 
 
 Clearly, tropical cyclones dramatically impact the social, economic, and physical wellbeing of  coastal communities. These extreme weather events represent an environmental health threat that is not going to disappear, and given that coastal regions of the Southeastern US are experiencing population growth, it is likely that higher numbers of people will be put at risk in the future. Avoiding these risks is not possible, but building resilience in communities after they experience tropical cyclone events is key to mitigating damages and preparing for future disasters. Creating lasting and resilient communities in areas prone to tropical cyclones  requires that researchers understand which populations and locations are at the greatest risk for negative exposures to tropical storms. This requires data that allows researchers to assess where in space and time tropical storms occur, and also where in space and time individuals and populations are experiencing impacts from these storms. 
 
-Multidisciplinary teams of researchers are exploring this using different datasets, however a key challenge is integrating data from across disciplines. For example: extensive physical exposure data is often available for tropical cyclones as they near and cross communities in the United States. This data can come both from established monitoring networks, like [NOAA network name?], but may also result from data collection efforts during or after the storm by atmospheric scientists and engineers seeking to characterize a storm. Researchers studying the human impacts of these storms, including epidemiologists, economists, and social scientists are interested in this data as well, but the differences in temporal and spatial resolution makes the data harder to use. Resolving physical exposure and human impact datasets is challenging because the human impact data and physical exposure data often do not have congruent resolutions. 
+To investigate links between tropical cyclones and human impacts, investigators must collect two types of data: measures of exposure to the tropical cyclone and measures of outcomes among humans. A key challenge, however, is integrating these two types of data. For example: extensive physical exposure data is often available for tropical cyclones as they near and cross communities in the United States. This data can come both from established monitoring networks, like [NOAA network name?], but may also result from data collection efforts during or after the storm by atmospheric scientists and engineers seeking to characterize a storm. Researchers studying the human impacts of these storms, including epidemiologists, economists, and social scientists are interested in this data as well, but the differences in temporal and spatial resolution makes the data harder to use. Integrating physical exposure and human impact datasets is challenging because the human impact data and physical exposure data often do not have congruent resolutions. 
 
 Here we explore cases and implications of integrating data at different temporal and spatial scales, focusing as an example on human impact studies of tropical cyclones in the US. We begin by investigating the reasons that spatial and temporal misaligment exist in the study of tropical cyclones. We then describe the main spatial and temporal scales used, and finally assess some of the consequences that result from integrating physical exposure data with human impacts data. 
+
+# Data for studying the human impacts of tropical cyclones
+
+For an observational study to investigate links between tropical cyclones
+and human impacts, the study's investigators must collect data on two 
+key items: measures of exposure to the tropical cyclone and measures of
+outcomes among humans. In this section, we outline key sources of these 
+two types of data, illustrating with examples from the TC-human impacts
+literature. We highlight sources of the data, as well as the temporal and 
+spatial scales at which they are commonly collected. This helps highlight
+inherent challenges in leveraging large administrative datasets when 
+studying the human impacts of tropical cyclones, as discordance in 
+temporal and spatial scales between exposure and impact datasets can create challenges in integrating the two types of data within a joint model.  
 
 ## Physical Exposures
 
