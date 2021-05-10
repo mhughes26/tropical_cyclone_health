@@ -34,17 +34,79 @@ temporal and spatial scales between exposure and impact datasets can create chal
 
 ## Physical Exposures
 
-Atmospheric and weather data have long been designed to give a picture of meteorological activity over vast geographic spreads as large as entire continents or oceanic basins. To acheive this, data is often recorded by sensors at fixed weather monitoring stations, in vast monitoring systems that are designed to automatically record a data point at a fixed interval of time. These monitoring systems are often the result of long-standing weather projects such as the National Hurricane Center Data Archive from NOAA (National Oceanic and Atmospheric Administration), and the NWS (National Weather Service). This data is often narrow in temporal and spatial resolution, and large in geographic scope. 
+To study the human impacts of tropical cyclones, investigators must identify 
+times and places where humans were exposed to these disasters. This exposure
+assessment can be as simple as identifying a community or person as 
+exposed or unexposed to a specific event, or can be more complex, assigning
+continuous levels of exposure to various physical hazards of the storm, 
+including severe winds, extreme rainfall, and coastal and inland flooding. 
+
+This exposure assessment often leverages data collected by national or
+international weather organizations, including the United States' National
+Oceanic and Atmospheric Administration (NOAA). Atmospheric and weather data have
+long been collected in a way that is designed to give a picture of
+meteorological activity over vast geographic spreads, as such coverage is
+critical for weather forecasting. Most countries have vast monitoring systems of
+sensors at fixed weather monitoring stations, designed to automatically record a
+data point at a fixed interval of time. Weather organizations typically
+supplement these fixed-location measurements with other data, including data for
+specific weather events. For example, NOAA's National Centers for Environmental
+Information published reports on specific severe weather events through its
+Storm Events database, while the US National Hurricane Center collects and
+publishes storm-specific data on tropical cyclones in the North Atlantic [and?],
+including the location and intensity of the storm along its track.
+
+The specific data used for exposure assessment, as well as the data's temporal
+and spatial scales, is often determined by whether exposure is based on distance
+to the storm's track or on physical exposures from the storm (e.g., severity of
+wind, flooding) and, if the second, which specific physical exposures are
+considered. 
+
+<!-- These monitoring systems are often the result of long-standing weather projects such as the National Hurricane Center Data Archive from NOAA (National Oceanic and Atmospheric Administration), and the NWS (National Weather Service).  -->
+<!-- These data are often fine in temporal and spatial resolution, and large in geographic scope.  -->
 
 ## Storm Tracks
 
-Tropical cyclone storm tracks refer to the paths the storms take, and can be displayed on maps to visualize where the center of the storm (the eye of the tropical cyclone) passes through. In the North Atlantic Basin, tropical cyclone paths have a tendency to move westward first, then curve north and sometimes northeastward before ending, although some storm tracks take very messy and circuitous paths. Satellite imagery and remote sensing can be used to detect the paths of tropical cyclones and hurricanes, and ground monitors measuring wind speed can also detect the movement of the storm. The location of the center of a tropical cyclone can be documented at specific point locations at different times, meaning that it has a very narrow spatial and also temporal resolution. 
+In some studies of the human impacts of tropical cyclones, exposure assessment
+is based on the location of a community relative to the location of the
+storm's track. These studies typically leverage data on tropical storm 
+tracks, collected by weather organizations like the US National Hurricane
+Center. 
 
-One source of data on tropical cyclone storm tracks is the Hurricane Data second generation dataset (HURDAT2) which has information on the point location of storm centers, wind speed, and atmospheric pressure in six hour intervals of North Atlantic tropical cyclones since 1851 [@deryugina2017fiscal]. 
+Tropical cyclone storm tracks refer to the paths the storms take, and can be displayed on maps to visualize where the center of the storm (the eye of the tropical cyclone, if the storm is severe enough to have one) passes through. 
+<!-- In the North Atlantic Basin, tropical cyclone paths have a tendency to move westward first, then curve north and sometimes northeastward before ending, although some storm tracks take very messy and circuitous paths.  -->
+Satellite imagery and remote sensing can be used to detect the paths of tropical cyclones and hurricanes, and ground monitors measuring wind speed can also detect the movement of the storm. 
+[Add something about how these data are all considered jointly by an 
+expert at the NHC to come up with the final track data---see paper ...]
+<!-- The location of the center of a tropical cyclone can be documented at specific point locations at different times, meaning that it has a very narrow spatial and also temporal resolution.  -->
+These tracks are reported by different weather organizations, depending on 
+the basin in which the storm occurs. In the North Atlantic basin, storm tracks
+are reported by the US National Hurricane Center through the Hurricane Data second generation dataset (HURDAT2) which has information on the point location of storm centers, wind speed, and atmospheric pressure in six hour intervals of North Atlantic tropical cyclones since 1851 [@deryugina2017fiscal] [consider replacing this ref with one from the NHC]. 
 
-Oftentimes storm tracks are used in tropical cyclone studies to assign exposures. Sometimes, distance from a storm track is used to assign counties or zip codes as exposed, as in [@yan2019tropical]. If distance from storm track is used to assign exposure, a threshold will have to be chosen to determine whether or not a county or zip code is exposed. Larger distance thresholds will increase the number of counties defined as exposed, and potentially overestimate exposure. Smaller distance thresholds will decrease the number of counties defined as exposed and potentially underestimate exposure. In either case, misclassification of exposure could arise. 
+For North Atlantic hurricanes, these tracking data are resolved to [10ths of
+degrees] in latitude and longitude (about how many miles?), but are only
+reported at six-hour intervals. [We might want to move the following
+interpolation section later, to when we talk about integrating data at different
+scales?] Interpolation between the reported time points can improve this
+temporal resolution, and in more recent years, tracking observations have been
+added at the time of landfall, so landfall location is well-resolved in the
+data. In many cases, tropical cyclones follow fairly smooth, curving
+tracks---for example, in the North Atlantic Basin tropical cyclone paths have a
+tendency to move northwestward first, then curve northeastward. These smoother
+tracks are reasonable to interpolate between six-hour reported locations.
+However, some storm tracks take very messy and circuitous paths, and for these
+interpolation between reported points may be more prone to error. [Are NHC GIS
+products interpolated?] Distance to the storm's track from fixed
+locations---like a county's center or a study member's residence---can be
+measured using GIS tools.
 
-Other times, exposure to a tropical cyclone is assigned only if the storm track passed through a county or zip code. This is the approach that was used in [@kinney2008autism]. Populations are not typically distributed in a uniform pattern across these spatial areas, and so using this method to assign exposure could also result in exposure misclassification for communities that are close to the storm track but not in the county or zip code that the storm track passed through. The reverse of this, where communities in exposed counties or zip codes are actually located farther away from the storm track is also plausible. 
+Oftentimes these storm track data are used in tropical cyclone studies to assign exposure. Sometimes, distance from a storm track is used to assign counties or zip codes as exposed, as in [@yan2019tropical]. [More examples of this?] [We may not need the rest of this paragraph, at least not here---it may make more sense later when we talk about integrating] If distance from the storm track is used to assign exposure, a threshold will have to be chosen to determine whether or not a county or zip code is exposed. Larger distance thresholds will increase the number of counties defined as exposed, and potentially overestimate exposure. Smaller distance thresholds will decrease the number of counties defined as exposed and potentially underestimate exposure. In either case, misclassification of exposure could arise. [I think that sometimes
+other criteria will also be used---for example, it has to be within a certain 
+distance of the storm track *and* the central storm intensity at that point 
+in the track had to be above a certain level. It may be helpful to add an 
+example of this.]
+
+Other times, exposure to a tropical cyclone is assigned only if the storm track passed through a county or zip code. This is the approach that was used in [@kinney2008autism]. [Any other examples of this?] [The rest of this paragraph may be something we want to move later, when we talk about integrating the two types of data.] Populations are not typically distributed in a uniform pattern across these spatial areas, and so using this method to assign exposure could also result in exposure misclassification for communities that are close to the storm track but not in the county or zip code that the storm track passed through. The reverse of this, where communities in exposed counties or zip codes are actually located farther away from the storm track is also plausible. 
 
 ## Wind Speed and Direction
 
