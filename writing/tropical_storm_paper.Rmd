@@ -3,7 +3,7 @@ title: "Challenges of Integrating Physical Exposure and Human Impacts Data in Tr
 author: "Matthew Hughes and Brooke Anderson"
 date: "May 25, 2020"
 output: pdf_document
-bibliography: bibliography.bib
+bibliography: ../bibliographies/bibliography.bib
 ---
 
 
@@ -205,7 +205,7 @@ The spatial scale that a researcher uses varies depending on the data available 
 
 
 ```{r echo = FALSE, out.width="1.0\\textwidth", fig.align="center"}
-knitr::include_graphics("figures/florida_spatial_scales_rstudio.JPG")
+knitr::include_graphics("../figures/florida_spatial_scales_rstudio.JPG")
 ```
 
 ### Point Location

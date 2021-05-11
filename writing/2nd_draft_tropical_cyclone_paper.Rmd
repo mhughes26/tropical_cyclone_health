@@ -3,7 +3,7 @@ title: "2nd Draft of Challenges of Integrating Physical Exposure and Human Impac
 author: "Matthew Hughes and Brooke Anderson"
 date: "February 16, 2021"
 output: pdf_document
-bibliography: bibliography.bib
+bibliography: ../bibliographies/bibliography.bib
 ---
 
 # Introduction
