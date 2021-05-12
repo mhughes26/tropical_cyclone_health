@@ -65,7 +65,7 @@ considered.
 <!-- These monitoring systems are often the result of long-standing weather projects such as the National Hurricane Center Data Archive from NOAA (National Oceanic and Atmospheric Administration), and the NWS (National Weather Service).  -->
 <!-- These data are often fine in temporal and spatial resolution, and large in geographic scope.  -->
 
-## Storm Tracks
+### Storm Tracks
 
 In some studies of the human impacts of tropical cyclones, exposure assessment
 is based on the location of a community relative to the location of the
@@ -108,7 +108,7 @@ example of this.]
 
 Other times, exposure to a tropical cyclone is assigned only if the storm track passed through a county or zip code. This is the approach that was used in [@kinney2008autism]. [Any other examples of this?] [The rest of this paragraph may be something we want to move later, when we talk about integrating the two types of data.] Populations are not typically distributed in a uniform pattern across these spatial areas, and so using this method to assign exposure could also result in exposure misclassification for communities that are close to the storm track but not in the county or zip code that the storm track passed through. The reverse of this, where communities in exposed counties or zip codes are actually located farther away from the storm track is also plausible. 
 
-## Wind Speed and Direction
+### Wind Speed and Direction
 
 For some studies of the human impacts of tropical cyclones, researchers will 
 assess exposure based on the severity of physical hazards experienced, 
@@ -156,7 +156,7 @@ There are several examples of wind speed being used as a measure for assigning e
 Another study that used wind speed to assign exposure was [@parks2021tropical], which categorized counties as exposed to tropical cyclones on days that they experienced peak sustained wind greater than or equal to 34 knots when the the cyclone was at the point of closest approach to the county. [Any other examples
 of papers that used wind speeds for exposure assessment?]
 
-## Flooding and Storm Surges
+### Flooding and Storm Surges
 
 Due to intensive precipitation, and the threat of storm surges during and after tropical cyclones make landfall, flooding is a major consequence that has a number of impacts on the infrastructure, safety, and economic strength of communities. Flooding accounts for about 75% of declared federal disasters, costs an average of $8 billion in the US annually, and results in over 90 fatalities on average each year. [USGS, 2016]
 
@@ -167,19 +167,22 @@ Another method is to use data from stream gauges. The United States Geological S
 Satellite imagery, aerial photography, and remote sensing can also be used to asses the extent and damage of flooding in the aftermath of tropical cyclone disasters, but issues pertaining to cloud cover and inclement weather can make high quality, consistent, and clear images difficult to acheive and therefore use in analyzing impacts [@li2018novel]. 
 
 
-# Human Impacts of Tropical Cyclones
+## Human Impacts of Tropical Cyclones
 
 Where physical exposure data is often expansive and specific, owing to well established networks of weather monitoring stations, data on human impacts are spatially and temporally located within geopolitical, cultural, and administrative boundaries. This type of data is available often in the form of census records, hospitalization records and vitals statistics from hospitals and public health departments, disaster insurance claims, schools, and other systems that record human activities. Unlike the physical exposure data, these sources are often aggregated by geographic region and time, often out of convenience, or a need to preserve the anonymity and privacy of the people whose data is being used.  Researchers also will use such secondary datasets and sources to compare with primary data sources. For example in [@lieberman2017self], self reported flooding exposure data was compared to FEMA flooding exposure data. 
 
-## Health Impacts
+### Health Impacts
 
 Tropical cyclones studies have documented associations between exposure to tropical cyclones and a number of health outcomes such as increased hospitalizations due to cardiovascular and respiratory effects [@yan2020tropical], autism in children from in utero exposure [@kinney2008autism], risk of preterm birth [@grabich2016hurricane], adverse mental health outcomes such as anxiety, depression, and PTSD [@lieberman2017self],[@scaramutti2019mental],[@bevilacqua2020understanding], increased risk of hypertension [@ferdinand2005hurricane], and injury and death [@lane2013health]. The health data that informed thesd studies comes from a number of public health agencies, both governmental and non-governmental that collect extensive information pertaining to deaths, acute and chronic illnesses, injuries, birth and pregnancy outcomes, and mental health conditions. This data provides researchers with a wealth of information on health related human impacts of tropical cyclones. 
 
-Certain general health information can be accessed from data published by the National Vital Statistics System of the National Center for Health Statistics (NCHS) [@aschengrau2013essentials]. This organization has registration offices in every U.S. state, Washington D.C., and New York City. Vital statistics from birth certificates for example, are recorded and verified by medical professionals and submitted to local health depaertments, which submit this information to state health departments, which eventually send it to the NCHS [@aschengrau2013essentials]. Because local health departments typically exist at the county and state level, this health information will also be aggregated at those levels. 
+Certain general health information can be accessed from data published by the National Vital Statistics System of the National Center for Health Statistics (NCHS) [@aschengrau2013essentials]. This organization has registration offices in every U.S. state, Washington D.C., and New York City. Vital statistics from birth certificates for example, are recorded and verified by medical professionals and submitted to local health depaertments, which submit this information to state health departments, which eventually send it to the NCHS [@aschengrau2013essentials]. 
+
+Because local health departments typically exist at the county and state level, this health information will also be aggregated at those levels. [Examples of when data from NCHS are used in tropical cyclone
+impacts research?]
 
 Mortality data is also collected in the US by the NCHS through a program it administers called the National Death Index [@aschengrau2013essentials]; this particular data has to be obtained through offices at the state level. Death certificates themselves will give the information of the events that led to death, something of interest when determining impacts of tropical cyclones. There are many other sources of health data that contain information pertinent to impacts from tropical cyclones such as the National Health Interview Survey, National Notifiable Diseases Surveillance System, Planned Parenthood Federation of America, Center for Disease Control, Pregnancy Risk Assessment Monitoring System, and many others [@aschengrau2013essentials]. The key is to understand that these data come from hospitals, public health departments and other agencies at county and state levels. 
 
-## Social and Economic Impacts
+### Social and Economic Impacts
 
 There a wide variety of social and economic costs associated with tropical cyclones. Often large populations of people are displaced after tropical cyclone events, such as the Puerto Ricans who migrated to Florida after Hurricane Maria [@scaramutti2019mental]. Another crucial consequence of tropical cyclones is that homes, businesses, and commmunity infrastructure are damaged, often severly. This destruction alters local economies, sometimes leading to unexpected economic consequences. 
 
