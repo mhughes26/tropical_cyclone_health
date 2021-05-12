@@ -177,10 +177,12 @@ Tropical cyclones studies have documented associations between exposure to tropi
 
 Certain general health information can be accessed from data published by the
 National Vital Statistics System of the National Center for Health Statistics
-(NCHS) [@aschengrau2013essentials]. This organization has registration offices
-in every U.S. state, Washington D.C., and New York City. Vital statistics from
-birth certificates for example, are recorded and verified by medical
-professionals and submitted to local health depaertments, which submit this
+(NCHS) [@aschengrau2013essentials].  
+<!-- This organization has registration offices -->
+<!-- in every U.S. state, Washington D.C., and New York City.  -->
+Vital statistics---from
+birth certificates, for example---are recorded and verified by medical
+professionals and submitted to local health departments, which submit this
 information to state health departments, which eventually send it to the NCHS
 [@aschengrau2013essentials]. The NCHS also collects US mortality data through a
 program it administers called the National Death Index
