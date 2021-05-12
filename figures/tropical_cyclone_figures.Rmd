@@ -1,0 +1,240 @@
+---
+title: "tropical_cyclone_figures"
+author: "Matthew Hughes"
+date: "March 9, 2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(sf)
+library(tigris)
+options(tigris_use_cache = TRUE)
+```
+### Point Location Image ###
+```{r}
+# Creating a map of the Florida panhandle including Tallahassee
+
+florida_zip <- zctas(cb = TRUE, starts_with = "323", 
+                    class = "sf")
+```
+
+```{r}
+# Creating a small dataframe with latitude and longitude points in Florida panhandle. 
+
+lon <- c(-84.365908,-84.469249,-83.928361,-84.264767)
+lat <- c(29.918281,30.281365,30.087633,30.425467)
+coordinates <- data.frame(lon, lat)
+coordinates
+```
+
+```{r}
+# Turning the latitude and longitude coordinates into sf objects. 
+
+florida_sf <- coordinates %>% 
+  st_as_sf(coords = c("lon", "lat")) %>% 
+   st_set_crs(4269)
+
+```
+
+```{r}
+# Create map of Florida panhandle with point locations using the latitude and longitude dataframe. 
+
+florida_map <- ggplot() +
+  geom_sf(data = florida_zip, fill = "light green", color = "darkcyan") +
+  geom_sf(data = florida_sf) +
+  ggtitle("Point Locations in Florida Panhandle") +
+  labs(x = "Longitude", "Latitude") 
+
+florida_map
+```
+### Zip Code Shaded Image ###
+```{r}
+# Creating an image of a zip code in Florida panhandle that is shaded dark blue. 
+class(florida_zip)
+head(florida_zip)
+
+zipcode <- florida_zip %>%
+filter(ZCTA5CE10 == "32340")
+zipcode
+
+zipcode_map <- ggplot() + 
+  geom_sf(data = florida_zip, fill = "light green", color = "darkcyan") + 
+  geom_sf(data = zipcode, fill = "darkcyan") +
+  ggtitle("A Zip Code in the Florida Panhandle") +
+  labs(x = "Longitude", "Latitude") 
+
+zipcode_map
+```
+### County Shaded Image ###
+```{r}
+# Create in image of a county in the Florida panhandle that is shaded in. 
+
+florida_counties <- counties(state = "FL", class = "sf") %>% 
+  filter(NAME == "Jefferson")
+
+florida_county_map <- ggplot() + 
+  geom_sf(data = florida_zip, fill = "light green", color = "darkcyan") + 
+  geom_sf(data = florida_counties, fill = "darkcyan") +
+  ggtitle("Jefferson County in the Florida Panhandle") +
+  labs(x = "Longitude", "Latitude") 
+
+florida_county_map
+```
+```{r}
+# Creating a panel of the Florida panhandle spatial scale maps
+
+library(cowplot)
+
+plot_grid(florida_map, zipcode_map, florida_county_map)
+```
+
+<<<<<<< HEAD
+```{r}
+# Creating a world map
+
+library("rnaturalearth")
+library("rnaturalearthdata")
+
+world <- ne_countries(scale = "medium", returnclass = "sf")
+class(world)
+
+ggplot(data = world) + 
+    geom_sf(color = "black", fill = "cyan")
+```
+
+```{r}
+florida_pan_zip <- zctas(cb = TRUE, class = "sf")
+
+florida_panhandle <- ggplot(data = world) +
+  geom_sf(data = florida_pan_zip, fill = "lightgreen") +
+  geom_sf(data = florida_sf) +
+  ggtitle("Point Locations in Florida Panhandle") +
+  labs(x = "Longitude", y = "Latitude") +
+    coord_sf(xlim = c(-88.15, -81.12), ylim = c(27.65, 31.97), expand = FALSE) +
+  theme_void()
+florida_panhandle
+```
+```{r}
+florida_pan_counties <- counties(state = "FL, GA, AL", class = "sf")
+
+florida_panhandle2 <- ggplot(data = world) +
+  geom_sf(data = florida_pan_counties, fill = "purple") +
+  geom_sf(data = florida_sf) +
+  ggtitle("Point Locations in Florida Panhandle") +
+  labs(x = "Longitude", y = "Latitude") +
+    coord_sf(xlim = c(-88.15, -81.12), ylim = c(27.65, 31.97), expand = FALSE) +
+  theme_void()
+florida_panhandle2
+```
+```{r}
+# Using rnoaa to find the coordinates for NOAA stations to use as point locations. 
+library(rnoaa)
+
+noaa_stations <- isd_stations_search(lat = 30.50, lon = -84.5, radius = 250)
+
+florida_pan_sf <- noaa_stations %>% 
+  st_as_sf(coords = c("lon", "lat")) %>% 
+   st_set_crs(4269)
+
+florida_panhandle2 <- ggplot(data = world) +
+  geom_sf(data = florida_pan_counties, fill = "lightgrey", color = "lightgrey") +
+  geom_sf(data = florida_pan_sf) +
+  ggtitle("Point Locations in Florida Panhandle") +
+  labs(x = "Longitude", y = "Latitude") +
+    coord_sf(xlim = c(-88.15, -81.12), ylim = c(27.65, 31.97), expand = FALSE) +
+  theme_void()
+florida_panhandle2
+```
+```{r}
+# Mapping the wind exposure in Florida panhandle of Hurricane Michael in 2018
+library(hurricaneexposure)
+library(hurricaneexposuredata)
+library(tidyverse)
+library(drat)
+addRepo("geanders")
+data("hurr_tracks")
+
+map_counties(storm = "Michael-2018", metric = "wind")
+map_counties(storm = "Michael-2018", metric = "distance")
+```
+```{r}
+# Creating an dataframe with maximum sustained wind speed for Hurricane Michael in Florida in 2018
+
+florida_wind <- county_wind(counties = c("12073", "12039", "12079","12065", "12123", "12129", "12077", "12045", "12123"),
+                            start_year = 2018,
+                            end_year = 2018,
+                            wind_limit = 20,
+                            wind_var = "vmax_sust")
+florida_wind
+```
+```{r}
+#florida_wind_sf <- florida_wind %>% 
+ # st_as_sf(agr = "fips") %>% 
+   #st_set_crs(4269)
+
+
+florida_panhandle3 <- ggplot(data = world) +
+  geom_sf(data = florida_pan_counties) +
+  geom_sf(aes(fill = florida_wind)) +
+  scale_fill_viridis_c(option = "plasma")
+  ggtitle("Point Locations in Florida Panhandle") +
+  theme_void()
+florida_panhandle3
+```
+
+```{r message = FALSE, warning = FALSE}
+library(hurricaneexposuredata)
+library(hurricaneexposure)
+
+map_counties(storm = "Michael-2018", metric = "wind")
+```
+
+```{r message = FALSE}
+library(tidyverse)
+data("county_centers")
+michael_fl_winds <- county_wind(counties = county_centers %>%
+                                  filter(state_name == "Florida") %>% 
+                                  pull(fips), 
+            start_year = 2018, end_year = 2018, 
+            wind_limit = 0) %>% 
+  filter(storm_id == "Michael-2018")
+head(michael_fl_winds)
+```
+
+```{r}
+library(viridis)
+all_fl_counties <- counties(state = "FL", cb = TRUE, resolution = "20m") %>% 
+  mutate(fips = paste0(STATEFP, COUNTYFP)) %>% 
+  full_join(michael_fl_winds, by = "fips")
+  
+florida_county_map2 <- ggplot() + 
+  geom_sf(data = all_fl_counties, aes(fill = vmax_sust)) +
+  scale_fill_viridis() + 
+  theme_void()
+florida_county_map2
+>>>>>>> 0a5cd56c6fffab04405043c41f0987b717deea6a
+```
+```{r}
+# Viridis wind speed map of the zip codes of Florida
+
+
+# function in sf allows you to find center of a polygon
+# storm windmodel package map winds to specific latitude and longitude
+#  devtools install_package
+# rtools
+library(viridis)
+all_fl_zips <- zctas(state = "FL", cb = TRUE) 
+ 
+  
+florida_county_map3 <- ggplot() + 
+  geom_sf(data = all_fl_zips, as(fill = vmax_sust)) +
+  scale_fill_viridis() + 
+  theme_void()
+florida_county_map3
+```
+

@@ -3,7 +3,7 @@ title: "Challenges of Integrating Physical Exposure and Human Impacts Data in Tr
 author: "Matthew Hughes and Brooke Anderson"
 date: "May 25, 2020"
 output: pdf_document
-bibliography: bibliography.bib
+bibliography: ../bibliographies/bibliography.bib
 ---
 
 
@@ -15,31 +15,146 @@ Tropical cyclones are environmental disaster events that are crucial for public 
 
 Clearly, tropical cyclones dramatically impact the social, economic, and physical wellbeing of  coastal communities. These extreme weather events represent an environmental health threat that is not going to disappear, and given that coastal regions of the Southeastern US are experiencing population growth, it is likely that higher numbers of people will be put at risk in the future. Avoiding these risks is not possible, but building resilience in communities after they experience tropical cyclone events is key to mitigating damages and preparing for future disasters. Creating lasting and resilient communities in areas prone to tropical cyclones  requires that researchers understand which populations and locations are at the greatest risk for negative exposures to tropical storms. This requires data that allows researchers to assess where in space and time tropical storms occur, and also where in space and time individuals and populations are experiencing impacts from these storms. 
 
-Multidisciplinary teams of researchers are exploring this using different datasets, however a key challenge is integrating data from across disciplines. For example: extensive physical exposure data is often available for tropical cyclones as they near and cross communities in the United States. This data can come both from established monitoring networks, like [NOAA network name?], but may also result from data collection efforts during or after the storm by atmospheric scientists and engineers seeking to characterize a storm. Researchers studying the human impacts of these storms, including epidemiologists, economists, and social scientists are interested in this data as well, but the differences in temporal and spatial resolution makes the data harder to use. Resolving physical exposure and human impact datasets is challenging because the human impact data and physical exposure data often do not have congruent resolutions. 
+To investigate links between tropical cyclones and human impacts, investigators must collect two types of data: measures of exposure to the tropical cyclone and measures of outcomes among humans. A key challenge, however, is integrating these two types of data. For example: extensive physical exposure data is often available for tropical cyclones as they near and cross communities in the United States. This data can come both from established monitoring networks, like [NOAA network name?], but may also result from data collection efforts during or after the storm by atmospheric scientists and engineers seeking to characterize a storm. Researchers studying the human impacts of these storms, including epidemiologists, economists, and social scientists are interested in this data as well, but the differences in temporal and spatial resolution makes the data harder to use. Integrating physical exposure and human impact datasets is challenging because the human impact data and physical exposure data often do not have congruent resolutions. 
 
 Here we explore cases and implications of integrating data at different temporal and spatial scales, focusing as an example on human impact studies of tropical cyclones in the US. We begin by investigating the reasons that spatial and temporal misaligment exist in the study of tropical cyclones. We then describe the main spatial and temporal scales used, and finally assess some of the consequences that result from integrating physical exposure data with human impacts data. 
 
+# Data for studying the human impacts of tropical cyclones
+
+For an observational study to investigate links between tropical cyclones
+and human impacts, the study's investigators must collect data on two 
+key items: measures of exposure to the tropical cyclone and measures of
+outcomes among humans. In this section, we outline key sources of these 
+two types of data, illustrating with examples from the TC-human impacts
+literature. We highlight sources of the data, as well as the temporal and 
+spatial scales at which they are commonly collected. This helps highlight
+inherent challenges in leveraging large administrative datasets when 
+studying the human impacts of tropical cyclones, as discordance in 
+temporal and spatial scales between exposure and impact datasets can create challenges in integrating the two types of data within a joint model.  
+
 ## Physical Exposures
 
-Atmospheric and weather data have long been designed to give a picture of meteorological activity over vast geographic spreads as large as entire continents or oceanic basins. To acheive this, data is often recorded by sensors at fixed weather monitoring stations, in vast monitoring systems that are designed to automatically record a data point at a fixed interval of time. These monitoring systems are often the result of long-standing weather projects such as the National Hurricane Center Data Archive from NOAA (National Oceanic and Atmospheric Administration), and the NWS (National Weather Service). This data is often narrow in temporal and spatial resolution, and large in geographic scope. 
+To study the human impacts of tropical cyclones, investigators must identify 
+times and places where humans were exposed to these disasters. This exposure
+assessment can be as simple as identifying a community or person as 
+exposed or unexposed to a specific event, or can be more complex, assigning
+continuous levels of exposure to various physical hazards of the storm, 
+including severe winds, extreme rainfall, and coastal and inland flooding. 
+
+This exposure assessment often leverages data collected by national or
+international weather organizations, including the United States' National
+Oceanic and Atmospheric Administration (NOAA). Atmospheric and weather data have
+long been collected in a way that is designed to give a picture of
+meteorological activity over vast geographic spreads, as such coverage is
+critical for weather forecasting. Most countries have vast monitoring systems of
+sensors at fixed weather monitoring stations, designed to automatically record a
+data point at a fixed interval of time. Weather organizations typically
+supplement these fixed-location measurements with other data, including data for
+specific weather events. For example, NOAA's National Centers for Environmental
+Information published reports on specific severe weather events through its
+Storm Events database, while the US National Hurricane Center collects and
+publishes storm-specific data on tropical cyclones in the North Atlantic [and?],
+including the location and intensity of the storm along its track.
+
+The specific data used for exposure assessment, as well as the data's temporal
+and spatial scales, is often determined by whether exposure is based on distance
+to the storm's track or on physical exposures from the storm (e.g., severity of
+wind, flooding) and, if the second, which specific physical exposures are
+considered. 
+
+<!-- These monitoring systems are often the result of long-standing weather projects such as the National Hurricane Center Data Archive from NOAA (National Oceanic and Atmospheric Administration), and the NWS (National Weather Service).  -->
+<!-- These data are often fine in temporal and spatial resolution, and large in geographic scope.  -->
 
 ## Storm Tracks
 
-Tropical cyclone storm tracks refer to the paths the storms take, and can be displayed on maps to visualize where the center of the storm (the eye of the tropical cyclone) passes through. In the North Atlantic Basin, tropical cyclone paths have a tendency to move westward first, then curve north and sometimes northeastward before ending, although some storm tracks take very messy and circuitous paths. Satellite imagery and remote sensing can be used to detect the paths of tropical cyclones and hurricanes, and ground monitors measuring wind speed can also detect the movement of the storm. The location of the center of a tropical cyclone can be documented at specific point locations at different times, meaning that it has a very narrow spatial and also temporal resolution. 
+In some studies of the human impacts of tropical cyclones, exposure assessment
+is based on the location of a community relative to the location of the
+storm's track. These studies typically leverage data on tropical storm 
+tracks, collected by weather organizations like the US National Hurricane
+Center. 
 
-One source of data on tropical cyclone storm tracks is the Hurricane Data second generation dataset (HURDAT2) which has information on the point location of storm centers, wind speed, and atmospheric pressure in six hour intervals of North Atlantic tropical cyclones since 1851 [@deryugina2017fiscal]. 
+Tropical cyclone storm tracks refer to the paths the storms take, and can be displayed on maps to visualize where the center of the storm (the eye of the tropical cyclone, if the storm is severe enough to have one) passes through. 
+<!-- In the North Atlantic Basin, tropical cyclone paths have a tendency to move westward first, then curve north and sometimes northeastward before ending, although some storm tracks take very messy and circuitous paths.  -->
+Satellite imagery and remote sensing can be used to detect the paths of tropical cyclones and hurricanes, and ground monitors measuring wind speed can also detect the movement of the storm. 
+[Add something about how these data are all considered jointly by an 
+expert at the NHC to come up with the final track data---see paper ...]
+<!-- The location of the center of a tropical cyclone can be documented at specific point locations at different times, meaning that it has a very narrow spatial and also temporal resolution.  -->
+These tracks are reported by different weather organizations, depending on 
+the basin in which the storm occurs. In the North Atlantic basin, storm tracks
+are reported by the US National Hurricane Center through the Hurricane Data second generation dataset (HURDAT2) which has information on the point location of storm centers, wind speed, and atmospheric pressure in six hour intervals of North Atlantic tropical cyclones since 1851 [@deryugina2017fiscal] [consider replacing this ref with one from the NHC]. 
 
-Oftentimes storm tracks are used in tropical cyclone studies to assign exposures. Sometimes, distance from a storm track is used to assign counties or zip codes as exposed, as in [@yan2019tropical]. If distance from storm track is used to assign exposure, a threshold will have to be chosen to determine whether or not a county or zip code is exposed. Larger distance thresholds will increase the number of counties defined as exposed, and potentially overestimate exposure. Smaller distance thresholds will decrease the number of counties defined as exposed and potentially underestimate exposure. In either case, misclassification of exposure could arise. 
+For North Atlantic hurricanes, these tracking data are resolved to [10ths of
+degrees] in latitude and longitude (about how many miles?), but are only
+reported at six-hour intervals. [We might want to move the following
+interpolation section later, to when we talk about integrating data at different
+scales?] Interpolation between the reported time points can improve this
+temporal resolution, and in more recent years, tracking observations have been
+added at the time of landfall, so landfall location is well-resolved in the
+data. In many cases, tropical cyclones follow fairly smooth, curving
+tracks---for example, in the North Atlantic Basin tropical cyclone paths have a
+tendency to move northwestward first, then curve northeastward. These smoother
+tracks are reasonable to interpolate between six-hour reported locations.
+However, some storm tracks take very messy and circuitous paths, and for these
+interpolation between reported points may be more prone to error. [Are NHC GIS
+products interpolated?] Distance to the storm's track from fixed
+locations---like a county's center or a study member's residence---can be
+measured using GIS tools.
 
-Other times, exposure to a tropical cyclone is assigned only if the storm track passed through a county or zip code. This is the approach that was used in [@kinney2008autism]. Populations are not typically distributed in a uniform pattern across these spatial areas, and so using this method to assign exposure could also result in exposure misclassification for communities that are close to the storm track but not in the county or zip code that the storm track passed through. The reverse of this, where communities in exposed counties or zip codes are actually located farther away from the storm track is also plausible. 
+Oftentimes these storm track data are used in tropical cyclone studies to assign exposure. Sometimes, distance from a storm track is used to assign counties or zip codes as exposed, as in [@yan2019tropical]. [More examples of this?] [We may not need the rest of this paragraph, at least not here---it may make more sense later when we talk about integrating] If distance from the storm track is used to assign exposure, a threshold will have to be chosen to determine whether or not a county or zip code is exposed. Larger distance thresholds will increase the number of counties defined as exposed, and potentially overestimate exposure. Smaller distance thresholds will decrease the number of counties defined as exposed and potentially underestimate exposure. In either case, misclassification of exposure could arise. [I think that sometimes
+other criteria will also be used---for example, it has to be within a certain 
+distance of the storm track *and* the central storm intensity at that point 
+in the track had to be above a certain level. It may be helpful to add an 
+example of this.]
+
+Other times, exposure to a tropical cyclone is assigned only if the storm track passed through a county or zip code. This is the approach that was used in [@kinney2008autism]. [Any other examples of this?] [The rest of this paragraph may be something we want to move later, when we talk about integrating the two types of data.] Populations are not typically distributed in a uniform pattern across these spatial areas, and so using this method to assign exposure could also result in exposure misclassification for communities that are close to the storm track but not in the county or zip code that the storm track passed through. The reverse of this, where communities in exposed counties or zip codes are actually located farther away from the storm track is also plausible. 
 
 ## Wind Speed and Direction
 
-Wind speed is a common way to characterize exposure to tropical cyclones. To even be classified as a tropical cyclone, a storm must have wind speeds in excess of 74 miles per hour (64 knots). Meteorologists and atmospheric scientists use ground based wind instruments in set locations to measure wind speed and direction, such as wind vanes, anenometers, and aerovanes. In order to be accurate and effective, these ground based wind instruments must be placed above the roofs of buildings so that they can be exposed to free flowing air. Since this is not always the case, wind observations can consequently be erratic in nature. Above ground, geostationary satellites, which are positioned above a particular location can measure wind speed and wind direction by observing the direction that clouds move in a given amount of time. Doppler radar can also be used to measure wind speed and direction. 
+For some studies of the human impacts of tropical cyclones, researchers will 
+assess exposure based on the severity of physical hazards experienced, 
+rather than solely on whether the storm passed near a residence or community. 
+Tropical cyclones are associated with multiple hazards, with high wind and
+flooding as two hazards often associated with human impacts.
 
-Wind speed is often used as a measure for assigning exposure, often by choosing a threshold wind speed that if attained in a zip code or county, makes it exposed. [@yan2020tropical] used the sustained maximum wind speed recorded at the center of counties. In this example counties were considered exposed to tropical cyclones if the sustained maximum wind speed was greater than 21 meters per second. Because this wind speed is taken from a monitor at the center of the county, it may not be representative of wind speeds in other parts of the exposed county, again contributing to potential misclassification of exposure. 
+Tropical cyclone-associated winds can be measured or modeling in a number of
+ways. The central intensity of a storm's winds (i.e., the highest winds in 
+any part of the storm) are used as a measure of the overall intensity of 
+the storm. However, these central measurements are of limited use in determining
+exposure for locations that were not directly hit by the storm, as they 
+characterize the hazards only near the core of the storm. 
+Long-term weather monitoring networks include ground-based wind instruments in set locations to measure wind speed and direction, such as wind vanes, anenometers, and aerovanes. These can provide wind speed measurements at specific locations
+(the location of that ground-based station), and often provide measurements
+at a high temporal resolution (e.g., [minutes? seconds?]). However, these
+instruments can be prone to failure or destruction during very severe conditions, 
+and so may be missing data during the worst tropical cyclone exposures.
+<!-- In order to be accurate and effective, these ground based wind instruments must be placed above the roofs of buildings so that they can be exposed to free flowing air. Since this is not always the case, wind observations can consequently be erratic in nature.  -->
+Geostationary satellites, which are positioned above a particular location, can measure wind speed and wind direction by observing the direction that clouds move in a given amount of time. Doppler radar can also be used to measure wind speed and direction. [Anything about the temporal and spatial resolution
+of geostationary satellites and doppler radar?]
+Finally, customized data collection campaigns are sometimes conducted to 
+collect wind speed data during tropical cyclones. These are often conducted
+over sea, rather than land, including through [flight data collections]. 
+However, [any examples of data collection campaigns on land for a specific 
+tropical cyclone, where people put out more monitors specifically near the
+site of landfall, for example?].
+ 
+Modeling can also be used to estimate tropical cyclone-associated winds at
+specific locations. Wind speed models use central measurements of the storm, 
+including its location and central intensity, to create a wind profile 
+extending from the center of the storm. These models incorporate knowledge
+from atmospheric science on patterns in wind fields and asymmetry in winds
+around the storm's center. These models can be used to estimate winds at any
+location relative to the storm, and so they provide complete spatial coverage. 
+Temporal resolution is influenced by the temporal resolution of the tropical
+cyclone tracking data, since that is the key input to the model, but this 
+temporal resolution can be improved by interpolating tracking data to a finer
+temporal resolution. [Limitations of modeling winds]
 
-Another study that used wind speed to assign exposure was [@parks2021tropical], which categorized counties as exposed to tropical cyclones on days that they experienced peak sustained wind greater than or equal to 34 knots when the the cyclone was at the point of closest approach to the county. 
+<!-- Wind speed is a common way to characterize exposure to tropical cyclones. To even be classified as a tropical cyclone, a storm must have wind speeds in excess of 74 miles per hour (64 knots).  -->
+ 
+There are several examples of wind speed being used as a measure for assigning exposure, often by choosing a threshold wind speed that if attained in a zip code or county during the course of a tropical cyclone, makes it exposed. 
+[@yan2020tropical] used the sustained maximum wind speed recorded at the center of counties. [Move the next two sentences later?] In this example counties were considered exposed to tropical cyclones if the sustained maximum wind speed was greater than 21 meters per second. Because this wind speed is taken from a monitor at the center of the county, it may not be representative of wind speeds in other parts of the exposed county, again contributing to potential misclassification of exposure. 
+Another study that used wind speed to assign exposure was [@parks2021tropical], which categorized counties as exposed to tropical cyclones on days that they experienced peak sustained wind greater than or equal to 34 knots when the the cyclone was at the point of closest approach to the county. [Any other examples
+of papers that used wind speeds for exposure assessment?]
 
 ## Flooding and Storm Surges
 
@@ -90,7 +205,7 @@ The spatial scale that a researcher uses varies depending on the data available 
 
 
 ```{r echo = FALSE, out.width="1.0\\textwidth", fig.align="center"}
-knitr::include_graphics("figures/florida_spatial_scales_rstudio.JPG")
+knitr::include_graphics("../figures/florida_spatial_scales_rstudio.JPG")
 ```
 
 ### Point Location
