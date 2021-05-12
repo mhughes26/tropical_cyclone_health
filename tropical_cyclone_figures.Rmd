@@ -142,7 +142,7 @@ florida_pan_sf <- noaa_stations %>%
    st_set_crs(4269)
 
 florida_panhandle2 <- ggplot(data = world) +
-  geom_sf(data = florida_pan_counties, fill = "purple") +
+  geom_sf(data = florida_pan_counties, fill = "lightgrey", color = "lightgrey") +
   geom_sf(data = florida_pan_sf) +
   ggtitle("Point Locations in Florida Panhandle") +
   labs(x = "Longitude", y = "Latitude") +
@@ -185,7 +185,8 @@ florida_panhandle3 <- ggplot(data = world) +
   ggtitle("Point Locations in Florida Panhandle") +
   theme_void()
 florida_panhandle3
-=======
+```
+
 ```{r message = FALSE, warning = FALSE}
 library(hurricaneexposuredata)
 library(hurricaneexposure)
@@ -217,5 +218,23 @@ florida_county_map2 <- ggplot() +
   theme_void()
 florida_county_map2
 >>>>>>> 0a5cd56c6fffab04405043c41f0987b717deea6a
+```
+```{r}
+# Viridis wind speed map of the zip codes of Florida
+
+
+# function in sf allows you to find center of a polygon
+# storm windmodel package map winds to specific latitude and longitude
+#  devtools install_package
+# rtools
+library(viridis)
+all_fl_zips <- zctas(state = "FL", cb = TRUE) 
+ 
+  
+florida_county_map3 <- ggplot() + 
+  geom_sf(data = all_fl_zips, as(fill = vmax_sust)) +
+  scale_fill_viridis() + 
+  theme_void()
+florida_county_map3
 ```
 
