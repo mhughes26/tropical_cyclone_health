@@ -124,12 +124,11 @@ exposure for locations that were not directly hit by the storm, as they
 characterize the hazards only near the core of the storm. 
 Long-term weather monitoring networks include ground-based wind instruments in set locations to measure wind speed and direction, such as wind vanes, anenometers, and aerovanes. These can provide wind speed measurements at specific locations
 (the location of that ground-based station), and often provide measurements
-at a high temporal resolution (e.g., [minutes? seconds?]). However, these
+at a high temporal resolution. For example, the R package stormwindmodel utilizes gridded to measure maximum gusts which are the maximum gust (in meters per second) in one minute during a ten minute interval[@stormwindodel]. Maximum sustained wind is also the maximum one minute sustained wind in a ten minute period (also measured in meters per second)[@stormwindmodel]. However, these
 instruments can be prone to failure or destruction during very severe conditions, 
 and so may be missing data during the worst tropical cyclone exposures.
 <!-- In order to be accurate and effective, these ground based wind instruments must be placed above the roofs of buildings so that they can be exposed to free flowing air. Since this is not always the case, wind observations can consequently be erratic in nature.  -->
-Geostationary satellites, which are positioned above a particular location, can measure wind speed and wind direction by observing the direction that clouds move in a given amount of time. Doppler radar can also be used to measure wind speed and direction. [Anything about the temporal and spatial resolution
-of geostationary satellites and doppler radar?]
+Geostationary satellites, which are positioned above a particular location, can measure wind speed and wind direction by observing the direction that clouds move in a given amount of time. Doppler radar can also be used to measure wind speed and direction. The spatial and temporal resolutions of the wind data from these satellites is typically pretty high, for example NOAA uses high density infrared to show wind vectors (which display direction and speed) at 60 kilometer increments every hour. 
 Finally, customized data collection campaigns are sometimes conducted to 
 collect wind speed data during tropical cyclones. These are often conducted
 over sea, rather than land, including through [flight data collections]. 
@@ -166,7 +165,11 @@ Another method is to use data from stream gauges. The United States Geological S
 
 Satellite imagery, aerial photography, and remote sensing can also be used to asses the extent and damage of flooding in the aftermath of tropical cyclone disasters, but issues pertaining to cloud cover and inclement weather can make high quality, consistent, and clear images difficult to acheive and therefore use in analyzing impacts [@li2018novel]. 
 
+### Disaster Declarations
 
+Another method of categorizing exposure to tropical cyclones is through disaster declarations. Unlike storm tracks, windspeed, precipitation, and flooding, a disaster declaration is not necessarily based on raw physical data that is collected by sites and monitors. Also unlike storm tracks, wind speed, precipitation, and flooding, disaster declarations occur at geopolitical boundaries. For example, tropical cyclones in the North Atlantic can lead to FEMA presidential disaster declarations, which are designed to allocate federal aid and resources to counties affected by storm events [@grabich2016measuring]. The US president can declare FEMA disaster declarations before or after the event, meaning that the temporal scale of these declarations has a very low resolution [@mccarthy2010fema]. 
+
+[Somewhere to go elsewhere in the paper: The FEMA disaster declaration appears to overassign exposure to counties when comparing it to other methods of assessing exposure at the county level, such as proximity to the storm track [@grabich2016measuring]. Also in this paper is noted that disaster declarations are not intended for research, but instead for providing resources in the aftermath of a storm]
 ## Human Impacts of Tropical Cyclones
 
 Where physical exposure data is often expansive and specific, owing to well established networks of weather monitoring stations, data on human impacts are spatially and temporally located within geopolitical, cultural, and administrative boundaries. This type of data is available often in the form of census records, hospitalization records and vitals statistics from hospitals and public health departments, disaster insurance claims, schools, and other systems that record human activities. Unlike the physical exposure data, these sources are often aggregated by geographic region and time, often out of convenience, or a need to preserve the anonymity and privacy of the people whose data is being used.  Researchers also will use such secondary datasets and sources to compare with primary data sources. For example in [@lieberman2017self], self reported flooding exposure data was compared to FEMA flooding exposure data. 
