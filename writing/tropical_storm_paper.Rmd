@@ -160,10 +160,19 @@ of papers that used wind speeds for exposure assessment?]
 Due to intensive precipitation, and the threat of storm surges during and after tropical cyclones make landfall, flooding is a major consequence that has a number of impacts on the infrastructure, safety, and economic strength of communities. Flooding accounts for about 75% of declared federal disasters, costs an average of $8 billion in the US annually, and results in over 90 fatalities on average each year. [USGS, 2016]
 
 There are several methods for measuring flooding and creating geospatial maps to show the extent and impact of flooding. One method is to measure high water marks. Typically, this involves sending people out to specific locations to record the high water marks, but this method is costly, requires intensive labor, and is difficult to acheive during or after flooding disasters [@li2018novel]. 
+[Anything on the temporal and spatial scales here? I'm guessing that the temporal
+scale may be limited to a single measure for a location for a storm---they're
+going after the storm to measure the maximum, and that represents severity 
+over the course of the storm, rather than measuring at several times during 
+the storm. How about the spatial scale? Do they check lots of spots near 
+landfall, or only a few? Is this measurement ever taken away from the landfall, 
+or does it just tend to characterize exposure near landfall?]
 
 Another method is to use data from stream gauges. The United States Geological Survey (USGS) maintains stream gauges at monitored locations along bodies of water that regularly record information on water height and stream flow, often updating every fifteen minutes [@li2018novel]. There are some limitations to this method as well, for example these stream gauges are not systematically installed along water ways, meaning that information is not uniform, and the stream gauges are not useful if the water level rises above the limit of ground based gauges or washes gauges away entirely [@li2018novel]. 
 
 Satellite imagery, aerial photography, and remote sensing can also be used to asses the extent and damage of flooding in the aftermath of tropical cyclone disasters, but issues pertaining to cloud cover and inclement weather can make high quality, consistent, and clear images difficult to acheive and therefore use in analyzing impacts [@li2018novel]. 
+
+[Anything about FEMA assessments of flooding from an event?]
 
 ### Disaster Declarations
 
