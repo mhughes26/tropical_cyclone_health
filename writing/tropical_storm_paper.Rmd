@@ -168,15 +168,26 @@ the storm. How about the spatial scale? Do they check lots of spots near
 landfall, or only a few? Is this measurement ever taken away from the landfall, 
 or does it just tend to characterize exposure near landfall?]
 
-Another method is to use data from stream gauges. The United States Geological Survey (USGS) maintains stream gauges at monitored locations along bodies of water that regularly record information on water height and stream flow, often updating every fifteen minutes [@li2018novel]. There are some limitations to this method as well, for example these stream gauges are not systematically installed along water ways, meaning that information is not uniform, and the stream gauges are not useful if the water level rises above the limit of ground based gauges or washes gauges away entirely [@li2018novel]. 
+Another method is to use data from stream gauges. The United States Geological Survey (USGS) maintains stream gauges at monitored locations along bodies of water that regularly record information on water height and stream flow, often updating every fifteen minutes [@li2018novel]. There are some limitations to this method as well, for example these stream gauges are not systematically installed along water ways, meaning that information is not uniform, and the stream gauges are not useful if the water level rises above the limit of ground based gauges or washes gauges away entirely [@li2018novel]. [What is the time scale at which stream
+gage data is available? If you take a look at some sample data from stream gages, 
+you could probably see. I think it's pretty fine---multiple measurements a day, 
+I think. The spatial resolution is point location data, so we should mention 
+that. You talk some about this but could make it clearer---you may have several
+of these within a county, but they will be located along streams and rivers, and
+so there will be large populated areas that aren't well represented spatially.]
 
 Satellite imagery, aerial photography, and remote sensing can also be used to asses the extent and damage of flooding in the aftermath of tropical cyclone disasters, but issues pertaining to cloud cover and inclement weather can make high quality, consistent, and clear images difficult to acheive and therefore use in analyzing impacts [@li2018novel]. 
 
 [Anything about FEMA assessments of flooding from an event?]
 
-[Add something on listings of flood events in the NOAA Storm Events database---you
-may want to talk with Therese about this, and then we use this source in the 
-EHP paper, and we have a small discussion about it there.]
+[Add something on listings of flood events in the NOAA Storm Events
+database---you may want to talk with Therese about this, and then we use this
+source in the EHP paper, and we have a small discussion about it there. The
+spatial scale for these is by the county or forecast zone (we might have to
+doublecheck which is used to report flood events---I think Therese could check
+for us). The time scale is pretty much by day, because they'll record a start
+date and end date for each event, so you can assign each day in that range as
+exposed.]
 
 ### Disaster Declarations
 
