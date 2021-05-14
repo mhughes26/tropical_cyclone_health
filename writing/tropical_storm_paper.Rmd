@@ -189,6 +189,8 @@ for us). The time scale is pretty much by day, because they'll record a start
 date and end date for each event, so you can assign each day in that range as
 exposed.]
 
+[Add something about precipitation data here.]
+
 ### Disaster Declarations
 
 Another method of categorizing exposure to tropical cyclones is through disaster declarations. Unlike storm tracks, windspeed, precipitation, and flooding, a disaster declaration is not necessarily based on raw physical data that is collected by sites and monitors. Also unlike storm tracks, wind speed, precipitation, and flooding, disaster declarations occur at geopolitical boundaries. For example, tropical cyclones in the North Atlantic can lead to FEMA presidential disaster declarations, which are designed to allocate federal aid and resources to counties affected by storm events [@grabich2016measuring]. The US president can declare FEMA disaster declarations before or after the event, meaning that the temporal scale of these declarations has a very low resolution [@mccarthy2010fema]. 
