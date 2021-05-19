@@ -221,15 +221,19 @@ program it administers called the National Death Index
 [@aschengrau2013essentials]; this particular data has to be obtained through
 offices at the state level. Death certificates themselves will give the
 information of the events that led to death, something of interest when
-determining impacts of tropical cyclones. Because local health departments
-typically exist at the county and state level, this health information will
-often be aggregated at those levels. [Sometimes I think the aggregation is in
-part for privacy, as well. Could we say something about that?] [What is the
+determining impacts of tropical cyclones. 
+
+Because local health departments typically exist at the county and state level, this health information will
+often be aggregated at those levels. However, another function of aggregation in public health data is often to preserve the privacy of individuals' health data. In the United States, the Health Insurance Portability and Accountability Act (HIPAA) governs public health agencies authority to collect private data [@van2014systematic]. However, it is often difficult to distinguish between data that is fully anonymous, and data with personal identifiers, moreover aggregated public health data that is deidentified often lacks enough detail to be useful for certain applications. [@van2014systematic].
+
+The spatial and temporal scales of vital statistics are very detailed and high resolution. So much in fact, that since 2005, access to national vital statistics micro-data require approval from the NCHS through a process of research grant review to preserve confidentiality [@CDC_NCHS_Restricted-Use]. The NCHS has information on death available in Multiple Cause of Death (MCOD) research files that include the individual's exact date of death, county of the death, and the manner in which they died [@CDC_NCHS_Restricted-Use]. Data on births and fetal deaths (which is useful for tropical cyclone studies that look at birth outcomes), is also available and includes the exact time and date of birth in addition to the county of birth, and the specific place of birth (hospital, freestanding birth center, home). This kind of ???NCHS??? data (Florida Department of Health, Vital Statistics Department) was utilized by [@grabich2016hurricane] to study birth outcomes in Florida prior to Hurricane Charley, using specific birth dates to estimate time of conception and therefore assess the stage of pregancy that occurred at the same time as exposure to Hurricane Charley.
+
+<!--[What is the
 temporal scale of these data? They may offer different levels for different
 uses---for example, they may have open (completely public) data available by
 month for some things, but then you have to apply and use data under constraints
 if you're using daily resolution]. [Add examples of when data from NCHS are used
-in tropical cyclone impacts research?]
+in tropical cyclone impacts research?] -->
 
 There are many other sources of health data that contain information pertinent
 to impacts from tropical cyclones such as the National Health Interview Survey,
@@ -241,6 +245,9 @@ agencies at county and state levels. [What implications does this have in terms
 of temporal and spatial scales? What are typical temporal and spatial scales
 for data from these sources?] [Add examples of studies that have used these
 sources for TC impact studies.]
+
+Health insurance claims are another valuable resource for public health data that are frequently used in tropical cyclone studies. For example, in [@kelman2015dialysis], researchers used Centers for Medicare and Medicaid claims to identify patients with end-stage renal disease in New York City and New Jersey during Hurricane Sandy. The claims were used determine dialysis treament of these patients and comparing it to the treament of patients living in states unaffected by Hurricane Sandy, by looking at the patterns of care for the week the storm hit (October 28, 2012 to November 3, 2012).  Another study, [@parks2021tropical] used Medicare claims to identify 70 million hospitalizations in the Medicare population a week after exposure to a tropical cyclone over a 16 year period and found that hospitializations do increase after tropical cyclone events. 
+
 
 [Consider adding a paragraph or sentences on health insurance claim data, which 
 is another source for some health data. Meilin's paper and Robbie Park's paper
