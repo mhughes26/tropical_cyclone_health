@@ -81,7 +81,9 @@ The storm track of a tropical cyclone is constructed from available observationa
 [Add something about how these data are all considered jointly by an 
 expert at the NHC to come up with the final track data---see paper ...]
 <!-- The location of the center of a tropical cyclone can be documented at specific point locations at different times, meaning that it has a very narrow spatial and also temporal resolution.  -->
-One of IBTrACS' sources, the US National Hurricane Center, reports storm data through the Hurricane Data Second Generation Dataset (HURDAT2) which has information on the point location of storm centers (latitude and longitude to the 10th of a degree), wind speed (given in both miles per hour and kilometers per hour), and central minimum pressure (given in millibars) in six hour (00:00, 06:00, 12:00, 18:00) intervals of North Atlantic tropical cyclones since 1851 [@al092011revised]. 
+One of IBTrACS' sources, the US National Hurricane Center, reports storm data through the Hurricane Data Second Generation Dataset (HURDAT2) which has information on the point location of storm centers (latitude and longitude to the 10th of a degree), wind speed (given in both miles per hour and kilometers per hour), and central minimum pressure (given in millibars) in six hour (00:00, 06:00, 12:00, 18:00) intervals of North Atlantic tropical cyclones since 1851 [@al092011revised]. These measurements are used to construct a "best track." 
+
+The best tracks created by the National Hurricane Center represent historical records of tropical cyclone events, and include the information on the storm's intensity, central pressure, position and time and space, and size every six hours [@landsea2013atlantic]. Hurricane specialists at the National Hurricane Center are assigned to specific cyclone events after the storm has occurred, and using a variety of data sources (including satellites), create a draft of the storm's best track and pass it through review by other hurricane specialists at the National Hurricane Center to ensure continuity and consistency between other best track authors [@landsea2013atlantic]. These best tracks are subjectively smoothed, and for this reason may not always reflect the most precise account of the actual historical storm track. Data with high confidence will receive greater weight in the smoothing process, and daylight positions are considered more reliable than night time positions of the storm track [@landsea2013atlantic]. 
 
 For North Atlantic hurricanes, these tracking data are resolved to [10ths of
 degrees] in latitude and longitude (about how many miles?), but are only
@@ -116,7 +118,7 @@ rather than solely on whether the storm passed near a residence or community.
 Tropical cyclones are associated with multiple hazards, with high wind and
 flooding as two hazards often associated with human impacts.
 
-Tropical cyclone-associated winds can be measured or modeling in a number of
+Tropical cyclone-associated winds can be measured or modeled in a number of
 ways. The central intensity of a storm's winds (i.e., the highest winds in 
 any part of the storm) are used as a measure of the overall intensity of 
 the storm. HURDAT2 data gives this information in miles per hour and kilometers per hour every six hours. However, these central measurements are of limited use in determining
