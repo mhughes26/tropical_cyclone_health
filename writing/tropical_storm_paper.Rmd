@@ -205,7 +205,7 @@ Where physical exposure data is often expansive and specific, owing to well esta
 
 ### Health Impacts
 
-Tropical cyclones studies have documented associations between exposure to tropical cyclones and a number of health outcomes such as increased hospitalizations due to cardiovascular and respiratory effects [@yan2020tropical], autism in children from in utero exposure [@kinney2008autism], risk of preterm birth [@grabich2016hurricane], adverse mental health outcomes such as anxiety, depression, and PTSD [@lieberman2017self],[@scaramutti2019mental],[@bevilacqua2020understanding], increased risk of hypertension [@ferdinand2005hurricane], and injury and death [@lane2013health]. The health data that informed thesd studies comes from a number of public health agencies, both governmental and non-governmental that collect extensive information pertaining to deaths, acute and chronic illnesses, injuries, birth and pregnancy outcomes, and mental health conditions. This data provides researchers with a wealth of information on health related human impacts of tropical cyclones. 
+Tropical cyclones studies have documented associations between exposure to tropical cyclones and a number of health outcomes such as increased hospitalizations due to cardiovascular and respiratory effects [@yan2020tropical], autism in children from in utero exposure [@kinney2008autism], risk of preterm birth [@grabich2016hurricane], adverse mental health outcomes such as anxiety, depression, and PTSD [@lieberman2017self],[@scaramutti2019mental],[@bevilacqua2020understanding], increased risk of hypertension [@ferdinand2005hurricane], and injury and death [@lane2013health]. The health data that informed these studies comes from a number of public health agencies, both governmental and non-governmental that collect extensive information pertaining to deaths, acute and chronic illnesses, injuries, birth and pregnancy outcomes, and mental health conditions. This data provides researchers with a wealth of information on health related human impacts of tropical cyclones. 
 
 Certain general health information can be accessed from data published by the
 National Vital Statistics System of the National Center for Health Statistics
@@ -252,7 +252,8 @@ population and determine health outcomes through a survey they administer one or
 several times. In this case, they would have a point location for each study
 subject (latitude and longitude of residence). The time resolution might not be
 as precise, however---they may just be capturing "post" storm health, without a
-big focus on how long after the storm. ]
+big focus on how long after the storm. ] 
+
 
 ### Social and Economic Impacts
 
