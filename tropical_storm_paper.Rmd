@@ -2,7 +2,7 @@
 title: "Challenges of Integrating Physical Exposure and Human Impacts Data in Tropical Cyclone Studies"
 author: "Matthew Hughes and Brooke Anderson"
 date: "May 25, 2020"
-output: pdf_document
+output: word_document
 bibliography: bibliography.bib
 ---
 
@@ -23,7 +23,7 @@ Here we explore cases and implications of integrating data at different temporal
 
 Atmospheric and weather data have long been designed to give a picture of meteorological activity over vast geographic spreads as large as entire continents or oceanic basins. To acheive this, data is often recorded by sensors at fixed weather monitoring stations, in vast monitoring systems that are designed to automatically record a data point at a fixed interval of time. These monitoring systems are often the result of long-standing weather projects such as the National Hurricane Center Data Archive from NOAA (National Oceanic and Atmospheric Administration), and the NWS (National Weather Service). This data is often narrow in temporal and spatial resolution, and large in geographic scope. 
 
-## Storm Tracks
+### Storm Tracks
 
 Tropical cyclone storm tracks refer to the paths the storms take, and can be displayed on maps to visualize where the center of the storm (the eye of the tropical cyclone) passes through. In the North Atlantic Basin, tropical cyclone paths have a tendency to move westward first, then curve north and sometimes northeastward before ending, although some storm tracks take very messy and circuitous paths. Satellite imagery and remote sensing can be used to detect the paths of tropical cyclones and hurricanes, and ground monitors measuring wind speed can also detect the movement of the storm. The location of the center of a tropical cyclone can be documented at specific point locations at different times, meaning that it has a very narrow spatial and also temporal resolution. 
 
@@ -33,7 +33,7 @@ Oftentimes storm tracks are used in tropical cyclone studies to assign exposures
 
 Other times, exposure to a tropical cyclone is assigned only if the storm track passed through a county or zip code. This is the approach that was used in [@kinney2008autism]. Populations are not typically distributed in a uniform pattern across these spatial areas, and so using this method to assign exposure could also result in exposure misclassification for communities that are close to the storm track but not in the county or zip code that the storm track passed through. The reverse of this, where communities in exposed counties or zip codes are actually located farther away from the storm track is also plausible. 
 
-## Wind Speed and Direction
+### Wind Speed and Direction
 
 Wind speed is a common way to characterize exposure to tropical cyclones. To even be classified as a tropical cyclone, a storm must have wind speeds in excess of 74 miles per hour (64 knots). Meteorologists and atmospheric scientists use ground based wind instruments in set locations to measure wind speed and direction, such as wind vanes, anenometers, and aerovanes. In order to be accurate and effective, these ground based wind instruments must be placed above the roofs of buildings so that they can be exposed to free flowing air. Since this is not always the case, wind observations can consequently be erratic in nature. Above ground, geostationary satellites, which are positioned above a particular location can measure wind speed and wind direction by observing the direction that clouds move in a given amount of time. Doppler radar can also be used to measure wind speed and direction. 
 
@@ -86,18 +86,19 @@ The remainder of this section will highlight the most common spatial and tempora
 
 # Spatial Scales
 
-The spatial scale that a researcher uses varies depending on the data available or sampling method used. In human impacts data finer spatial scales will correspond more often to residential or business addresses, while larger spatial scales will correspond to zip codes, counties, states, or even countries. Physical exposure data is often at a small point location, sometimes within a larger grid, based on where weather monitoring sensors are placed. In the following section we will outline the most common spatial scales used in tropical cyclone studies and include some examples from the literature where they were employed. 
+When we refer to spatial scales, we are referring to the size of a geographic space that data are collected from. In tropical cyclone studies, the size of this space can be as small as a latitude-longitude coordinate (a point location), or as large as an oceanic basin;  for example the North Atlantic Basin where North American tropical cyclones typically develop. In general physical exposure data comes from monitors and sensors at point locations, while human impacts data comes from larger aggregated scales such as zip codes, counties, and states. 
+
+In this section we will describe several spatial scales that are commonly used by researchers studying human impacts of tropical cyclones in ascending order of magnitude. With each scale we will describe how measurements and data are generated from that particular area. We will also describe the methods that researchers use to join physical exposures data with human impacts data to accurately ascertain responses to exposure. 
 
 
-```{r echo = FALSE, out.width="1.0\\textwidth", fig.align="center"}
-knitr::include_graphics("figures/florida_spatial_scales_rstudio.JPG")
-```
+# ```{r echo = FALSE, out.width="1.0\\textwidth", fig.align="center"}
+# knitr::include_graphics("figures/florida_spatial_scales_rstudio.JPG")
+# ```
 
 ### Point Location
 
-Point locations are the smallest resolution of spatial data used to assess the exposure to tropical storms and hurricanes, that can be characterized by a specific latitude and longitude. Meteorological instruments, monitors, and sensors that collect information on physical exposures are at this spatial level, but human impacts data can also be represented at this spatial level. 
+Point locations are the smallest resolution of spatial data used to assess the exposure to tropical storms and hurricanes. Point locations can be characterized by specific latitude and longitude values, which specify a specific geographic location on a map. Meteorological instruments, monitors, and sensors that collect information on physical exposures are at this spatial level, often located at airports, weather stations, and even personal monitors used by volunteers (example CoCoRAHs). It is also possible to gather human impacts data from a point location, such as from a residential address or the location of a school. 
 
-In many cases, researchers collect information on the study subject's residential address through some sort of a survey to assess point location  [@lieberman2017self], [@jaycox2010children],[@bayleyegn2006rapid]. These surveys are often designed to assess psychological needs of hurricane survivors, as well as medical, financial, and nutritional needs. For example in [@lieberman2017self], New York City residents provided their address in a self reported manner to look at associations between mental health outcomes and flooding data. This residential address served as a point location that could be mapped and was compared to flooding data maps created by FEMA.  
 
 The obvious advantage of knowing the point location of a human impact is that when mapped, it can be overlayed with physical exposure data on a storm or storms to gauge a very accurate picture of exposure, taking full advantage of high data resolution. Since storm tracks are often spatially represented by the path of the storm's center, having point locations like geocoded residential addresses, allows researchers to measure how close individuals are to the storm's central track, and therefore categorize their exposure. Similarly, point locations can be integrated in a straightforward way with gridded exposure data, as might result from re-analysis datasets or ... [check with James Done about this], as each point location can be assigned the exposure level of the closest gridded measurement.
 
