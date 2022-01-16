@@ -330,9 +330,11 @@ Thanks to scientitific institutions such as NOAA and the National Weather Servic
 
 Many physical exposures, like the ones mentioned above (storm tracks, wind speed, flooding, precipitation, storm surges) are recorded by various instruments and measuring devices both on the ground and above using radar, satellite imagery, etc. 
 
+[Can we give some examples here? Perhaps you've found some of the time resolutions for weather-related monitors when editing the "Data" section---perhaps you could add an example of time resolution for a precipitation monitor, a ground-based wind monitor, and / or a flood gage here? You could also include six-hour data here taken at synoptic times, which is the time resolution for the storm tracking data (3-hour for IBTrACS, I think)]
+
 ### Day and Week
 
-In the event of a tropical cyclone, there are several situations in which the temporal unit of a day may be used to analyze exposure. Physical exposure data from tropical cyclones will typically be available at this scale anyways, but some studies will look at time series and use daily exposure data from hospitalizations and visits to the emergency room. 
+In the event of a tropical cyclone, there are several situations in which the temporal unit of a day may be used to analyze exposure. Physical exposure data from tropical cyclones will typically be available at this scale anyways [is this true? won't most of the physical exposures be at a finer time scale, like minutes or at 6-hour intervals], but some studies will look at time series and use daily exposure data from hospitalizations and visits to the emergency room. 
 
 One study, [@zahrah2013daily] looked at casualty counts per day for counties in the Southeastern United States that were exposed to tropical cyclones. 
 
@@ -340,7 +342,7 @@ Week is a very common unit of time used to ascertain exposure, particularly for 
 
 ### Cumulative Measures of Time
 
-It is often the case that specific physical exposures are not considered in real time to ascertain human impacts. Instead, human impacts are assessed after the storm has passed, often noting the number of days or weeks that have passed since the hurricane made landfall. This method is common when assessing damages, recovery efforts, and when human impacts are self reported. When this is the case, it is often useful to take an aggregate exposure an aggregate measure of physical exposure corresponding to this time frame, such as the maximum wind speed or maximum flooding level over the period of time being studied. 
+It is often the case that specific physical exposures are not considered in real time to ascertain human impacts. Instead, human impacts are assessed after the storm has passed, often noting the number of days or weeks that have passed since the hurricane made landfall. This method is common when assessing damages, recovery efforts, and when human impacts are self reported. When this is the case, it is often useful to take an aggregate exposure an aggregate measure of physical exposure corresponding to this time frame, such as the maximum wind speed or maximum flooding level over the period of time being studied. [Can you add any examples of this?]
 
 Other times, it is useful to look at cumulative measures of time but also divide that period up by a certain time unit. For example, in [@grech2015hurricane], male and female birth ratios were observed monthly from January 2003 to December 2012 in order to observe trends before and after Hurricane Katrina. In this example we can see that a large time frame of several years is studied, but it is divided by months. 
 
