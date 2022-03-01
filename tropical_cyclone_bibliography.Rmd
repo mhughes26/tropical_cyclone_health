@@ -18,7 +18,7 @@ by remote sensing)
   + [@lane2013health]
 - County / parish
   + [@kinney2008autism]
-  + [@grabich2016hurricane] [double-check]
+  + [] [double-check]
   + [@grabich2016measuring] [double-check]
 - State
   + [@jaycox2010children] [double-check]
@@ -37,7 +37,7 @@ given the study's outcome data.*
   + [@hagy2006effects]
 - Week (often pregnancy outcomes, where gestational week is a factor)
   + [@kinney2008autism]
-  + [@grabich2016hurricane] [double-check]
+  + [] [double-check]
   + [@grabich2016measuring] [double-check]
 - Cumulative measure across storm event
   + [@jaycox2010children]
@@ -200,7 +200,7 @@ They used a very fine-scale (3-m resolution) estimate of storm surge to try to d
 - Macro-level flooding data is less expensive and faster, but potentially underestimates mental health outcomes. 
 
 
-# [@grabich2016hurricane]
+# []
 
 This study investigated the association between risk of pre-term birth and hurricane 
 exposure in Florida. 
@@ -217,14 +217,14 @@ exposure in Florida.
 - Pregnancy divided into exposed time and unexposed time after 20 weeks
 - Study population included births with estimated date of conception between October 24, 2003 and September 26, 2004.
 - "The authors used county-level Vital Statistics data obtained from the Florida Department of Health to calculate county-specific rates oflow birth weight and preterm births for women who were pregnant
-during the 2004 hurricane season. Women included in this calculation had an estimated date of conception based on last menstrual period between October 2003 and September 2004. These women would be at risk of hurricane exposure during pregnancy." [@grabich2016hurricane]
+during the 2004 hurricane season. Women included in this calculation had an estimated date of conception based on last menstrual period between October 2003 and September 2004. These women would be at risk of hurricane exposure during pregnancy." []
 
 ## Exposure:
 
 - Hurricane exposure classified as maximum wind speed in specific Florida county extracted from NOAA's Hurricane Research Division public database. 
-- "Wind speeds were extracted from NOAA’s Hurricane Research Division (HRD) public databases." [@grabich2016hurricane]
+- "Wind speeds were extracted from NOAA’s Hurricane Research Division (HRD) public databases." []
 - "The geographic spatial buffer exposure method yielded different results than either the disaster declaration method or the binary maximum wind-speed-exposure classifications. For all hurricanes
-except Hurricane Ivan, the 60 and 100-km buffer identified a similar number of counties as the binary 63-km=h (39-mi=h) windspeed categorization. For Hurricane Ivan, the number of counties exposed to both the 60 and 100-km buffer was less than any of the other methods. Compared with the counties exposed using the dichotomous 119-km=h (74-mi=h) maximum wind speed, there was a 138% difference in the number of counties exposed. Although the spatial buffer categorized a similar number of counties exposed as the binary wind speed methods, the heterogeneity across storms is apparent, particularly for Hurricane Ivan."[@grabich2016hurricane]
+except Hurricane Ivan, the 60 and 100-km buffer identified a similar number of counties as the binary 63-km=h (39-mi=h) windspeed categorization. For Hurricane Ivan, the number of counties exposed to both the 60 and 100-km buffer was less than any of the other methods. Compared with the counties exposed using the dichotomous 119-km=h (74-mi=h) maximum wind speed, there was a 138% difference in the number of counties exposed. Although the spatial buffer categorized a similar number of counties exposed as the binary wind speed methods, the heterogeneity across storms is apparent, particularly for Hurricane Ivan."[]
 
 ###[Could you check on this---did they use the wind field value for the county, for example from H*Winds, or did they use the central wind of the storm as the approximation, which they would have gotten from HURDAT?]###
 - Exposure defined as >= 39 mph and >= 74 mph
