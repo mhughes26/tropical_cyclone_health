@@ -161,6 +161,8 @@ Somes snapshot measurements are taken at intervals that are much larger in tempo
 
 Zooming out to even broader time scales, snapshots can be taken at seasonal, yearly, or even decadal frequencies. Once again this will also be associated more strongly with human impacts. For example, the U.S. Census occurs every 10 years and is acts as a proxy for a snapshot of the nation's population. These 10 year snapshots can reveal changes in population, socioeconomic status, and other information in regions affected by tropical cyclone events. 
 
+In the study [@jaycox2010children], mental health outcomes of New Orleans school children was assessed 15 months after Hurricane Katrina, and an intervention strategy was implemented to help treat these outcomes. The children were assessed for symptom of post traumatic stress disorder and depression first at baseline (December 2006/January 2007), again 5 months after intervention, and then again 10 months after intervention. Overall the treatment was shown to reduce symptoms of PTSD, although this was not even across all groups. 
+
 ***Try to think of an example of snapshots that would be taken on an annual basis***
 
 ### Cumulative Measures Over Time (The Rain Gauge Model)
