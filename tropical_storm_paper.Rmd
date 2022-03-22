@@ -145,7 +145,7 @@ When thinking about temporal scales in tropical cyclone studies, it is useful to
 
 ## Snapshots of Time (The Thermometer Model)
 
-Just as spatial scales exist at different size grades (point location, zip code, county, etc.), so do the temporal scales of time snapshots. The difference here is that these time scales exist as minutes, hours, days, etc. Here we discuss how tropical cyclone studies utilize snapshots at different temporal scales, because how often measurements are taken is incredibly important for understanding what the data can and cannot tell us. 
+Just as spatial scales exist at different size grades (point location, zip code, county, etc.), so do the temporal scales of time snapshots. The difference here is that these time scales exist as frequency of snapshots at the level of minutes, hours, days, etc. Here we discuss how tropical cyclone studies utilize snapshots at different temporal scales, because how often measurements are taken is important for understanding what the data can and cannot tell us. 
 
 Relatively short intervals of time such as minute or hourly snapshots are possible for many physical exposures because weather monitiors and stations can easily record this information at consistent and regular frequencies. Because the snapshots are taken at such regular intervals, they can be used to construct continuous estimates of other storm properties such as the storm track. The storm track itself is constructed by stringing together measurements of wind speed and other properties at a specific time in place. If a hurricane is tracked at intervals of every 6 to 3 hours, this can also be interpolated to estimate location at more regular intervals, for example every fifteen minutes. 
 
