@@ -98,7 +98,7 @@ If the researchers have a specific geographic region that they want to study, th
 
 Rasterization is a form of geographic data aggregation, and is a term used for the conversion of vector data into a raster [@lovelace2019geocomputation]. Point, line, and polygon rasterization are all possible, and usually involve conversion of points, lines, and polygons, into shaded grids. For example, turning a vector display of the state of Florida could take the form of shading every grid cell that the Florida border (a vector) passes through, and shading every grid inside. Depending on the resolution of the raster, this new map of Florida could look either extremely sharp, or extremely blocky. 
 
-
+The opposite of rasterization is, perhaps not surprisingly, vectorization in which spatially continuous raster data is converted into spatially discrete vector data [@lovelace2019geocomputation]. One method of doing this is to take the centroid of each raster and convert this into a single point [@lovelace2019geocomputation]. 
 
 In this section we will describe several spatial scales that are commonly used by researchers studying human impacts of tropical cyclones in ascending order of magnitude. With each scale we will describe how measurements and data are generated from that particular area. We will also describe the methods that researchers use to join physical exposures data with human impacts data to accurately ascertain responses to exposure. 
 
