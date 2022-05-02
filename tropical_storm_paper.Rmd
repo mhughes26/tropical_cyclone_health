@@ -88,6 +88,12 @@ The remainder of this section will highlight the most common spatial and tempora
 
 When we refer to spatial scales, we are referring to the size of a geographic space that data are collected from. In tropical cyclone studies, the size of this space can be as small as a latitude-longitude coordinate (a point location), or as large as an oceanic basin;  for example the North Atlantic Basin where North American tropical cyclones typically develop. In general physical exposure data comes from monitors and sensors at point locations, while human impacts data comes from larger aggregated scales such as zip codes, counties, and states. 
 
+It can be helpful to think of geospatial data in two major ways, as vectors, or as rasters. Vector data use points, lines, or polygons to represent geographic features and locations [@lovelace2019geocomputation]. These vector data are discrete and well-defined, and are typically used to study human impacts, because administrative boundaries and borders utilize this data type [@lovelace2019geocomputation]. For example, polygons can be used to represent closed areas such as zip codes, counties, states, countries, islands, or even continents. The borders of these geographic regions (for example the border between states such as Florida and Georgia) are line vectors. Vector points can represent smaller areas such as cities, mountain peaks, locations of hospitals, etc.
+
+The other major spatial data type is a raster. Rasters are gridded data, meaning that they are displayed as cells that divide a surface into equal, regularly spaced parts [@lovelace2019geocomputation]. Raster data is often utilized for physical exposures of tropical cyclones because it can display continuous data (such as wind speed or flooding over a geographic area). However, because raster data can also display categorical data, it can also be used for studying human impacts (for example rasterized data could overlay socioeconomic makeup of a city on a map, with each raster representing the dominant group at that location) [@lovelace2019geocomputation]. 
+
+
+
 In this section we will describe several spatial scales that are commonly used by researchers studying human impacts of tropical cyclones in ascending order of magnitude. With each scale we will describe how measurements and data are generated from that particular area. We will also describe the methods that researchers use to join physical exposures data with human impacts data to accurately ascertain responses to exposure. 
 
 
@@ -244,4 +250,8 @@ Ecological bias and exposure misclassification are a problem, because they impac
 
 There is reason to be optimistic that we can harness the power of large datasets on physical, and increasing precision in model building, to understand and predict the effects of tropical cyclones on human health, economic viability, infrastructure, and social dynamics. This is of course contingent on our ability as researchers to make sure that the data on human impacts is of a similar quality and translatable resolution as the high quality data we already have on physical exposures. With larger populations expected to live in areas threatened by tropical cyclones in the future, this is an extremely important undertaking for interdisciplinary teams of meteorologists, epidemiologists, economists, and diaster planners. 
 
+Link to online book Geocomputation in R
+https://geocompr.robinlovelace.net/
 # References
+
+
