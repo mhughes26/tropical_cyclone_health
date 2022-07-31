@@ -147,6 +147,10 @@ Where vectorized geographic data objects can delineate boundaries and precise lo
 
 For example, in [@anderson2020assessing], rainfall was used to assess exposure to tropical cyclones by summing hourly precipitation measurements from the North American Land Data Assimilation System Phase 2 (NLDAS-2). This network spans the continental United States at  1/8∘ grid points. In this study the precipitation data from this grid was used to create a daily precipitation total for each grid point, then the gridpoints in a county were averaged together (based on counties' 1990 Census boundaries), which then created a daily county level estimate of precipitation for each U.S. county from 1988-2011.
 
+In [@anderson2020assessing], a wind-based exposure metric was also used; the county-level peak sustained surface wind during each storm.To do this, the 1 minute surface wind was modeled at each county's mean population center. 
+
+
+
 # Temporal Scales
 
 Thanks to scientitific institutions such as NOAA and the National Weather Service, there are large networks of sensors and monitoring equipment established across the United States that are capable of recording physical exposure data at a fine temporal level. It is possible to know the wind speed, amount of rainfall, and air temperature at very fine temporal scales throughout the duration of a tropical cyclone event. Human impacts data however, is typically not available at such a fine scale, nor is such a scale sometimes even relevant. Whereas physical exposure data may be collected in real time during the storm, many of the human impacts that researchers are interested in may be only known after the storm, and thus estimations may have to be made of what happened in the past. 
