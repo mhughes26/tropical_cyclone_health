@@ -1,0 +1,1373 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Challenges of Integrating Physical Exposure and Human Impacts Data in Tropical Cyclone Studies},
+  pdfauthor={Matthew Hughes and Brooke Anderson},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\title{Challenges of Integrating Physical Exposure and Human Impacts Data in
+Tropical Cyclone Studies}
+\author{Matthew Hughes and Brooke Anderson}
+\date{May 25, 2020}
+
+\begin{document}
+\maketitle
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+Tropical cyclones---which encompasses hurricanes as well as tropical
+storms and tropical depressions--- regularly threaten coastal
+communities across the Eastern and Southern United States. From 2000 to
+2019, tropical cyclones cost the United States at least 811 billion
+dollars in damages({\textbf{???}} billion dollar disasters). Tropical
+cyclones in that same time frame resulted in 6,010 human fatalities,
+averaging 301 deaths per year ({\textbf{???}} billion dollar disasters).
+Tropical cyclones upset coastal communities and society by damaging
+property, disrupting local economies, and harming human health. This is
+why they are so critical to study.
+
+Tropical cyclones are environmental disaster events that are crucial for
+public health authorities and scientists to understand. Human mortality
+is an obvious consequence of these storms, and in 1992 Hurricane Andrew
+left 53 residents in Florida and surrounding states dead (Ahrens 2005).
+However, many other chronic and long term health impacts have been
+observed in the aftermath of tropical cyclones. Researchers have
+observed that in utero exposure to tropical cyclones leads to adverse
+birth outcomes. (Kinney et al. 2008) observed higher rates of autism in
+children born to mothers who had higher rates of storm exposure than
+children born to mothers who were exposed to later intensities. The
+scientific literature also reveals evidence of mental health outcomes
+associated with populations exposed to tropical cyclones. Survivors of
+tropical storms often report higher levels of depression, anxiety, and
+PTSD, due to reduced access to important medical and social services,
+property damages, poor sanitation, and displacement after storms.
+(Lieberman-Cribbin et al. 2017) found higher levels of PTSD in New York
+City residents who were exposed to flooding after Hurricane Sandy.
+Beyond health impacts, both mental and physical, tropical storms create
+incredible strains on the economies of the Southeastern United States.
+The average cost of a tropical cyclone event in the US is 21.2 billion
+per event, CPI-adjusted ({\textbf{???}} billion dollar disasters).
+
+Clearly, tropical cyclones dramatically impact the social, economic, and
+physical wellbeing of coastal communities. These extreme weather events
+represent an environmental health threat that is not going to disappear,
+and given that coastal regions of the Southeastern US are experiencing
+population growth, it is likely that higher numbers of people will be
+put at risk in the future. Avoiding these risks is not possible, but
+building resilience in communities after they experience tropical
+cyclone events is key to mitigating damages and preparing for future
+disasters. Creating lasting and resilient communities in areas prone to
+tropical cyclones requires that researchers understand which populations
+and locations are at the greatest risk for negative exposures to
+tropical storms. This requires data that allows researchers to assess
+where in space and time tropical storms occur, and also where in space
+and time individuals and populations are experiencing impacts from these
+storms.
+
+Multidisciplinary teams of researchers are exploring this using
+different datasets, however a key challenge is integrating data from
+across disciplines. For example: extensive physical exposure data is
+often available for tropical cyclones as they near and cross communities
+in the United States. This data can come both from established
+monitoring networks, like {[}NOAA network name?{]}, but may also result
+from data collection efforts during or after the storm by atmospheric
+scientists and engineers seeking to characterize a storm's physical
+properties. Researchers studying the human impacts of these storms,
+including epidemiologists, economists, and social scientists are
+interested in this data as well, but the differences in temporal and
+spatial resolution makes the data harder to use. Resolving physical
+exposure and human impact datasets is challenging because the human
+impact data and physical exposure data often do not have congruent
+resolutions.
+
+Here we explore cases and implications of integrating data at different
+temporal and spatial scales, focusing as an example on human impact
+studies of tropical cyclones in the US. We begin by investigating the
+reasons that spatial and temporal misaligment exist in the study of
+tropical cyclones. We then describe the main spatial and temporal scales
+used, and finally assess some of the consequences that result from
+integrating physical exposure data with human impacts data.
+
+\hypertarget{physical-exposures}{%
+\subsection{Physical Exposures}\label{physical-exposures}}
+
+Atmospheric and weather data have long been designed to give a picture
+of meteorological activity over vast geographic spreads as large as
+entire continents or oceanic basins. To acheive this, data is often
+recorded by sensors at fixed weather monitoring stations, in vast
+monitoring systems that are designed to automatically record a data
+point at a fixed interval of time. These monitoring systems are often
+the result of long-standing weather projects such as the National
+Hurricane Center Data Archive from NOAA (National Oceanic and
+Atmospheric Administration), and the NWS (National Weather Service).
+This data is often narrow in temporal and spatial resolution, and large
+in geographic scope.
+
+\hypertarget{storm-tracks}{%
+\subsubsection{Storm Tracks}\label{storm-tracks}}
+
+Tropical cyclone storm tracks refer to the paths the storms take, and
+can be displayed on maps to visualize where the center of the storm (the
+eye of the tropical cyclone) passes through. In the North Atlantic
+Basin, tropical cyclone paths have a tendency to move westward first,
+then curve north and sometimes northeastward before ending, although
+some storm tracks take very messy and circuitous paths. Satellite
+imagery and remote sensing can be used to detect the paths of tropical
+cyclones and hurricanes, and ground monitors measuring wind speed can
+also detect the movement of the storm. The location of the center of a
+tropical cyclone can be documented at specific point locations at
+different times, meaning that it has a very narrow spatial and also
+temporal resolution.
+
+One source of data on tropical cyclone storm tracks is the Hurricane
+Data second generation dataset (HURDAT2) which has information on the
+point location of storm centers, wind speed, and atmospheric pressure in
+six hour intervals of North Atlantic tropical cyclones since 1851
+(Deryugina 2017).
+
+Oftentimes storm tracks are used in tropical cyclone studies to assign
+exposures. Sometimes, distance from a storm track is used to assign
+counties or zip codes as exposed, as in ({\textbf{???}}). If distance
+from storm track is used to assign exposure, a threshold will have to be
+chosen to determine whether or not a county or zip code is exposed.
+Larger distance thresholds will increase the number of counties defined
+as exposed, and potentially overestimate exposure. Smaller distance
+thresholds will decrease the number of counties defined as exposed and
+potentially underestimate exposure. In either case, misclassification of
+exposure could arise.
+
+Other times, exposure to a tropical cyclone is assigned only if the
+storm track passed through a county or zip code. This is the approach
+that was used in (Kinney et al. 2008). Populations are not typically
+distributed in a uniform pattern across these spatial areas, and so
+using this method to assign exposure could also result in exposure
+misclassification for communities that are close to the storm track but
+not in the county or zip code that the storm track passed through. The
+reverse of this, where communities in exposed counties or zip codes are
+actually located farther away from the storm track is also plausible.
+
+\hypertarget{wind-speed-and-direction}{%
+\subsubsection{Wind Speed and
+Direction}\label{wind-speed-and-direction}}
+
+Wind speed is a common way to characterize exposure to tropical
+cyclones. To even be classified as a tropical cyclone, a storm must have
+wind speeds in excess of 74 miles per hour (64 knots). Meteorologists
+and atmospheric scientists use ground based wind instruments in set
+locations to measure wind speed and direction, such as wind vanes,
+anenometers, and aerovanes. In order to be accurate and effective, these
+ground based wind instruments must be placed above the roofs of
+buildings so that they can be exposed to free flowing air. Since this is
+not always the case, wind observations can consequently be erratic in
+nature. Above ground, geostationary satellites, which are positioned
+above a particular location can measure wind speed and wind direction by
+observing the direction that clouds move in a given amount of time.
+Doppler radar can also be used to measure wind speed and direction.
+
+Wind speed is often used as a measure for assigning exposure, often by
+choosing a threshold wind speed that if attained in a zip code or
+county, makes it exposed. (Yan et al. 2020) used the sustained maximum
+wind speed recorded at the center of counties. In this example counties
+were considered exposed to tropical cyclones if the sustained maximum
+wind speed was greater than 21 meters per second. Because this wind
+speed is taken from a monitor at the center of the county, it may not be
+representative of wind speeds in other parts of the exposed county,
+again contributing to potential misclassification of exposure.
+
+Another study that used wind speed to assign exposure was (Parks et al.
+2021), which categorized counties as exposed to tropical cyclones on
+days that they experienced peak sustained wind greater than or equal to
+34 knots when the the cyclone was at the point of closest approach to
+the county.
+
+\hypertarget{flooding-and-storm-surges}{%
+\subsection{Flooding and Storm Surges}\label{flooding-and-storm-surges}}
+
+Due to intensive precipitation, and the threat of storm surges during
+and after tropical cyclones make landfall, flooding is a major
+consequence that has a number of impacts on the infrastructure, safety,
+and economic strength of communities. Flooding accounts for about 75\%
+of declared federal disasters, costs an average of \$8 billion in the US
+annually, and results in over 90 fatalities on average each year.
+{[}USGS, 2016{]}
+
+There are several methods for measuring flooding and creating geospatial
+maps to show the extent and impact of flooding. One method is to measure
+high water marks. Typically, this involves sending people out to
+specific locations to record the high water marks, but this method is
+costly, requires intensive labor, and is difficult to acheive during or
+after flooding disasters (Li et al. 2018).
+
+Another method is to use data from stream gauges. The United States
+Geological Survey (USGS) maintains stream gauges at monitored locations
+along bodies of water that regularly record information on water height
+and stream flow, often updating every fifteen minutes (Li et al. 2018).
+There are some limitations to this method as well, for example these
+stream gauges are not systematically installed along water ways, meaning
+that information is not uniform, and the stream gauges are not useful if
+the water level rises above the limit of ground based gauges or washes
+gauges away entirely (Li et al. 2018).
+
+Satellite imagery, aerial photography, and remote sensing can also be
+used to asses the extent and damage of flooding in the aftermath of
+tropical cyclone disasters, but issues pertaining to cloud cover and
+inclement weather can make high quality, consistent, and clear images
+difficult to acheive and therefore use in analyzing impacts (Li et al.
+2018).
+
+\hypertarget{human-impacts-of-tropical-cyclones}{%
+\section{Human Impacts of Tropical
+Cyclones}\label{human-impacts-of-tropical-cyclones}}
+
+Where physical exposure data is often expansive and specific, owing to
+well established networks of weather monitoring stations, data on human
+impacts are spatially and temporally located within geopolitical,
+cultural, and administrative boundaries. This type of data is available
+often in the form of census records, hospitalization records and vitals
+statistics from hospitals and public health departments, disaster
+insurance claims, schools, and other systems that record human
+activities. Unlike the physical exposure data, these sources are often
+aggregated by geographic region and time, often out of convenience, or a
+need to preserve the anonymity and privacy of the people whose data is
+being used. Researchers also will use such secondary datasets and
+sources to compare with primary data sources. For example in
+(Lieberman-Cribbin et al. 2017), self reported flooding exposure data
+was compared to FEMA flooding exposure data.
+
+\hypertarget{health-impacts}{%
+\subsection{Health Impacts}\label{health-impacts}}
+
+Tropical cyclones studies have documented associations between exposure
+to tropical cyclones and a number of health outcomes such as increased
+hospitalizations due to cardiovascular and respiratory effects (Yan et
+al. 2020), autism in children from in utero exposure (Kinney et al.
+2008), risk of preterm birth (S. C. Grabich et al. 2016), adverse mental
+health outcomes such as anxiety, depression, and PTSD (Lieberman-Cribbin
+et al. 2017),(Scaramutti et al. 2019),(Bevilacqua et al. 2020),
+increased risk of hypertension (Ferdinand 2005), and injury and death
+(Lane et al. 2013). The health data that informed thesd studies comes
+from a number of public health agencies, both governmental and
+non-governmental that collect extensive information pertaining to
+deaths, acute and chronic illnesses, injuries, birth and pregnancy
+outcomes, and mental health conditions. This data provides researchers
+with a wealth of information on health related human impacts of tropical
+cyclones.
+
+Certain general health information can be accessed from data published
+by the National Vital Statistics System of the National Center for
+Health Statistics (NCHS) (Aschengrau and Seage 2013). This organization
+has registration offices in every U.S. state, Washington D.C., and New
+York City. Vital statistics from birth certificates for example, are
+recorded and verified by medical professionals and submitted to local
+health departments, which submit this information to state health
+departments, which eventually send it to the NCHS (Aschengrau and Seage
+2013). Because local health departments typically exist at the county
+and state level, this health information will also be aggregated at
+those levels.
+
+Mortality data is also collected in the US by the NCHS through a program
+it administers called the National Death Index (Aschengrau and Seage
+2013); this particular data has to be obtained through offices at the
+state level. Death certificates themselves will give the information of
+the events that led to death, something of interest when determining
+impacts of tropical cyclones. There are many other sources of health
+data that contain information pertinent to impacts from tropical
+cyclones such as the National Health Interview Survey, National
+Notifiable Diseases Surveillance System, Planned Parenthood Federation
+of America, Center for Disease Control, Pregnancy Risk Assessment
+Monitoring System, and many others (Aschengrau and Seage 2013). The key
+is to understand that these data come from hospitals, public health
+departments and other agencies at county and state levels.
+
+\hypertarget{social-and-economic-impacts}{%
+\subsection{Social and Economic
+Impacts}\label{social-and-economic-impacts}}
+
+There a wide variety of social and economic costs associated with
+tropical cyclones. Often large populations of people are displaced after
+tropical cyclone events, such as the Puerto Ricans who migrated to
+Florida after Hurricane Maria (Scaramutti et al. 2019). Another crucial
+consequence of tropical cyclones is that homes, businesses, and
+commmunity infrastructure are damaged, often severly. This destruction
+alters local economies, sometimes leading to unexpected economic
+consequences.
+
+To study social changes after tropical cyclones, demographic details
+such as race, ethnicity, socioeconomic status, age, and political
+affiliation are interesting and often insightful details of information
+that can help to shine a light on the human impacts of tropical
+cyclones. For many researchers, this data can be gleaned from the US
+Census. The US Census is a valuable source of information that is
+updated and compiled every ten years by the US Bureau of the Census on
+many variables including ancestry, racial background, mortage,
+occupation, household size, etc.(Aschengrau and Seage 2013).
+
+To quantify economic impacts of tropical cyclones, there are a variety
+of metrics that are used by researchers, such as studying how employment
+and earnings change before and after a tropical cyclone event. (Belasen
+and Polachek 2008) built a generalized difference-in-difference (GDD)
+model to study the effects of hurricanes on county-level employment and
+county-level average quarterly earnings per worker in the state of
+Florida. Though the state of Florida was studied here, results from
+looking at the county level showed differences in economic impacts
+depending on the severity of the hurricane, and the intensity of it when
+the county was hit by it.
+
+Individual tax returns are another resource that researchers can use to
+estimate economic impacts from tropical cyclones. Tax returns and tax
+records can provide a wealth of information on the financial and
+economic situations of large numbers of individuals before and after a
+tropical cyclone event because they can be linked to individual
+residential addresses (a point location), which allows researchers to
+identify residents of an area before a tropical cyclone, and they can
+give information about wages, salaries, self-employment, unemployment
+insurance, the Social Security Disability Insurance program, and
+retirement accounts (Deryugina, Kawano, and Levitt 2018). (Deryugina,
+Kawano, and Levitt 2018) did just this to study the economic impact of
+Hurricane Katrina on the city of New Orleans, by collected information
+on individual federal tax returns and third party information returns
+filed between 1999 and 2013. Because tax returns are linked to
+individuals with known residential addresses, tax returns allow
+researchers to observe economic impacts at a point location.
+
+Another great resource researchers can utilize for studying economic
+impacts of tropical cyclones is from insurance claims.
+
+\hypertarget{spatial-and-temporal-scales-and-misalignment}{%
+\section{Spatial and Temporal Scales and
+Misalignment}\label{spatial-and-temporal-scales-and-misalignment}}
+
+Questions about the human impacts of tropical cyclones are
+multidisciplinary, and as such require datasets from different and
+sometimes seemingly disparate sources. The physical exposures of
+tropical cyclones that were mentioned above such as wind speed, storm
+tracks, precipitation, and flooding data come from monitors that are at
+fixed locations or at locations created by models in gridded formations.
+In contrast, the data on human health, social, and economic impacts will
+come from hospitals, schools, census reports, insurance claims, tax
+returns, and other documents and records coming from typically more
+aggregated spatial levels like counties.
+
+Differences in spatial and temporal scales are also related to the study
+question that researchers are asking. If a study is concerned with birth
+outcomes for example, having weather data on the windspeed every several
+seconds may not be relevant, because birth outcomes related to storm
+exposure in utero may operate on a longer time scale. In (S. C. Grabich
+et al. 2016), the researchers looked at gestational periods and defined
+pregnancies as exposed to tropical cyclones if they happened before 20
+weeks of gestation. If the researchers had been interested in a
+different question, for example acute injuries due to direct storm
+exposure, they would have chosen a smaller time scale. There is no
+correct spatial or temporal scale that works well for all research, it
+all depends on what is being asked and how that can be ascertained.
+Different scales allow the researchers to make certain inferences and
+determine how the results of a study can be interpreted.
+
+The remainder of this section will highlight the most common spatial and
+temporal scales typically used in tropical cyclone studies. These scales
+were chosen after conducting a literature review that covered a wide
+range of human impacts from tropical cyclones. First we will describe
+spatial scales starting from the smallest resolution of point locations,
+working up to the level of metropolitan areas and states. Next we will
+describe temporal scales most commonly used in tropical cyclone studies
+and again work from smallest to largest resolution.
+
+\hypertarget{spatial-scales}{%
+\section{Spatial Scales}\label{spatial-scales}}
+
+When we refer to spatial scales, we are referring to the size of a
+geographic space that data are collected from. In tropical cyclone
+studies, the size of this space can be as small as a latitude-longitude
+coordinate (a point location), or as large as an oceanic basin; for
+example the North Atlantic Basin where North American tropical cyclones
+typically develop. In general physical exposure data comes from monitors
+and sensors at point locations, while human impacts data comes from
+larger aggregated scales such as zip codes, counties, and states.
+
+It can be helpful to think of geospatial data in two major ways, as
+vectors, or as rasters. Vector data use points, lines, or polygons to
+represent geographic features and locations (Lovelace, Nowosad, and
+Muenchow 2019). These vector data are discrete and well-defined, and are
+typically used to study human impacts, because administrative boundaries
+and borders utilize this data type (Lovelace, Nowosad, and Muenchow
+2019). For example, polygons can be used to represent closed areas such
+as zip codes, counties, states, countries, islands, or even continents.
+Tropical cyclone storm tracks can be thought of as as line vectors.
+Vector points can represent smaller areas such as cities, mountain
+peaks, locations of hospitals, etc.
+
+The other major spatial data type is a raster. Rasters are gridded data,
+meaning that they are displayed as cells that divide a surface into
+equal, regularly spaced parts (Lovelace, Nowosad, and Muenchow 2019).
+Raster data is often utilized for physical exposures of tropical
+cyclones because it can display continuous data (such as wind speed or
+flooding over a geographic area). However, because raster data can also
+display categorical data, it can also be used for studying human impacts
+(for example rasterized data could overlay socioeconomic makeup of a
+city on a map, with each raster representing the dominant group at that
+location) (Lovelace, Nowosad, and Muenchow 2019).
+
+Here we will describe several spatial scales that are commonly used by
+researchers studying human impacts of tropical cyclones in ascending
+order of magnitude. With each scale we will describe how measurements
+and data are generated from that particular area. We will also describe
+the methods that researchers use to join physical exposures data with
+human impacts data to accurately ascertain responses to exposure.
+
+\hypertarget{vector-data}{%
+\subsection{Vector Data}\label{vector-data}}
+
+In tropical cyclone studies, the vector classes most often utilized are
+self standing point locations, or polygons -- which can be thought of as
+a more complex geometric collection of points.
+
+\hypertarget{point-location}{%
+\subsubsection{Point Location}\label{point-location}}
+
+Point locations are the smallest resolution of spatial data used to
+assess the exposure to tropical storms and hurricanes. Point locations
+can be characterized by specific latitude and longitude values, which
+specify a specific geographic location on a map. Meteorological
+instruments, monitors, and sensors that collect information on physical
+exposures are at this spatial level, often located at airports, weather
+stations, and even personal monitors used by volunteers (example
+CoCoRAHs).
+
+When Hurricane Ike struck the coasts of Texas and Louisiana in 2008, the
+U.S. Geological Survey set up 117 pressure transducers (a type of
+sensor) as a temporary monitoring network spanning over 5,000 square
+miles along the Gulf Coast of the affected states(East, Turco, and Mason
+Jr 2008). This temporary monitoring network was designed to record the
+timing, areal extent, and magnitude of inland hurricane storm surge and
+coastal flooding.Although the combined network of sensors and the data
+they record was used to evaluate storm surge models and document the
+extent of flooding and other site specific effects, each individual
+pressure transducer represented a specific point location (East, Turco,
+and Mason Jr 2008).
+
+Storm tracks, which are mapped as lines, are really composed of a series
+of point locations on a map. These point locations come from known
+locations based on satellite data or monitors on the ground measuring
+wind speed, and then the storm track itself is interpolated to visualize
+the entirety of the track. (Yan et al. 2020) used distance from storm
+track to assign exposure to the tropical cyclone, and part of the
+cyclone's storm track that was closest represented an individual point
+location. Exposure to tropical cyclones using storm tracks was assessed
+differently in (Kinney et al. 2008), the storm track simply had to pass
+through a particular county for residents to be considered exposed, but
+the storm track itself still represented a series of point locations at
+every section of the track.
+
+In (Lieberman-Cribbin et al. 2017), a study that looked at associations
+between flooding and mental health outcomes after Hurricane Sandy struck
+New York City, residents of areas that experience flooding completed
+surveys and indicated their street address, city, and zip code. This
+address information was then geocoded and matched up with the
+appropriate latitude and longitude and represents data at at point
+location.
+
+Another example of a study that geocoded physical addresses to use point
+location data for exposure analysis was (Brunkard, Namulanda, and Ratard
+2008). This study analyzed mortality data in Louisiana prior to
+Hurricane Katrina and characterize deaths related to the storm. Deaths
+were mapped using the street location where death occurred which were in
+turn matched with latitude and longitude coordinate systems (in cases
+where the only address associated with a death was a nursing care
+facility, the address of the nursing care facility was used).
+
+Point locations represent the smallest spatial resolution of vector
+data, and the specificity of this small scale can be appealing for
+getting a close up look at individual human impacts of a tropical
+cyclone event. However, there are reasons why this spatial scale is not
+always used, even when it is accessible.
+
+Physical exposure data from point locations is generally reliable and
+consistent if it comes from monitors and weather stations, but in the
+case of temporary networks of monitors, as mentioned in the previous
+example from (East, Turco, and Mason Jr 2008), there isn't always enough
+notice and lead time before a storm makes landfall for this to be a
+reliable and consistent way to measure accurate data.
+
+When using point location and individual level data on human impacts, an
+important factor to consider is the preservation of privacy. Because
+health data often contains highly sensitive information about
+individuals, using point location data can compromise the privacy and
+even safety of individuals if they are able to be traced to this
+location. For this reason, even when point location and individual data
+are available for study of human impacts, the data may be aggregated to
+a larger spatial level (such as county or state) in order to preserve
+the anonymity if the individuals.
+
+A real life example to illustrate this point of privacy comes from the
+Centers for Disease Control and Prevention, which collects data on many
+different diseases and their outcomes. In the case of arboviral diseases
+such as Zika, West Nile, Eastern equine encephalitis and many others,
+data is provided at a spatial level no smaller than the county. Even so,
+identifiable information such as age, sex, race, and ethnicity is
+suppressed at the county level if less than three cases were reported in
+the state in a given year. The main reason for this is to preserve
+privacy and assure that individuals cannot be identified.
+
+\hypertarget{polygons---zip-codecountyparishstate}{%
+\subsubsection{Polygons - Zip
+Code/County/Parish/State}\label{polygons---zip-codecountyparishstate}}
+
+While point locations are the most common vectorized spatial scale that
+physical exposure data are collected at, and human impacts data can also
+be collected at that level, polygon vectors such as zip codes, counties,
+parishes, and states tend to be more commonly used for human impacts
+data. Information on human impacts such as birth outcomes,
+hospitalizations, tax records, and demographic data are often recorded
+at this spatial level.
+
+It is important to remember that data at this spatial scale come from
+individual and point location information at some point in the data
+collection pipeline, but have been aggregated or deidentified in a way
+that these invidual and point location data points are no longer
+apparent. There are a variety of ways that this can be done such as
+taking an aggregate measuremeant (for example the average birth weight
+in an zip code), or as a count (such as the total number of
+hospitalizations in a county). Reasons for making data available at this
+spatial resolution are often practical (administrative organizations and
+institutions often collect population level data at this level), but as
+was mentioned previously it can also be used to preserve the privacy and
+anonymity of individuals.
+
+In (Huang, Rosowsky, and Sparks 2001), researchers created a damage
+model from loss information (provided by a large insurer) to estimate
+damage and losses in coastal zip codes of Florida and the Carolinas due
+to Hurricanes Hugo and Andrew. The claims ratio (the total number of
+claims in the code divided by the total number of insurance policies in
+that zip code), and the damage ratio (the amount paid out by the insurer
+divided by the total insured value) were compared to the maximum
+gradient wind speed, obtained from wind field models. The relationships
+between these ratios and wind speed suggested that when the mean wind
+speed reached 20 meters per second, structural damage was more likely to
+occur, and this damage became widespread when mean wind speed reached 30
+meters per second (Huang, Rosowsky, and Sparks 2001).
+
+Another example of physical exposures being assigned using polygon
+spatial scales is FEMA disaster declarations. FEMA disaster declarations
+are used to determine how much federal aid and funding needs to be
+allocated to particular regions after a disaster, and in this way can be
+used to estimate intensity of tropical cyclones and the resulting human
+impacts on a given area. An example of a study that used this method to
+assign exposure was (Horney et al. 2021) which looked at the impact of
+natural disasters on this risk of suicide by identifying counties as
+exposed if they had a single major disaster declaration between 2003 and
+2005.
+
+Another study that looked at human impacts in zip codes is (Lane et al.
+2013). A review of the literature as well as using lessons from
+Hurricane Sandy's impact on New York City, the researchers mapped
+population vulnerability indicators in the 42 New York City United
+Hospital Fund (UHF) neighborhoods, which are zip code aggregated areas
+located within the city's five boroughs. In this study, these
+neighborhoods were characterized by percentages such as percentage of
+the neighborhood with delapidated or deteriorating housing, percentage
+of neighborhood's residents living below the federal poverty line, the
+percentage of neighborhood residents aged 85 or older, and the
+percentage of residents with frequent mental distress.
+
+Similar to a county is a parish (unique the state of Louisiana) and was
+the spatial unit used in (Kinney et al. 2008), which looked at looked at
+the prevalence of autism following prenatal exposure to tropical
+cyclones. The study used maps of storm tracks provided by the National
+Weather Service to identify the parishes that would be most intensely
+impacted by the storm. A storm track passing through a parish's
+boundaries as a proxy for the storm's intensity in that parish was one
+of two characteristics that would be used to assign an exposure ranking
+for residents of that parish (the other characterisitic being how
+vulnerable to the effects of the storm the residents of the parish would
+be). Ultimately this study concluded that in Louisiana the prevalence of
+autism increased significantly in cohorts of children with prenatal
+exposure to the tropical cyclones.
+
+A study that used the county level to understand the human impacts of
+tropical cyclones was (Parks et al. 2021). This study, which was
+concerned with the rate of hospitalizations of older adults in response
+to exposure to tropical cyclones, assigned the category of ``exposed''
+to counties that experienced or exceed a gale force of greater than or
+equal to 34 knots. The human impact of concern in this study was
+quantified using data from enrollees from the Medicare cohort to
+determine the cause of hospitalization and county of resident. Again, to
+belabor an earlier point, the enrollees in this Medicare cohort are
+individuals with residential addresses which could be considered as
+point locations, that are instead aggregated at the county level to
+preserve privacy. With the prior knowledge of which counties were
+exposed to tropical the researchers were able to assign exposures to
+these residents.
+
+Spatial scales larger than point locations, zip codes, and counties are
+the state and national levels of studying human impacts of tropical
+cyclones. This spatial scale is not used as often but when it is it can
+be useful to compare the emergency preparedness and policies of
+different states. It can also reveal inequities in government response
+to natural disasters.
+
+For example, in (Willison et al. 2019), researchers quantified the
+federal responses to Hurricanes Irma, Harvey, and Maria in Texas,
+Florida, and Puerto Rico. They determined that in terms of federal
+spending and staffing, Hurricane Maria in Puerto Rico was not responded
+to in a manner commensurate with damage and need for aid compared to
+Hurricanes Irma and Harvey in Texas and Puerto Rico.
+
+Another study that used the spatial scale of state to study the human
+impacts of tropical cyclones was (Grech and Scherb 2015), which showed
+that in utero exposure to Hurricane Katrina (exposure assigned by
+measuring the amount of rainfall after the storm in the Gulf states) had
+an impact on the difference of survival of male and female fetuses,
+which later impacted the male/female birth ratio at the end of the
+pregnancy. Data on male and female live births was taken from the
+Centers for Disease Control and Prevention on a monthly basis at the
+state level from Alabama, Florida, Louisiana, and Mississippi. Rainfall
+as a metric of exposure to Hurricane Katrina was also analyzed at the
+state level, presented in inches for each state in the three days that
+Hurricane Katrina struck the Gulf Coast.
+
+\hypertarget{rasterized-data}{%
+\subsection{Rasterized Data}\label{rasterized-data}}
+
+Where vectorized geographic data objects can delineate boundaries and
+precise locations on a map, rasterized data can fill in the space and
+create a continous picture that shows variation across a geographic
+space. Rasterized surfaces are created using gridded networks and
+modeling.
+
+For example, in (Anderson et al. 2020), rainfall was used to assess
+exposure to tropical cyclones by summing hourly precipitation
+measurements from the North American Land Data Assimilation System Phase
+2 (NLDAS-2). This network spans the continental United States at 1/8∘
+grid points. In this study the precipitation data from this grid was
+used to create a daily precipitation total for each grid point, then the
+gridpoints in a county were averaged together (based on counties' 1990
+Census boundaries), which then created a daily county level estimate of
+precipitation for each U.S. county from 1988-2011.
+
+In (Anderson et al. 2020), a wind-based exposure metric was also used;
+the county-level peak sustained surface wind during each storm.To do
+this, the 1 minute surface wind was modeled at each county's mean
+population center.
+
+\hypertarget{temporal-scales}{%
+\section{Temporal Scales}\label{temporal-scales}}
+
+Thanks to scientitific institutions such as NOAA and the National
+Weather Service, there are large networks of sensors and monitoring
+equipment established across the United States that are capable of
+recording physical exposure data at a fine temporal level. It is
+possible to know the wind speed, amount of rainfall, and air temperature
+at very fine temporal scales throughout the duration of a tropical
+cyclone event. Human impacts data however, is typically not available at
+such a fine scale, nor is such a scale sometimes even relevant. Whereas
+physical exposure data may be collected in real time during the storm,
+many of the human impacts that researchers are interested in may be only
+known after the storm, and thus estimations may have to be made of what
+happened in the past.
+
+When thinking about temporal scales in tropical cyclone studies, it is
+useful to think of them either as snapshots in time, or as cumulative
+measurements up to a specific time. To illustrate this point, snapshots
+in time can be thought of as thermometers. Thermometer measurements
+represent the temperature at a specific point in time, and do no show
+what the temperature was previously. In contrast to this, cumulative
+measurements are the types of measurements taken by rain gauges. A rain
+gauge collects and measures the amount of rain water gathered over a
+specified duration of time, thus it is not a snapshot at all, but in
+fact a cumulation. These two modes of thinking about temporal scales
+will guide the way that we discuss the scales below.
+
+\hypertarget{snapshots-of-time-the-thermometer-model}{%
+\subsection{Snapshots of Time (The Thermometer
+Model)}\label{snapshots-of-time-the-thermometer-model}}
+
+Just as spatial scales exist at different levels (point location, zip
+code, county, etc.), so do the temporal scales of time snapshots. The
+difference here is that these time scales exist as frequency of
+snapshots at the level of minutes, hours, days, etc. Here we discuss how
+tropical cyclone studies utilize snapshots at different temporal scales,
+because how often measurements are taken is important for understanding
+what the data can and cannot tell us.
+
+Relatively short intervals of time such as minute or hourly snapshots
+are possible for many physical exposures because weather monitiors and
+stations can easily record this information at consistent and regular
+frequencies. Because the snapshots are taken at such regular intervals,
+they can be used to construct continuous estimates of other storm
+properties such as the storm track. The storm track itself is
+constructed by stringing together measurements of wind speed and other
+properties at a specific time and place. If a hurricane is tracked at
+intervals of every 6 to 3 hours, this can also be interpolated to
+estimate location at more regular intervals, for example every fifteen
+minutes.
+
+The sensors that were previously mentioned in (East, Turco, and Mason Jr
+2008) are an example of a study that used this type of time scale. The
+storm surge and inland flooding caused by Hurricane Ike were calculated
+by these deployed pressure transducers which took measurements of surge
+pressure, barometric pressure, and temperature every minute. The key
+point here is that these snapshot measurements taken by the pressure
+transducers represent the a property of the storm surge or flooding at a
+single moment in time.
+
+(S. Grabich et al. 2016) used storm track data from the National Oceanic
+and Atmospheric's Association to compare disaster exposure assignment to
+FEMA presidential disaster declarations. The data used to construct
+NOAA's storm tracks records the magnitude and geographic location of the
+storm every 6 hours, and each of these 6 hour measurements is a single
+snapshot of where the storm center is in time and space. (Anderson et
+al. 2020) also used storm tracks to generate a distance-based exposure
+metric, and they interpolated the tracks to get storm track locations at
+every 15 minutes. Even though these interpolated values are estimates
+created from a model, they still represent snapshots of the time and
+location of the storm center, but at a much finer scale.
+
+Measurements of human impacts are not available as often at such fine
+temporal scales, although there are certainly certain measurements that
+could be taken, for example the timing of phone calls to emergency
+departments or more recently by social media posts that pertain to the
+storm.
+
+Some snapshot measurements are taken at intervals that are much larger
+in temporal scop than minutes or hours, for example on the time scale of
+days and weeks. Because physical exposure data is so easily recorded at
+fine temporal resolutions, snapshots that are taken at more daily or
+weekly frequencies are often associated more with human impacts. Daily
+or weekly summaries of abseentism at work or school due to inclement
+weather conditions are an example of snapshot data taken at this level.
+
+(Parks et al. 2021) is an example of a study that took daily
+measurements to study human impacts of tropical cyclones, in this case
+daily hospitalization rates. The study used a conditional quasi-Poisson
+regression model to analyze the daily hospitalization rate up to 7 days
+after the day of hurricane exposure. Hospitalizations from respiratory
+diseases and from injuries increased all days after the day of exposure,
+peaking on the first and second days respectively. For several other
+causes of hospitalization such as cardiovascular disease, endocrine
+disorders, genitourinary diseases, infectious and parasitic diseases,
+nervous system diseases, and skin and subcutaneous tissue diseases, the
+rate of hospitalization decreased on the day of exposure to the
+hurricane and then peaked about 1 to 3 days later before returning to
+the expected rate before the storm (Parks et al. 2021). The daily number
+of hospitalizations represents a snapshot because it is a slice of time
+and doesn't tell us about the total and final number of hospitalizations
+resulting from the entire storm.
+
+Zooming out to even broader time scales, snapshots can be taken at
+seasonal, yearly, or even decadal frequencies. Once again this will also
+be associated more strongly with human impacts. For example, the U.S.
+Census occurs every 10 years and is acts as a proxy for a snapshot of
+the nation's population. These 10 year snapshots can reveal changes in
+population, socioeconomic status, and other information in regions
+affected by tropical cyclone events.
+
+In the study (Jaycox et al. 2010), mental health outcomes of New Orleans
+school children was assessed 15 months after Hurricane Katrina, and an
+intervention strategy was implemented to help treat these outcomes. The
+children were assessed for symptom of post traumatic stress disorder and
+depression first at baseline (December 2006/January 2007), again 5
+months after intervention, and then again 10 months after intervention.
+Overall the treatment was shown to reduce symptoms of PTSD, although
+this was not even across all groups.
+
+\textbf{\emph{Try to think of an example of snapshots that would be
+taken on an annual basis}}
+
+\hypertarget{cumulative-measures-over-time-the-rain-gauge-model}{%
+\subsubsection{Cumulative Measures Over Time (The Rain Gauge
+Model)}\label{cumulative-measures-over-time-the-rain-gauge-model}}
+
+Cumulative measurements within a defined period of time give different
+information about exposures and impacts of tropical cyclones. Instead of
+giving information about a precise moment, cumulative measurements
+inform researchers on the amassed value of a specified measurement, in
+other words everything up to a certain point. Rain gauges are an
+effective way to visualize cumulative data because the measurement
+reflects the total amount of rain water that has been collected in a
+designated period of time. The final volume of the rain gauge is not a
+snapshot, as an specific quantity like 3 inches of rain doesn't exist
+all at once, but instead it shows the additive amount that has occurred
+in a known time frame.
+
+Similar to the way that snapshot measurements can be recorded at varying
+intervals of time, cumulative data can represent total measurements over
+varying spans of time. Cumulative measurements of physical exposures
+will often be taken over smaller periods of time, on the order of
+minutes, hours, or days which corresponds to the lengths of the storms
+themselves. Over a the span of several hours or several days such
+measurements as the total amount of rainfall, or the number of minutes
+where wind exceeded a certain speed could come to represent cumulative
+measurements on a smaller scale. Cumulative measurements that give
+information on human impacts typically happen on the order of days,
+weeks, months or years. Daily and weekly counts of deaths and
+hospitalizations in an area due to the effects of tropical cyclones are
+cumulative measurements. Over the span of months and years, cumulative
+measurements of human impacts could encompass things like the total
+dollar value of insurance claims in a particular neighborhood struck by
+flooding, or the net migration of people in or out of a community after
+the impact of a storm.
+
+Many cumulative measurements are taken of human impacts of tropical
+cyclones simply because there is no way to measure certain impacts at a
+precise moment or in the midst of the storm, so damages and impacts have
+to be assessed once the storm has passed. It is also important to note
+that snapshots and cumulative measurements are not always so clearly
+separated. A daily count of hospitalizations could reflect the
+cumulative number of patients hospitalized (imagining them all in a rain
+gauge together), or it could represent a snapshot of how many people
+have been hospitalized at a precise moment.
+
+\hypertarget{implications-of-not-improving-this-integration}{%
+\section{Implications of not improving this
+integration}\label{implications-of-not-improving-this-integration}}
+
+Temporal and spatial misalignment poses certain challenges to
+researchers investigating the human impacts of tropical cyclones.
+Integrating data at different spatial scales is often accomplished by
+aggregating one set of data to match the data that is at a greater
+scale. Sometimes however, misalignment exists not at different scales,
+but at the same scale in different places, such as a residence that is
+miles away from the nearest weather monitor. In cases such as this,
+physical exposure is assigned by matching residences or addresses to the
+nearest monitor, or an interpolation model will be created to estimate
+exposures. In the following sections we will discuss aggregation and
+some of the implications that arise from it. We will then describe
+matching and interpolating and similary describe the implications that
+result from these methods.
+
+\hypertarget{aggregating-to-integrate-data-at-different-scales}{%
+\subsection{Aggregating to Integrate Data at Different
+Scales}\label{aggregating-to-integrate-data-at-different-scales}}
+
+Aggregating physical exposures is what researchers do by assigning a
+single exposure value to a wider spatial area, such as a zip code or
+county. Since the human impacts data available will often be at this
+scale anyways, the finer physical exposure data will be generalized to
+this level as well. This can be done in a number of ways, such as taking
+a wind speed measurement from a monitor at the center of the county.
+This wind exposure value will then be assigned to the entire county.
+Windspeed at the moment a tropical cyclone makes landfall is another
+exposure assignment method, as was done in (Shao et al. 2017), in which
+the maximum wind speed when a tropical cyclone made landfall in a
+particular coastal county was used to assign that particular county's
+exposure. Cumulativie rainfall in the entire county, distance of the
+county from the storm track, number of tornadoes in the county, and
+floodindg in the county are other methods of assigning an aggregate
+exposure value to a certain region.
+
+It is often the case that these aggregated values will be determined to
+categorize a county or other spatial area as exposed or unexposed, based
+on some kind of threshold. In (Parks et al. 2021), researchers
+considered counties exposed if the peak sustained wind that day exceeded
+a gale force greater than or equal to 34 knots on the Beaufort scale
+when the cyclone was at the point of closest approach to the county.
+Entire counties will also be categorized as unexposed or exposed based
+on whether the storm track of the tropical cyclone passed through their
+borders or not.
+
+The Saffir-Simpson scale is an example of how entire storms are often
+classified by their maximum wind speed. Forecasters classify hurricanes
+into categories on the Saffir-Simpson scale based on maximum sustained
+surface wind speed. This is defined as the peak one minute wind speed at
+a height of 10 feet over an unobstructed exposure (Taylor et al. 2010).
+The Saffir-Simpson scale uses five different bins to classify varying
+levels of wind speed and determine the severity of a storm. The first
+level, Category 1 is designated for hurricanes and tropical storms with
+maximum wind speeds of between 64 - 82 knots and is generally considered
+dangerous to people, livestock, and pets from the hazard of flying and
+falling debris (Taylor et al. 2010). On the higher end of the scale,
+Category 5 designates hurricanes with maximum wind speeds above 137
+knots and is considered to have catastrophic effect on damage and a high
+probability of injury or death to people, livestock, and pets even if
+they are sheltering indoors (Taylor et al. 2010). An important
+limitation of the Saffir-Simpson scale is that it doesn't account for
+other hurricane-related impact variables such as storm surges, flooding,
+and tornadoes (Taylor et al. 2010). (Shao et al. 2017) used this scale
+to assign wind speed categories to counties along the Gulf Coast in a
+study assessing perceptions of risk to tropical cyclones. (Belasen and
+Polachek 2008) used this scale as well in a study that compared
+hurricane intensities to average earnings in different counties.
+Hurricanes with categories one, two or three were considered lower
+intensity, and hurricanes of counties four and five were considered high
+intensity.
+
+\hypertarget{implications-of-aggregating-data}{%
+\subsubsection{Implications of Aggregating
+Data}\label{implications-of-aggregating-data}}
+
+When researchers have physical exposure data at a very fine resolution,
+perhaps even continuous, and human impacts data at a more aggregate
+level, it is common and practical to aggregate the physical exposure
+data. When dealing with aggregated data of any kind, it is important to
+realize that information on the individual level is lost. Researchers
+should be mindful when aggregating data, particularly continuous data,
+that they are losing information. In this section we will discuss some
+of the major implications of aggregating data which include ecological
+bias, misclassification and measurement error, and the process of
+categorizing continuous data.
+
+\hypertarget{ecological-bias}{%
+\subsubsection{Ecological Bias}\label{ecological-bias}}
+
+Physical exposures to tropical cyclones, as well as human impacts, are
+observed across spatial gradiants, and though specific point locations
+may exist for a weather monitor recording maximum wind speed or
+rainfall, that point location data is often aggregated to a larger
+spatial unit. For example, several weather monitors at specific point
+locations recording maximum wind speed may be replaced by the maximum
+wind speed at the center of the county. Data such as this is known as
+ecological data, aggregate data, or contextual-level data. Studies that
+use such data are known as ecological studies (Sedgwick 2014).
+Ecological bias occurs whenever the aggregate association between an
+exposure and an outcome does not properly reflect the association on the
+individual level (Greenland and Morgenstern 1989). There are times when
+this is not a concern, such as when the aggregate is a count. For
+example in (Zahran, Tavani, and Weiler 2013), the daily casualty count
+was reported for individual counties in the Southern United States,
+using count data from the Spatial Hazard Events and Losses Database.
+However, when estimates derived from ecological studies are used to
+infer individual estimates, ecological bias will likely be present.
+Especially when there is heterogeneity present in an aggregated
+population, an ecological estimate should not be taken to be
+representative of individual estimates.
+
+\hypertarget{misclassification-and-measurement-error-in-aggregating-data}{%
+\subsubsection{Misclassification and Measurement Error in Aggregating
+Data}\label{misclassification-and-measurement-error-in-aggregating-data}}
+
+When aggregating data, another concern that arises is misclassification
+or measurerement error. Misclassification error occurs when exposure and
+outcome variables are measured in categories and the wrong category is
+assigned to a particular case/observation - for example when a case that
+is exposed is incorrectly categorized as unexposed. Failure to classify
+exposure accurately(for example, classifying certain observations as
+exposed to a storm when they really were not, or vice-versa), allows
+misclassification bias to move the results of the study further from the
+true parameter. Measurement error occurs when the variables being
+measured are continuous, such as the amount of precipitation or the wind
+speed that was measured during a tropical cyclone.
+
+Environmental epidemiology studies are often prone to misclassification
+error because the methods of assessing exposure are not always congruent
+with the way that researchers conduct human impact studies. It is easy
+to map the path of a tropical cyclone's center, and categorize every
+county it passes through as an exposed county. However, this information
+by itself would not give the researcher any information about population
+centers that the storm track got close to. A town within an exposed
+county may or may not have been close to the storm's path. Conversely,a
+town in an unexposed county could be located very close to the border of
+an exposed county, and even be closer to the storm's track than a
+different town within that exposed county. An example of a study that
+could be prone to this kind of bias is (Kinney et al. 2008) where
+Louisiana parishes were considered vulnerable to hurricane exposure
+based on whether or not the storm center passed through that parish. It
+is possible that the cases considered exposed based on living in these
+parishes were not in fact exposed since the storm may have passed
+through only a certain part of the parish. Never the less, all cases in
+a parish are considered exposed or unexposed in the aggregate.
+
+\#\#\#\#{[}Need to figure a way to conclude this section{]}\#\#\#\#
+
+\hypertarget{when-data-have-the-same-scale-but-are-at-different-locations}{%
+\subsection{When Data Have the Same Scale but are at Different
+Locations}\label{when-data-have-the-same-scale-but-are-at-different-locations}}
+
+Sometimes, researchers may have access to data that is down to the point
+source, both for physical exposures and also for human impacts. Very
+likely however, these point sources will not be the same. Here the issue
+is not of integrating different resolution levels, but rather of
+matching different point locations. Weather monitoring stations may be
+set up regularly in a geographic region, sometimes in regular grids, but
+the human impacts point locations could be tied to a single residential
+address that is likely not at a weather station or in a grid.
+
+One way to resolve this spatial misalignment is to assign exposure to
+the residential addresses based on the closest weather monitoring
+station (Kim, Sheppard, and Kim 2009). This is a common method that is
+employed in many other areas of environmental epidemiology, including
+studies on the impacts of wildfire smoke plumes and urban smog on
+respiratory health. Typically, a distance threshold will be determined
+for a monitoring station or a sensor, and any residence within that
+distance will be assigned an exposure value from that monitoring point.
+
+There are several drawbacks to assigning exposure to human residences
+based on distance from a weather monitoring stations. One of them is
+that in more rural areas, in situ observations may be sparse and this
+limits the information between monitors, and diminishes the accuracy of
+exposures assigned to individuals located between those monitors (Gan et
+al. 2017).The exposed population is also reduced when you rely on
+distance from monitoring sites, because you can only include individuals
+who are close enough to reasonably be assigned the exposure from that
+site (Lassman et al. 2017). This can be a problem, as large populations
+are often required for detection of health impacts. Depending on the
+exposure of interest, topography, climate, and localized weather
+patterns will also render sites beyond a limited threshold distance from
+the site as unrealistic to be assigned the value from the monitoring
+station.
+
+Another method of assigning exposure to spatially misaligned individuals
+is to interpolate, using models. Spatial interpolation is the prediction
+of values or metrics of specific points within a defined region based on
+some sort of spatial model (Li and Heap 2014). Kriging is one such
+method that creates continuous spatial surfaces for understanding
+environmental variables like air pollution, minerals, soil, and
+meteorological conditions (Liang and Kumar 2013). It is a type of
+Generalized Least Square Regression Algorithm (Li and Heap 2014). This
+method has been used extensively in modeling the effects of air
+pollution in places like California, as was done in (Kim, Sheppard, and
+Kim 2009) to look at air pollution exposure in Los Angeles, California.
+The study utilized a kriging model and as well as using the nearest
+weather monitoring station to assign air pollution exposure to
+residential locations in Los Angeles. Kriging is widely applicable to
+studies of tropical cyclones as well. Researchers in South Carolina used
+kriging interpolation to analyse rainfall data and create
+spatio-temporal model in 2015 during a particularly strong storm season.
+
+A limitation of both matching physical exposure monitors to residences,
+and using interpolation models to infer exposure values, is that
+meteorological events can damage these monitors. Strong storm events
+that produce high enough winds can blow away or damage senors. If
+precipitation is being measured, rain that comes down in slants can also
+make measurements less accurate. These are issues that are particularly
+concerning for ground based monitors.
+
+The more complicated that a model becomes, the harder it is to
+interpret. This is why the most simple method that can be utilized
+(sometimes simply matching human point locations to the nearest monitor)
+is the best way to go. Some exposures, like wind speed, are relatively
+homogenous over large areas, so the different methods will not give much
+variation in results.
+
+\hypertarget{misclassification-for-same-scale-different-locations}{%
+\subsubsection{Misclassification for Same Scale Different
+Locations}\label{misclassification-for-same-scale-different-locations}}
+
+The obvious goal of assigning tropical cyclone exposures to individual
+point locations by matching values from the nearest monitoring site or
+spatially interpolating, is to estimate exposure values accuarately.
+This is crucial to avoid exposure misclassification. The more spatially
+heterogeneous that an environmental exposure is, the more room there is
+for exposure misclassification to occur. In studies of wildfires and air
+pollution, concentrations of PM2.5 and other air pollutants can very
+greatly within relatively small spatial areas. Other factors like
+windspeed and rainfall however, are fairly homogenous across spatial
+areas. This means that interpolating and assigning exposure based on the
+nearest monitoring sites may result in less exposure
+misclassificationhave. Tornadoes on the other hand tend to be very
+localized and can easily be overlooked with these methods.
+
+When assigning exposure to an individual point location based on the
+nearest monitoring site, the further this location is from the
+monitoring site, the more likely it is that the monitoring site won't
+reflect an exposure estimate accurately. Topography, complicated weather
+patterns, and other things could complicate this measurement.
+
+When interpolating, the environmental exposure of concern will partially
+determine the potential for misclassification. Using the examples from
+above of windspeed and rainfall, it is unlikely that much
+misclassification would occur over a spatial interface since they are
+homogenous over large areas.
+
+\hypertarget{conclusiondiscussion}{%
+\section{Conclusion/Discussion}\label{conclusiondiscussion}}
+
+The aim of this paper has been to show that studying the human impacts
+of tropical cyclones requires use of multiple datasets from different
+sources, at different temporal and spatial scales, and resulting from
+different data collection methods. We've shown how physical exposure
+data from tropical cyclones usually comes from point location monitors
+and sensors such as rain and stream gauges, wind vanes, at weather
+stations that are often a part of large scale networks operated by NOAA
+and the NWS. We've shown how in contrast to this, that data on human
+impacts comes from administrative sources at hospitals, schools, and
+governments, often at the level of the zip code or county. These
+differences in temporal and spatial scale make use of the data difficult
+for researchers to immediately utilize. Nevertheless, several methods
+exist for integrating these datasets, and we've briefly described
+aggregation, interpolation, and matching as the main methdos for doing
+this. Though useful, these methods are not without their limitation,
+such as their propensity towards ecological bias and exposure
+misclassification.
+
+Ecological bias and exposure misclassification are a problem, because
+they impact the external validity of tropical cyclone studies. If not
+adequately mitigated, they can produce measures of association that do
+not reflect the true impact that tropical cyclones have on coastal
+communities. In other words, these kinds of bias and error make tropical
+cyclone studies less generalizable, which renders them less effective in
+predicting for future events and preparing for them. That leaves large
+gaps of uncertainty when it comes to creating resilient communities that
+can withstand tropical cyclone events, and leaves more vulnerable
+populations and communities at an elevated risk. {[}Cite Daniel's
+paper{]}
+
+There is reason to be optimistic that we can harness the power of large
+datasets on physical, and increasing precision in model building, to
+understand and predict the effects of tropical cyclones on human health,
+economic viability, infrastructure, and social dynamics. This is of
+course contingent on our ability as researchers to make sure that the
+data on human impacts is of a similar quality and translatable
+resolution as the high quality data we already have on physical
+exposures. With larger populations expected to live in areas threatened
+by tropical cyclones in the future, this is an extremely important
+undertaking for interdisciplinary teams of meteorologists,
+epidemiologists, economists, and diaster planners.
+
+Link to online book Geocomputation in R
+\url{https://geocompr.robinlovelace.net/} \# References
+
+\hypertarget{refs}{}
+\leavevmode\hypertarget{ref-ahrens2005essentials}{}%
+Ahrens, CD. 2005. ``Essentials of Meteorology Essentials of Meteorology:
+An Invitation to the Atomosphere.'' Thomson Brooks/Cole Calif.
+
+\leavevmode\hypertarget{ref-anderson2020assessing}{}%
+Anderson, G Brooke, Joshua Ferreri, Mohammad Al-Hamdan, William Crosson,
+Andrea Schumacher, Seth Guikema, Steven Quiring, Dirk Eddelbuettel,
+Meilin Yan, and Roger D Peng. 2020. ``Assessing United States
+County-Level Exposure for Research on Tropical Cyclones and Human
+Health.'' \emph{Environmental Health Perspectives} 128 (10): 107009.
+
+\leavevmode\hypertarget{ref-aschengrau2013essentials}{}%
+Aschengrau, Ann, and George R Seage. 2013. \emph{Essentials of
+Epidemiology in Public Health}. Jones \& Bartlett Publishers.
+
+\leavevmode\hypertarget{ref-belasen2008hurricanes}{}%
+Belasen, Ariel R, and Solomon W Polachek. 2008. ``How Hurricanes Affect
+Wages and Employment in Local Labor Markets.'' \emph{American Economic
+Review} 98 (2): 49--53.
+
+\leavevmode\hypertarget{ref-bevilacqua2020understanding}{}%
+Bevilacqua, Kristin, Rehana Rasul, Samantha Schneider, Maria Guzman,
+Vishnu Nepal, Deborah Banerjee, Joann Schulte, and Rebecca M Schwartz.
+2020. ``Understanding Associations Between Hurricane Harvey Exposure and
+Mental Health Symptoms Among Greater Houston-Area Residents.''
+\emph{Disaster Medicine and Public Health Preparedness}, 1--8.
+
+\leavevmode\hypertarget{ref-brunkard2008hurricane}{}%
+Brunkard, Joan, Gonza Namulanda, and Raoult Ratard. 2008. ``Hurricane
+Katrina Deaths, Louisiana, 2005.'' \emph{Disaster Medicine and Public
+Health Preparedness} 2 (4): 215--23.
+
+\leavevmode\hypertarget{ref-deryugina2017fiscal}{}%
+Deryugina, Tatyana. 2017. ``The Fiscal Cost of Hurricanes: Disaster Aid
+Versus Social Insurance.'' \emph{American Economic Journal: Economic
+Policy} 9 (3): 168--98.
+
+\leavevmode\hypertarget{ref-deryugina2018economic}{}%
+Deryugina, Tatyana, Laura Kawano, and Steven Levitt. 2018. ``The
+Economic Impact of Hurricane Katrina on Its Victims: Evidence from
+Individual Tax Returns.'' \emph{American Economic Journal: Applied
+Economics} 10 (2): 202--33.
+
+\leavevmode\hypertarget{ref-east2008monitoring}{}%
+East, Jeffery W, Michael J Turco, and Robert R Mason Jr. 2008.
+``Monitoring Inland Storm Surge and Flooding from Hurricane Ike in Texas
+and Louisiana, September 2008.'' \emph{Surge} 29: 95--20833.
+
+\leavevmode\hypertarget{ref-ferdinand2005hurricane}{}%
+Ferdinand, Keith C. 2005. ``The Hurricane Katrina Disaster: Focus on the
+Hypertensive Patient.'' \emph{The Journal of Clinical Hypertension} 7
+(11): 679--80.
+
+\leavevmode\hypertarget{ref-gan2017comparison}{}%
+Gan, Ryan W, Bonne Ford, William Lassman, Gabriele Pfister, Ambarish
+Vaidyanathan, Emily Fischer, John Volckens, Jeffrey R Pierce, and Sheryl
+Magzamen. 2017. ``Comparison of Wildfire Smoke Estimation Methods and
+Associations with Cardiopulmonary-Related Hospital Admissions.''
+\emph{GeoHealth} 1 (3): 122--36.
+
+\leavevmode\hypertarget{ref-grabich2016measuring}{}%
+Grabich, SC, J Horney, C Konrad, and DT Lobdell. 2016. ``Measuring the
+Storm: Methods of Quantifying Hurricane Exposure with Pregnancy
+Outcomes.'' \emph{Natural Hazards Review} 17 (1): 06015002.
+
+\leavevmode\hypertarget{ref-grabich2016hurricane}{}%
+Grabich, Shannon C, Whitney R Robinson, Stephanie M Engel, Charles E
+Konrad, David B Richardson, and Jennifer A Horney. 2016. ``Hurricane
+Charley Exposure and Hazard of Preterm Delivery, Florida 2004.''
+\emph{Maternal and Child Health Journal} 20 (12): 2474--82.
+
+\leavevmode\hypertarget{ref-grech2015hurricane}{}%
+Grech, Victor, and Hagen Scherb. 2015. ``Hurricane Katrina: Influence on
+the Male-to-Female Birth Ratio.'' \emph{Medical Principles and Practice}
+24 (5): 477--85.
+
+\leavevmode\hypertarget{ref-greenland1989ecological}{}%
+Greenland, Sander, and Hal Morgenstern. 1989. ``Ecological Bias,
+Confounding, and Effect Modification.'' \emph{International Journal of
+Epidemiology} 18 (1): 269--74.
+
+\leavevmode\hypertarget{ref-horney2021impact}{}%
+Horney, Jennifer A, Ibraheem M Karaye, Alexander Abuabara, Sera
+Gearhart, Shannon Grabich, and Maria Perez-Patron. 2021. ``The Impact of
+Natural Disasters on Suicide in the United States, 2003--2015.''
+\emph{Crisis: The Journal of Crisis Intervention and Suicide Prevention}
+42 (5): 328.
+
+\leavevmode\hypertarget{ref-huang2001long}{}%
+Huang, Zhigang, David V Rosowsky, and Peter R Sparks. 2001. ``Long-Term
+Hurricane Risk Assessment and Expected Damage to Residential
+Structures.'' \emph{Reliability Engineering \& System Safety} 74 (3):
+239--49.
+
+\leavevmode\hypertarget{ref-jaycox2010children}{}%
+Jaycox, Lisa H, Judith A Cohen, Anthony P Mannarino, Douglas W Walker,
+Audra K Langley, Kate L Gegenheimer, Molly Scott, and Matthias Schonlau.
+2010. ``Children's Mental Health Care Following Hurricane Katrina: A
+Field Trial of Trauma-Focused Psychotherapies.'' \emph{Journal of
+Traumatic Stress: Official Publication of the International Society for
+Traumatic Stress Studies} 23 (2): 223--31.
+
+\leavevmode\hypertarget{ref-kim2009health}{}%
+Kim, Sun-Young, Lianne Sheppard, and Ho Kim. 2009. ``Health Effects of
+Long-Term Air Pollution: Influence of Exposure Prediction Methods.''
+\emph{Epidemiology}, 442--50.
+
+\leavevmode\hypertarget{ref-kinney2008autism}{}%
+Kinney, Dennis K, Andrea M Miller, David J Crowley, Emerald Huang, and
+Erika Gerber. 2008. ``Autism Prevalence Following Prenatal Exposure to
+Hurricanes and Tropical Storms in Louisiana.'' \emph{Journal of Autism
+and Developmental Disorders} 38 (3): 481--88.
+
+\leavevmode\hypertarget{ref-lane2013health}{}%
+Lane, Kathryn, Kizzy Charles-Guzman, Katherine Wheeler, Zaynah Abid,
+Nathan Graber, and Thomas Matte. 2013. ``Health Effects of Coastal
+Storms and Flooding in Urban Areas: A Review and Vulnerability
+Assessment.'' \emph{Journal of Environmental and Public Health} 2013.
+
+\leavevmode\hypertarget{ref-lassman2017spatial}{}%
+Lassman, William, Bonne Ford, Ryan W Gan, Gabriele Pfister, Sheryl
+Magzamen, Emily V Fischer, and Jeffrey R Pierce. 2017. ``Spatial and
+Temporal Estimates of Population Exposure to Wildfire Smoke During the
+Washington State 2012 Wildfire Season Using Blended Model, Satellite,
+and in Situ Data.'' \emph{GeoHealth} 1 (3): 106--21.
+
+\leavevmode\hypertarget{ref-li2014spatial}{}%
+Li, Jin, and Andrew D Heap. 2014. ``Spatial Interpolation Methods
+Applied in the Environmental Sciences: A Review.'' \emph{Environmental
+Modelling \& Software} 53: 173--89.
+
+\leavevmode\hypertarget{ref-li2018novel}{}%
+Li, Zhenlong, Cuizhen Wang, Christopher T Emrich, and Diansheng Guo.
+2018. ``A Novel Approach to Leveraging Social Media for Rapid Flood
+Mapping: A Case Study of the 2015 South Carolina Floods.''
+\emph{Cartography and Geographic Information Science} 45 (2): 97--110.
+
+\leavevmode\hypertarget{ref-liang2013time}{}%
+Liang, Dong, and Naresh Kumar. 2013. ``Time-Space Kriging to Address the
+Spatiotemporal Misalignment in the Large Datasets.'' \emph{Atmospheric
+Environment} 72: 60--69.
+
+\leavevmode\hypertarget{ref-lieberman2017self}{}%
+Lieberman-Cribbin, Wil, Bian Liu, Samantha Schneider, Rebecca Schwartz,
+and Emanuela Taioli. 2017. ``Self-Reported and Fema Flood Exposure
+Assessment After Hurricane Sandy: Association with Mental Health
+Outcomes.'' \emph{PLoS One} 12 (1): e0170965.
+
+\leavevmode\hypertarget{ref-lovelace2019geocomputation}{}%
+Lovelace, Robin, Jakub Nowosad, and Jannes Muenchow. 2019.
+\emph{Geocomputation with R}. Chapman; Hall/CRC.
+
+\leavevmode\hypertarget{ref-parks2021tropical}{}%
+Parks, Robbie M, G Brooke Anderson, Rachel C Nethery, Ana Navas-Acien,
+Francesca Dominici, and Marianthi-Anna Kioumourtzoglou. 2021. ``Tropical
+Cyclone Exposure Is Associated with Increased Hospitalization Rates in
+Older Adults.'' \emph{Nature Communications} 12 (1): 1--12.
+
+\leavevmode\hypertarget{ref-scaramutti2019mental}{}%
+Scaramutti, Carolina, Christopher P Salas-Wright, Saskia R Vos, and Seth
+J Schwartz. 2019. ``The Mental Health Impact of Hurricane Maria on
+Puerto Ricans in Puerto Rico and Florida.'' \emph{Disaster Medicine and
+Public Health Preparedness} 13 (1): 24--27.
+
+\leavevmode\hypertarget{ref-sedgwick2014ecological}{}%
+Sedgwick, Philip. 2014. ``Ecological Studies: Advantages and
+Disadvantages.'' \emph{Bmj} 348.
+
+\leavevmode\hypertarget{ref-shao2017understanding}{}%
+Shao, Wanyun, Siyuan Xian, Barry D Keim, Kirby Goidel, and Ning Lin.
+2017. ``Understanding Perceptions of Changing Hurricane Strength Along
+the Us Gulf Coast.'' \emph{International Journal of Climatology} 37 (4):
+1716--27.
+
+\leavevmode\hypertarget{ref-taylor2010saffir}{}%
+Taylor, Harvey Thurm, Bill Ward, Mark Willis, and Walt Zaleski. 2010.
+``The Saffir-Simpson Hurricane Wind Scale.'' \emph{Atmospheric
+Administration: Washington, DC, USA}.
+
+\leavevmode\hypertarget{ref-willison2019quantifying}{}%
+Willison, Charley E, Phillip M Singer, Melissa S Creary, and Scott L
+Greer. 2019. ``Quantifying Inequities in Us Federal Response to
+Hurricane Disaster in Texas and Florida Compared with Puerto Rico.''
+\emph{BMJ Global Health} 4 (1).
+
+\leavevmode\hypertarget{ref-yan2020tropical}{}%
+Yan, M, G Anderson, A Wilson, F Dominici, Y Wang, M Al-Hamdan, W
+Crosson, et al. 2020. ``Tropical Cyclone Exposure and Risk of Emergency
+Medicare Hospital Admissions for Cardiorespiratory Diseases in 175
+United States Counties, 1999-2010.'' \emph{Epidemiology} In Press.
+
+\leavevmode\hypertarget{ref-zahran2013daily}{}%
+Zahran, Sammy, Daniele Tavani, and Stephan Weiler. 2013. ``Daily
+Variation in Natural Disaster Casualties: Information Flows, Safety, and
+Opportunity Costs in Tornado Versus Hurricane Strikes.'' \emph{Risk
+Analysis} 33 (7): 1265--80.
+
+\end{document}
